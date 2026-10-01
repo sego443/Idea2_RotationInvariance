@@ -1,0 +1,14 @@
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+*.txt text eol=lf
+*.npz binary
+*.pt binary
+*.png binary
+.gitattributes text eol=lf
+.gitignore text eol=lf
+# Preserve published evidence checksums and original processed metadata bytes.
+docs/evidence/** -text whitespace=cr-at-eol
+data/**/*.csv -text whitespace=cr-at-eol

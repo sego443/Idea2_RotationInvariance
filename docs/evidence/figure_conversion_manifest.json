@@ -1,0 +1,53 @@
+{
+  "format": "rotation-english-figure-conversion-v1",
+  "date": "2026-10-01",
+  "scope": "Regenerate five existing derived overlay images with English labels and the same numerical traces; no registered-test rows preprocessed, no training or classification scoring",
+  "original_image_backup": "C:\\Users\\56569\\AppData\\Local\\Temp\\rotation_original_figures_20261001.zip",
+  "figures": [
+    {
+      "path": "outputs/c170_overlay_5_20260927/B008_D005MM_RIGHT_R20_overlay.png",
+      "original_sha256": "45e71f67b7916b01fbd76bccf0c9eb35e9842587922ac0583ef393afd19443f5",
+      "english_sha256": "33de338e04673d66da912da3d22c9b019c12f082664d32607d0586fb83102dad",
+      "block": 8,
+      "distance_mm": 5,
+      "traces_sha256": "b06301ea4230552cebef085e81ca9c4e20a6cd88baca6da5c0e0494434d4dad0",
+      "traces_exactly_equal_to_original_calculation": true
+    },
+    {
+      "path": "outputs/c170_overlay_5_20260927/B020_D020MM_RIGHT_R20_overlay.png",
+      "original_sha256": "9bce3236442f8a51f847dcecfc8c7aea1c19266fbccd0afbb17f97a16b250fea",
+      "english_sha256": "b0c4782bac203756477535297625d535509d7386167c76361b7cbdce9b0b08f5",
+      "block": 20,
+      "distance_mm": 20,
+      "traces_sha256": "4bfa1ef6d92ec1691b8a005408edfac1fc6973dd138be9ef910f803937911ef4",
+      "traces_exactly_equal_to_original_calculation": true
+    },
+    {
+      "path": "outputs/c170_overlay_5_20260927/B036_D040MM_RIGHT_R20_overlay.png",
+      "original_sha256": "08ebe2d3536d4a9b49ebca97d9c8109b0e7aeeb72cd118a801350d075e234e8c",
+      "english_sha256": "7499afe110a5cd08765f6d0c6c4fa4c673c8f2d9389ef44583c49e6b39918355",
+      "block": 36,
+      "distance_mm": 40,
+      "traces_sha256": "021034260d8667fe45179c0992cfe00402c3fab5b731b1c5ac37273641315f67",
+      "traces_exactly_equal_to_original_calculation": true
+    },
+    {
+      "path": "outputs/c170_overlay_5_20260927/B131_D160MM_LEFT_R20_overlay.png",
+      "original_sha256": "dcfa2771735eed96d8e038662ed57131071e8de1a01f643fa6694b1d23c8e1e3",
+      "english_sha256": "93a5f0be26616c5e7b5fa4860e3a42dd5285a3661da8e44768625b52b0f0ea0d",
+      "block": 131,
+      "distance_mm": 160,
+      "traces_sha256": "ae5154737228aaa2ad8ea95898ccab6ea5050887a9e7f547d945442b8004a6df",
+      "traces_exactly_equal_to_original_calculation": true
+    },
+    {
+      "path": "outputs/c170_overlay_5_20260927/B058_D070MM_DOWN_R20_overlay.png",
+      "original_sha256": "168fc4f1ef0441b1d82dc84420ebb3d4c02b7332511d44f0d72a5671bcb8af05",
+      "english_sha256": "ea8fdda9bed52ca897fb5c11f0eda5d448f488de70e9392df7958edab3028662",
+      "block": 58,
+      "distance_mm": 70,
+      "traces_sha256": "2ce2eaafc25c1e48cb743ccb1936d201fdb9fb065ca40646cc3d875049a0e39f",
+      "traces_exactly_equal_to_original_calculation": true
+    }
+  ]
+}

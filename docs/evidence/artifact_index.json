@@ -1,0 +1,289 @@
+{
+  "format": "rotation-portable-evidence-v1",
+  "date": "2026-10-01",
+  "scope": "Curated saved summaries/predictions; complete raw/checkpoint/run bundle is separate",
+  "artifacts": [
+    {
+      "path": "docs/evidence/c170_complex_regularization_v17_recovery2_20260930/c170_complex_regularization_v17_validation_summary.json",
+      "source_path": "outputs/c170_complex_regularization_v17_recovery2_20260930/c170_complex_regularization_v17_validation_summary.json",
+      "sha256": "b6a43ae196fcf2a1728dccaac777453b161f0dde76a7797874a299aede51f09c",
+      "bytes": 123827
+    },
+    {
+      "path": "docs/evidence/c170_distance_holdout_20260927/config.json",
+      "source_path": "outputs/c170_distance_holdout_20260927/config.json",
+      "sha256": "568faa1821f1458d7cea9b3bfac8872bd4aac6a884f1451d561747f1a05f8c78",
+      "bytes": 10827
+    },
+    {
+      "path": "docs/evidence/c170_distance_holdout_20260927/validation_metrics.json",
+      "source_path": "outputs/c170_distance_holdout_20260927/validation_metrics.json",
+      "sha256": "d09386a56017fe1717db6a3df413ba22fb42ecafa3261e9bd31b9f4b134d443d",
+      "bytes": 606251
+    },
+    {
+      "path": "docs/evidence/c170_distance_holdout_candidates_20260927/config.json",
+      "source_path": "outputs/c170_distance_holdout_candidates_20260927/config.json",
+      "sha256": "ddb37788fd71cc72744606eefb6c518e78d234826afb298198ff268602881a93",
+      "bytes": 11108
+    },
+    {
+      "path": "docs/evidence/c170_distance_holdout_candidates_20260927/validation_metrics.json",
+      "source_path": "outputs/c170_distance_holdout_candidates_20260927/validation_metrics.json",
+      "sha256": "ec1728d59d1af8f7a1d531230f07d61bc0207c2225e248dd8e3dfbf78fe59f9a",
+      "bytes": 607690
+    },
+    {
+      "path": "docs/evidence/c170_distance_holdout_ensemble_verified_20260927/validation_ensemble_metrics.json",
+      "source_path": "outputs/c170_distance_holdout_ensemble_verified_20260927/validation_ensemble_metrics.json",
+      "sha256": "93bfd049b3576a81aa065213cc2afaf3e8ef9397ebd6691db4e2999c468263e6",
+      "bytes": 74571
+    },
+    {
+      "path": "docs/evidence/c170_f2_matched_nulls_20260929/NULL_RUNS_COMPLETE.json",
+      "source_path": "outputs/c170_f2_matched_nulls_20260929/NULL_RUNS_COMPLETE.json",
+      "sha256": "13802390882b82866c4fdd9dd6b8efe5fbdd760ffc6a20e2de7b525a35f2087b",
+      "bytes": 11299
+    },
+    {
+      "path": "docs/evidence/c170_f2_matched_nulls_20260929/driver_state.json",
+      "source_path": "outputs/c170_f2_matched_nulls_20260929/driver_state.json",
+      "sha256": "f6007d8b1ca1a09e7a02a2021337669d5a7dd326a686b745decffd80e0106d6c",
+      "bytes": 68061
+    },
+    {
+      "path": "docs/evidence/c170_f2_matched_nulls_20260929/experiment_manifest.json",
+      "source_path": "outputs/c170_f2_matched_nulls_20260929/experiment_manifest.json",
+      "sha256": "de6a07af797b91eb47f93fcaee439d05c034540176ddc2fcd0c9ec6561945d36",
+      "bytes": 10871
+    },
+    {
+      "path": "docs/evidence/c170_f2_matched_nulls_20260929/frozen_f2_and_null_test_predictions.csv",
+      "source_path": "outputs/c170_f2_matched_nulls_20260929/frozen_f2_and_null_test_predictions.csv",
+      "sha256": "5b2839f50e92340aafb1498d81ceb3980e68e74ab6a3468f8a889a0ade9195f5",
+      "bytes": 5027538
+    },
+    {
+      "path": "docs/evidence/c170_f2_matched_nulls_20260929/frozen_f2_final_acceptance.json",
+      "source_path": "outputs/c170_f2_matched_nulls_20260929/frozen_f2_final_acceptance.json",
+      "sha256": "a8965b2b6ac0e76210e2ee65e2e48b3b3c6fa91655ec10f93b8973ad5672b145",
+      "bytes": 5809
+    },
+    {
+      "path": "docs/evidence/c170_f2_matched_nulls_20260929/frozen_f2_final_acceptance.md",
+      "source_path": "outputs/c170_f2_matched_nulls_20260929/frozen_f2_final_acceptance.md",
+      "sha256": "57930a83b38e498b0e1c5f1935ca13fe5d4ef98d59018edde8d58b0ee66501fc",
+      "bytes": 3477
+    },
+    {
+      "path": "docs/evidence/c170_f2_matched_nulls_20260929/frozen_f2_final_test_metrics.json",
+      "source_path": "outputs/c170_f2_matched_nulls_20260929/frozen_f2_final_test_metrics.json",
+      "sha256": "c09bfe2ad3fb648830c0b6d212c1b0c95181a7469bca2d57861f8cd3f59a34b6",
+      "bytes": 14188
+    },
+    {
+      "path": "docs/evidence/c170_f2_matched_nulls_20260929/frozen_f2_rule_revision.json",
+      "source_path": "outputs/c170_f2_matched_nulls_20260929/frozen_f2_rule_revision.json",
+      "sha256": "635da73b8a4cc93a9d45833701e80ae729d6ea87c4d36c8bf6c64be71bde3d94",
+      "bytes": 10231
+    },
+    {
+      "path": "docs/evidence/c170_f2_matched_nulls_20260929/frozen_f2_validation_replay.json",
+      "source_path": "outputs/c170_f2_matched_nulls_20260929/frozen_f2_validation_replay.json",
+      "sha256": "7f52fded8d19c2c34b256b2496071f9af1489a02dc68adcee922648eabbc38af",
+      "bytes": 7669
+    },
+    {
+      "path": "docs/evidence/c170_f2_matched_nulls_20260929/matched_null_mapping.json",
+      "source_path": "outputs/c170_f2_matched_nulls_20260929/matched_null_mapping.json",
+      "sha256": "0d4c58ef43847c7ee8cdb44e0ec14c1799c782512a3c75dcb733b379499c5831",
+      "bytes": 37174
+    },
+    {
+      "path": "docs/evidence/c170_f2_matched_nulls_20260929/matched_null_validation_metrics.json",
+      "source_path": "outputs/c170_f2_matched_nulls_20260929/matched_null_validation_metrics.json",
+      "sha256": "b58733717ef565e63c35075f559bf87be0be142464d5bd0df9ccae67d173e1c6",
+      "bytes": 12544
+    },
+    {
+      "path": "docs/evidence/c170_f2_matched_nulls_20260929/matched_null_validation_metrics_frozen_f2.json",
+      "source_path": "outputs/c170_f2_matched_nulls_20260929/matched_null_validation_metrics_frozen_f2.json",
+      "sha256": "8bcbc3705dea6fd624a6471668837c026465334a0ae9f85b1ed238bcd8f6b7b9",
+      "bytes": 12621
+    },
+    {
+      "path": "docs/evidence/c170_harmonic_nyquist_v5_validation_summary_20260929/validation_summary.md",
+      "source_path": "outputs/c170_harmonic_nyquist_v5_validation_summary_20260929/validation_summary.md",
+      "sha256": "c571468f85dffa605648c296c98c0411451fe3e8b35dabadeea860abfb2221bb",
+      "bytes": 2866
+    },
+    {
+      "path": "docs/evidence/c170_harmonic_phase_v4_validation_summary_20260929/validation_summary.md",
+      "source_path": "outputs/c170_harmonic_phase_v4_validation_summary_20260929/validation_summary.md",
+      "sha256": "71840c36bd357c9e24a1dbebce60abcf1ac0f7ec6e45a911098ddfed16e44940",
+      "bytes": 3021
+    },
+    {
+      "path": "docs/evidence/c170_latent_angle_formal_cuda_20260928/validation_analysis_20260928/validation_summary.md",
+      "source_path": "outputs/c170_latent_angle_formal_cuda_20260928/validation_analysis_20260928/validation_summary.md",
+      "sha256": "200841fabefdd44eb34f71749795d6a1893d029bbcbd6e7e26c1391b259712d3",
+      "bytes": 3267
+    },
+    {
+      "path": "docs/evidence/c170_multiscale_nyquist_v16_formal_20260930/sensor_normalization_v16_validation_summary.json",
+      "source_path": "outputs/c170_multiscale_nyquist_v16_formal_20260930/sensor_normalization_v16_validation_summary.json",
+      "sha256": "0ae1fb4a6314374580d5e33148cd61dc0867f807929291712e2165a55c268f59",
+      "bytes": 444512
+    },
+    {
+      "path": "docs/evidence/c170_oof_fusion_v18_formal_20260930/v18_fusion_summary.json",
+      "source_path": "outputs/c170_oof_fusion_v18_formal_20260930/v18_fusion_summary.json",
+      "sha256": "52c2320696c7ff755c7e8310f798f61832acddf672a6b2e64b07d53cc4246aa5",
+      "bytes": 28143
+    },
+    {
+      "path": "docs/evidence/c170_ring_v2_validation_summary_recovery1_20260928/validation_summary.md",
+      "source_path": "outputs/c170_ring_v2_validation_summary_recovery1_20260928/validation_summary.md",
+      "sha256": "7aae7b477d8a5edc0c3baa6488819a9ab2e5543f7fbcea90ba8f3dccdc434c46",
+      "bytes": 2736
+    },
+    {
+      "path": "docs/evidence/c170_ring_v3_validation_summary_20260929_retry1/validation_summary.md",
+      "source_path": "outputs/c170_ring_v3_validation_summary_20260929_retry1/validation_summary.md",
+      "sha256": "a726c6d2ca6f9f706c592b1ad3b046db8bbf4946b0e995273cedbc0b34720dba",
+      "bytes": 2742
+    },
+    {
+      "path": "docs/evidence/c170_sensor_adapter_v13_formal_20260930/sensor_adapter_v13_validation_summary.json",
+      "source_path": "outputs/c170_sensor_adapter_v13_formal_20260930/sensor_adapter_v13_validation_summary.json",
+      "sha256": "83b57bb3f0518eb2209c7541ebcf51a7a55c19f5b70513647d4aaccdd5a04d0c",
+      "bytes": 49880
+    },
+    {
+      "path": "docs/evidence/c170_sensor_normalization_v14_formal_20260930/sensor_normalization_v14_validation_summary.json",
+      "source_path": "outputs/c170_sensor_normalization_v14_formal_20260930/sensor_normalization_v14_validation_summary.json",
+      "sha256": "178330c394813788a808fc71b86cd3df8b80e5dbbcbb2ad192b5db27f4a778e0",
+      "bytes": 591286
+    },
+    {
+      "path": "docs/evidence/c170_temporal_gram_v19_formal_20260930/v19_oldval_summary.json",
+      "source_path": "outputs/c170_temporal_gram_v19_formal_20260930/v19_oldval_summary.json",
+      "sha256": "bd8e2f7213cd717a1dc6f0f851da436a8f5acc09fc9e40328ca0cfc4825f3ac5",
+      "bytes": 47084
+    },
+    {
+      "path": "docs/evidence/c170_temporal_phase_invariant_v6_validation_summary_20260929/validation_summary.md",
+      "source_path": "outputs/c170_temporal_phase_invariant_v6_validation_summary_20260929/validation_summary.md",
+      "sha256": "8be0d875bd8be378668eb0b72570050fc555ff30ee62e28430260833542a3c5b",
+      "bytes": 3011
+    },
+    {
+      "path": "docs/evidence/c170_trainval_spectral_diagnostic_20260929/core_summary.md",
+      "source_path": "outputs/c170_trainval_spectral_diagnostic_20260929/core_summary.md",
+      "sha256": "cca6d9858d6df7eb2c9b7a88c3f12c73177aacf188bb14f8ccd46c62d80774d4",
+      "bytes": 3658
+    },
+    {
+      "path": "docs/evidence/c170_trainval_spectral_diagnostic_20260929/summary.md",
+      "source_path": "outputs/c170_trainval_spectral_diagnostic_20260929/summary.md",
+      "sha256": "17d58c3b19664cca249503ae92eab71b3cef9885ba374b145e001b30d5edbc3e",
+      "bytes": 9360
+    },
+    {
+      "path": "docs/evidence/c170_v4_v6_power_fusion_validation_20260929/fusion_validation_summary.md",
+      "source_path": "outputs/c170_v4_v6_power_fusion_validation_20260929/fusion_validation_summary.md",
+      "sha256": "9d8df3a4b6139b18902c3d8e065cb9c53be6f343d64a6d5390f39f73fd9fb3e6",
+      "bytes": 2541
+    },
+    {
+      "path": "docs/evidence/c170_v7_v4_v6_fixed_vote_validation_20260929/summary.md",
+      "source_path": "outputs/c170_v7_v4_v6_fixed_vote_validation_20260929/summary.md",
+      "sha256": "dd3b49b3042e4f86778c779663da59aff1267d2f0b64b77b35bd3c6bbfbf049b",
+      "bytes": 2916
+    },
+    {
+      "path": "docs/evidence/c170_v7_v4_v6_soft_probability_validation_20260929/summary.md",
+      "source_path": "outputs/c170_v7_v4_v6_soft_probability_validation_20260929/summary.md",
+      "sha256": "caaa1561f608a05f620283659710b28446846b9921a79f863069177f8b9262fd",
+      "bytes": 3767
+    },
+    {
+      "path": "docs/evidence/conditional_directions_2026-09-26/metrics.json",
+      "source_path": "outputs/conditional_directions_2026-09-26/metrics.json",
+      "sha256": "19a38e3d66d404a7c204b6d7e1e90b73d2654a53dc5fa59441a2e9f3f99da08c",
+      "bytes": 86880
+    },
+    {
+      "path": "docs/evidence/conditional_directions_2026-09-26/report.md",
+      "source_path": "outputs/conditional_directions_2026-09-26/report.md",
+      "sha256": "abc6b1177094e1f539735bb900a77143d58fabbbbb13efb905213b88e532f05b",
+      "bytes": 3625
+    },
+    {
+      "path": "docs/evidence/lstm_graph_round1_2026-09-25/comparison_report.md",
+      "source_path": "outputs/lstm_graph_round1_2026-09-25/comparison_report.md",
+      "sha256": "54b48d6e1486cd22e633dab3ce60e40ed642ec4daaa5894bfdb5da1d2a8a18c7",
+      "bytes": 3190
+    },
+    {
+      "path": "docs/evidence/lstm_graph_round1_2026-09-25/metrics.json",
+      "source_path": "outputs/lstm_graph_round1_2026-09-25/metrics.json",
+      "sha256": "59abad2a09d7c5ea2c5148326f0341063eecf0b0acaba16634833ddb0e976cbb",
+      "bytes": 71706
+    },
+    {
+      "path": "docs/evidence/round1_rotation_poc_2026-08-27/experiment_report.md",
+      "source_path": "outputs/round1_rotation_poc_2026-08-27/experiment_report.md",
+      "sha256": "2348e53e9ec254a1123177210eef36ecd6bc35fcd6fa2e991971865f3851f6c4",
+      "bytes": 2154
+    },
+    {
+      "path": "docs/evidence/round1_rotation_poc_2026-08-27/metrics.json",
+      "source_path": "outputs/round1_rotation_poc_2026-08-27/metrics.json",
+      "sha256": "14e6bd208fc645d5106eff85e2a92b74808687f21f12c01b7ed831179376904e",
+      "bytes": 56946
+    },
+    {
+      "path": "docs/evidence/c170_trainval_spectral_diagnostic_20260929/summary.json",
+      "source_path": "outputs/c170_trainval_spectral_diagnostic_20260929/summary.json",
+      "sha256": "899b5c06e4d46c0d989e135996ad5f6c16225aab0d47d84b5a92254e98186ede",
+      "bytes": 405914
+    },
+    {
+      "path": "docs/figures/B008_D005MM_RIGHT_R20_overlay.png",
+      "source_path": "outputs/c170_overlay_5_20260927/B008_D005MM_RIGHT_R20_overlay.png",
+      "sha256": "33de338e04673d66da912da3d22c9b019c12f082664d32607d0586fb83102dad",
+      "bytes": 909366
+    },
+    {
+      "path": "docs/figures/B020_D020MM_RIGHT_R20_overlay.png",
+      "source_path": "outputs/c170_overlay_5_20260927/B020_D020MM_RIGHT_R20_overlay.png",
+      "sha256": "b0c4782bac203756477535297625d535509d7386167c76361b7cbdce9b0b08f5",
+      "bytes": 844501
+    },
+    {
+      "path": "docs/figures/B036_D040MM_RIGHT_R20_overlay.png",
+      "source_path": "outputs/c170_overlay_5_20260927/B036_D040MM_RIGHT_R20_overlay.png",
+      "sha256": "7499afe110a5cd08765f6d0c6c4fa4c673c8f2d9389ef44583c49e6b39918355",
+      "bytes": 1011186
+    },
+    {
+      "path": "docs/figures/B058_D070MM_DOWN_R20_overlay.png",
+      "source_path": "outputs/c170_overlay_5_20260927/B058_D070MM_DOWN_R20_overlay.png",
+      "sha256": "ea8fdda9bed52ca897fb5c11f0eda5d448f488de70e9392df7958edab3028662",
+      "bytes": 899250
+    },
+    {
+      "path": "docs/figures/B131_D160MM_LEFT_R20_overlay.png",
+      "source_path": "outputs/c170_overlay_5_20260927/B131_D160MM_LEFT_R20_overlay.png",
+      "sha256": "93a5f0be26616c5e7b5fa4860e3a42dd5285a3661da8e44768625b52b0f0ea0d",
+      "bytes": 730244
+    },
+    {
+      "path": "docs/figures/held_out_angle_performance.png",
+      "source_path": "outputs/round1_rotation_poc_2026-08-27/held_out_angle_performance.png",
+      "sha256": "82be0813d230c4868b820bcbccaa288fd2c18d74cacfbc971b77356f248bb38e",
+      "bytes": 57511
+    }
+  ]
+}

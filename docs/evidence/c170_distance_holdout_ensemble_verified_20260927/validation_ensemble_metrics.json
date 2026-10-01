@@ -1,0 +1,2502 @@
+{
+  "phase": "validation-only",
+  "runs": [
+    {
+      "ensemble_name": "orbit_prob_5seed",
+      "experiment": "true_training_labels",
+      "split": "val",
+      "aggregation": "equal_mean_softmax_probabilities",
+      "model_kinds": [
+        "orbit_prob"
+      ],
+      "member_count": 5,
+      "seeds": [
+        17,
+        29,
+        43,
+        61,
+        89
+      ],
+      "ensemble_checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_ensemble_verified_20260927/checkpoints/orbit_prob_5seed__true_training_labels.pt",
+      "ensemble_checkpoint_sha256": "00ec71ba854b7618861527e910fe3e04f678672d658b2f5d8f0b9ba4ee4afc01",
+      "reloaded_probabilities_exact_match": true,
+      "member_checkpoints": [
+        {
+          "checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/checkpoints/true_training_labels__orbit_prob__seed-17.pt",
+          "checkpoint_sha256": "b5dbed1dae1dd813e0e762526d8cb2a6289d1f5c7b39cae07713d53776ae70f4",
+          "model_kind": "orbit_prob",
+          "seed": 17,
+          "source_config_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/config.json",
+          "source_config_sha256": "d682c7314e692f14bf7f950cfa4d9a8f6c2291671003a7fe1828cceb23a50eee",
+          "model_input_transform": "identity",
+          "training_derived_sensor_scales": [
+            10522.12890625,
+            9305.55078125,
+            11992.974609375,
+            12856.6142578125
+          ],
+          "sample_rate_hz": 250,
+          "filter_band_hz": [
+            0.5,
+            40.0
+          ]
+        },
+        {
+          "checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/checkpoints/true_training_labels__orbit_prob__seed-29.pt",
+          "checkpoint_sha256": "cb1e596b7643b4da69a5c94eddf169995257fe91f0099b37040e777b6866dfa7",
+          "model_kind": "orbit_prob",
+          "seed": 29,
+          "source_config_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/config.json",
+          "source_config_sha256": "d682c7314e692f14bf7f950cfa4d9a8f6c2291671003a7fe1828cceb23a50eee",
+          "model_input_transform": "identity",
+          "training_derived_sensor_scales": [
+            10522.12890625,
+            9305.55078125,
+            11992.974609375,
+            12856.6142578125
+          ],
+          "sample_rate_hz": 250,
+          "filter_band_hz": [
+            0.5,
+            40.0
+          ]
+        },
+        {
+          "checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/checkpoints/true_training_labels__orbit_prob__seed-43.pt",
+          "checkpoint_sha256": "05898b3f1b996178cb095c4192d3ad37352b01106704d483bd5f0d059dc7f605",
+          "model_kind": "orbit_prob",
+          "seed": 43,
+          "source_config_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/config.json",
+          "source_config_sha256": "d682c7314e692f14bf7f950cfa4d9a8f6c2291671003a7fe1828cceb23a50eee",
+          "model_input_transform": "identity",
+          "training_derived_sensor_scales": [
+            10522.12890625,
+            9305.55078125,
+            11992.974609375,
+            12856.6142578125
+          ],
+          "sample_rate_hz": 250,
+          "filter_band_hz": [
+            0.5,
+            40.0
+          ]
+        },
+        {
+          "checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/checkpoints/true_training_labels__orbit_prob__seed-61.pt",
+          "checkpoint_sha256": "9a6c66025250ce409ed9a5a083a76d38efa7fb3c77fff9f191aed1103094be4a",
+          "model_kind": "orbit_prob",
+          "seed": 61,
+          "source_config_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/config.json",
+          "source_config_sha256": "d682c7314e692f14bf7f950cfa4d9a8f6c2291671003a7fe1828cceb23a50eee",
+          "model_input_transform": "identity",
+          "training_derived_sensor_scales": [
+            10522.12890625,
+            9305.55078125,
+            11992.974609375,
+            12856.6142578125
+          ],
+          "sample_rate_hz": 250,
+          "filter_band_hz": [
+            0.5,
+            40.0
+          ]
+        },
+        {
+          "checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/checkpoints/true_training_labels__orbit_prob__seed-89.pt",
+          "checkpoint_sha256": "4d870d09bec8b3a7c828b0a35f71efe62ed1bc9bfb065383cded057ee2b87ced",
+          "model_kind": "orbit_prob",
+          "seed": 89,
+          "source_config_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/config.json",
+          "source_config_sha256": "d682c7314e692f14bf7f950cfa4d9a8f6c2291671003a7fe1828cceb23a50eee",
+          "model_input_transform": "identity",
+          "training_derived_sensor_scales": [
+            10522.12890625,
+            9305.55078125,
+            11992.974609375,
+            12856.6142578125
+          ],
+          "sample_rate_hz": 250,
+          "filter_band_hz": [
+            0.5,
+            40.0
+          ]
+        }
+      ],
+      "metrics": {
+        "overall": {
+          "accuracy": 0.675,
+          "macro_f1": 0.6708520949733356,
+          "per_class_recall": [
+            0.8875,
+            0.6625,
+            0.6375,
+            0.5125
+          ],
+          "prediction_counts": [
+            92,
+            75,
+            91,
+            62
+          ],
+          "confusion_matrix": [
+            [
+              71,
+              1,
+              4,
+              4
+            ],
+            [
+              21,
+              53,
+              0,
+              6
+            ],
+            [
+              0,
+              18,
+              51,
+              11
+            ],
+            [
+              0,
+              3,
+              36,
+              41
+            ]
+          ],
+          "prediction_unique_class_count": 4
+        },
+        "by_distance_mm": {
+          "5": {
+            "accuracy": 0.625,
+            "macro_f1": 0.6206232492997199,
+            "per_class_recall": [
+              0.6,
+              0.65,
+              0.95,
+              0.3
+            ],
+            "prediction_counts": [
+              14,
+              14,
+              36,
+              16
+            ],
+            "confusion_matrix": [
+              [
+                12,
+                0,
+                4,
+                4
+              ],
+              [
+                2,
+                13,
+                0,
+                5
+              ],
+              [
+                0,
+                0,
+                19,
+                1
+              ],
+              [
+                0,
+                1,
+                13,
+                6
+              ]
+            ],
+            "prediction_unique_class_count": 4
+          },
+          "40": {
+            "accuracy": 0.75,
+            "macro_f1": 0.7111285462504975,
+            "per_class_recall": [
+              0.95,
+              1.0,
+              0.9,
+              0.15
+            ],
+            "prediction_counts": [
+              19,
+              21,
+              35,
+              5
+            ],
+            "confusion_matrix": [
+              [
+                19,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                20,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                18,
+                2
+              ],
+              [
+                0,
+                0,
+                17,
+                3
+              ]
+            ],
+            "prediction_unique_class_count": 4
+          },
+          "90": {
+            "accuracy": 0.5,
+            "macro_f1": 0.4362654019537029,
+            "per_class_recall": [
+              1.0,
+              0.05,
+              0.05,
+              0.9
+            ],
+            "prediction_counts": [
+              39,
+              21,
+              1,
+              19
+            ],
+            "confusion_matrix": [
+              [
+                20,
+                0,
+                0,
+                0
+              ],
+              [
+                19,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                18,
+                1,
+                1
+              ],
+              [
+                0,
+                2,
+                0,
+                18
+              ]
+            ],
+            "prediction_unique_class_count": 4
+          },
+          "130": {
+            "accuracy": 0.825,
+            "macro_f1": 0.826923076923077,
+            "per_class_recall": [
+              1.0,
+              0.95,
+              0.65,
+              0.7
+            ],
+            "prediction_counts": [
+              20,
+              19,
+              19,
+              22
+            ],
+            "confusion_matrix": [
+              [
+                20,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                19,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                13,
+                7
+              ],
+              [
+                0,
+                0,
+                6,
+                14
+              ]
+            ],
+            "prediction_unique_class_count": 4
+          }
+        },
+        "by_distance_mm_and_channel_map": {
+          "5": {
+            "0,2,4,6": {
+              "accuracy": 0.625,
+              "macro_f1": 0.6206232492997199,
+              "per_class_recall": [
+                0.6,
+                0.65,
+                0.95,
+                0.3
+              ],
+              "prediction_counts": [
+                14,
+                14,
+                36,
+                16
+              ],
+              "confusion_matrix": [
+                [
+                  12,
+                  0,
+                  4,
+                  4
+                ],
+                [
+                  2,
+                  13,
+                  0,
+                  5
+                ],
+                [
+                  0,
+                  0,
+                  19,
+                  1
+                ],
+                [
+                  0,
+                  1,
+                  13,
+                  6
+                ]
+              ],
+              "prediction_unique_class_count": 4
+            }
+          },
+          "40": {
+            "0,2,4,6": {
+              "accuracy": 0.75,
+              "macro_f1": 0.7111285462504975,
+              "per_class_recall": [
+                0.95,
+                1.0,
+                0.9,
+                0.15
+              ],
+              "prediction_counts": [
+                19,
+                21,
+                35,
+                5
+              ],
+              "confusion_matrix": [
+                [
+                  19,
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  20,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  18,
+                  2
+                ],
+                [
+                  0,
+                  0,
+                  17,
+                  3
+                ]
+              ],
+              "prediction_unique_class_count": 4
+            }
+          },
+          "90": {
+            "0,1,2,3": {
+              "accuracy": 0.5,
+              "macro_f1": 0.4362654019537029,
+              "per_class_recall": [
+                1.0,
+                0.05,
+                0.05,
+                0.9
+              ],
+              "prediction_counts": [
+                39,
+                21,
+                1,
+                19
+              ],
+              "confusion_matrix": [
+                [
+                  20,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  19,
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  18,
+                  1,
+                  1
+                ],
+                [
+                  0,
+                  2,
+                  0,
+                  18
+                ]
+              ],
+              "prediction_unique_class_count": 4
+            }
+          },
+          "130": {
+            "0,1,2,3": {
+              "accuracy": 0.825,
+              "macro_f1": 0.826923076923077,
+              "per_class_recall": [
+                1.0,
+                0.95,
+                0.65,
+                0.7
+              ],
+              "prediction_counts": [
+                20,
+                19,
+                19,
+                22
+              ],
+              "confusion_matrix": [
+                [
+                  20,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  19,
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  0,
+                  13,
+                  7
+                ],
+                [
+                  0,
+                  0,
+                  6,
+                  14
+                ]
+              ],
+              "prediction_unique_class_count": 4
+            }
+          }
+        }
+      }
+    },
+    {
+      "ensemble_name": "orbit_prob_5seed",
+      "experiment": "shuffled_training_labels",
+      "split": "val",
+      "aggregation": "equal_mean_softmax_probabilities",
+      "model_kinds": [
+        "orbit_prob"
+      ],
+      "member_count": 5,
+      "seeds": [
+        17,
+        29,
+        43,
+        61,
+        89
+      ],
+      "ensemble_checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_ensemble_verified_20260927/checkpoints/orbit_prob_5seed__shuffled_training_labels.pt",
+      "ensemble_checkpoint_sha256": "c45e4ec77dd5228893d35ca160480e5b554d5c3ca6b40c0b94faed7a10ae1fbf",
+      "reloaded_probabilities_exact_match": true,
+      "member_checkpoints": [
+        {
+          "checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/checkpoints/shuffled_training_labels__orbit_prob__seed-17.pt",
+          "checkpoint_sha256": "3c16bb33c8fb529fe7cd6a9a2c6665b56cb6e6cf35fccf55524ba5fbd20554e3",
+          "model_kind": "orbit_prob",
+          "seed": 17,
+          "source_config_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/config.json",
+          "source_config_sha256": "d682c7314e692f14bf7f950cfa4d9a8f6c2291671003a7fe1828cceb23a50eee",
+          "model_input_transform": "identity",
+          "training_derived_sensor_scales": [
+            10522.12890625,
+            9305.55078125,
+            11992.974609375,
+            12856.6142578125
+          ],
+          "sample_rate_hz": 250,
+          "filter_band_hz": [
+            0.5,
+            40.0
+          ]
+        },
+        {
+          "checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/checkpoints/shuffled_training_labels__orbit_prob__seed-29.pt",
+          "checkpoint_sha256": "e3c9eeb729ec20255c3429566fd227548a9ca1d633bff4dc6584dc1068f3d813",
+          "model_kind": "orbit_prob",
+          "seed": 29,
+          "source_config_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/config.json",
+          "source_config_sha256": "d682c7314e692f14bf7f950cfa4d9a8f6c2291671003a7fe1828cceb23a50eee",
+          "model_input_transform": "identity",
+          "training_derived_sensor_scales": [
+            10522.12890625,
+            9305.55078125,
+            11992.974609375,
+            12856.6142578125
+          ],
+          "sample_rate_hz": 250,
+          "filter_band_hz": [
+            0.5,
+            40.0
+          ]
+        },
+        {
+          "checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/checkpoints/shuffled_training_labels__orbit_prob__seed-43.pt",
+          "checkpoint_sha256": "03d67dbb55383e5de9f397b9fd97202220a2d90aa01b7f881bd1735c9b32b99d",
+          "model_kind": "orbit_prob",
+          "seed": 43,
+          "source_config_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/config.json",
+          "source_config_sha256": "d682c7314e692f14bf7f950cfa4d9a8f6c2291671003a7fe1828cceb23a50eee",
+          "model_input_transform": "identity",
+          "training_derived_sensor_scales": [
+            10522.12890625,
+            9305.55078125,
+            11992.974609375,
+            12856.6142578125
+          ],
+          "sample_rate_hz": 250,
+          "filter_band_hz": [
+            0.5,
+            40.0
+          ]
+        },
+        {
+          "checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/checkpoints/shuffled_training_labels__orbit_prob__seed-61.pt",
+          "checkpoint_sha256": "c5813e4db8163729aa5de30be16392cede5399d5fdd8582c5ef530542c96a11e",
+          "model_kind": "orbit_prob",
+          "seed": 61,
+          "source_config_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/config.json",
+          "source_config_sha256": "d682c7314e692f14bf7f950cfa4d9a8f6c2291671003a7fe1828cceb23a50eee",
+          "model_input_transform": "identity",
+          "training_derived_sensor_scales": [
+            10522.12890625,
+            9305.55078125,
+            11992.974609375,
+            12856.6142578125
+          ],
+          "sample_rate_hz": 250,
+          "filter_band_hz": [
+            0.5,
+            40.0
+          ]
+        },
+        {
+          "checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/checkpoints/shuffled_training_labels__orbit_prob__seed-89.pt",
+          "checkpoint_sha256": "f8e7d569f52d473cde2fc667d70bea33a5e7fc8464b1951b685c6372ea22dd5a",
+          "model_kind": "orbit_prob",
+          "seed": 89,
+          "source_config_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/config.json",
+          "source_config_sha256": "d682c7314e692f14bf7f950cfa4d9a8f6c2291671003a7fe1828cceb23a50eee",
+          "model_input_transform": "identity",
+          "training_derived_sensor_scales": [
+            10522.12890625,
+            9305.55078125,
+            11992.974609375,
+            12856.6142578125
+          ],
+          "sample_rate_hz": 250,
+          "filter_band_hz": [
+            0.5,
+            40.0
+          ]
+        }
+      ],
+      "metrics": {
+        "overall": {
+          "accuracy": 0.0625,
+          "macro_f1": 0.06119938884644767,
+          "per_class_recall": [
+            0.0125,
+            0.05,
+            0.025,
+            0.1625
+          ],
+          "prediction_counts": [
+            95,
+            56,
+            74,
+            95
+          ],
+          "confusion_matrix": [
+            [
+              1,
+              15,
+              12,
+              52
+            ],
+            [
+              12,
+              4,
+              44,
+              20
+            ],
+            [
+              54,
+              14,
+              2,
+              10
+            ],
+            [
+              28,
+              23,
+              16,
+              13
+            ]
+          ],
+          "prediction_unique_class_count": 4
+        },
+        "by_distance_mm": {
+          "5": {
+            "accuracy": 0.1,
+            "macro_f1": 0.09369168567281776,
+            "per_class_recall": [
+              0.05,
+              0.05,
+              0.05,
+              0.25
+            ],
+            "prediction_counts": [
+              33,
+              6,
+              8,
+              33
+            ],
+            "confusion_matrix": [
+              [
+                1,
+                5,
+                1,
+                13
+              ],
+              [
+                5,
+                1,
+                2,
+                12
+              ],
+              [
+                16,
+                0,
+                1,
+                3
+              ],
+              [
+                11,
+                0,
+                4,
+                5
+              ]
+            ],
+            "prediction_unique_class_count": 4
+          },
+          "40": {
+            "accuracy": 0.0375,
+            "macro_f1": 0.03504273504273504,
+            "per_class_recall": [
+              0.0,
+              0.05,
+              0.0,
+              0.1
+            ],
+            "prediction_counts": [
+              15,
+              19,
+              21,
+              25
+            ],
+            "confusion_matrix": [
+              [
+                0,
+                1,
+                2,
+                17
+              ],
+              [
+                1,
+                1,
+                17,
+                1
+              ],
+              [
+                6,
+                9,
+                0,
+                5
+              ],
+              [
+                8,
+                8,
+                2,
+                2
+              ]
+            ],
+            "prediction_unique_class_count": 4
+          },
+          "90": {
+            "accuracy": 0.025,
+            "macro_f1": 0.022727272727272724,
+            "per_class_recall": [
+              0.0,
+              0.0,
+              0.0,
+              0.1
+            ],
+            "prediction_counts": [
+              17,
+              10,
+              29,
+              24
+            ],
+            "confusion_matrix": [
+              [
+                0,
+                0,
+                0,
+                20
+              ],
+              [
+                0,
+                0,
+                20,
+                0
+              ],
+              [
+                13,
+                5,
+                0,
+                2
+              ],
+              [
+                4,
+                5,
+                9,
+                2
+              ]
+            ],
+            "prediction_unique_class_count": 4
+          },
+          "130": {
+            "accuracy": 0.0875,
+            "macro_f1": 0.09888519339738852,
+            "per_class_recall": [
+              0.0,
+              0.1,
+              0.05,
+              0.2
+            ],
+            "prediction_counts": [
+              30,
+              21,
+              16,
+              13
+            ],
+            "confusion_matrix": [
+              [
+                0,
+                9,
+                9,
+                2
+              ],
+              [
+                6,
+                2,
+                5,
+                7
+              ],
+              [
+                19,
+                0,
+                1,
+                0
+              ],
+              [
+                5,
+                10,
+                1,
+                4
+              ]
+            ],
+            "prediction_unique_class_count": 4
+          }
+        },
+        "by_distance_mm_and_channel_map": {
+          "5": {
+            "0,2,4,6": {
+              "accuracy": 0.1,
+              "macro_f1": 0.09369168567281776,
+              "per_class_recall": [
+                0.05,
+                0.05,
+                0.05,
+                0.25
+              ],
+              "prediction_counts": [
+                33,
+                6,
+                8,
+                33
+              ],
+              "confusion_matrix": [
+                [
+                  1,
+                  5,
+                  1,
+                  13
+                ],
+                [
+                  5,
+                  1,
+                  2,
+                  12
+                ],
+                [
+                  16,
+                  0,
+                  1,
+                  3
+                ],
+                [
+                  11,
+                  0,
+                  4,
+                  5
+                ]
+              ],
+              "prediction_unique_class_count": 4
+            }
+          },
+          "40": {
+            "0,2,4,6": {
+              "accuracy": 0.0375,
+              "macro_f1": 0.03504273504273504,
+              "per_class_recall": [
+                0.0,
+                0.05,
+                0.0,
+                0.1
+              ],
+              "prediction_counts": [
+                15,
+                19,
+                21,
+                25
+              ],
+              "confusion_matrix": [
+                [
+                  0,
+                  1,
+                  2,
+                  17
+                ],
+                [
+                  1,
+                  1,
+                  17,
+                  1
+                ],
+                [
+                  6,
+                  9,
+                  0,
+                  5
+                ],
+                [
+                  8,
+                  8,
+                  2,
+                  2
+                ]
+              ],
+              "prediction_unique_class_count": 4
+            }
+          },
+          "90": {
+            "0,1,2,3": {
+              "accuracy": 0.025,
+              "macro_f1": 0.022727272727272724,
+              "per_class_recall": [
+                0.0,
+                0.0,
+                0.0,
+                0.1
+              ],
+              "prediction_counts": [
+                17,
+                10,
+                29,
+                24
+              ],
+              "confusion_matrix": [
+                [
+                  0,
+                  0,
+                  0,
+                  20
+                ],
+                [
+                  0,
+                  0,
+                  20,
+                  0
+                ],
+                [
+                  13,
+                  5,
+                  0,
+                  2
+                ],
+                [
+                  4,
+                  5,
+                  9,
+                  2
+                ]
+              ],
+              "prediction_unique_class_count": 4
+            }
+          },
+          "130": {
+            "0,1,2,3": {
+              "accuracy": 0.0875,
+              "macro_f1": 0.09888519339738852,
+              "per_class_recall": [
+                0.0,
+                0.1,
+                0.05,
+                0.2
+              ],
+              "prediction_counts": [
+                30,
+                21,
+                16,
+                13
+              ],
+              "confusion_matrix": [
+                [
+                  0,
+                  9,
+                  9,
+                  2
+                ],
+                [
+                  6,
+                  2,
+                  5,
+                  7
+                ],
+                [
+                  19,
+                  0,
+                  1,
+                  0
+                ],
+                [
+                  5,
+                  10,
+                  1,
+                  4
+                ]
+              ],
+              "prediction_unique_class_count": 4
+            }
+          }
+        }
+      }
+    },
+    {
+      "ensemble_name": "three_model_15seed",
+      "experiment": "true_training_labels",
+      "split": "val",
+      "aggregation": "equal_mean_softmax_probabilities",
+      "model_kinds": [
+        "orbit",
+        "orbit_prob",
+        "harmonic"
+      ],
+      "member_count": 15,
+      "seeds": [
+        17,
+        29,
+        43,
+        61,
+        89
+      ],
+      "ensemble_checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_ensemble_verified_20260927/checkpoints/three_model_15seed__true_training_labels.pt",
+      "ensemble_checkpoint_sha256": "91b66e0e70819df76424ecb166de2ac3b77c6afc8424822103082d10748392f7",
+      "reloaded_probabilities_exact_match": true,
+      "member_checkpoints": [
+        {
+          "checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_20260927/checkpoints/true_training_labels__orbit__seed-17.pt",
+          "checkpoint_sha256": "ef3c5a1685e523d55575d068c6e9c089995a748f6300691ded4a30f817b6dce7",
+          "model_kind": "orbit",
+          "seed": 17,
+          "source_config_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_20260927/config.json",
+          "source_config_sha256": "a699bec4740d35b6e9df6f3eb0a835fc669a76b81f8c7036def8a8cee446be1d",
+          "model_input_transform": "identity",
+          "training_derived_sensor_scales": [
+            10522.12890625,
+            9305.55078125,
+            11992.974609375,
+            12856.6142578125
+          ],
+          "sample_rate_hz": 250,
+          "filter_band_hz": [
+            0.5,
+            40.0
+          ]
+        },
+        {
+          "checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_20260927/checkpoints/true_training_labels__orbit__seed-29.pt",
+          "checkpoint_sha256": "a7b80e80d47225e8a3f275aa0d0b24b4f11acae396714171806ecea5479c720a",
+          "model_kind": "orbit",
+          "seed": 29,
+          "source_config_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_20260927/config.json",
+          "source_config_sha256": "a699bec4740d35b6e9df6f3eb0a835fc669a76b81f8c7036def8a8cee446be1d",
+          "model_input_transform": "identity",
+          "training_derived_sensor_scales": [
+            10522.12890625,
+            9305.55078125,
+            11992.974609375,
+            12856.6142578125
+          ],
+          "sample_rate_hz": 250,
+          "filter_band_hz": [
+            0.5,
+            40.0
+          ]
+        },
+        {
+          "checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_20260927/checkpoints/true_training_labels__orbit__seed-43.pt",
+          "checkpoint_sha256": "9bddceb50281313ecd1e92d2ed09a89d9cdb05b75053a9e4aa75ad13d49e2cc0",
+          "model_kind": "orbit",
+          "seed": 43,
+          "source_config_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_20260927/config.json",
+          "source_config_sha256": "a699bec4740d35b6e9df6f3eb0a835fc669a76b81f8c7036def8a8cee446be1d",
+          "model_input_transform": "identity",
+          "training_derived_sensor_scales": [
+            10522.12890625,
+            9305.55078125,
+            11992.974609375,
+            12856.6142578125
+          ],
+          "sample_rate_hz": 250,
+          "filter_band_hz": [
+            0.5,
+            40.0
+          ]
+        },
+        {
+          "checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_20260927/checkpoints/true_training_labels__orbit__seed-61.pt",
+          "checkpoint_sha256": "42916562fb6d0c3d1c1eec430dd99485acb80ad7ba543e0abced9ba954293589",
+          "model_kind": "orbit",
+          "seed": 61,
+          "source_config_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_20260927/config.json",
+          "source_config_sha256": "a699bec4740d35b6e9df6f3eb0a835fc669a76b81f8c7036def8a8cee446be1d",
+          "model_input_transform": "identity",
+          "training_derived_sensor_scales": [
+            10522.12890625,
+            9305.55078125,
+            11992.974609375,
+            12856.6142578125
+          ],
+          "sample_rate_hz": 250,
+          "filter_band_hz": [
+            0.5,
+            40.0
+          ]
+        },
+        {
+          "checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_20260927/checkpoints/true_training_labels__orbit__seed-89.pt",
+          "checkpoint_sha256": "759394190e4ef66a17203f9a551a3e182de3c3c175becac750d4d07abdc17a8b",
+          "model_kind": "orbit",
+          "seed": 89,
+          "source_config_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_20260927/config.json",
+          "source_config_sha256": "a699bec4740d35b6e9df6f3eb0a835fc669a76b81f8c7036def8a8cee446be1d",
+          "model_input_transform": "identity",
+          "training_derived_sensor_scales": [
+            10522.12890625,
+            9305.55078125,
+            11992.974609375,
+            12856.6142578125
+          ],
+          "sample_rate_hz": 250,
+          "filter_band_hz": [
+            0.5,
+            40.0
+          ]
+        },
+        {
+          "checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/checkpoints/true_training_labels__orbit_prob__seed-17.pt",
+          "checkpoint_sha256": "b5dbed1dae1dd813e0e762526d8cb2a6289d1f5c7b39cae07713d53776ae70f4",
+          "model_kind": "orbit_prob",
+          "seed": 17,
+          "source_config_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/config.json",
+          "source_config_sha256": "d682c7314e692f14bf7f950cfa4d9a8f6c2291671003a7fe1828cceb23a50eee",
+          "model_input_transform": "identity",
+          "training_derived_sensor_scales": [
+            10522.12890625,
+            9305.55078125,
+            11992.974609375,
+            12856.6142578125
+          ],
+          "sample_rate_hz": 250,
+          "filter_band_hz": [
+            0.5,
+            40.0
+          ]
+        },
+        {
+          "checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/checkpoints/true_training_labels__orbit_prob__seed-29.pt",
+          "checkpoint_sha256": "cb1e596b7643b4da69a5c94eddf169995257fe91f0099b37040e777b6866dfa7",
+          "model_kind": "orbit_prob",
+          "seed": 29,
+          "source_config_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/config.json",
+          "source_config_sha256": "d682c7314e692f14bf7f950cfa4d9a8f6c2291671003a7fe1828cceb23a50eee",
+          "model_input_transform": "identity",
+          "training_derived_sensor_scales": [
+            10522.12890625,
+            9305.55078125,
+            11992.974609375,
+            12856.6142578125
+          ],
+          "sample_rate_hz": 250,
+          "filter_band_hz": [
+            0.5,
+            40.0
+          ]
+        },
+        {
+          "checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/checkpoints/true_training_labels__orbit_prob__seed-43.pt",
+          "checkpoint_sha256": "05898b3f1b996178cb095c4192d3ad37352b01106704d483bd5f0d059dc7f605",
+          "model_kind": "orbit_prob",
+          "seed": 43,
+          "source_config_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/config.json",
+          "source_config_sha256": "d682c7314e692f14bf7f950cfa4d9a8f6c2291671003a7fe1828cceb23a50eee",
+          "model_input_transform": "identity",
+          "training_derived_sensor_scales": [
+            10522.12890625,
+            9305.55078125,
+            11992.974609375,
+            12856.6142578125
+          ],
+          "sample_rate_hz": 250,
+          "filter_band_hz": [
+            0.5,
+            40.0
+          ]
+        },
+        {
+          "checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/checkpoints/true_training_labels__orbit_prob__seed-61.pt",
+          "checkpoint_sha256": "9a6c66025250ce409ed9a5a083a76d38efa7fb3c77fff9f191aed1103094be4a",
+          "model_kind": "orbit_prob",
+          "seed": 61,
+          "source_config_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/config.json",
+          "source_config_sha256": "d682c7314e692f14bf7f950cfa4d9a8f6c2291671003a7fe1828cceb23a50eee",
+          "model_input_transform": "identity",
+          "training_derived_sensor_scales": [
+            10522.12890625,
+            9305.55078125,
+            11992.974609375,
+            12856.6142578125
+          ],
+          "sample_rate_hz": 250,
+          "filter_band_hz": [
+            0.5,
+            40.0
+          ]
+        },
+        {
+          "checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/checkpoints/true_training_labels__orbit_prob__seed-89.pt",
+          "checkpoint_sha256": "4d870d09bec8b3a7c828b0a35f71efe62ed1bc9bfb065383cded057ee2b87ced",
+          "model_kind": "orbit_prob",
+          "seed": 89,
+          "source_config_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/config.json",
+          "source_config_sha256": "d682c7314e692f14bf7f950cfa4d9a8f6c2291671003a7fe1828cceb23a50eee",
+          "model_input_transform": "identity",
+          "training_derived_sensor_scales": [
+            10522.12890625,
+            9305.55078125,
+            11992.974609375,
+            12856.6142578125
+          ],
+          "sample_rate_hz": 250,
+          "filter_band_hz": [
+            0.5,
+            40.0
+          ]
+        },
+        {
+          "checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/checkpoints/true_training_labels__harmonic__seed-17.pt",
+          "checkpoint_sha256": "29a9a9b3c3c77a87c0e59cf31d2d1006a4937877277d810f7fac00d4485b9cbb",
+          "model_kind": "harmonic",
+          "seed": 17,
+          "source_config_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/config.json",
+          "source_config_sha256": "d682c7314e692f14bf7f950cfa4d9a8f6c2291671003a7fe1828cceb23a50eee",
+          "model_input_transform": "harmonic_c4_invariants",
+          "training_derived_sensor_scales": [
+            10522.12890625,
+            9305.55078125,
+            11992.974609375,
+            12856.6142578125
+          ],
+          "sample_rate_hz": 250,
+          "filter_band_hz": [
+            0.5,
+            40.0
+          ]
+        },
+        {
+          "checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/checkpoints/true_training_labels__harmonic__seed-29.pt",
+          "checkpoint_sha256": "d3f88311a0a0065b7b1cca60655ca629e48ea97c0d2b272160d100adf2c7d6a1",
+          "model_kind": "harmonic",
+          "seed": 29,
+          "source_config_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/config.json",
+          "source_config_sha256": "d682c7314e692f14bf7f950cfa4d9a8f6c2291671003a7fe1828cceb23a50eee",
+          "model_input_transform": "harmonic_c4_invariants",
+          "training_derived_sensor_scales": [
+            10522.12890625,
+            9305.55078125,
+            11992.974609375,
+            12856.6142578125
+          ],
+          "sample_rate_hz": 250,
+          "filter_band_hz": [
+            0.5,
+            40.0
+          ]
+        },
+        {
+          "checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/checkpoints/true_training_labels__harmonic__seed-43.pt",
+          "checkpoint_sha256": "0a94519b6fa42b2fb87abae995314ef38839391cd4a34ded10152efdc40fa6d1",
+          "model_kind": "harmonic",
+          "seed": 43,
+          "source_config_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/config.json",
+          "source_config_sha256": "d682c7314e692f14bf7f950cfa4d9a8f6c2291671003a7fe1828cceb23a50eee",
+          "model_input_transform": "harmonic_c4_invariants",
+          "training_derived_sensor_scales": [
+            10522.12890625,
+            9305.55078125,
+            11992.974609375,
+            12856.6142578125
+          ],
+          "sample_rate_hz": 250,
+          "filter_band_hz": [
+            0.5,
+            40.0
+          ]
+        },
+        {
+          "checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/checkpoints/true_training_labels__harmonic__seed-61.pt",
+          "checkpoint_sha256": "6fde7a8293102716ff62b1123a31963bc9a4e82ddee412bb54a34b32fbdd4175",
+          "model_kind": "harmonic",
+          "seed": 61,
+          "source_config_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/config.json",
+          "source_config_sha256": "d682c7314e692f14bf7f950cfa4d9a8f6c2291671003a7fe1828cceb23a50eee",
+          "model_input_transform": "harmonic_c4_invariants",
+          "training_derived_sensor_scales": [
+            10522.12890625,
+            9305.55078125,
+            11992.974609375,
+            12856.6142578125
+          ],
+          "sample_rate_hz": 250,
+          "filter_band_hz": [
+            0.5,
+            40.0
+          ]
+        },
+        {
+          "checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/checkpoints/true_training_labels__harmonic__seed-89.pt",
+          "checkpoint_sha256": "e8c7d37228c6316610a15ef457a8d4ea6c8ae89777369ec9f892a050134d57ce",
+          "model_kind": "harmonic",
+          "seed": 89,
+          "source_config_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/config.json",
+          "source_config_sha256": "d682c7314e692f14bf7f950cfa4d9a8f6c2291671003a7fe1828cceb23a50eee",
+          "model_input_transform": "harmonic_c4_invariants",
+          "training_derived_sensor_scales": [
+            10522.12890625,
+            9305.55078125,
+            11992.974609375,
+            12856.6142578125
+          ],
+          "sample_rate_hz": 250,
+          "filter_band_hz": [
+            0.5,
+            40.0
+          ]
+        }
+      ],
+      "metrics": {
+        "overall": {
+          "accuracy": 0.66875,
+          "macro_f1": 0.6648711766666162,
+          "per_class_recall": [
+            0.875,
+            0.625,
+            0.65,
+            0.525
+          ],
+          "prediction_counts": [
+            93,
+            71,
+            92,
+            64
+          ],
+          "confusion_matrix": [
+            [
+              70,
+              2,
+              4,
+              4
+            ],
+            [
+              23,
+              50,
+              0,
+              7
+            ],
+            [
+              0,
+              17,
+              52,
+              11
+            ],
+            [
+              0,
+              2,
+              36,
+              42
+            ]
+          ],
+          "prediction_unique_class_count": 4
+        },
+        "by_distance_mm": {
+          "5": {
+            "accuracy": 0.5875,
+            "macro_f1": 0.5858873034859877,
+            "per_class_recall": [
+              0.6,
+              0.55,
+              0.9,
+              0.3
+            ],
+            "prediction_counts": [
+              15,
+              12,
+              35,
+              18
+            ],
+            "confusion_matrix": [
+              [
+                12,
+                0,
+                4,
+                4
+              ],
+              [
+                3,
+                11,
+                0,
+                6
+              ],
+              [
+                0,
+                0,
+                18,
+                2
+              ],
+              [
+                0,
+                1,
+                13,
+                6
+              ]
+            ],
+            "prediction_unique_class_count": 4
+          },
+          "40": {
+            "accuracy": 0.7375,
+            "macro_f1": 0.6985737069947597,
+            "per_class_recall": [
+              0.9,
+              1.0,
+              0.9,
+              0.15
+            ],
+            "prediction_counts": [
+              18,
+              22,
+              35,
+              5
+            ],
+            "confusion_matrix": [
+              [
+                18,
+                2,
+                0,
+                0
+              ],
+              [
+                0,
+                20,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                18,
+                2
+              ],
+              [
+                0,
+                0,
+                17,
+                3
+              ]
+            ],
+            "prediction_unique_class_count": 4
+          },
+          "90": {
+            "accuracy": 0.525,
+            "macro_f1": 0.475473801560758,
+            "per_class_recall": [
+              1.0,
+              0.0,
+              0.15,
+              0.95
+            ],
+            "prediction_counts": [
+              40,
+              18,
+              3,
+              19
+            ],
+            "confusion_matrix": [
+              [
+                20,
+                0,
+                0,
+                0
+              ],
+              [
+                20,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                17,
+                3,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                19
+              ]
+            ],
+            "prediction_unique_class_count": 4
+          },
+          "130": {
+            "accuracy": 0.825,
+            "macro_f1": 0.826923076923077,
+            "per_class_recall": [
+              1.0,
+              0.95,
+              0.65,
+              0.7
+            ],
+            "prediction_counts": [
+              20,
+              19,
+              19,
+              22
+            ],
+            "confusion_matrix": [
+              [
+                20,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                19,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                13,
+                7
+              ],
+              [
+                0,
+                0,
+                6,
+                14
+              ]
+            ],
+            "prediction_unique_class_count": 4
+          }
+        },
+        "by_distance_mm_and_channel_map": {
+          "5": {
+            "0,2,4,6": {
+              "accuracy": 0.5875,
+              "macro_f1": 0.5858873034859877,
+              "per_class_recall": [
+                0.6,
+                0.55,
+                0.9,
+                0.3
+              ],
+              "prediction_counts": [
+                15,
+                12,
+                35,
+                18
+              ],
+              "confusion_matrix": [
+                [
+                  12,
+                  0,
+                  4,
+                  4
+                ],
+                [
+                  3,
+                  11,
+                  0,
+                  6
+                ],
+                [
+                  0,
+                  0,
+                  18,
+                  2
+                ],
+                [
+                  0,
+                  1,
+                  13,
+                  6
+                ]
+              ],
+              "prediction_unique_class_count": 4
+            }
+          },
+          "40": {
+            "0,2,4,6": {
+              "accuracy": 0.7375,
+              "macro_f1": 0.6985737069947597,
+              "per_class_recall": [
+                0.9,
+                1.0,
+                0.9,
+                0.15
+              ],
+              "prediction_counts": [
+                18,
+                22,
+                35,
+                5
+              ],
+              "confusion_matrix": [
+                [
+                  18,
+                  2,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  20,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  18,
+                  2
+                ],
+                [
+                  0,
+                  0,
+                  17,
+                  3
+                ]
+              ],
+              "prediction_unique_class_count": 4
+            }
+          },
+          "90": {
+            "0,1,2,3": {
+              "accuracy": 0.525,
+              "macro_f1": 0.475473801560758,
+              "per_class_recall": [
+                1.0,
+                0.0,
+                0.15,
+                0.95
+              ],
+              "prediction_counts": [
+                40,
+                18,
+                3,
+                19
+              ],
+              "confusion_matrix": [
+                [
+                  20,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  20,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  17,
+                  3,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0,
+                  19
+                ]
+              ],
+              "prediction_unique_class_count": 4
+            }
+          },
+          "130": {
+            "0,1,2,3": {
+              "accuracy": 0.825,
+              "macro_f1": 0.826923076923077,
+              "per_class_recall": [
+                1.0,
+                0.95,
+                0.65,
+                0.7
+              ],
+              "prediction_counts": [
+                20,
+                19,
+                19,
+                22
+              ],
+              "confusion_matrix": [
+                [
+                  20,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  19,
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  0,
+                  13,
+                  7
+                ],
+                [
+                  0,
+                  0,
+                  6,
+                  14
+                ]
+              ],
+              "prediction_unique_class_count": 4
+            }
+          }
+        }
+      }
+    },
+    {
+      "ensemble_name": "three_model_15seed",
+      "experiment": "shuffled_training_labels",
+      "split": "val",
+      "aggregation": "equal_mean_softmax_probabilities",
+      "model_kinds": [
+        "orbit",
+        "orbit_prob",
+        "harmonic"
+      ],
+      "member_count": 15,
+      "seeds": [
+        17,
+        29,
+        43,
+        61,
+        89
+      ],
+      "ensemble_checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_ensemble_verified_20260927/checkpoints/three_model_15seed__shuffled_training_labels.pt",
+      "ensemble_checkpoint_sha256": "ec2044ff2e449e7b8820f5f2c67d5fa870fd4050bc4812b754f1c22f92da5833",
+      "reloaded_probabilities_exact_match": true,
+      "member_checkpoints": [
+        {
+          "checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_20260927/checkpoints/shuffled_training_labels__orbit__seed-17.pt",
+          "checkpoint_sha256": "ef7288085e67a590d6bf24bd10cadb9a81dfb73d56a212cb6b7ac938270ccbf0",
+          "model_kind": "orbit",
+          "seed": 17,
+          "source_config_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_20260927/config.json",
+          "source_config_sha256": "a699bec4740d35b6e9df6f3eb0a835fc669a76b81f8c7036def8a8cee446be1d",
+          "model_input_transform": "identity",
+          "training_derived_sensor_scales": [
+            10522.12890625,
+            9305.55078125,
+            11992.974609375,
+            12856.6142578125
+          ],
+          "sample_rate_hz": 250,
+          "filter_band_hz": [
+            0.5,
+            40.0
+          ]
+        },
+        {
+          "checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_20260927/checkpoints/shuffled_training_labels__orbit__seed-29.pt",
+          "checkpoint_sha256": "83245802f88652afb5c147dce0cdd5990bf5315decdb880a8181944b51c01dee",
+          "model_kind": "orbit",
+          "seed": 29,
+          "source_config_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_20260927/config.json",
+          "source_config_sha256": "a699bec4740d35b6e9df6f3eb0a835fc669a76b81f8c7036def8a8cee446be1d",
+          "model_input_transform": "identity",
+          "training_derived_sensor_scales": [
+            10522.12890625,
+            9305.55078125,
+            11992.974609375,
+            12856.6142578125
+          ],
+          "sample_rate_hz": 250,
+          "filter_band_hz": [
+            0.5,
+            40.0
+          ]
+        },
+        {
+          "checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_20260927/checkpoints/shuffled_training_labels__orbit__seed-43.pt",
+          "checkpoint_sha256": "a7565dc2f80f504b5c3487ed01ce07f0776b79d36ebc05ed3180f348c6ce369c",
+          "model_kind": "orbit",
+          "seed": 43,
+          "source_config_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_20260927/config.json",
+          "source_config_sha256": "a699bec4740d35b6e9df6f3eb0a835fc669a76b81f8c7036def8a8cee446be1d",
+          "model_input_transform": "identity",
+          "training_derived_sensor_scales": [
+            10522.12890625,
+            9305.55078125,
+            11992.974609375,
+            12856.6142578125
+          ],
+          "sample_rate_hz": 250,
+          "filter_band_hz": [
+            0.5,
+            40.0
+          ]
+        },
+        {
+          "checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_20260927/checkpoints/shuffled_training_labels__orbit__seed-61.pt",
+          "checkpoint_sha256": "7deb1e035905dab104d68cfe720390656099b2fe1f792a400fd647c5caa552db",
+          "model_kind": "orbit",
+          "seed": 61,
+          "source_config_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_20260927/config.json",
+          "source_config_sha256": "a699bec4740d35b6e9df6f3eb0a835fc669a76b81f8c7036def8a8cee446be1d",
+          "model_input_transform": "identity",
+          "training_derived_sensor_scales": [
+            10522.12890625,
+            9305.55078125,
+            11992.974609375,
+            12856.6142578125
+          ],
+          "sample_rate_hz": 250,
+          "filter_band_hz": [
+            0.5,
+            40.0
+          ]
+        },
+        {
+          "checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_20260927/checkpoints/shuffled_training_labels__orbit__seed-89.pt",
+          "checkpoint_sha256": "aecc4d6daafa45243ea7ae666ce17eaa3c26af10fb20a417be8ecf6b61574972",
+          "model_kind": "orbit",
+          "seed": 89,
+          "source_config_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_20260927/config.json",
+          "source_config_sha256": "a699bec4740d35b6e9df6f3eb0a835fc669a76b81f8c7036def8a8cee446be1d",
+          "model_input_transform": "identity",
+          "training_derived_sensor_scales": [
+            10522.12890625,
+            9305.55078125,
+            11992.974609375,
+            12856.6142578125
+          ],
+          "sample_rate_hz": 250,
+          "filter_band_hz": [
+            0.5,
+            40.0
+          ]
+        },
+        {
+          "checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/checkpoints/shuffled_training_labels__orbit_prob__seed-17.pt",
+          "checkpoint_sha256": "3c16bb33c8fb529fe7cd6a9a2c6665b56cb6e6cf35fccf55524ba5fbd20554e3",
+          "model_kind": "orbit_prob",
+          "seed": 17,
+          "source_config_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/config.json",
+          "source_config_sha256": "d682c7314e692f14bf7f950cfa4d9a8f6c2291671003a7fe1828cceb23a50eee",
+          "model_input_transform": "identity",
+          "training_derived_sensor_scales": [
+            10522.12890625,
+            9305.55078125,
+            11992.974609375,
+            12856.6142578125
+          ],
+          "sample_rate_hz": 250,
+          "filter_band_hz": [
+            0.5,
+            40.0
+          ]
+        },
+        {
+          "checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/checkpoints/shuffled_training_labels__orbit_prob__seed-29.pt",
+          "checkpoint_sha256": "e3c9eeb729ec20255c3429566fd227548a9ca1d633bff4dc6584dc1068f3d813",
+          "model_kind": "orbit_prob",
+          "seed": 29,
+          "source_config_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/config.json",
+          "source_config_sha256": "d682c7314e692f14bf7f950cfa4d9a8f6c2291671003a7fe1828cceb23a50eee",
+          "model_input_transform": "identity",
+          "training_derived_sensor_scales": [
+            10522.12890625,
+            9305.55078125,
+            11992.974609375,
+            12856.6142578125
+          ],
+          "sample_rate_hz": 250,
+          "filter_band_hz": [
+            0.5,
+            40.0
+          ]
+        },
+        {
+          "checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/checkpoints/shuffled_training_labels__orbit_prob__seed-43.pt",
+          "checkpoint_sha256": "03d67dbb55383e5de9f397b9fd97202220a2d90aa01b7f881bd1735c9b32b99d",
+          "model_kind": "orbit_prob",
+          "seed": 43,
+          "source_config_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/config.json",
+          "source_config_sha256": "d682c7314e692f14bf7f950cfa4d9a8f6c2291671003a7fe1828cceb23a50eee",
+          "model_input_transform": "identity",
+          "training_derived_sensor_scales": [
+            10522.12890625,
+            9305.55078125,
+            11992.974609375,
+            12856.6142578125
+          ],
+          "sample_rate_hz": 250,
+          "filter_band_hz": [
+            0.5,
+            40.0
+          ]
+        },
+        {
+          "checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/checkpoints/shuffled_training_labels__orbit_prob__seed-61.pt",
+          "checkpoint_sha256": "c5813e4db8163729aa5de30be16392cede5399d5fdd8582c5ef530542c96a11e",
+          "model_kind": "orbit_prob",
+          "seed": 61,
+          "source_config_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/config.json",
+          "source_config_sha256": "d682c7314e692f14bf7f950cfa4d9a8f6c2291671003a7fe1828cceb23a50eee",
+          "model_input_transform": "identity",
+          "training_derived_sensor_scales": [
+            10522.12890625,
+            9305.55078125,
+            11992.974609375,
+            12856.6142578125
+          ],
+          "sample_rate_hz": 250,
+          "filter_band_hz": [
+            0.5,
+            40.0
+          ]
+        },
+        {
+          "checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/checkpoints/shuffled_training_labels__orbit_prob__seed-89.pt",
+          "checkpoint_sha256": "f8e7d569f52d473cde2fc667d70bea33a5e7fc8464b1951b685c6372ea22dd5a",
+          "model_kind": "orbit_prob",
+          "seed": 89,
+          "source_config_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/config.json",
+          "source_config_sha256": "d682c7314e692f14bf7f950cfa4d9a8f6c2291671003a7fe1828cceb23a50eee",
+          "model_input_transform": "identity",
+          "training_derived_sensor_scales": [
+            10522.12890625,
+            9305.55078125,
+            11992.974609375,
+            12856.6142578125
+          ],
+          "sample_rate_hz": 250,
+          "filter_band_hz": [
+            0.5,
+            40.0
+          ]
+        },
+        {
+          "checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/checkpoints/shuffled_training_labels__harmonic__seed-17.pt",
+          "checkpoint_sha256": "ea89a0d873fa7800fed3542552d4718849f00bff5b9f6dc288b7f1ace3580106",
+          "model_kind": "harmonic",
+          "seed": 17,
+          "source_config_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/config.json",
+          "source_config_sha256": "d682c7314e692f14bf7f950cfa4d9a8f6c2291671003a7fe1828cceb23a50eee",
+          "model_input_transform": "harmonic_c4_invariants",
+          "training_derived_sensor_scales": [
+            10522.12890625,
+            9305.55078125,
+            11992.974609375,
+            12856.6142578125
+          ],
+          "sample_rate_hz": 250,
+          "filter_band_hz": [
+            0.5,
+            40.0
+          ]
+        },
+        {
+          "checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/checkpoints/shuffled_training_labels__harmonic__seed-29.pt",
+          "checkpoint_sha256": "5fc02d933dd9cd726c8fdb438186c55b778a72110e7659a3756bfecb1c420afc",
+          "model_kind": "harmonic",
+          "seed": 29,
+          "source_config_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/config.json",
+          "source_config_sha256": "d682c7314e692f14bf7f950cfa4d9a8f6c2291671003a7fe1828cceb23a50eee",
+          "model_input_transform": "harmonic_c4_invariants",
+          "training_derived_sensor_scales": [
+            10522.12890625,
+            9305.55078125,
+            11992.974609375,
+            12856.6142578125
+          ],
+          "sample_rate_hz": 250,
+          "filter_band_hz": [
+            0.5,
+            40.0
+          ]
+        },
+        {
+          "checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/checkpoints/shuffled_training_labels__harmonic__seed-43.pt",
+          "checkpoint_sha256": "6756221ad80ce07198c75508cc937b1bb2a6078be6b6e482d4492fdc2910c57b",
+          "model_kind": "harmonic",
+          "seed": 43,
+          "source_config_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/config.json",
+          "source_config_sha256": "d682c7314e692f14bf7f950cfa4d9a8f6c2291671003a7fe1828cceb23a50eee",
+          "model_input_transform": "harmonic_c4_invariants",
+          "training_derived_sensor_scales": [
+            10522.12890625,
+            9305.55078125,
+            11992.974609375,
+            12856.6142578125
+          ],
+          "sample_rate_hz": 250,
+          "filter_band_hz": [
+            0.5,
+            40.0
+          ]
+        },
+        {
+          "checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/checkpoints/shuffled_training_labels__harmonic__seed-61.pt",
+          "checkpoint_sha256": "51ac546a40f278a3b0bf63c239bce343bc6b9928780ce90e5df70abe058a1d2e",
+          "model_kind": "harmonic",
+          "seed": 61,
+          "source_config_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/config.json",
+          "source_config_sha256": "d682c7314e692f14bf7f950cfa4d9a8f6c2291671003a7fe1828cceb23a50eee",
+          "model_input_transform": "harmonic_c4_invariants",
+          "training_derived_sensor_scales": [
+            10522.12890625,
+            9305.55078125,
+            11992.974609375,
+            12856.6142578125
+          ],
+          "sample_rate_hz": 250,
+          "filter_band_hz": [
+            0.5,
+            40.0
+          ]
+        },
+        {
+          "checkpoint_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/checkpoints/shuffled_training_labels__harmonic__seed-89.pt",
+          "checkpoint_sha256": "9f95005f2b3a3607fadbc0a59ebc3cb66da57aa5344a2da5a1c5a168e9b93f12",
+          "model_kind": "harmonic",
+          "seed": 89,
+          "source_config_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/c170_distance_holdout_candidates_20260927/config.json",
+          "source_config_sha256": "d682c7314e692f14bf7f950cfa4d9a8f6c2291671003a7fe1828cceb23a50eee",
+          "model_input_transform": "harmonic_c4_invariants",
+          "training_derived_sensor_scales": [
+            10522.12890625,
+            9305.55078125,
+            11992.974609375,
+            12856.6142578125
+          ],
+          "sample_rate_hz": 250,
+          "filter_band_hz": [
+            0.5,
+            40.0
+          ]
+        }
+      ],
+      "metrics": {
+        "overall": {
+          "accuracy": 0.09375,
+          "macro_f1": 0.09638565498298948,
+          "per_class_recall": [
+            0.05,
+            0.075,
+            0.075,
+            0.175
+          ],
+          "prediction_counts": [
+            119,
+            60,
+            60,
+            81
+          ],
+          "confusion_matrix": [
+            [
+              4,
+              24,
+              9,
+              43
+            ],
+            [
+              17,
+              6,
+              40,
+              17
+            ],
+            [
+              57,
+              10,
+              6,
+              7
+            ],
+            [
+              41,
+              20,
+              5,
+              14
+            ]
+          ],
+          "prediction_unique_class_count": 4
+        },
+        "by_distance_mm": {
+          "5": {
+            "accuracy": 0.05,
+            "macro_f1": 0.03546944858420268,
+            "per_class_recall": [
+              0.05,
+              0.0,
+              0.0,
+              0.15
+            ],
+            "prediction_counts": [
+              41,
+              3,
+              1,
+              35
+            ],
+            "confusion_matrix": [
+              [
+                1,
+                3,
+                0,
+                16
+              ],
+              [
+                6,
+                0,
+                0,
+                14
+              ],
+              [
+                18,
+                0,
+                0,
+                2
+              ],
+              [
+                16,
+                0,
+                1,
+                3
+              ]
+            ],
+            "prediction_unique_class_count": 4
+          },
+          "40": {
+            "accuracy": 0.175,
+            "macro_f1": 0.16286727456940225,
+            "per_class_recall": [
+              0.0,
+              0.15,
+              0.0,
+              0.55
+            ],
+            "prediction_counts": [
+              19,
+              27,
+              12,
+              22
+            ],
+            "confusion_matrix": [
+              [
+                0,
+                12,
+                3,
+                5
+              ],
+              [
+                6,
+                3,
+                9,
+                2
+              ],
+              [
+                6,
+                10,
+                0,
+                4
+              ],
+              [
+                7,
+                2,
+                0,
+                11
+              ]
+            ],
+            "prediction_unique_class_count": 4
+          },
+          "90": {
+            "accuracy": 0.1125,
+            "macro_f1": 0.10166666666666666,
+            "per_class_recall": [
+              0.15,
+              0.0,
+              0.3,
+              0.0
+            ],
+            "prediction_counts": [
+              16,
+              18,
+              30,
+              16
+            ],
+            "confusion_matrix": [
+              [
+                3,
+                2,
+                1,
+                14
+              ],
+              [
+                0,
+                0,
+                19,
+                1
+              ],
+              [
+                13,
+                0,
+                6,
+                1
+              ],
+              [
+                0,
+                16,
+                4,
+                0
+              ]
+            ],
+            "prediction_unique_class_count": 4
+          },
+          "130": {
+            "accuracy": 0.0375,
+            "macro_f1": 0.04687499999999999,
+            "per_class_recall": [
+              0.0,
+              0.15,
+              0.0,
+              0.0
+            ],
+            "prediction_counts": [
+              43,
+              12,
+              17,
+              8
+            ],
+            "confusion_matrix": [
+              [
+                0,
+                7,
+                5,
+                8
+              ],
+              [
+                5,
+                3,
+                12,
+                0
+              ],
+              [
+                20,
+                0,
+                0,
+                0
+              ],
+              [
+                18,
+                2,
+                0,
+                0
+              ]
+            ],
+            "prediction_unique_class_count": 4
+          }
+        },
+        "by_distance_mm_and_channel_map": {
+          "5": {
+            "0,2,4,6": {
+              "accuracy": 0.05,
+              "macro_f1": 0.03546944858420268,
+              "per_class_recall": [
+                0.05,
+                0.0,
+                0.0,
+                0.15
+              ],
+              "prediction_counts": [
+                41,
+                3,
+                1,
+                35
+              ],
+              "confusion_matrix": [
+                [
+                  1,
+                  3,
+                  0,
+                  16
+                ],
+                [
+                  6,
+                  0,
+                  0,
+                  14
+                ],
+                [
+                  18,
+                  0,
+                  0,
+                  2
+                ],
+                [
+                  16,
+                  0,
+                  1,
+                  3
+                ]
+              ],
+              "prediction_unique_class_count": 4
+            }
+          },
+          "40": {
+            "0,2,4,6": {
+              "accuracy": 0.175,
+              "macro_f1": 0.16286727456940225,
+              "per_class_recall": [
+                0.0,
+                0.15,
+                0.0,
+                0.55
+              ],
+              "prediction_counts": [
+                19,
+                27,
+                12,
+                22
+              ],
+              "confusion_matrix": [
+                [
+                  0,
+                  12,
+                  3,
+                  5
+                ],
+                [
+                  6,
+                  3,
+                  9,
+                  2
+                ],
+                [
+                  6,
+                  10,
+                  0,
+                  4
+                ],
+                [
+                  7,
+                  2,
+                  0,
+                  11
+                ]
+              ],
+              "prediction_unique_class_count": 4
+            }
+          },
+          "90": {
+            "0,1,2,3": {
+              "accuracy": 0.1125,
+              "macro_f1": 0.10166666666666666,
+              "per_class_recall": [
+                0.15,
+                0.0,
+                0.3,
+                0.0
+              ],
+              "prediction_counts": [
+                16,
+                18,
+                30,
+                16
+              ],
+              "confusion_matrix": [
+                [
+                  3,
+                  2,
+                  1,
+                  14
+                ],
+                [
+                  0,
+                  0,
+                  19,
+                  1
+                ],
+                [
+                  13,
+                  0,
+                  6,
+                  1
+                ],
+                [
+                  0,
+                  16,
+                  4,
+                  0
+                ]
+              ],
+              "prediction_unique_class_count": 4
+            }
+          },
+          "130": {
+            "0,1,2,3": {
+              "accuracy": 0.0375,
+              "macro_f1": 0.04687499999999999,
+              "per_class_recall": [
+                0.0,
+                0.15,
+                0.0,
+                0.0
+              ],
+              "prediction_counts": [
+                43,
+                12,
+                17,
+                8
+              ],
+              "confusion_matrix": [
+                [
+                  0,
+                  7,
+                  5,
+                  8
+                ],
+                [
+                  5,
+                  3,
+                  12,
+                  0
+                ],
+                [
+                  20,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  18,
+                  2,
+                  0,
+                  0
+                ]
+              ],
+              "prediction_unique_class_count": 4
+            }
+          }
+        }
+      }
+    }
+  ],
+  "prediction_count": 1280
+}

@@ -1,0 +1,8 @@
+# Historical numerical stack for Python 3.10 training on processed data.
+# Select a CUDA-specific torch build separately if reproducing CUDA runs.
+numpy==1.23.5
+scipy==1.10.1
+pandas==1.5.3
+matplotlib==3.7.1
+torch==1.13.1
+pytest>=7,<9

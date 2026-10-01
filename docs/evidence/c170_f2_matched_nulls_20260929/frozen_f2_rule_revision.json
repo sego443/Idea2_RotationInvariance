@@ -1,0 +1,158 @@
+{
+  "canonical_fusion_rule": "Per member, argmax raw neural logits or raw v7 KRR scores. Within complex_gram5 and learned_power10, choose the most frequent member argmax, ties to lowest class ID. The two neural family winners and v7 group_true prediction each cast one vote; choose the most frequent family vote, ties to lowest class ID.",
+  "corrected_matched_null_validation_sha256": "8bcbc3705dea6fd624a6471668837c026465334a0ae9f85b1ed238bcd8f6b7b9",
+  "created_utc": "2026-09-29T15:02:55+00:00",
+  "dataset_sha256": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349",
+  "evaluator_sha256": "d2c773f96f2846637e770ccd91a93a42fb033e7fb8bcc778c85123716479031b",
+  "format": "c170-frozen-f2-rule-revision",
+  "freeze_sha256": "61d2ab79191a829edbcb5435d812e85cd072204e755b61b815b2f0b8bd8cebe9",
+  "frozen_validation_macro_f1": 0.8268715072387495,
+  "frozen_validation_replay_sha256": "7f52fded8d19c2c34b256b2496071f9af1489a02dc68adcee922648eabbc38af",
+  "historical_evidence": {
+    "f2_metrics_match_recorded_metrics": true,
+    "f2_rows_match_replayed_two_level_hard_majority": 320,
+    "family_vote_columns_match_replayed_family_majority": true,
+    "fixed_hard_fusion_metrics_json": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_v11_complex_orbit_formal_20260929\\fixed_hard_fusion_metrics.json",
+    "fixed_hard_fusion_metrics_sha256": "9a89548ee32f1cf0335d87f92c73b272c600366ff6727d668dc11d94ab45cdb5",
+    "fixed_hard_fusion_predictions_csv": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_v11_complex_orbit_formal_20260929\\fixed_hard_fusion_predictions.csv",
+    "fixed_hard_fusion_predictions_sha256": "758ae2a77984f20bd6a68b9001970c3fa586de380ddb7858b25b76e62fbab425",
+    "validation_rows": 320
+  },
+  "matched_null_max_validation_macro_f1": 0.20586937018138135,
+  "null_gate_passed": true,
+  "null_gate_threshold": 0.5,
+  "prior_incorrect_description_preserved": {
+    "path": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\matched_null_validation_metrics.json",
+    "preserved_without_overwrite": true,
+    "previous_written_rule": "mean one-hot vote within each of complex_gram, learned_power, v7_group; equal 1/3 family mean; np.argmax lowest class id on ties",
+    "sha256": "b58733717ef565e63c35075f559bf87be0be142464d5bd0df9ccae67d173e1c6"
+  },
+  "real_member_checkpoints": [
+    {
+      "family": "complex_gram",
+      "manifest_sha256": "d047fe53dd9914f614c37e02cad2b7fd13e05a89cc363c04bc896833729fa4af",
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_v11_complex_orbit_formal_20260929\\complex_gram__seed-17",
+      "safe_weights_sha256": "ad3db742ea34ab6d70fd4faabeb4a1ad2bb133276cd37384bb426e5f7e6fd0e5",
+      "seed": 17
+    },
+    {
+      "family": "complex_gram",
+      "manifest_sha256": "eee75c0b9aaecc742faee3517aca91c10df6762ecbe7588f68e60af827f16241",
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_v11_complex_orbit_formal_20260929\\complex_gram__seed-29",
+      "safe_weights_sha256": "eaa69634ce35b4b77c215266f246045027fc203da3e345678789a5d5870fe1c4",
+      "seed": 29
+    },
+    {
+      "family": "complex_gram",
+      "manifest_sha256": "edbe967a52cdcc11130fd91b0f6635b4fac3b7b213ce16fd42ac54421fef1a78",
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_v11_complex_orbit_formal_20260929\\complex_gram__seed-43",
+      "safe_weights_sha256": "2aae65d84b67418cd8a32d5c22eae824446aa01798853cec7ae68241a7c96069",
+      "seed": 43
+    },
+    {
+      "family": "complex_gram",
+      "manifest_sha256": "f1fe8aa4712faf9fa2ff3363180ca3a6d9e85e2ed5ec0f25fc7a3f5c6ba48bc4",
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_v11_complex_orbit_formal_20260929\\complex_gram__seed-61",
+      "safe_weights_sha256": "64bfe8f6859631edbd3c92da717271777586bec55fa30f20afe1a854f5701bbb",
+      "seed": 61
+    },
+    {
+      "family": "complex_gram",
+      "manifest_sha256": "191392d147a08bca8bc111c09e93c2d82e009fc264c96b65ba0aea28a529f8fa",
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_v11_complex_orbit_formal_20260929\\complex_gram__seed-89",
+      "safe_weights_sha256": "4fb51572595eefbd8aa147f944661be54eca3bd784159a2afa6ea8f92d9bfbc2",
+      "seed": 89
+    },
+    {
+      "family": "learned_power",
+      "manifest_sha256": "1e3b915915db728ef302179f5aa5b6c926e1d572d5c6dbb47338234613822eec",
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_temporal_phase_invariant_v6_formal_cuda_20260929\\learned_power__seed-17",
+      "safe_weights_sha256": "6034dff21c3b19d79b0ef933d3a9bc429283e68c4eece20e52ba58a0e3fcc624",
+      "seed": 17
+    },
+    {
+      "family": "learned_power",
+      "manifest_sha256": "af3fdc67d2795628a7fda9c0265e046af93b19507d085c0dac4c9bd82a7ca3be",
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_temporal_phase_invariant_v6_formal_cuda_20260929\\learned_power__seed-29",
+      "safe_weights_sha256": "778b547ec4c1f96222a5844c551039c7ebeb7bd89442b3e58082f065818c5a78",
+      "seed": 29
+    },
+    {
+      "family": "learned_power",
+      "manifest_sha256": "2608cd3f7a57e5122d22cbb03293a50a9914b806069388adc7a6d6bf5f99a450",
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_temporal_phase_invariant_v6_formal_cuda_20260929\\learned_power__seed-43",
+      "safe_weights_sha256": "bc204b7eb89867823bf0e67ba04177cd164ee22fc1ac764f54bdb3e022d9edf5",
+      "seed": 43
+    },
+    {
+      "family": "learned_power",
+      "manifest_sha256": "bdefb1f874e81607cf8964fd6ae4a0e72735f454f873142a6a6ecac14f06370c",
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_temporal_phase_invariant_v6_formal_cuda_20260929\\learned_power__seed-61",
+      "safe_weights_sha256": "71a2eebf4381dcdb77525d5a98b351b7953a520d9e3f657a0cbc289ab3a80abb",
+      "seed": 61
+    },
+    {
+      "family": "learned_power",
+      "manifest_sha256": "9582bd9b211801478edffba6f3193ed473b75a71cd585884e0ba43ae4ece3991",
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_temporal_phase_invariant_v6_formal_cuda_20260929\\learned_power__seed-89",
+      "safe_weights_sha256": "5da94e3689501cc03ddf33eaf505d914c6b7ba3245ed3e916d1981d53d8b76b1",
+      "seed": 89
+    },
+    {
+      "family": "learned_power",
+      "manifest_sha256": "2b5e0f27abebf491935729205fd9932adfcf5ccab5e251f741ace0b1dfa4e7b2",
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_v4v6_power_extensions_formal_20260929\\v6_learned_power__seed-101",
+      "safe_weights_sha256": "efd087564cfbc0a041326fb8ad04d512e3b0699a9512a65943a16305dd165d30",
+      "seed": 101
+    },
+    {
+      "family": "learned_power",
+      "manifest_sha256": "c31f8700602b6c968de5ac25315959ba2048f72d81c2cc23633f0e7d6a807d1f",
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_v4v6_power_extensions_formal_20260929\\v6_learned_power__seed-131",
+      "safe_weights_sha256": "ad1e449790fe3d496aa53626055301c4021d8f8fe5f3afba8911910133458078",
+      "seed": 131
+    },
+    {
+      "family": "learned_power",
+      "manifest_sha256": "fee90f2bb67cef3c22f22e8cf622bdd91f1b19f118d2a81f8fdcbea7bfd424dd",
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_v4v6_power_extensions_formal_20260929\\v6_learned_power__seed-173",
+      "safe_weights_sha256": "b8d7d838489f70372d13650e47eb14e4f068e2ec4cc74f9edd32eab4ac2a1681",
+      "seed": 173
+    },
+    {
+      "family": "learned_power",
+      "manifest_sha256": "09fc7c1ab39edef1779f01a1b5ba31ca8c02393857c41c5f4e56921ad510492d",
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_v4v6_power_extensions_formal_20260929\\v6_learned_power__seed-211",
+      "safe_weights_sha256": "8580c5a4cff6bfef01c37ae8200c199d99ab494ee4ba9c6a080a9e42ab5918eb",
+      "seed": 211
+    },
+    {
+      "family": "learned_power",
+      "manifest_sha256": "bdd831a6d26249c73d2085820c1c6b7f26953ffdbf116ed38620a6a689e18f89",
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_v4v6_power_extensions_formal_20260929\\v6_learned_power__seed-257",
+      "safe_weights_sha256": "4d57829c8eecc90ae4e50df905e529e61460e2ebafe781ca9c18c77dd46e6f21",
+      "seed": 257
+    }
+  ],
+  "revision_reason": "An earlier evaluator description averaged neural-family vote-frequency vectors directly. The saved historical F2 CSV instead encodes hard majority within each family followed by one hard vote per family. The frozen predictions remain unchanged; this record documents the implementation discrepancy and correction.",
+  "source_sha256": {
+    "run_c170_c4_kernel_ridge_v7.py": "177173c924847ea9ef11c5ace67be75de4ac2951b8cbaaa08da19ed5d7c27b94",
+    "run_c170_complex_orbit_experiment_v11.py": "38038ae20729e0d87cde086dfde251155088fce2217541036e5e0f1badde09ac",
+    "run_c170_temporal_phase_invariant_experiment_v6_power_shuffle.py": "9876a5becca68ed50bd55e59ebe30e9adbd281b38eb56f64a613a2b1a6661469",
+    "src\\c170_c4_kernel_ridge_v7.py": "12df6ca215e43a26ab198d3d042ba8437efdae162e3324834bba6a5489bb89e0",
+    "src\\c170_complex_orbit_model_v11.py": "4bf8a5b0a74be747e9620ffbc5cd37dc3b44f64710b59bc47ac1c5f48db8ff64",
+    "src\\c170_shared_scale_preprocessing_v3.py": "d5782839107c5f58b262e84572176c4c9e41ba7d9d8821487d6857bb5a58e42b",
+    "src\\c170_temporal_phase_invariant_model_v6_power_shuffle.py": "04fecd8b064389b4a85653578067fdb52918db0e8209b5255ce8154b5d9ab514"
+  },
+  "split_counts": {
+    "test": 320,
+    "train": 879,
+    "val": 320
+  },
+  "test_metrics_computed": false,
+  "v7_selected_model": {
+    "mode": "group_true",
+    "path": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_c4_kernel_ridge_v7_formal_20260929\\models\\bandpass_0p5_40__bcd__group_true.npz",
+    "sha256": "3b6b3827e03086051afea5c4e7f542bdf20c2cd87c89496cc5ba539948c6d94f"
+  }
+}

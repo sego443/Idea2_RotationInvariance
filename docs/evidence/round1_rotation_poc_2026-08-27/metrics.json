@@ -1,0 +1,3358 @@
+{
+  "session_dir": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/data/OpenBCISession_2026-08-27_14-37-15",
+  "frozen_splits": {
+    "train_angles": [
+      0,
+      60,
+      120,
+      180,
+      240,
+      300
+    ],
+    "val_angles": [
+      30,
+      150,
+      270
+    ],
+    "test_angles": [
+      90,
+      210,
+      330
+    ]
+  },
+  "seeds": [
+    17,
+    29,
+    43,
+    61,
+    89
+  ],
+  "selected_model_by_validation": "harmonic",
+  "summary": {
+    "primary_stroke/harmonic/test": {
+      "n_seeds": 5,
+      "macro_f1_mean": 0.4782197905688639,
+      "macro_f1_std": 0.04040752247873274,
+      "macro_f1_min": 0.41562912657989054,
+      "macro_f1_max": 0.5207279693486591,
+      "accuracy_mean": 0.49333333333333335,
+      "minimum_class_recall_mean": 0.21333333333333332,
+      "minimum_class_recall_min": 0.13333333333333333
+    },
+    "primary_stroke/harmonic/train": {
+      "n_seeds": 5,
+      "macro_f1_mean": 0.993395963425513,
+      "macro_f1_std": 0.014767074706447895,
+      "macro_f1_min": 0.9669798171275648,
+      "macro_f1_max": 1.0,
+      "accuracy_mean": 0.9933333333333334,
+      "minimum_class_recall_mean": 0.9800000000000001,
+      "minimum_class_recall_min": 0.9
+    },
+    "primary_stroke/harmonic/val": {
+      "n_seeds": 5,
+      "macro_f1_mean": 0.5307137322741885,
+      "macro_f1_std": 0.032722163555375106,
+      "macro_f1_min": 0.5025180459963069,
+      "macro_f1_max": 0.5855072463768115,
+      "accuracy_mean": 0.5433333333333333,
+      "minimum_class_recall_mean": 0.3333333333333333,
+      "minimum_class_recall_min": 0.3333333333333333
+    },
+    "primary_stroke/orbit/test": {
+      "n_seeds": 5,
+      "macro_f1_mean": 0.6697274832878939,
+      "macro_f1_std": 0.026147717945433836,
+      "macro_f1_min": 0.6356728702266459,
+      "macro_f1_max": 0.7091249911049688,
+      "accuracy_mean": 0.6833333333333333,
+      "minimum_class_recall_mean": 0.42666666666666664,
+      "minimum_class_recall_min": 0.3333333333333333
+    },
+    "primary_stroke/orbit/train": {
+      "n_seeds": 5,
+      "macro_f1_mean": 0.9397246248585519,
+      "macro_f1_std": 0.07084593481600823,
+      "macro_f1_min": 0.8248488917022574,
+      "macro_f1_max": 1.0,
+      "accuracy_mean": 0.9399999999999998,
+      "minimum_class_recall_mean": 0.8866666666666667,
+      "minimum_class_recall_min": 0.7333333333333333
+    },
+    "primary_stroke/orbit/val": {
+      "n_seeds": 5,
+      "macro_f1_mean": 0.4411708968185971,
+      "macro_f1_std": 0.03906264362106108,
+      "macro_f1_min": 0.39469413644825935,
+      "macro_f1_max": 0.4989734927234928,
+      "accuracy_mean": 0.4533333333333333,
+      "minimum_class_recall_mean": 0.26666666666666666,
+      "minimum_class_recall_min": 0.13333333333333333
+    },
+    "primary_stroke/raw/test": {
+      "n_seeds": 5,
+      "macro_f1_mean": 0.49477392578141427,
+      "macro_f1_std": 0.10608989601382418,
+      "macro_f1_min": 0.3746700188560653,
+      "macro_f1_max": 0.620281141622605,
+      "accuracy_mean": 0.5233333333333334,
+      "minimum_class_recall_mean": 0.24,
+      "minimum_class_recall_min": 0.0
+    },
+    "primary_stroke/raw/train": {
+      "n_seeds": 5,
+      "macro_f1_mean": 0.9847888954880097,
+      "macro_f1_std": 0.02957438013567174,
+      "macro_f1_min": 0.9322801262313795,
+      "macro_f1_max": 1.0,
+      "accuracy_mean": 0.985,
+      "minimum_class_recall_mean": 0.9666666666666668,
+      "minimum_class_recall_min": 0.8666666666666667
+    },
+    "primary_stroke/raw/val": {
+      "n_seeds": 5,
+      "macro_f1_mean": 0.4370224130105832,
+      "macro_f1_std": 0.06186684296781571,
+      "macro_f1_min": 0.35738935940548844,
+      "macro_f1_max": 0.4990421455938697,
+      "accuracy_mean": 0.43666666666666665,
+      "minimum_class_recall_mean": 0.29333333333333333,
+      "minimum_class_recall_min": 0.2
+    },
+    "rest_only_control/harmonic/test": {
+      "n_seeds": 5,
+      "macro_f1_mean": 0.23825582460426636,
+      "macro_f1_std": 0.0759387951466465,
+      "macro_f1_min": 0.13821750321750323,
+      "macro_f1_max": 0.3328409090909091,
+      "accuracy_mean": 0.26666666666666666,
+      "minimum_class_recall_mean": 0.09333333333333334,
+      "minimum_class_recall_min": 0.0
+    },
+    "rest_only_control/raw/test": {
+      "n_seeds": 5,
+      "macro_f1_mean": 0.18204891849450686,
+      "macro_f1_std": 0.042293820469939354,
+      "macro_f1_min": 0.11320097526994077,
+      "macro_f1_max": 0.22317073170731713,
+      "accuracy_mean": 0.19666666666666668,
+      "minimum_class_recall_mean": 0.05333333333333333,
+      "minimum_class_recall_min": 0.0
+    },
+    "shuffled_label_control/harmonic/test": {
+      "n_seeds": 5,
+      "macro_f1_mean": 0.2288847693397431,
+      "macro_f1_std": 0.07079242712461953,
+      "macro_f1_min": 0.1681818181818182,
+      "macro_f1_max": 0.34700387331966276,
+      "accuracy_mean": 0.24666666666666667,
+      "minimum_class_recall_mean": 0.06666666666666667,
+      "minimum_class_recall_min": 0.0
+    }
+  },
+  "runs": [
+    {
+      "experiment": "primary_stroke",
+      "model": "raw",
+      "seed": 17,
+      "split": "train",
+      "best_epoch": 52,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "prediction_counts": [
+        30,
+        30,
+        30,
+        30
+      ],
+      "confusion_matrix": [
+        [
+          30,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          30,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          30
+        ]
+      ],
+      "accuracy_by_angle": {
+        "0": 1.0,
+        "60": 1.0,
+        "120": 1.0,
+        "180": 1.0,
+        "240": 1.0,
+        "300": 1.0
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "raw",
+      "seed": 17,
+      "split": "val",
+      "best_epoch": 52,
+      "accuracy": 0.5,
+      "macro_f1": 0.4990421455938697,
+      "per_class_recall": [
+        0.4,
+        0.6666666666666666,
+        0.4,
+        0.5333333333333333
+      ],
+      "prediction_counts": [
+        17,
+        17,
+        12,
+        14
+      ],
+      "confusion_matrix": [
+        [
+          6,
+          4,
+          5,
+          0
+        ],
+        [
+          5,
+          10,
+          0,
+          0
+        ],
+        [
+          1,
+          2,
+          6,
+          6
+        ],
+        [
+          5,
+          1,
+          1,
+          8
+        ]
+      ],
+      "accuracy_by_angle": {
+        "30": 0.05,
+        "150": 0.9,
+        "270": 0.55
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "raw",
+      "seed": 17,
+      "split": "test",
+      "best_epoch": 52,
+      "accuracy": 0.5666666666666667,
+      "macro_f1": 0.5464221014492754,
+      "per_class_recall": [
+        0.4,
+        0.9333333333333333,
+        0.3333333333333333,
+        0.6
+      ],
+      "prediction_counts": [
+        8,
+        27,
+        8,
+        17
+      ],
+      "confusion_matrix": [
+        [
+          6,
+          5,
+          2,
+          2
+        ],
+        [
+          1,
+          14,
+          0,
+          0
+        ],
+        [
+          1,
+          3,
+          5,
+          6
+        ],
+        [
+          0,
+          5,
+          1,
+          9
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.55,
+        "210": 0.5,
+        "330": 0.65
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "raw",
+      "seed": 29,
+      "split": "train",
+      "best_epoch": 57,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "prediction_counts": [
+        30,
+        30,
+        30,
+        30
+      ],
+      "confusion_matrix": [
+        [
+          30,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          30,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          30
+        ]
+      ],
+      "accuracy_by_angle": {
+        "0": 1.0,
+        "60": 1.0,
+        "120": 1.0,
+        "180": 1.0,
+        "240": 1.0,
+        "300": 1.0
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "raw",
+      "seed": 29,
+      "split": "val",
+      "best_epoch": 57,
+      "accuracy": 0.45,
+      "macro_f1": 0.4753342953342954,
+      "per_class_recall": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.5333333333333333,
+        0.6
+      ],
+      "prediction_counts": [
+        18,
+        20,
+        12,
+        10
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          9,
+          1,
+          0
+        ],
+        [
+          6,
+          5,
+          3,
+          1
+        ],
+        [
+          5,
+          2,
+          8,
+          0
+        ],
+        [
+          2,
+          4,
+          0,
+          9
+        ]
+      ],
+      "accuracy_by_angle": {
+        "30": 0.2,
+        "150": 0.55,
+        "270": 0.6
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "raw",
+      "seed": 29,
+      "split": "test",
+      "best_epoch": 57,
+      "accuracy": 0.4166666666666667,
+      "macro_f1": 0.39362489362489367,
+      "per_class_recall": [
+        0.2,
+        0.8,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "prediction_counts": [
+        6,
+        24,
+        12,
+        18
+      ],
+      "confusion_matrix": [
+        [
+          3,
+          6,
+          2,
+          4
+        ],
+        [
+          0,
+          12,
+          0,
+          3
+        ],
+        [
+          0,
+          4,
+          5,
+          6
+        ],
+        [
+          3,
+          2,
+          5,
+          5
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.65,
+        "210": 0.25,
+        "330": 0.35
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "raw",
+      "seed": 43,
+      "split": "train",
+      "best_epoch": 39,
+      "accuracy": 0.9916666666666667,
+      "macro_f1": 0.9916643512086691,
+      "per_class_recall": [
+        0.9666666666666667,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "prediction_counts": [
+        29,
+        30,
+        30,
+        31
+      ],
+      "confusion_matrix": [
+        [
+          29,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          30,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          30
+        ]
+      ],
+      "accuracy_by_angle": {
+        "0": 1.0,
+        "60": 1.0,
+        "120": 1.0,
+        "180": 0.95,
+        "240": 1.0,
+        "300": 1.0
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "raw",
+      "seed": 43,
+      "split": "val",
+      "best_epoch": 39,
+      "accuracy": 0.5,
+      "macro_f1": 0.46814685314685317,
+      "per_class_recall": [
+        0.4,
+        0.2,
+        0.4,
+        1.0
+      ],
+      "prediction_counts": [
+        10,
+        11,
+        10,
+        29
+      ],
+      "confusion_matrix": [
+        [
+          6,
+          5,
+          4,
+          0
+        ],
+        [
+          4,
+          3,
+          0,
+          8
+        ],
+        [
+          0,
+          3,
+          6,
+          6
+        ],
+        [
+          0,
+          0,
+          0,
+          15
+        ]
+      ],
+      "accuracy_by_angle": {
+        "30": 0.25,
+        "150": 0.75,
+        "270": 0.5
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "raw",
+      "seed": 43,
+      "split": "test",
+      "best_epoch": 39,
+      "accuracy": 0.65,
+      "macro_f1": 0.620281141622605,
+      "per_class_recall": [
+        0.3333333333333333,
+        1.0,
+        0.4,
+        0.8666666666666667
+      ],
+      "prediction_counts": [
+        5,
+        26,
+        11,
+        18
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          4,
+          5,
+          1
+        ],
+        [
+          0,
+          15,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          6,
+          4
+        ],
+        [
+          0,
+          2,
+          0,
+          13
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.6,
+        "210": 0.6,
+        "330": 0.75
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "raw",
+      "seed": 61,
+      "split": "train",
+      "best_epoch": 108,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "prediction_counts": [
+        30,
+        30,
+        30,
+        30
+      ],
+      "confusion_matrix": [
+        [
+          30,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          30,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          30
+        ]
+      ],
+      "accuracy_by_angle": {
+        "0": 1.0,
+        "60": 1.0,
+        "120": 1.0,
+        "180": 1.0,
+        "240": 1.0,
+        "300": 1.0
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "raw",
+      "seed": 61,
+      "split": "val",
+      "best_epoch": 108,
+      "accuracy": 0.36666666666666664,
+      "macro_f1": 0.35738935940548844,
+      "per_class_recall": [
+        0.2,
+        0.26666666666666666,
+        0.6666666666666666,
+        0.3333333333333333
+      ],
+      "prediction_counts": [
+        13,
+        16,
+        22,
+        9
+      ],
+      "confusion_matrix": [
+        [
+          3,
+          6,
+          6,
+          0
+        ],
+        [
+          5,
+          4,
+          6,
+          0
+        ],
+        [
+          0,
+          1,
+          10,
+          4
+        ],
+        [
+          5,
+          5,
+          0,
+          5
+        ]
+      ],
+      "accuracy_by_angle": {
+        "30": 0.2,
+        "150": 0.6,
+        "270": 0.3
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "raw",
+      "seed": 61,
+      "split": "test",
+      "best_epoch": 108,
+      "accuracy": 0.55,
+      "macro_f1": 0.538871473354232,
+      "per_class_recall": [
+        0.3333333333333333,
+        0.9333333333333333,
+        0.4666666666666667,
+        0.4666666666666667
+      ],
+      "prediction_counts": [
+        10,
+        18,
+        18,
+        14
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          9,
+          1
+        ],
+        [
+          0,
+          14,
+          0,
+          1
+        ],
+        [
+          0,
+          3,
+          7,
+          5
+        ],
+        [
+          5,
+          1,
+          2,
+          7
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.6,
+        "210": 0.45,
+        "330": 0.6
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "raw",
+      "seed": 89,
+      "split": "train",
+      "best_epoch": 20,
+      "accuracy": 0.9333333333333333,
+      "macro_f1": 0.9322801262313795,
+      "per_class_recall": [
+        0.8666666666666667,
+        1.0,
+        0.8666666666666667,
+        1.0
+      ],
+      "prediction_counts": [
+        29,
+        32,
+        27,
+        32
+      ],
+      "confusion_matrix": [
+        [
+          26,
+          1,
+          1,
+          2
+        ],
+        [
+          0,
+          30,
+          0,
+          0
+        ],
+        [
+          3,
+          1,
+          26,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          30
+        ]
+      ],
+      "accuracy_by_angle": {
+        "0": 1.0,
+        "60": 0.9,
+        "120": 1.0,
+        "180": 0.85,
+        "240": 1.0,
+        "300": 0.85
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "raw",
+      "seed": 89,
+      "split": "val",
+      "best_epoch": 20,
+      "accuracy": 0.36666666666666664,
+      "macro_f1": 0.3851994115724092,
+      "per_class_recall": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.4,
+        0.4
+      ],
+      "prediction_counts": [
+        8,
+        23,
+        9,
+        20
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          8,
+          1,
+          1
+        ],
+        [
+          0,
+          5,
+          2,
+          8
+        ],
+        [
+          1,
+          3,
+          6,
+          5
+        ],
+        [
+          2,
+          7,
+          0,
+          6
+        ]
+      ],
+      "accuracy_by_angle": {
+        "30": 0.0,
+        "150": 0.45,
+        "270": 0.65
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "raw",
+      "seed": 89,
+      "split": "test",
+      "best_epoch": 20,
+      "accuracy": 0.43333333333333335,
+      "macro_f1": 0.3746700188560653,
+      "per_class_recall": [
+        0.26666666666666666,
+        0.8,
+        0.0,
+        0.6666666666666666
+      ],
+      "prediction_counts": [
+        5,
+        28,
+        5,
+        22
+      ],
+      "confusion_matrix": [
+        [
+          4,
+          2,
+          5,
+          4
+        ],
+        [
+          0,
+          12,
+          0,
+          3
+        ],
+        [
+          1,
+          9,
+          0,
+          5
+        ],
+        [
+          0,
+          5,
+          0,
+          10
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.5,
+        "210": 0.25,
+        "330": 0.55
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "orbit",
+      "seed": 17,
+      "split": "train",
+      "best_epoch": 62,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "prediction_counts": [
+        30,
+        30,
+        30,
+        30
+      ],
+      "confusion_matrix": [
+        [
+          30,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          30,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          30
+        ]
+      ],
+      "accuracy_by_angle": {
+        "0": 1.0,
+        "60": 1.0,
+        "120": 1.0,
+        "180": 1.0,
+        "240": 1.0,
+        "300": 1.0
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "orbit",
+      "seed": 17,
+      "split": "val",
+      "best_epoch": 62,
+      "accuracy": 0.43333333333333335,
+      "macro_f1": 0.4209716378369955,
+      "per_class_recall": [
+        0.2,
+        0.3333333333333333,
+        0.8666666666666667,
+        0.3333333333333333
+      ],
+      "prediction_counts": [
+        16,
+        15,
+        21,
+        8
+      ],
+      "confusion_matrix": [
+        [
+          3,
+          8,
+          3,
+          1
+        ],
+        [
+          8,
+          5,
+          0,
+          2
+        ],
+        [
+          0,
+          2,
+          13,
+          0
+        ],
+        [
+          5,
+          0,
+          5,
+          5
+        ]
+      ],
+      "accuracy_by_angle": {
+        "30": 0.25,
+        "150": 0.45,
+        "270": 0.6
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "orbit",
+      "seed": 17,
+      "split": "test",
+      "best_epoch": 62,
+      "accuracy": 0.7166666666666667,
+      "macro_f1": 0.7091249911049688,
+      "per_class_recall": [
+        0.5333333333333333,
+        1.0,
+        0.6666666666666666,
+        0.6666666666666666
+      ],
+      "prediction_counts": [
+        12,
+        18,
+        16,
+        14
+      ],
+      "confusion_matrix": [
+        [
+          8,
+          0,
+          6,
+          1
+        ],
+        [
+          0,
+          15,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          10,
+          3
+        ],
+        [
+          2,
+          3,
+          0,
+          10
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.85,
+        "210": 0.45,
+        "330": 0.85
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "orbit",
+      "seed": 29,
+      "split": "train",
+      "best_epoch": 24,
+      "accuracy": 0.825,
+      "macro_f1": 0.8248488917022574,
+      "per_class_recall": [
+        0.8333333333333334,
+        0.8666666666666667,
+        0.7333333333333333,
+        0.8666666666666667
+      ],
+      "prediction_counts": [
+        33,
+        31,
+        27,
+        29
+      ],
+      "confusion_matrix": [
+        [
+          25,
+          1,
+          3,
+          1
+        ],
+        [
+          2,
+          26,
+          1,
+          1
+        ],
+        [
+          3,
+          4,
+          22,
+          1
+        ],
+        [
+          3,
+          0,
+          1,
+          26
+        ]
+      ],
+      "accuracy_by_angle": {
+        "0": 0.75,
+        "60": 0.95,
+        "120": 0.8,
+        "180": 0.8,
+        "240": 0.9,
+        "300": 0.75
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "orbit",
+      "seed": 29,
+      "split": "val",
+      "best_epoch": 24,
+      "accuracy": 0.4666666666666667,
+      "macro_f1": 0.4544096615286827,
+      "per_class_recall": [
+        0.3333333333333333,
+        0.4,
+        0.8,
+        0.3333333333333333
+      ],
+      "prediction_counts": [
+        14,
+        16,
+        20,
+        10
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          8,
+          2,
+          0
+        ],
+        [
+          4,
+          6,
+          1,
+          4
+        ],
+        [
+          0,
+          2,
+          12,
+          1
+        ],
+        [
+          5,
+          0,
+          5,
+          5
+        ]
+      ],
+      "accuracy_by_angle": {
+        "30": 0.35,
+        "150": 0.4,
+        "270": 0.65
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "orbit",
+      "seed": 29,
+      "split": "test",
+      "best_epoch": 24,
+      "accuracy": 0.6833333333333333,
+      "macro_f1": 0.6655250296929457,
+      "per_class_recall": [
+        0.3333333333333333,
+        1.0,
+        0.7333333333333333,
+        0.6666666666666666
+      ],
+      "prediction_counts": [
+        8,
+        18,
+        20,
+        14
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          9,
+          1
+        ],
+        [
+          0,
+          15,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          11,
+          3
+        ],
+        [
+          2,
+          3,
+          0,
+          10
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.75,
+        "210": 0.45,
+        "330": 0.85
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "orbit",
+      "seed": 43,
+      "split": "train",
+      "best_epoch": 38,
+      "accuracy": 0.9916666666666667,
+      "macro_f1": 0.9916643512086691,
+      "per_class_recall": [
+        0.9666666666666667,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "prediction_counts": [
+        29,
+        30,
+        30,
+        31
+      ],
+      "confusion_matrix": [
+        [
+          29,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          30,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          30
+        ]
+      ],
+      "accuracy_by_angle": {
+        "0": 1.0,
+        "60": 0.95,
+        "120": 1.0,
+        "180": 1.0,
+        "240": 1.0,
+        "300": 1.0
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "orbit",
+      "seed": 43,
+      "split": "val",
+      "best_epoch": 38,
+      "accuracy": 0.5,
+      "macro_f1": 0.4989734927234928,
+      "per_class_recall": [
+        0.4666666666666667,
+        0.5333333333333333,
+        0.6666666666666666,
+        0.3333333333333333
+      ],
+      "prediction_counts": [
+        11,
+        22,
+        17,
+        10
+      ],
+      "confusion_matrix": [
+        [
+          7,
+          6,
+          2,
+          0
+        ],
+        [
+          2,
+          8,
+          0,
+          5
+        ],
+        [
+          0,
+          5,
+          10,
+          0
+        ],
+        [
+          2,
+          3,
+          5,
+          5
+        ]
+      ],
+      "accuracy_by_angle": {
+        "30": 0.6,
+        "150": 0.25,
+        "270": 0.65
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "orbit",
+      "seed": 43,
+      "split": "test",
+      "best_epoch": 38,
+      "accuracy": 0.6833333333333333,
+      "macro_f1": 0.6676371635610766,
+      "per_class_recall": [
+        0.4,
+        1.0,
+        0.6666666666666666,
+        0.6666666666666666
+      ],
+      "prediction_counts": [
+        8,
+        20,
+        15,
+        17
+      ],
+      "confusion_matrix": [
+        [
+          6,
+          0,
+          5,
+          4
+        ],
+        [
+          0,
+          15,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          10,
+          3
+        ],
+        [
+          2,
+          3,
+          0,
+          10
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.7,
+        "210": 0.5,
+        "330": 0.85
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "orbit",
+      "seed": 61,
+      "split": "train",
+      "best_epoch": 28,
+      "accuracy": 0.925,
+      "macro_f1": 0.9245359160613398,
+      "per_class_recall": [
+        0.9333333333333333,
+        0.8666666666666667,
+        0.9,
+        1.0
+      ],
+      "prediction_counts": [
+        29,
+        29,
+        29,
+        33
+      ],
+      "confusion_matrix": [
+        [
+          28,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          26,
+          2,
+          1
+        ],
+        [
+          0,
+          2,
+          27,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          30
+        ]
+      ],
+      "accuracy_by_angle": {
+        "0": 0.85,
+        "60": 0.95,
+        "120": 1.0,
+        "180": 0.9,
+        "240": 0.95,
+        "300": 0.9
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "orbit",
+      "seed": 61,
+      "split": "val",
+      "best_epoch": 28,
+      "accuracy": 0.43333333333333335,
+      "macro_f1": 0.39469413644825935,
+      "per_class_recall": [
+        0.13333333333333333,
+        0.26666666666666666,
+        1.0,
+        0.3333333333333333
+      ],
+      "prediction_counts": [
+        11,
+        14,
+        27,
+        8
+      ],
+      "confusion_matrix": [
+        [
+          2,
+          7,
+          6,
+          0
+        ],
+        [
+          7,
+          4,
+          1,
+          3
+        ],
+        [
+          0,
+          0,
+          15,
+          0
+        ],
+        [
+          2,
+          3,
+          5,
+          5
+        ]
+      ],
+      "accuracy_by_angle": {
+        "30": 0.3,
+        "150": 0.45,
+        "270": 0.55
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "orbit",
+      "seed": 61,
+      "split": "test",
+      "best_epoch": 28,
+      "accuracy": 0.6833333333333333,
+      "macro_f1": 0.6706773618538324,
+      "per_class_recall": [
+        0.4,
+        0.9333333333333333,
+        0.7333333333333333,
+        0.6666666666666666
+      ],
+      "prediction_counts": [
+        7,
+        19,
+        19,
+        15
+      ],
+      "confusion_matrix": [
+        [
+          6,
+          0,
+          8,
+          1
+        ],
+        [
+          1,
+          14,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          11,
+          4
+        ],
+        [
+          0,
+          5,
+          0,
+          10
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.8,
+        "210": 0.45,
+        "330": 0.8
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "orbit",
+      "seed": 89,
+      "split": "train",
+      "best_epoch": 32,
+      "accuracy": 0.9583333333333334,
+      "macro_f1": 0.9575739653204933,
+      "per_class_recall": [
+        0.8666666666666667,
+        1.0,
+        1.0,
+        0.9666666666666667
+      ],
+      "prediction_counts": [
+        27,
+        32,
+        31,
+        30
+      ],
+      "confusion_matrix": [
+        [
+          26,
+          2,
+          1,
+          1
+        ],
+        [
+          0,
+          30,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          29
+        ]
+      ],
+      "accuracy_by_angle": {
+        "0": 0.95,
+        "60": 0.95,
+        "120": 0.95,
+        "180": 0.95,
+        "240": 1.0,
+        "300": 0.95
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "orbit",
+      "seed": 89,
+      "split": "val",
+      "best_epoch": 32,
+      "accuracy": 0.43333333333333335,
+      "macro_f1": 0.43680555555555556,
+      "per_class_recall": [
+        0.4,
+        0.3333333333333333,
+        0.6666666666666666,
+        0.3333333333333333
+      ],
+      "prediction_counts": [
+        12,
+        21,
+        17,
+        10
+      ],
+      "confusion_matrix": [
+        [
+          6,
+          7,
+          2,
+          0
+        ],
+        [
+          5,
+          5,
+          0,
+          5
+        ],
+        [
+          0,
+          5,
+          10,
+          0
+        ],
+        [
+          1,
+          4,
+          5,
+          5
+        ]
+      ],
+      "accuracy_by_angle": {
+        "30": 0.4,
+        "150": 0.25,
+        "270": 0.65
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "orbit",
+      "seed": 89,
+      "split": "test",
+      "best_epoch": 32,
+      "accuracy": 0.65,
+      "macro_f1": 0.6356728702266459,
+      "per_class_recall": [
+        0.4666666666666667,
+        1.0,
+        0.4666666666666667,
+        0.6666666666666666
+      ],
+      "prediction_counts": [
+        8,
+        23,
+        11,
+        18
+      ],
+      "confusion_matrix": [
+        [
+          7,
+          0,
+          4,
+          4
+        ],
+        [
+          0,
+          15,
+          0,
+          0
+        ],
+        [
+          1,
+          3,
+          7,
+          4
+        ],
+        [
+          0,
+          5,
+          0,
+          10
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.65,
+        "210": 0.5,
+        "330": 0.8
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "harmonic",
+      "seed": 17,
+      "split": "train",
+      "best_epoch": 51,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "prediction_counts": [
+        30,
+        30,
+        30,
+        30
+      ],
+      "confusion_matrix": [
+        [
+          30,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          30,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          30
+        ]
+      ],
+      "accuracy_by_angle": {
+        "0": 1.0,
+        "60": 1.0,
+        "120": 1.0,
+        "180": 1.0,
+        "240": 1.0,
+        "300": 1.0
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "harmonic",
+      "seed": 17,
+      "split": "val",
+      "best_epoch": 51,
+      "accuracy": 0.55,
+      "macro_f1": 0.5347002742588481,
+      "per_class_recall": [
+        0.5333333333333333,
+        0.4666666666666667,
+        0.8666666666666667,
+        0.3333333333333333
+      ],
+      "prediction_counts": [
+        16,
+        11,
+        23,
+        10
+      ],
+      "confusion_matrix": [
+        [
+          8,
+          4,
+          3,
+          0
+        ],
+        [
+          3,
+          7,
+          2,
+          3
+        ],
+        [
+          0,
+          0,
+          13,
+          2
+        ],
+        [
+          5,
+          0,
+          5,
+          5
+        ]
+      ],
+      "accuracy_by_angle": {
+        "30": 0.5,
+        "150": 0.5,
+        "270": 0.65
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "harmonic",
+      "seed": 17,
+      "split": "test",
+      "best_epoch": 51,
+      "accuracy": 0.5333333333333333,
+      "macro_f1": 0.5207279693486591,
+      "per_class_recall": [
+        0.2,
+        0.6,
+        0.6666666666666666,
+        0.6666666666666666
+      ],
+      "prediction_counts": [
+        10,
+        14,
+        15,
+        21
+      ],
+      "confusion_matrix": [
+        [
+          3,
+          3,
+          5,
+          4
+        ],
+        [
+          1,
+          9,
+          0,
+          5
+        ],
+        [
+          1,
+          2,
+          10,
+          2
+        ],
+        [
+          5,
+          0,
+          0,
+          10
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.8,
+        "210": 0.4,
+        "330": 0.4
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "harmonic",
+      "seed": 29,
+      "split": "train",
+      "best_epoch": 68,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "prediction_counts": [
+        30,
+        30,
+        30,
+        30
+      ],
+      "confusion_matrix": [
+        [
+          30,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          30,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          30
+        ]
+      ],
+      "accuracy_by_angle": {
+        "0": 1.0,
+        "60": 1.0,
+        "120": 1.0,
+        "180": 1.0,
+        "240": 1.0,
+        "300": 1.0
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "harmonic",
+      "seed": 29,
+      "split": "val",
+      "best_epoch": 68,
+      "accuracy": 0.5166666666666667,
+      "macro_f1": 0.5144116752812404,
+      "per_class_recall": [
+        0.5333333333333333,
+        0.4666666666666667,
+        0.7333333333333333,
+        0.3333333333333333
+      ],
+      "prediction_counts": [
+        18,
+        8,
+        24,
+        10
+      ],
+      "confusion_matrix": [
+        [
+          8,
+          1,
+          6,
+          0
+        ],
+        [
+          4,
+          7,
+          2,
+          2
+        ],
+        [
+          1,
+          0,
+          11,
+          3
+        ],
+        [
+          5,
+          0,
+          5,
+          5
+        ]
+      ],
+      "accuracy_by_angle": {
+        "30": 0.3,
+        "150": 0.6,
+        "270": 0.65
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "harmonic",
+      "seed": 29,
+      "split": "test",
+      "best_epoch": 68,
+      "accuracy": 0.48333333333333334,
+      "macro_f1": 0.4720916568742656,
+      "per_class_recall": [
+        0.3333333333333333,
+        0.6666666666666666,
+        0.26666666666666666,
+        0.6666666666666666
+      ],
+      "prediction_counts": [
+        15,
+        15,
+        8,
+        22
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          1,
+          4,
+          5
+        ],
+        [
+          1,
+          10,
+          0,
+          4
+        ],
+        [
+          4,
+          4,
+          4,
+          3
+        ],
+        [
+          5,
+          0,
+          0,
+          10
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.75,
+        "210": 0.35,
+        "330": 0.35
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "harmonic",
+      "seed": 43,
+      "split": "train",
+      "best_epoch": 56,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "prediction_counts": [
+        30,
+        30,
+        30,
+        30
+      ],
+      "confusion_matrix": [
+        [
+          30,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          30,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          30
+        ]
+      ],
+      "accuracy_by_angle": {
+        "0": 1.0,
+        "60": 1.0,
+        "120": 1.0,
+        "180": 1.0,
+        "240": 1.0,
+        "300": 1.0
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "harmonic",
+      "seed": 43,
+      "split": "val",
+      "best_epoch": 56,
+      "accuracy": 0.5333333333333333,
+      "macro_f1": 0.5164314194577352,
+      "per_class_recall": [
+        0.5333333333333333,
+        0.4,
+        0.8666666666666667,
+        0.3333333333333333
+      ],
+      "prediction_counts": [
+        18,
+        10,
+        23,
+        9
+      ],
+      "confusion_matrix": [
+        [
+          8,
+          3,
+          4,
+          0
+        ],
+        [
+          5,
+          6,
+          1,
+          3
+        ],
+        [
+          0,
+          1,
+          13,
+          1
+        ],
+        [
+          5,
+          0,
+          5,
+          5
+        ]
+      ],
+      "accuracy_by_angle": {
+        "30": 0.4,
+        "150": 0.65,
+        "270": 0.55
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "harmonic",
+      "seed": 43,
+      "split": "test",
+      "best_epoch": 56,
+      "accuracy": 0.5166666666666667,
+      "macro_f1": 0.5059107559107558,
+      "per_class_recall": [
+        0.26666666666666666,
+        0.6666666666666666,
+        0.4666666666666667,
+        0.6666666666666666
+      ],
+      "prediction_counts": [
+        11,
+        20,
+        11,
+        18
+      ],
+      "confusion_matrix": [
+        [
+          4,
+          5,
+          4,
+          2
+        ],
+        [
+          1,
+          10,
+          0,
+          4
+        ],
+        [
+          1,
+          5,
+          7,
+          2
+        ],
+        [
+          5,
+          0,
+          0,
+          10
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.8,
+        "210": 0.35,
+        "330": 0.4
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "harmonic",
+      "seed": 61,
+      "split": "train",
+      "best_epoch": 50,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "prediction_counts": [
+        30,
+        30,
+        30,
+        30
+      ],
+      "confusion_matrix": [
+        [
+          30,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          30,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          30
+        ]
+      ],
+      "accuracy_by_angle": {
+        "0": 1.0,
+        "60": 1.0,
+        "120": 1.0,
+        "180": 1.0,
+        "240": 1.0,
+        "300": 1.0
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "harmonic",
+      "seed": 61,
+      "split": "val",
+      "best_epoch": 50,
+      "accuracy": 0.6,
+      "macro_f1": 0.5855072463768115,
+      "per_class_recall": [
+        0.7333333333333333,
+        0.4666666666666667,
+        0.8666666666666667,
+        0.3333333333333333
+      ],
+      "prediction_counts": [
+        21,
+        8,
+        21,
+        10
+      ],
+      "confusion_matrix": [
+        [
+          11,
+          1,
+          3,
+          0
+        ],
+        [
+          5,
+          7,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          13,
+          2
+        ],
+        [
+          5,
+          0,
+          5,
+          5
+        ]
+      ],
+      "accuracy_by_angle": {
+        "30": 0.5,
+        "150": 0.6,
+        "270": 0.7
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "harmonic",
+      "seed": 61,
+      "split": "test",
+      "best_epoch": 50,
+      "accuracy": 0.43333333333333335,
+      "macro_f1": 0.41562912657989054,
+      "per_class_recall": [
+        0.2,
+        0.6,
+        0.26666666666666666,
+        0.6666666666666666
+      ],
+      "prediction_counts": [
+        12,
+        16,
+        9,
+        23
+      ],
+      "confusion_matrix": [
+        [
+          3,
+          4,
+          5,
+          3
+        ],
+        [
+          2,
+          9,
+          0,
+          4
+        ],
+        [
+          2,
+          3,
+          4,
+          6
+        ],
+        [
+          5,
+          0,
+          0,
+          10
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.7,
+        "210": 0.25,
+        "330": 0.35
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "harmonic",
+      "seed": 89,
+      "split": "train",
+      "best_epoch": 38,
+      "accuracy": 0.9666666666666667,
+      "macro_f1": 0.9669798171275648,
+      "per_class_recall": [
+        1.0,
+        0.9,
+        1.0,
+        0.9666666666666667
+      ],
+      "prediction_counts": [
+        34,
+        27,
+        30,
+        29
+      ],
+      "confusion_matrix": [
+        [
+          30,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          27,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          29
+        ]
+      ],
+      "accuracy_by_angle": {
+        "0": 0.9,
+        "60": 1.0,
+        "120": 1.0,
+        "180": 0.95,
+        "240": 1.0,
+        "300": 0.95
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "harmonic",
+      "seed": 89,
+      "split": "val",
+      "best_epoch": 38,
+      "accuracy": 0.5166666666666667,
+      "macro_f1": 0.5025180459963069,
+      "per_class_recall": [
+        0.5333333333333333,
+        0.3333333333333333,
+        0.8666666666666667,
+        0.3333333333333333
+      ],
+      "prediction_counts": [
+        22,
+        10,
+        20,
+        8
+      ],
+      "confusion_matrix": [
+        [
+          8,
+          5,
+          2,
+          0
+        ],
+        [
+          9,
+          5,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          13,
+          2
+        ],
+        [
+          5,
+          0,
+          5,
+          5
+        ]
+      ],
+      "accuracy_by_angle": {
+        "30": 0.45,
+        "150": 0.45,
+        "270": 0.65
+      }
+    },
+    {
+      "experiment": "primary_stroke",
+      "model": "harmonic",
+      "seed": 89,
+      "split": "test",
+      "best_epoch": 38,
+      "accuracy": 0.5,
+      "macro_f1": 0.4767394441307485,
+      "per_class_recall": [
+        0.13333333333333333,
+        0.5333333333333333,
+        0.6666666666666666,
+        0.6666666666666666
+      ],
+      "prediction_counts": [
+        8,
+        13,
+        18,
+        21
+      ],
+      "confusion_matrix": [
+        [
+          2,
+          4,
+          6,
+          3
+        ],
+        [
+          0,
+          8,
+          2,
+          5
+        ],
+        [
+          1,
+          1,
+          10,
+          3
+        ],
+        [
+          5,
+          0,
+          0,
+          10
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.8,
+        "210": 0.3,
+        "330": 0.4
+      }
+    },
+    {
+      "experiment": "shuffled_label_control",
+      "model": "harmonic",
+      "seed": 17,
+      "split": "test",
+      "best_epoch": 62,
+      "accuracy": 0.2,
+      "macro_f1": 0.18408340467163994,
+      "per_class_recall": [
+        0.26666666666666666,
+        0.0,
+        0.3333333333333333,
+        0.2
+      ],
+      "prediction_counts": [
+        19,
+        8,
+        22,
+        11
+      ],
+      "confusion_matrix": [
+        [
+          4,
+          3,
+          8,
+          0
+        ],
+        [
+          5,
+          0,
+          5,
+          5
+        ],
+        [
+          2,
+          5,
+          5,
+          3
+        ],
+        [
+          8,
+          0,
+          4,
+          3
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.4,
+        "210": 0.0,
+        "330": 0.2
+      }
+    },
+    {
+      "experiment": "shuffled_label_control",
+      "model": "harmonic",
+      "seed": 29,
+      "split": "test",
+      "best_epoch": 123,
+      "accuracy": 0.16666666666666666,
+      "macro_f1": 0.1681818181818182,
+      "per_class_recall": [
+        0.0,
+        0.2,
+        0.4666666666666667,
+        0.0
+      ],
+      "prediction_counts": [
+        15,
+        7,
+        20,
+        18
+      ],
+      "confusion_matrix": [
+        [
+          0,
+          1,
+          3,
+          11
+        ],
+        [
+          3,
+          3,
+          6,
+          3
+        ],
+        [
+          3,
+          1,
+          7,
+          4
+        ],
+        [
+          9,
+          2,
+          4,
+          0
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.15,
+        "210": 0.1,
+        "330": 0.25
+      }
+    },
+    {
+      "experiment": "shuffled_label_control",
+      "model": "harmonic",
+      "seed": 43,
+      "split": "test",
+      "best_epoch": 46,
+      "accuracy": 0.4,
+      "macro_f1": 0.34700387331966276,
+      "per_class_recall": [
+        0.9333333333333333,
+        0.2,
+        0.13333333333333333,
+        0.3333333333333333
+      ],
+      "prediction_counts": [
+        34,
+        7,
+        4,
+        15
+      ],
+      "confusion_matrix": [
+        [
+          14,
+          0,
+          1,
+          0
+        ],
+        [
+          6,
+          3,
+          0,
+          6
+        ],
+        [
+          6,
+          3,
+          2,
+          4
+        ],
+        [
+          8,
+          1,
+          1,
+          5
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.5,
+        "210": 0.45,
+        "330": 0.25
+      }
+    },
+    {
+      "experiment": "shuffled_label_control",
+      "model": "harmonic",
+      "seed": 61,
+      "split": "test",
+      "best_epoch": 94,
+      "accuracy": 0.25,
+      "macro_f1": 0.23527720266850705,
+      "per_class_recall": [
+        0.4666666666666667,
+        0.13333333333333333,
+        0.26666666666666666,
+        0.13333333333333333
+      ],
+      "prediction_counts": [
+        27,
+        8,
+        13,
+        12
+      ],
+      "confusion_matrix": [
+        [
+          7,
+          0,
+          3,
+          5
+        ],
+        [
+          7,
+          2,
+          1,
+          5
+        ],
+        [
+          9,
+          2,
+          4,
+          0
+        ],
+        [
+          4,
+          4,
+          5,
+          2
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.3,
+        "210": 0.2,
+        "330": 0.25
+      }
+    },
+    {
+      "experiment": "shuffled_label_control",
+      "model": "harmonic",
+      "seed": 89,
+      "split": "test",
+      "best_epoch": 13,
+      "accuracy": 0.21666666666666667,
+      "macro_f1": 0.20987754785708748,
+      "per_class_recall": [
+        0.26666666666666666,
+        0.06666666666666667,
+        0.4,
+        0.13333333333333333
+      ],
+      "prediction_counts": [
+        19,
+        15,
+        18,
+        8
+      ],
+      "confusion_matrix": [
+        [
+          4,
+          3,
+          7,
+          1
+        ],
+        [
+          8,
+          1,
+          2,
+          4
+        ],
+        [
+          1,
+          7,
+          6,
+          1
+        ],
+        [
+          6,
+          4,
+          3,
+          2
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.05,
+        "210": 0.05,
+        "330": 0.55
+      }
+    },
+    {
+      "experiment": "rest_only_control",
+      "model": "raw",
+      "seed": 17,
+      "split": "test",
+      "best_epoch": 5,
+      "accuracy": 0.11666666666666667,
+      "macro_f1": 0.11320097526994077,
+      "per_class_recall": [
+        0.06666666666666667,
+        0.13333333333333333,
+        0.06666666666666667,
+        0.2
+      ],
+      "prediction_counts": [
+        14,
+        21,
+        7,
+        18
+      ],
+      "confusion_matrix": [
+        [
+          1,
+          6,
+          2,
+          6
+        ],
+        [
+          7,
+          2,
+          0,
+          6
+        ],
+        [
+          4,
+          7,
+          1,
+          3
+        ],
+        [
+          2,
+          6,
+          4,
+          3
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.05,
+        "210": 0.15,
+        "330": 0.15
+      }
+    },
+    {
+      "experiment": "rest_only_control",
+      "model": "raw",
+      "seed": 29,
+      "split": "test",
+      "best_epoch": 2,
+      "accuracy": 0.23333333333333334,
+      "macro_f1": 0.20894938394938392,
+      "per_class_recall": [
+        0.4,
+        0.4,
+        0.06666666666666667,
+        0.06666666666666667
+      ],
+      "prediction_counts": [
+        25,
+        18,
+        11,
+        6
+      ],
+      "confusion_matrix": [
+        [
+          6,
+          3,
+          3,
+          3
+        ],
+        [
+          4,
+          6,
+          4,
+          1
+        ],
+        [
+          9,
+          4,
+          1,
+          1
+        ],
+        [
+          6,
+          5,
+          3,
+          1
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.2,
+        "210": 0.2,
+        "330": 0.3
+      }
+    },
+    {
+      "experiment": "rest_only_control",
+      "model": "raw",
+      "seed": 43,
+      "split": "test",
+      "best_epoch": 4,
+      "accuracy": 0.25,
+      "macro_f1": 0.22317073170731713,
+      "per_class_recall": [
+        0.4,
+        0.4,
+        0.0,
+        0.2
+      ],
+      "prediction_counts": [
+        15,
+        26,
+        4,
+        15
+      ],
+      "confusion_matrix": [
+        [
+          6,
+          5,
+          1,
+          3
+        ],
+        [
+          3,
+          6,
+          0,
+          6
+        ],
+        [
+          3,
+          9,
+          0,
+          3
+        ],
+        [
+          3,
+          6,
+          3,
+          3
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.3,
+        "210": 0.25,
+        "330": 0.2
+      }
+    },
+    {
+      "experiment": "rest_only_control",
+      "model": "raw",
+      "seed": 61,
+      "split": "test",
+      "best_epoch": 4,
+      "accuracy": 0.2,
+      "macro_f1": 0.18262032085561497,
+      "per_class_recall": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.13333333333333333,
+        0.0
+      ],
+      "prediction_counts": [
+        19,
+        18,
+        15,
+        8
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          3,
+          5,
+          2
+        ],
+        [
+          6,
+          5,
+          2,
+          2
+        ],
+        [
+          5,
+          4,
+          2,
+          4
+        ],
+        [
+          3,
+          6,
+          6,
+          0
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.15,
+        "210": 0.25,
+        "330": 0.2
+      }
+    },
+    {
+      "experiment": "rest_only_control",
+      "model": "raw",
+      "seed": 89,
+      "split": "test",
+      "best_epoch": 49,
+      "accuracy": 0.18333333333333332,
+      "macro_f1": 0.18230318069027748,
+      "per_class_recall": [
+        0.2,
+        0.2,
+        0.2,
+        0.13333333333333333
+      ],
+      "prediction_counts": [
+        18,
+        16,
+        15,
+        11
+      ],
+      "confusion_matrix": [
+        [
+          3,
+          4,
+          3,
+          5
+        ],
+        [
+          7,
+          3,
+          3,
+          2
+        ],
+        [
+          5,
+          5,
+          3,
+          2
+        ],
+        [
+          3,
+          4,
+          6,
+          2
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.2,
+        "210": 0.15,
+        "330": 0.2
+      }
+    },
+    {
+      "experiment": "rest_only_control",
+      "model": "harmonic",
+      "seed": 17,
+      "split": "test",
+      "best_epoch": 8,
+      "accuracy": 0.2833333333333333,
+      "macro_f1": 0.26516337622993597,
+      "per_class_recall": [
+        0.5333333333333333,
+        0.2,
+        0.26666666666666666,
+        0.13333333333333333
+      ],
+      "prediction_counts": [
+        28,
+        12,
+        14,
+        6
+      ],
+      "confusion_matrix": [
+        [
+          8,
+          3,
+          2,
+          2
+        ],
+        [
+          7,
+          3,
+          3,
+          2
+        ],
+        [
+          7,
+          4,
+          4,
+          0
+        ],
+        [
+          6,
+          2,
+          5,
+          2
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.25,
+        "210": 0.2,
+        "330": 0.4
+      }
+    },
+    {
+      "experiment": "rest_only_control",
+      "model": "harmonic",
+      "seed": 29,
+      "split": "test",
+      "best_epoch": 5,
+      "accuracy": 0.2833333333333333,
+      "macro_f1": 0.18778801843317972,
+      "per_class_recall": [
+        0.0,
+        0.8,
+        0.0,
+        0.3333333333333333
+      ],
+      "prediction_counts": [
+        1,
+        41,
+        2,
+        16
+      ],
+      "confusion_matrix": [
+        [
+          0,
+          12,
+          0,
+          3
+        ],
+        [
+          0,
+          12,
+          1,
+          2
+        ],
+        [
+          1,
+          8,
+          0,
+          6
+        ],
+        [
+          0,
+          9,
+          1,
+          5
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.15,
+        "210": 0.3,
+        "330": 0.4
+      }
+    },
+    {
+      "experiment": "rest_only_control",
+      "model": "harmonic",
+      "seed": 43,
+      "split": "test",
+      "best_epoch": 5,
+      "accuracy": 0.3,
+      "macro_f1": 0.26726931604980386,
+      "per_class_recall": [
+        0.3333333333333333,
+        0.6,
+        0.0,
+        0.26666666666666666
+      ],
+      "prediction_counts": [
+        26,
+        24,
+        3,
+        7
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          9,
+          0,
+          1
+        ],
+        [
+          4,
+          9,
+          0,
+          2
+        ],
+        [
+          11,
+          4,
+          0,
+          0
+        ],
+        [
+          6,
+          2,
+          3,
+          4
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.2,
+        "210": 0.3,
+        "330": 0.4
+      }
+    },
+    {
+      "experiment": "rest_only_control",
+      "model": "harmonic",
+      "seed": 61,
+      "split": "test",
+      "best_epoch": 19,
+      "accuracy": 0.13333333333333333,
+      "macro_f1": 0.13821750321750323,
+      "per_class_recall": [
+        0.13333333333333333,
+        0.06666666666666667,
+        0.2,
+        0.13333333333333333
+      ],
+      "prediction_counts": [
+        22,
+        13,
+        10,
+        15
+      ],
+      "confusion_matrix": [
+        [
+          2,
+          5,
+          3,
+          5
+        ],
+        [
+          8,
+          1,
+          0,
+          6
+        ],
+        [
+          7,
+          3,
+          3,
+          2
+        ],
+        [
+          5,
+          4,
+          4,
+          2
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.1,
+        "210": 0.15,
+        "330": 0.15
+      }
+    },
+    {
+      "experiment": "rest_only_control",
+      "model": "harmonic",
+      "seed": 89,
+      "split": "test",
+      "best_epoch": 14,
+      "accuracy": 0.3333333333333333,
+      "macro_f1": 0.3328409090909091,
+      "per_class_recall": [
+        0.3333333333333333,
+        0.4,
+        0.3333333333333333,
+        0.26666666666666666
+      ],
+      "prediction_counts": [
+        18,
+        17,
+        15,
+        10
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          5,
+          2,
+          3
+        ],
+        [
+          4,
+          6,
+          2,
+          3
+        ],
+        [
+          5,
+          5,
+          5,
+          0
+        ],
+        [
+          4,
+          1,
+          6,
+          4
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.2,
+        "210": 0.45,
+        "330": 0.35
+      }
+    }
+  ],
+  "preprocessing": {
+    "stroke": {
+      "sensor_scale": [
+        15674.943359375,
+        11087.91015625,
+        11627.6796875,
+        5509.533203125
+      ],
+      "harmonic_center": [
+        -0.01943560689687729,
+        2.0725321769714355,
+        0.44029223918914795
+      ],
+      "harmonic_scale": [
+        0.19175611436367035,
+        1.5353187322616577,
+        0.35859981179237366
+      ]
+    },
+    "rest": {
+      "sensor_scale": [
+        361.5450134277344,
+        354.7496643066406,
+        328.9026794433594,
+        210.5718994140625
+      ],
+      "harmonic_center": [
+        -0.061473190784454346,
+        1.2793292999267578,
+        0.5262147188186646
+      ],
+      "harmonic_scale": [
+        0.5051193833351135,
+        0.6850748062133789,
+        0.36884093284606934
+      ]
+    }
+  }
+}

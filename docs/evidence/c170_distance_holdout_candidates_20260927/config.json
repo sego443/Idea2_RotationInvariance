@@ -1,0 +1,341 @@
+{
+  "phase": "validation-only",
+  "dataset_path": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/data/processed_c170_20260926/dataset.npz",
+  "dataset_sha256": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349",
+  "sample_count_after_duplicate_exclusion": 1599,
+  "duplicate_rows_excluded": 1,
+  "channel_map_confirmation": {
+    "0,1,2,3": [
+      "S0",
+      "S1",
+      "S2",
+      "S3"
+    ],
+    "0,2,4,6": [
+      "S0",
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "physical_order_confirmation_source": "User confirmed: B057 and earlier use columns 0,2,4,6; B058 onward use 0,1,2,3; both orders correspond to S0,S1,S2,S3",
+  "confirm_physical_order_flag": true,
+  "split_distance_mm": {
+    "train": [
+      0,
+      10,
+      20,
+      30,
+      50,
+      60,
+      80,
+      100,
+      120,
+      140,
+      160
+    ],
+    "val": [
+      5,
+      40,
+      90,
+      130
+    ],
+    "test": [
+      15,
+      25,
+      110,
+      150
+    ]
+  },
+  "unassigned_distance_mm": [
+    70
+  ],
+  "split_sample_counts": {
+    "train": 879,
+    "val": 320,
+    "test": 320
+  },
+  "direction_order": [
+    "UP",
+    "DOWN",
+    "LEFT",
+    "RIGHT"
+  ],
+  "model_kinds": [
+    "harmonic",
+    "orbit_prob"
+  ],
+  "training_label_conditions": [
+    "true_training_labels",
+    "shuffled_training_labels"
+  ],
+  "label_shuffle_unit": "Permute direction labels among the four complete recording blocks within each training position, preserving class-block counts",
+  "seeds": [
+    17,
+    29,
+    43,
+    61,
+    89
+  ],
+  "max_epochs": 220,
+  "patience": 35,
+  "sample_rate_hz": 250,
+  "filter_band_hz": [
+    0.5,
+    40.0
+  ],
+  "training_derived_sensor_scales": [
+    10522.12890625,
+    9305.55078125,
+    11992.974609375,
+    12856.6142578125
+  ],
+  "candidate_selection": {
+    "criterion": "Highest validation macro F1, then lowest validation loss, then lowest seed",
+    "selected_checkpoints": {
+      "true_training_labels:harmonic": {
+        "experiment": "true_training_labels",
+        "model_kind": "harmonic",
+        "seed": 61,
+        "path": "checkpoints/true_training_labels__harmonic__seed-61.pt",
+        "selected_for_final_test": true,
+        "validation_macro_f1": 0.7248297770475189,
+        "validation_loss": 0.9657353162765503,
+        "best_epoch_zero_based": 14
+      },
+      "true_training_labels:orbit_prob": {
+        "experiment": "true_training_labels",
+        "model_kind": "orbit_prob",
+        "seed": 17,
+        "path": "checkpoints/true_training_labels__orbit_prob__seed-17.pt",
+        "selected_for_final_test": true,
+        "validation_macro_f1": 0.7750139606623632,
+        "validation_loss": 0.8719682097434998,
+        "best_epoch_zero_based": 18
+      },
+      "shuffled_training_labels:harmonic": {
+        "experiment": "shuffled_training_labels",
+        "model_kind": "harmonic",
+        "seed": 61,
+        "path": "checkpoints/shuffled_training_labels__harmonic__seed-61.pt",
+        "selected_for_final_test": true,
+        "validation_macro_f1": 0.27991441557144287,
+        "validation_loss": 4.072420597076416,
+        "best_epoch_zero_based": 113
+      },
+      "shuffled_training_labels:orbit_prob": {
+        "experiment": "shuffled_training_labels",
+        "model_kind": "orbit_prob",
+        "seed": 61,
+        "path": "checkpoints/shuffled_training_labels__orbit_prob__seed-61.pt",
+        "selected_for_final_test": true,
+        "validation_macro_f1": 0.3265015873771835,
+        "validation_loss": 1.574405550956726,
+        "best_epoch_zero_based": 5
+      }
+    },
+    "all_checkpoints": [
+      {
+        "experiment": "true_training_labels",
+        "model_kind": "harmonic",
+        "seed": 17,
+        "path": "checkpoints/true_training_labels__harmonic__seed-17.pt",
+        "selected_for_final_test": false,
+        "validation_macro_f1": 0.6425558048943989,
+        "validation_loss": 1.0776687860488892,
+        "best_epoch_zero_based": 28
+      },
+      {
+        "experiment": "true_training_labels",
+        "model_kind": "harmonic",
+        "seed": 29,
+        "path": "checkpoints/true_training_labels__harmonic__seed-29.pt",
+        "selected_for_final_test": false,
+        "validation_macro_f1": 0.6649470674504874,
+        "validation_loss": 0.7985018491744995,
+        "best_epoch_zero_based": 26
+      },
+      {
+        "experiment": "true_training_labels",
+        "model_kind": "harmonic",
+        "seed": 43,
+        "path": "checkpoints/true_training_labels__harmonic__seed-43.pt",
+        "selected_for_final_test": false,
+        "validation_macro_f1": 0.6170663157736213,
+        "validation_loss": 1.0793113708496094,
+        "best_epoch_zero_based": 33
+      },
+      {
+        "experiment": "true_training_labels",
+        "model_kind": "harmonic",
+        "seed": 61,
+        "path": "checkpoints/true_training_labels__harmonic__seed-61.pt",
+        "selected_for_final_test": true,
+        "validation_macro_f1": 0.7248297770475189,
+        "validation_loss": 0.9657353162765503,
+        "best_epoch_zero_based": 14
+      },
+      {
+        "experiment": "true_training_labels",
+        "model_kind": "harmonic",
+        "seed": 89,
+        "path": "checkpoints/true_training_labels__harmonic__seed-89.pt",
+        "selected_for_final_test": false,
+        "validation_macro_f1": 0.6673712367359909,
+        "validation_loss": 0.9722771644592285,
+        "best_epoch_zero_based": 20
+      },
+      {
+        "experiment": "true_training_labels",
+        "model_kind": "orbit_prob",
+        "seed": 17,
+        "path": "checkpoints/true_training_labels__orbit_prob__seed-17.pt",
+        "selected_for_final_test": true,
+        "validation_macro_f1": 0.7750139606623632,
+        "validation_loss": 0.8719682097434998,
+        "best_epoch_zero_based": 18
+      },
+      {
+        "experiment": "true_training_labels",
+        "model_kind": "orbit_prob",
+        "seed": 29,
+        "path": "checkpoints/true_training_labels__orbit_prob__seed-29.pt",
+        "selected_for_final_test": false,
+        "validation_macro_f1": 0.63799175965081,
+        "validation_loss": 0.969111979007721,
+        "best_epoch_zero_based": 41
+      },
+      {
+        "experiment": "true_training_labels",
+        "model_kind": "orbit_prob",
+        "seed": 43,
+        "path": "checkpoints/true_training_labels__orbit_prob__seed-43.pt",
+        "selected_for_final_test": false,
+        "validation_macro_f1": 0.6730173978175331,
+        "validation_loss": 0.7737508416175842,
+        "best_epoch_zero_based": 33
+      },
+      {
+        "experiment": "true_training_labels",
+        "model_kind": "orbit_prob",
+        "seed": 61,
+        "path": "checkpoints/true_training_labels__orbit_prob__seed-61.pt",
+        "selected_for_final_test": false,
+        "validation_macro_f1": 0.6860904894856608,
+        "validation_loss": 0.8934360146522522,
+        "best_epoch_zero_based": 25
+      },
+      {
+        "experiment": "true_training_labels",
+        "model_kind": "orbit_prob",
+        "seed": 89,
+        "path": "checkpoints/true_training_labels__orbit_prob__seed-89.pt",
+        "selected_for_final_test": false,
+        "validation_macro_f1": 0.670849977973954,
+        "validation_loss": 0.9222168922424316,
+        "best_epoch_zero_based": 28
+      },
+      {
+        "experiment": "shuffled_training_labels",
+        "model_kind": "harmonic",
+        "seed": 17,
+        "path": "checkpoints/shuffled_training_labels__harmonic__seed-17.pt",
+        "selected_for_final_test": false,
+        "validation_macro_f1": 0.13513513513513514,
+        "validation_loss": 1.552821397781372,
+        "best_epoch_zero_based": 1
+      },
+      {
+        "experiment": "shuffled_training_labels",
+        "model_kind": "harmonic",
+        "seed": 29,
+        "path": "checkpoints/shuffled_training_labels__harmonic__seed-29.pt",
+        "selected_for_final_test": false,
+        "validation_macro_f1": 0.23622518894750627,
+        "validation_loss": 3.022714376449585,
+        "best_epoch_zero_based": 30
+      },
+      {
+        "experiment": "shuffled_training_labels",
+        "model_kind": "harmonic",
+        "seed": 43,
+        "path": "checkpoints/shuffled_training_labels__harmonic__seed-43.pt",
+        "selected_for_final_test": false,
+        "validation_macro_f1": 0.171184917277532,
+        "validation_loss": 1.7296359539031982,
+        "best_epoch_zero_based": 8
+      },
+      {
+        "experiment": "shuffled_training_labels",
+        "model_kind": "harmonic",
+        "seed": 61,
+        "path": "checkpoints/shuffled_training_labels__harmonic__seed-61.pt",
+        "selected_for_final_test": true,
+        "validation_macro_f1": 0.27991441557144287,
+        "validation_loss": 4.072420597076416,
+        "best_epoch_zero_based": 113
+      },
+      {
+        "experiment": "shuffled_training_labels",
+        "model_kind": "harmonic",
+        "seed": 89,
+        "path": "checkpoints/shuffled_training_labels__harmonic__seed-89.pt",
+        "selected_for_final_test": false,
+        "validation_macro_f1": 0.2464673345843335,
+        "validation_loss": 1.7172917127609253,
+        "best_epoch_zero_based": 10
+      },
+      {
+        "experiment": "shuffled_training_labels",
+        "model_kind": "orbit_prob",
+        "seed": 17,
+        "path": "checkpoints/shuffled_training_labels__orbit_prob__seed-17.pt",
+        "selected_for_final_test": false,
+        "validation_macro_f1": 0.08348292859326446,
+        "validation_loss": 2.8573920726776123,
+        "best_epoch_zero_based": 26
+      },
+      {
+        "experiment": "shuffled_training_labels",
+        "model_kind": "orbit_prob",
+        "seed": 29,
+        "path": "checkpoints/shuffled_training_labels__orbit_prob__seed-29.pt",
+        "selected_for_final_test": false,
+        "validation_macro_f1": 0.18040728535627604,
+        "validation_loss": 1.7625712156295776,
+        "best_epoch_zero_based": 4
+      },
+      {
+        "experiment": "shuffled_training_labels",
+        "model_kind": "orbit_prob",
+        "seed": 43,
+        "path": "checkpoints/shuffled_training_labels__orbit_prob__seed-43.pt",
+        "selected_for_final_test": false,
+        "validation_macro_f1": 0.20842884852759658,
+        "validation_loss": 1.4227595329284668,
+        "best_epoch_zero_based": 0
+      },
+      {
+        "experiment": "shuffled_training_labels",
+        "model_kind": "orbit_prob",
+        "seed": 61,
+        "path": "checkpoints/shuffled_training_labels__orbit_prob__seed-61.pt",
+        "selected_for_final_test": true,
+        "validation_macro_f1": 0.3265015873771835,
+        "validation_loss": 1.574405550956726,
+        "best_epoch_zero_based": 5
+      },
+      {
+        "experiment": "shuffled_training_labels",
+        "model_kind": "orbit_prob",
+        "seed": 89,
+        "path": "checkpoints/shuffled_training_labels__orbit_prob__seed-89.pt",
+        "selected_for_final_test": false,
+        "validation_macro_f1": 0.19765394097464228,
+        "validation_loss": 2.459838628768921,
+        "best_epoch_zero_based": 37
+      }
+    ]
+  },
+  "selected_primary_model_by_validation_macro_f1": "orbit_prob"
+}

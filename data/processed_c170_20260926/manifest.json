@@ -1,0 +1,47 @@
+{
+  "input_session": "/Users/sego/Documents/OpenBCI_GUI/Recordings/OpenBCISession_2026-09-26_20-05-53",
+  "prompts_file": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/docs/data_collection/rotation_c170mm_step5mm_r20_prompts.txt",
+  "sample_rate_hz": 250,
+  "window_samples": 500,
+  "window_duration_s": 2.0,
+  "signal_values": "Raw EXG values; movement localization uses a 0.5–12 Hz bandpass and a 75-sample smoothed envelope",
+  "peak_detection": {
+    "minimum_distance_samples": 525,
+    "minimum_prominence": 1.5,
+    "first_usable_center_row": 376
+  },
+  "extra_action_policy": "Keep the earliest 20 movements",
+  "missing_action_policy": "If 19 movements are detected, copy movement 10 as movement 20 and record its source",
+  "prompt_count": 136,
+  "recording_count": 80,
+  "excluded_short_count": 56,
+  "segment_count": 1600,
+  "original_segment_count": 1599,
+  "duplicate_segment_count": 1,
+  "recorded_distances_mm": [
+    0,
+    5,
+    10,
+    15,
+    20,
+    25,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90,
+    100,
+    110,
+    120,
+    130,
+    140,
+    150,
+    160
+  ],
+  "channel_map_recording_counts": {
+    "0,2,4,6": 41,
+    "0,1,2,3": 39
+  }
+}

@@ -1,0 +1,4055 @@
+{
+  "dataset": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/round1_rotation_poc_2026-08-27/segmented_dataset.npz",
+  "baseline_metrics": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/round1_rotation_poc_2026-08-27/metrics.json",
+  "split_angles": {
+    "train": [
+      0,
+      60,
+      120,
+      180,
+      240,
+      300
+    ],
+    "val": [
+      30,
+      150,
+      270
+    ],
+    "test": [
+      90,
+      210,
+      330
+    ]
+  },
+  "selection": "two-seed validation macro F1, then validation loss tie-break",
+  "tuning_seeds": [
+    17,
+    29
+  ],
+  "final_seeds": [
+    17,
+    29,
+    43,
+    61,
+    89
+  ],
+  "tuning_budget": {
+    "epochs": 100,
+    "patience": 18
+  },
+  "final_budget": {
+    "epochs": 220,
+    "patience": 35
+  },
+  "selected_model_kind": "lstm_graph_cnn",
+  "selected_model_config": {
+    "hidden_size": 16,
+    "num_layers": 1,
+    "graph_heads": 2,
+    "graph_topology": "ring"
+  },
+  "sensor_scale": [
+    15674.943359375,
+    11087.91015625,
+    11627.6796875,
+    5509.533203125
+  ],
+  "rest_sensor_scale": [
+    361.5450134277344,
+    354.7496643066406,
+    328.9026794433594,
+    210.5718994140625
+  ],
+  "input_length": 125,
+  "tuning_trials": [
+    {
+      "stage": "lstm",
+      "model_kind": "lstm_graph_cnn",
+      "config": {
+        "hidden_size": 8,
+        "num_layers": 1,
+        "graph_heads": 1,
+        "graph_topology": "full"
+      },
+      "mean_val_macro_f1": 0.4279651748863571,
+      "mean_val_loss": 1.9367640018463135,
+      "seeds": [
+        {
+          "seed": 17,
+          "best_epoch": 29,
+          "val_macro_f1": 0.4552500776638707,
+          "val_loss": 2.498427391052246
+        },
+        {
+          "seed": 29,
+          "best_epoch": 2,
+          "val_macro_f1": 0.40068027210884355,
+          "val_loss": 1.3751006126403809
+        }
+      ]
+    },
+    {
+      "stage": "lstm",
+      "model_kind": "lstm_graph_cnn",
+      "config": {
+        "hidden_size": 8,
+        "num_layers": 2,
+        "graph_heads": 1,
+        "graph_topology": "full"
+      },
+      "mean_val_macro_f1": 0.4092594905094905,
+      "mean_val_loss": 2.277491569519043,
+      "seeds": [
+        {
+          "seed": 17,
+          "best_epoch": 7,
+          "val_macro_f1": 0.36990786990786995,
+          "val_loss": 1.3856487274169922
+        },
+        {
+          "seed": 29,
+          "best_epoch": 42,
+          "val_macro_f1": 0.44861111111111107,
+          "val_loss": 3.1693344116210938
+        }
+      ]
+    },
+    {
+      "stage": "lstm",
+      "model_kind": "lstm_graph_cnn",
+      "config": {
+        "hidden_size": 16,
+        "num_layers": 1,
+        "graph_heads": 1,
+        "graph_topology": "full"
+      },
+      "mean_val_macro_f1": 0.4321296559055482,
+      "mean_val_loss": 2.106989800930023,
+      "seeds": [
+        {
+          "seed": 17,
+          "best_epoch": 5,
+          "val_macro_f1": 0.4312782217109852,
+          "val_loss": 1.3190747499465942
+        },
+        {
+          "seed": 29,
+          "best_epoch": 29,
+          "val_macro_f1": 0.4329810901001112,
+          "val_loss": 2.894904851913452
+        }
+      ]
+    },
+    {
+      "stage": "lstm",
+      "model_kind": "lstm_graph_cnn",
+      "config": {
+        "hidden_size": 16,
+        "num_layers": 2,
+        "graph_heads": 1,
+        "graph_topology": "full"
+      },
+      "mean_val_macro_f1": 0.4005852151962209,
+      "mean_val_loss": 2.836718797683716,
+      "seeds": [
+        {
+          "seed": 17,
+          "best_epoch": 43,
+          "val_macro_f1": 0.4528044173205463,
+          "val_loss": 3.327813148498535
+        },
+        {
+          "seed": 29,
+          "best_epoch": 10,
+          "val_macro_f1": 0.34836601307189546,
+          "val_loss": 2.3456244468688965
+        }
+      ]
+    },
+    {
+      "stage": "graph",
+      "model_kind": "lstm_graph_mlp",
+      "config": {
+        "hidden_size": 16,
+        "num_layers": 1,
+        "graph_heads": 1,
+        "graph_topology": "full"
+      },
+      "mean_val_macro_f1": 0.3742006569131779,
+      "mean_val_loss": 1.5305914878845215,
+      "seeds": [
+        {
+          "seed": 17,
+          "best_epoch": 5,
+          "val_macro_f1": 0.3235707364341085,
+          "val_loss": 1.312769889831543
+        },
+        {
+          "seed": 29,
+          "best_epoch": 21,
+          "val_macro_f1": 0.4248305773922473,
+          "val_loss": 1.7484130859375
+        }
+      ]
+    },
+    {
+      "stage": "graph",
+      "model_kind": "lstm_graph_cnn",
+      "config": {
+        "hidden_size": 16,
+        "num_layers": 1,
+        "graph_heads": 1,
+        "graph_topology": "full"
+      },
+      "mean_val_macro_f1": 0.4321296559055482,
+      "mean_val_loss": 2.106989800930023,
+      "seeds": [
+        {
+          "seed": 17,
+          "best_epoch": 5,
+          "val_macro_f1": 0.4312782217109852,
+          "val_loss": 1.3190747499465942
+        },
+        {
+          "seed": 29,
+          "best_epoch": 29,
+          "val_macro_f1": 0.4329810901001112,
+          "val_loss": 2.894904851913452
+        }
+      ]
+    },
+    {
+      "stage": "graph",
+      "model_kind": "lstm_graph_mlp",
+      "config": {
+        "hidden_size": 16,
+        "num_layers": 1,
+        "graph_heads": 1,
+        "graph_topology": "ring"
+      },
+      "mean_val_macro_f1": 0.39445087076666024,
+      "mean_val_loss": 1.9215238094329834,
+      "seeds": [
+        {
+          "seed": 17,
+          "best_epoch": 27,
+          "val_macro_f1": 0.4,
+          "val_loss": 2.429065465927124
+        },
+        {
+          "seed": 29,
+          "best_epoch": 6,
+          "val_macro_f1": 0.38890174153332047,
+          "val_loss": 1.4139821529388428
+        }
+      ]
+    },
+    {
+      "stage": "graph",
+      "model_kind": "lstm_graph_cnn",
+      "config": {
+        "hidden_size": 16,
+        "num_layers": 1,
+        "graph_heads": 1,
+        "graph_topology": "ring"
+      },
+      "mean_val_macro_f1": 0.43114708181449,
+      "mean_val_loss": 1.898622989654541,
+      "seeds": [
+        {
+          "seed": 17,
+          "best_epoch": 5,
+          "val_macro_f1": 0.44653679653679657,
+          "val_loss": 1.339158296585083
+        },
+        {
+          "seed": 29,
+          "best_epoch": 12,
+          "val_macro_f1": 0.41575736709218347,
+          "val_loss": 2.458087682723999
+        }
+      ]
+    },
+    {
+      "stage": "graph",
+      "model_kind": "lstm_graph_mlp",
+      "config": {
+        "hidden_size": 16,
+        "num_layers": 1,
+        "graph_heads": 2,
+        "graph_topology": "full"
+      },
+      "mean_val_macro_f1": 0.3742006569131779,
+      "mean_val_loss": 1.528502106666565,
+      "seeds": [
+        {
+          "seed": 17,
+          "best_epoch": 5,
+          "val_macro_f1": 0.3235707364341085,
+          "val_loss": 1.3124165534973145
+        },
+        {
+          "seed": 29,
+          "best_epoch": 21,
+          "val_macro_f1": 0.4248305773922473,
+          "val_loss": 1.7445876598358154
+        }
+      ]
+    },
+    {
+      "stage": "graph",
+      "model_kind": "lstm_graph_cnn",
+      "config": {
+        "hidden_size": 16,
+        "num_layers": 1,
+        "graph_heads": 2,
+        "graph_topology": "full"
+      },
+      "mean_val_macro_f1": 0.43322050626531095,
+      "mean_val_loss": 2.605005621910095,
+      "seeds": [
+        {
+          "seed": 17,
+          "best_epoch": 15,
+          "val_macro_f1": 0.4334599224305107,
+          "val_loss": 2.3258938789367676
+        },
+        {
+          "seed": 29,
+          "best_epoch": 29,
+          "val_macro_f1": 0.4329810901001112,
+          "val_loss": 2.884117364883423
+        }
+      ]
+    },
+    {
+      "stage": "graph",
+      "model_kind": "lstm_graph_mlp",
+      "config": {
+        "hidden_size": 16,
+        "num_layers": 1,
+        "graph_heads": 2,
+        "graph_topology": "ring"
+      },
+      "mean_val_macro_f1": 0.4136677656045581,
+      "mean_val_loss": 2.180416464805603,
+      "seeds": [
+        {
+          "seed": 17,
+          "best_epoch": 27,
+          "val_macro_f1": 0.39907304412309974,
+          "val_loss": 2.3916823863983154
+        },
+        {
+          "seed": 29,
+          "best_epoch": 26,
+          "val_macro_f1": 0.42826248708601644,
+          "val_loss": 1.9691505432128906
+        }
+      ]
+    },
+    {
+      "stage": "graph",
+      "model_kind": "lstm_graph_cnn",
+      "config": {
+        "hidden_size": 16,
+        "num_layers": 1,
+        "graph_heads": 2,
+        "graph_topology": "ring"
+      },
+      "mean_val_macro_f1": 0.43705927414828777,
+      "mean_val_loss": 1.8978034257888794,
+      "seeds": [
+        {
+          "seed": 17,
+          "best_epoch": 5,
+          "val_macro_f1": 0.44653679653679657,
+          "val_loss": 1.339188575744629
+        },
+        {
+          "seed": 29,
+          "best_epoch": 12,
+          "val_macro_f1": 0.42758175175977897,
+          "val_loss": 2.45641827583313
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "graph_selected/train": {
+      "macro_f1_mean": 0.9580073778216136,
+      "macro_f1_std": 0.046467422744406024,
+      "accuracy_mean": 0.9583333333333333,
+      "per_class_recall_mean": [
+        0.9733333333333334,
+        0.9266666666666665,
+        0.9866666666666667,
+        0.9466666666666667
+      ],
+      "minimum_class_recall_mean": 0.9133333333333333,
+      "accuracy_by_angle_mean": {
+        "0": 0.9199999999999999,
+        "60": 0.99,
+        "120": 1.0,
+        "180": 0.97,
+        "240": 0.9199999999999999,
+        "300": 0.95
+      }
+    },
+    "graph_selected/val": {
+      "macro_f1_mean": 0.4607484319132335,
+      "macro_f1_std": 0.08739693419202778,
+      "accuracy_mean": 0.4699999999999999,
+      "per_class_recall_mean": [
+        0.43999999999999995,
+        0.42666666666666664,
+        0.3466666666666666,
+        0.6666666666666666
+      ],
+      "minimum_class_recall_mean": 0.3066666666666667,
+      "accuracy_by_angle_mean": {
+        "30": 0.16000000000000003,
+        "150": 0.8099999999999999,
+        "270": 0.44000000000000006
+      }
+    },
+    "graph_selected/test": {
+      "macro_f1_mean": 0.33885347271616095,
+      "macro_f1_std": 0.034015349669484975,
+      "accuracy_mean": 0.36,
+      "per_class_recall_mean": [
+        0.16,
+        0.56,
+        0.22666666666666666,
+        0.4933333333333333
+      ],
+      "minimum_class_recall_mean": 0.16,
+      "accuracy_by_angle_mean": {
+        "90": 0.5,
+        "210": 0.31,
+        "330": 0.27
+      }
+    },
+    "mean_ablation/train": {
+      "macro_f1_mean": 0.8871194021317141,
+      "macro_f1_std": 0.24777521233555824,
+      "accuracy_mean": 0.9033333333333333,
+      "per_class_recall_mean": [
+        0.8,
+        0.8933333333333333,
+        0.9866666666666667,
+        0.9333333333333332
+      ],
+      "minimum_class_recall_mean": 0.7933333333333333,
+      "accuracy_by_angle_mean": {
+        "0": 0.8400000000000001,
+        "60": 0.89,
+        "120": 0.9400000000000001,
+        "180": 0.95,
+        "240": 0.9,
+        "300": 0.9
+      }
+    },
+    "mean_ablation/val": {
+      "macro_f1_mean": 0.45111895927413165,
+      "macro_f1_std": 0.07306404897675133,
+      "accuracy_mean": 0.45666666666666667,
+      "per_class_recall_mean": [
+        0.36,
+        0.42666666666666664,
+        0.4133333333333334,
+        0.6266666666666666
+      ],
+      "minimum_class_recall_mean": 0.27999999999999997,
+      "accuracy_by_angle_mean": {
+        "30": 0.16,
+        "150": 0.72,
+        "270": 0.49000000000000005
+      }
+    },
+    "mean_ablation/test": {
+      "macro_f1_mean": 0.39233714779360945,
+      "macro_f1_std": 0.09809594516405132,
+      "accuracy_mean": 0.4133333333333333,
+      "per_class_recall_mean": [
+        0.21333333333333332,
+        0.5599999999999999,
+        0.24,
+        0.6399999999999999
+      ],
+      "minimum_class_recall_mean": 0.10666666666666666,
+      "accuracy_by_angle_mean": {
+        "90": 0.63,
+        "210": 0.33,
+        "330": 0.27999999999999997
+      }
+    },
+    "resampled_raw_cnn/train": {
+      "macro_f1_mean": 0.983357877188108,
+      "macro_f1_std": 0.025588963557634778,
+      "accuracy_mean": 0.9833333333333334,
+      "per_class_recall_mean": [
+        0.9666666666666668,
+        0.9800000000000001,
+        0.9933333333333334,
+        0.9933333333333334
+      ],
+      "minimum_class_recall_mean": 0.9666666666666668,
+      "accuracy_by_angle_mean": {
+        "0": 0.9800000000000001,
+        "60": 0.9800000000000001,
+        "120": 0.99,
+        "180": 0.9700000000000001,
+        "240": 1.0,
+        "300": 0.9800000000000001
+      }
+    },
+    "resampled_raw_cnn/val": {
+      "macro_f1_mean": 0.4790290227210504,
+      "macro_f1_std": 0.06181209494359027,
+      "accuracy_mean": 0.4833333333333334,
+      "per_class_recall_mean": [
+        0.4666666666666666,
+        0.56,
+        0.3866666666666667,
+        0.52
+      ],
+      "minimum_class_recall_mean": 0.3466666666666666,
+      "accuracy_by_angle_mean": {
+        "30": 0.09999999999999999,
+        "150": 0.74,
+        "270": 0.6100000000000001
+      }
+    },
+    "resampled_raw_cnn/test": {
+      "macro_f1_mean": 0.49708741154112035,
+      "macro_f1_std": 0.0619708581746062,
+      "accuracy_mean": 0.5233333333333333,
+      "per_class_recall_mean": [
+        0.31999999999999995,
+        0.9333333333333333,
+        0.3333333333333333,
+        0.5066666666666666
+      ],
+      "minimum_class_recall_mean": 0.29333333333333333,
+      "accuracy_by_angle_mean": {
+        "90": 0.54,
+        "210": 0.44000000000000006,
+        "330": 0.5900000000000001
+      }
+    },
+    "rest_only/train": {
+      "macro_f1_mean": 0.7603091064041761,
+      "macro_f1_std": 0.2595147491706668,
+      "accuracy_mean": 0.765,
+      "per_class_recall_mean": [
+        0.7333333333333334,
+        0.7,
+        0.8400000000000001,
+        0.7866666666666666
+      ],
+      "minimum_class_recall_mean": 0.6666666666666667,
+      "accuracy_by_angle_mean": {
+        "0": 0.68,
+        "60": 0.75,
+        "120": 0.74,
+        "180": 0.75,
+        "240": 0.8,
+        "300": 0.8700000000000001
+      }
+    },
+    "rest_only/val": {
+      "macro_f1_mean": 0.3157104534948041,
+      "macro_f1_std": 0.08105719339476077,
+      "accuracy_mean": 0.3166666666666666,
+      "per_class_recall_mean": [
+        0.27999999999999997,
+        0.36,
+        0.30666666666666664,
+        0.31999999999999995
+      ],
+      "minimum_class_recall_mean": 0.21333333333333332,
+      "accuracy_by_angle_mean": {
+        "30": 0.31,
+        "150": 0.32,
+        "270": 0.32
+      }
+    },
+    "rest_only/test": {
+      "macro_f1_mean": 0.1706162514896124,
+      "macro_f1_std": 0.058181319869030294,
+      "accuracy_mean": 0.18,
+      "per_class_recall_mean": [
+        0.18666666666666668,
+        0.24,
+        0.14666666666666667,
+        0.14666666666666667
+      ],
+      "minimum_class_recall_mean": 0.06666666666666667,
+      "accuracy_by_angle_mean": {
+        "90": 0.20999999999999996,
+        "210": 0.16000000000000003,
+        "330": 0.16999999999999998
+      }
+    },
+    "shuffled_label/test": {
+      "macro_f1_mean": 0.1982148751152027,
+      "macro_f1_std": 0.05174622436524784,
+      "accuracy_mean": 0.22000000000000003,
+      "per_class_recall_mean": [
+        0.27999999999999997,
+        0.3333333333333333,
+        0.14666666666666667,
+        0.12
+      ],
+      "minimum_class_recall_mean": 0.04,
+      "accuracy_by_angle_mean": {
+        "90": 0.2,
+        "210": 0.2,
+        "330": 0.26
+      }
+    }
+  },
+  "runs": [
+    {
+      "experiment": "graph_selected",
+      "model_kind": "lstm_graph_cnn",
+      "seed": 17,
+      "split": "train",
+      "best_epoch": 31,
+      "accuracy": 0.9916666666666667,
+      "macro_f1": 0.9916643512086691,
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        0.9666666666666667
+      ],
+      "prediction_counts": [
+        30,
+        31,
+        30,
+        29
+      ],
+      "confusion_matrix": [
+        [
+          30,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          30,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          29
+        ]
+      ],
+      "accuracy_by_angle": {
+        "0": 1.0,
+        "60": 1.0,
+        "120": 1.0,
+        "180": 1.0,
+        "240": 0.95,
+        "300": 1.0
+      }
+    },
+    {
+      "experiment": "graph_selected",
+      "model_kind": "lstm_graph_cnn",
+      "seed": 17,
+      "split": "val",
+      "best_epoch": 31,
+      "accuracy": 0.48333333333333334,
+      "macro_f1": 0.48867127496159757,
+      "per_class_recall": [
+        0.4,
+        0.4666666666666667,
+        0.4,
+        0.6666666666666666
+      ],
+      "prediction_counts": [
+        9,
+        15,
+        20,
+        16
+      ],
+      "confusion_matrix": [
+        [
+          6,
+          1,
+          8,
+          0
+        ],
+        [
+          1,
+          7,
+          2,
+          5
+        ],
+        [
+          2,
+          6,
+          6,
+          1
+        ],
+        [
+          0,
+          1,
+          4,
+          10
+        ]
+      ],
+      "accuracy_by_angle": {
+        "30": 0.2,
+        "150": 0.7,
+        "270": 0.55
+      }
+    },
+    {
+      "experiment": "graph_selected",
+      "model_kind": "lstm_graph_cnn",
+      "seed": 17,
+      "split": "test",
+      "best_epoch": 31,
+      "accuracy": 0.38333333333333336,
+      "macro_f1": 0.35949971081550025,
+      "per_class_recall": [
+        0.13333333333333333,
+        0.6666666666666666,
+        0.3333333333333333,
+        0.4
+      ],
+      "prediction_counts": [
+        4,
+        25,
+        11,
+        20
+      ],
+      "confusion_matrix": [
+        [
+          2,
+          3,
+          5,
+          5
+        ],
+        [
+          1,
+          10,
+          0,
+          4
+        ],
+        [
+          0,
+          5,
+          5,
+          5
+        ],
+        [
+          1,
+          7,
+          1,
+          6
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.35,
+        "210": 0.45,
+        "330": 0.35
+      }
+    },
+    {
+      "experiment": "graph_selected",
+      "model_kind": "lstm_graph_cnn",
+      "seed": 29,
+      "split": "train",
+      "best_epoch": 12,
+      "accuracy": 0.9083333333333333,
+      "macro_f1": 0.9065268065268065,
+      "per_class_recall": [
+        1.0,
+        0.7666666666666667,
+        1.0,
+        0.8666666666666667
+      ],
+      "prediction_counts": [
+        35,
+        25,
+        30,
+        30
+      ],
+      "confusion_matrix": [
+        [
+          30,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          23,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          2,
+          2,
+          0,
+          26
+        ]
+      ],
+      "accuracy_by_angle": {
+        "0": 0.7,
+        "60": 1.0,
+        "120": 1.0,
+        "180": 1.0,
+        "240": 0.8,
+        "300": 0.95
+      }
+    },
+    {
+      "experiment": "graph_selected",
+      "model_kind": "lstm_graph_cnn",
+      "seed": 29,
+      "split": "val",
+      "best_epoch": 12,
+      "accuracy": 0.45,
+      "macro_f1": 0.42758175175977897,
+      "per_class_recall": [
+        0.6666666666666666,
+        0.13333333333333333,
+        0.3333333333333333,
+        0.6666666666666666
+      ],
+      "prediction_counts": [
+        28,
+        3,
+        15,
+        14
+      ],
+      "confusion_matrix": [
+        [
+          10,
+          0,
+          5,
+          0
+        ],
+        [
+          5,
+          2,
+          5,
+          3
+        ],
+        [
+          9,
+          0,
+          5,
+          1
+        ],
+        [
+          4,
+          1,
+          0,
+          10
+        ]
+      ],
+      "accuracy_by_angle": {
+        "30": 0.4,
+        "150": 0.85,
+        "270": 0.1
+      }
+    },
+    {
+      "experiment": "graph_selected",
+      "model_kind": "lstm_graph_cnn",
+      "seed": 29,
+      "split": "test",
+      "best_epoch": 12,
+      "accuracy": 0.36666666666666664,
+      "macro_f1": 0.3750706718448654,
+      "per_class_recall": [
+        0.26666666666666666,
+        0.5333333333333333,
+        0.26666666666666666,
+        0.4
+      ],
+      "prediction_counts": [
+        22,
+        15,
+        7,
+        16
+      ],
+      "confusion_matrix": [
+        [
+          4,
+          5,
+          3,
+          3
+        ],
+        [
+          2,
+          8,
+          0,
+          5
+        ],
+        [
+          7,
+          2,
+          4,
+          2
+        ],
+        [
+          9,
+          0,
+          0,
+          6
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.6,
+        "210": 0.4,
+        "330": 0.1
+      }
+    },
+    {
+      "experiment": "graph_selected",
+      "model_kind": "lstm_graph_cnn",
+      "seed": 43,
+      "split": "train",
+      "best_epoch": 51,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "prediction_counts": [
+        30,
+        30,
+        30,
+        30
+      ],
+      "confusion_matrix": [
+        [
+          30,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          30,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          30
+        ]
+      ],
+      "accuracy_by_angle": {
+        "0": 1.0,
+        "60": 1.0,
+        "120": 1.0,
+        "180": 1.0,
+        "240": 1.0,
+        "300": 1.0
+      }
+    },
+    {
+      "experiment": "graph_selected",
+      "model_kind": "lstm_graph_cnn",
+      "seed": 43,
+      "split": "val",
+      "best_epoch": 51,
+      "accuracy": 0.35,
+      "macro_f1": 0.33051313628899837,
+      "per_class_recall": [
+        0.26666666666666666,
+        0.26666666666666666,
+        0.2,
+        0.6666666666666666
+      ],
+      "prediction_counts": [
+        10,
+        14,
+        9,
+        27
+      ],
+      "confusion_matrix": [
+        [
+          4,
+          6,
+          5,
+          0
+        ],
+        [
+          1,
+          4,
+          1,
+          9
+        ],
+        [
+          1,
+          3,
+          3,
+          8
+        ],
+        [
+          4,
+          1,
+          0,
+          10
+        ]
+      ],
+      "accuracy_by_angle": {
+        "30": 0.0,
+        "150": 0.6,
+        "270": 0.45
+      }
+    },
+    {
+      "experiment": "graph_selected",
+      "model_kind": "lstm_graph_cnn",
+      "seed": 43,
+      "split": "test",
+      "best_epoch": 51,
+      "accuracy": 0.35,
+      "macro_f1": 0.28747474747474744,
+      "per_class_recall": [
+        0.0,
+        0.6666666666666666,
+        0.13333333333333333,
+        0.6
+      ],
+      "prediction_counts": [
+        2,
+        30,
+        10,
+        18
+      ],
+      "confusion_matrix": [
+        [
+          0,
+          12,
+          3,
+          0
+        ],
+        [
+          1,
+          10,
+          0,
+          4
+        ],
+        [
+          1,
+          7,
+          2,
+          5
+        ],
+        [
+          0,
+          1,
+          5,
+          9
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.45,
+        "210": 0.3,
+        "330": 0.3
+      }
+    },
+    {
+      "experiment": "graph_selected",
+      "model_kind": "lstm_graph_cnn",
+      "seed": 61,
+      "split": "train",
+      "best_epoch": 13,
+      "accuracy": 0.9083333333333333,
+      "macro_f1": 0.9085170289552544,
+      "per_class_recall": [
+        0.8666666666666667,
+        0.9,
+        0.9666666666666667,
+        0.9
+      ],
+      "prediction_counts": [
+        27,
+        30,
+        31,
+        32
+      ],
+      "confusion_matrix": [
+        [
+          26,
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          27,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          29,
+          0
+        ],
+        [
+          0,
+          3,
+          0,
+          27
+        ]
+      ],
+      "accuracy_by_angle": {
+        "0": 0.9,
+        "60": 0.95,
+        "120": 1.0,
+        "180": 0.85,
+        "240": 0.85,
+        "300": 0.9
+      }
+    },
+    {
+      "experiment": "graph_selected",
+      "model_kind": "lstm_graph_cnn",
+      "seed": 61,
+      "split": "val",
+      "best_epoch": 13,
+      "accuracy": 0.5666666666666667,
+      "macro_f1": 0.5640875253778479,
+      "per_class_recall": [
+        0.4666666666666667,
+        0.6666666666666666,
+        0.4666666666666667,
+        0.6666666666666666
+      ],
+      "prediction_counts": [
+        15,
+        16,
+        11,
+        18
+      ],
+      "confusion_matrix": [
+        [
+          7,
+          3,
+          4,
+          1
+        ],
+        [
+          3,
+          10,
+          0,
+          2
+        ],
+        [
+          0,
+          3,
+          7,
+          5
+        ],
+        [
+          5,
+          0,
+          0,
+          10
+        ]
+      ],
+      "accuracy_by_angle": {
+        "30": 0.15,
+        "150": 0.95,
+        "270": 0.6
+      }
+    },
+    {
+      "experiment": "graph_selected",
+      "model_kind": "lstm_graph_cnn",
+      "seed": 61,
+      "split": "test",
+      "best_epoch": 13,
+      "accuracy": 0.31666666666666665,
+      "macro_f1": 0.3252619473549706,
+      "per_class_recall": [
+        0.26666666666666666,
+        0.3333333333333333,
+        0.26666666666666666,
+        0.4
+      ],
+      "prediction_counts": [
+        11,
+        15,
+        6,
+        28
+      ],
+      "confusion_matrix": [
+        [
+          4,
+          4,
+          2,
+          5
+        ],
+        [
+          0,
+          5,
+          0,
+          10
+        ],
+        [
+          3,
+          1,
+          4,
+          7
+        ],
+        [
+          4,
+          5,
+          0,
+          6
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.55,
+        "210": 0.15,
+        "330": 0.25
+      }
+    },
+    {
+      "experiment": "graph_selected",
+      "model_kind": "lstm_graph_cnn",
+      "seed": 89,
+      "split": "train",
+      "best_epoch": 34,
+      "accuracy": 0.9833333333333333,
+      "macro_f1": 0.983328702417338,
+      "per_class_recall": [
+        1.0,
+        0.9666666666666667,
+        0.9666666666666667,
+        1.0
+      ],
+      "prediction_counts": [
+        31,
+        29,
+        29,
+        31
+      ],
+      "confusion_matrix": [
+        [
+          30,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          29,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          29,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          30
+        ]
+      ],
+      "accuracy_by_angle": {
+        "0": 1.0,
+        "60": 1.0,
+        "120": 1.0,
+        "180": 1.0,
+        "240": 1.0,
+        "300": 0.9
+      }
+    },
+    {
+      "experiment": "graph_selected",
+      "model_kind": "lstm_graph_cnn",
+      "seed": 89,
+      "split": "val",
+      "best_epoch": 34,
+      "accuracy": 0.5,
+      "macro_f1": 0.4928884711779448,
+      "per_class_recall": [
+        0.4,
+        0.6,
+        0.3333333333333333,
+        0.6666666666666666
+      ],
+      "prediction_counts": [
+        13,
+        15,
+        9,
+        23
+      ],
+      "confusion_matrix": [
+        [
+          6,
+          5,
+          4,
+          0
+        ],
+        [
+          1,
+          9,
+          0,
+          5
+        ],
+        [
+          1,
+          1,
+          5,
+          8
+        ],
+        [
+          5,
+          0,
+          0,
+          10
+        ]
+      ],
+      "accuracy_by_angle": {
+        "30": 0.05,
+        "150": 0.95,
+        "270": 0.5
+      }
+    },
+    {
+      "experiment": "graph_selected",
+      "model_kind": "lstm_graph_cnn",
+      "seed": 89,
+      "split": "test",
+      "best_epoch": 34,
+      "accuracy": 0.38333333333333336,
+      "macro_f1": 0.3469602860907208,
+      "per_class_recall": [
+        0.13333333333333333,
+        0.6,
+        0.13333333333333333,
+        0.6666666666666666
+      ],
+      "prediction_counts": [
+        6,
+        31,
+        5,
+        18
+      ],
+      "confusion_matrix": [
+        [
+          2,
+          9,
+          3,
+          1
+        ],
+        [
+          2,
+          9,
+          0,
+          4
+        ],
+        [
+          2,
+          8,
+          2,
+          3
+        ],
+        [
+          0,
+          5,
+          0,
+          10
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.55,
+        "210": 0.25,
+        "330": 0.35
+      }
+    },
+    {
+      "experiment": "mean_ablation",
+      "model_kind": "lstm_mean_cnn",
+      "seed": 17,
+      "split": "train",
+      "best_epoch": 60,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "prediction_counts": [
+        30,
+        30,
+        30,
+        30
+      ],
+      "confusion_matrix": [
+        [
+          30,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          30,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          30
+        ]
+      ],
+      "accuracy_by_angle": {
+        "0": 1.0,
+        "60": 1.0,
+        "120": 1.0,
+        "180": 1.0,
+        "240": 1.0,
+        "300": 1.0
+      }
+    },
+    {
+      "experiment": "mean_ablation",
+      "model_kind": "lstm_mean_cnn",
+      "seed": 17,
+      "split": "val",
+      "best_epoch": 60,
+      "accuracy": 0.31666666666666665,
+      "macro_f1": 0.34175824175824177,
+      "per_class_recall": [
+        0.3333333333333333,
+        0.26666666666666666,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "prediction_counts": [
+        6,
+        24,
+        10,
+        20
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          6,
+          4,
+          0
+        ],
+        [
+          0,
+          4,
+          1,
+          10
+        ],
+        [
+          1,
+          4,
+          5,
+          5
+        ],
+        [
+          0,
+          10,
+          0,
+          5
+        ]
+      ],
+      "accuracy_by_angle": {
+        "30": 0.05,
+        "150": 0.4,
+        "270": 0.5
+      }
+    },
+    {
+      "experiment": "mean_ablation",
+      "model_kind": "lstm_mean_cnn",
+      "seed": 17,
+      "split": "test",
+      "best_epoch": 60,
+      "accuracy": 0.45,
+      "macro_f1": 0.42444301388266903,
+      "per_class_recall": [
+        0.3333333333333333,
+        0.7333333333333333,
+        0.06666666666666667,
+        0.6666666666666666
+      ],
+      "prediction_counts": [
+        7,
+        33,
+        6,
+        14
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          5,
+          5,
+          0
+        ],
+        [
+          0,
+          11,
+          0,
+          4
+        ],
+        [
+          2,
+          12,
+          1,
+          0
+        ],
+        [
+          0,
+          5,
+          0,
+          10
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.6,
+        "210": 0.25,
+        "330": 0.5
+      }
+    },
+    {
+      "experiment": "mean_ablation",
+      "model_kind": "lstm_mean_cnn",
+      "seed": 29,
+      "split": "train",
+      "best_epoch": 28,
+      "accuracy": 0.9916666666666667,
+      "macro_f1": 0.9916643512086691,
+      "per_class_recall": [
+        1.0,
+        0.9666666666666667,
+        1.0,
+        1.0
+      ],
+      "prediction_counts": [
+        30,
+        29,
+        31,
+        30
+      ],
+      "confusion_matrix": [
+        [
+          30,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          29,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          30
+        ]
+      ],
+      "accuracy_by_angle": {
+        "0": 0.95,
+        "60": 1.0,
+        "120": 1.0,
+        "180": 1.0,
+        "240": 1.0,
+        "300": 1.0
+      }
+    },
+    {
+      "experiment": "mean_ablation",
+      "model_kind": "lstm_mean_cnn",
+      "seed": 29,
+      "split": "val",
+      "best_epoch": 28,
+      "accuracy": 0.45,
+      "macro_f1": 0.43384646962233164,
+      "per_class_recall": [
+        0.3333333333333333,
+        0.26666666666666666,
+        0.3333333333333333,
+        0.8666666666666667
+      ],
+      "prediction_counts": [
+        6,
+        14,
+        15,
+        25
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          4,
+          5,
+          1
+        ],
+        [
+          0,
+          4,
+          5,
+          6
+        ],
+        [
+          1,
+          4,
+          5,
+          5
+        ],
+        [
+          0,
+          2,
+          0,
+          13
+        ]
+      ],
+      "accuracy_by_angle": {
+        "30": 0.3,
+        "150": 0.75,
+        "270": 0.3
+      }
+    },
+    {
+      "experiment": "mean_ablation",
+      "model_kind": "lstm_mean_cnn",
+      "seed": 29,
+      "split": "test",
+      "best_epoch": 28,
+      "accuracy": 0.48333333333333334,
+      "macro_f1": 0.48237966987966985,
+      "per_class_recall": [
+        0.26666666666666666,
+        0.5333333333333333,
+        0.4666666666666667,
+        0.6666666666666666
+      ],
+      "prediction_counts": [
+        11,
+        22,
+        9,
+        18
+      ],
+      "confusion_matrix": [
+        [
+          4,
+          8,
+          2,
+          1
+        ],
+        [
+          2,
+          8,
+          0,
+          5
+        ],
+        [
+          2,
+          4,
+          7,
+          2
+        ],
+        [
+          3,
+          2,
+          0,
+          10
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.75,
+        "210": 0.45,
+        "330": 0.25
+      }
+    },
+    {
+      "experiment": "mean_ablation",
+      "model_kind": "lstm_mean_cnn",
+      "seed": 43,
+      "split": "train",
+      "best_epoch": 82,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "prediction_counts": [
+        30,
+        30,
+        30,
+        30
+      ],
+      "confusion_matrix": [
+        [
+          30,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          30,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          30
+        ]
+      ],
+      "accuracy_by_angle": {
+        "0": 1.0,
+        "60": 1.0,
+        "120": 1.0,
+        "180": 1.0,
+        "240": 1.0,
+        "300": 1.0
+      }
+    },
+    {
+      "experiment": "mean_ablation",
+      "model_kind": "lstm_mean_cnn",
+      "seed": 43,
+      "split": "val",
+      "best_epoch": 82,
+      "accuracy": 0.5333333333333333,
+      "macro_f1": 0.5201638001638,
+      "per_class_recall": [
+        0.3333333333333333,
+        0.6666666666666666,
+        0.4,
+        0.7333333333333333
+      ],
+      "prediction_counts": [
+        10,
+        18,
+        10,
+        22
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          6,
+          4,
+          0
+        ],
+        [
+          0,
+          10,
+          0,
+          5
+        ],
+        [
+          1,
+          2,
+          6,
+          6
+        ],
+        [
+          4,
+          0,
+          0,
+          11
+        ]
+      ],
+      "accuracy_by_angle": {
+        "30": 0.1,
+        "150": 0.9,
+        "270": 0.6
+      }
+    },
+    {
+      "experiment": "mean_ablation",
+      "model_kind": "lstm_mean_cnn",
+      "seed": 43,
+      "split": "test",
+      "best_epoch": 82,
+      "accuracy": 0.26666666666666666,
+      "macro_f1": 0.26251546482856136,
+      "per_class_recall": [
+        0.06666666666666667,
+        0.3333333333333333,
+        0.26666666666666666,
+        0.4
+      ],
+      "prediction_counts": [
+        9,
+        26,
+        8,
+        17
+      ],
+      "confusion_matrix": [
+        [
+          1,
+          10,
+          4,
+          0
+        ],
+        [
+          4,
+          5,
+          0,
+          6
+        ],
+        [
+          0,
+          6,
+          4,
+          5
+        ],
+        [
+          4,
+          5,
+          0,
+          6
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.6,
+        "210": 0.15,
+        "330": 0.05
+      }
+    },
+    {
+      "experiment": "mean_ablation",
+      "model_kind": "lstm_mean_cnn",
+      "seed": 61,
+      "split": "train",
+      "best_epoch": 13,
+      "accuracy": 0.525,
+      "macro_f1": 0.4439326594499008,
+      "per_class_recall": [
+        0.0,
+        0.5,
+        0.9333333333333333,
+        0.6666666666666666
+      ],
+      "prediction_counts": [
+        0,
+        28,
+        48,
+        44
+      ],
+      "confusion_matrix": [
+        [
+          0,
+          3,
+          17,
+          10
+        ],
+        [
+          0,
+          15,
+          2,
+          13
+        ],
+        [
+          0,
+          1,
+          28,
+          1
+        ],
+        [
+          0,
+          9,
+          1,
+          20
+        ]
+      ],
+      "accuracy_by_angle": {
+        "0": 0.25,
+        "60": 0.45,
+        "120": 0.7,
+        "180": 0.75,
+        "240": 0.5,
+        "300": 0.5
+      }
+    },
+    {
+      "experiment": "mean_ablation",
+      "model_kind": "lstm_mean_cnn",
+      "seed": 61,
+      "split": "val",
+      "best_epoch": 13,
+      "accuracy": 0.4666666666666667,
+      "macro_f1": 0.44337606837606836,
+      "per_class_recall": [
+        0.2,
+        0.3333333333333333,
+        0.6666666666666666,
+        0.6666666666666666
+      ],
+      "prediction_counts": [
+        3,
+        11,
+        21,
+        25
+      ],
+      "confusion_matrix": [
+        [
+          3,
+          1,
+          5,
+          6
+        ],
+        [
+          0,
+          5,
+          6,
+          4
+        ],
+        [
+          0,
+          0,
+          10,
+          5
+        ],
+        [
+          0,
+          5,
+          0,
+          10
+        ]
+      ],
+      "accuracy_by_angle": {
+        "30": 0.15,
+        "150": 0.75,
+        "270": 0.5
+      }
+    },
+    {
+      "experiment": "mean_ablation",
+      "model_kind": "lstm_mean_cnn",
+      "seed": 61,
+      "split": "test",
+      "best_epoch": 13,
+      "accuracy": 0.38333333333333336,
+      "macro_f1": 0.31721270883832464,
+      "per_class_recall": [
+        0.0,
+        0.4666666666666667,
+        0.26666666666666666,
+        0.8
+      ],
+      "prediction_counts": [
+        0,
+        14,
+        12,
+        34
+      ],
+      "confusion_matrix": [
+        [
+          0,
+          5,
+          5,
+          5
+        ],
+        [
+          0,
+          7,
+          0,
+          8
+        ],
+        [
+          0,
+          2,
+          4,
+          9
+        ],
+        [
+          0,
+          0,
+          3,
+          12
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.55,
+        "210": 0.5,
+        "330": 0.1
+      }
+    },
+    {
+      "experiment": "mean_ablation",
+      "model_kind": "lstm_mean_cnn",
+      "seed": 89,
+      "split": "train",
+      "best_epoch": 70,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "prediction_counts": [
+        30,
+        30,
+        30,
+        30
+      ],
+      "confusion_matrix": [
+        [
+          30,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          30,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          30
+        ]
+      ],
+      "accuracy_by_angle": {
+        "0": 1.0,
+        "60": 1.0,
+        "120": 1.0,
+        "180": 1.0,
+        "240": 1.0,
+        "300": 1.0
+      }
+    },
+    {
+      "experiment": "mean_ablation",
+      "model_kind": "lstm_mean_cnn",
+      "seed": 89,
+      "split": "val",
+      "best_epoch": 70,
+      "accuracy": 0.5166666666666667,
+      "macro_f1": 0.5164502164502164,
+      "per_class_recall": [
+        0.6,
+        0.6,
+        0.3333333333333333,
+        0.5333333333333333
+      ],
+      "prediction_counts": [
+        20,
+        12,
+        10,
+        18
+      ],
+      "confusion_matrix": [
+        [
+          9,
+          1,
+          5,
+          0
+        ],
+        [
+          1,
+          9,
+          0,
+          5
+        ],
+        [
+          4,
+          1,
+          5,
+          5
+        ],
+        [
+          6,
+          1,
+          0,
+          8
+        ]
+      ],
+      "accuracy_by_angle": {
+        "30": 0.2,
+        "150": 0.8,
+        "270": 0.55
+      }
+    },
+    {
+      "experiment": "mean_ablation",
+      "model_kind": "lstm_mean_cnn",
+      "seed": 89,
+      "split": "test",
+      "best_epoch": 70,
+      "accuracy": 0.48333333333333334,
+      "macro_f1": 0.47513488153882244,
+      "per_class_recall": [
+        0.4,
+        0.7333333333333333,
+        0.13333333333333333,
+        0.6666666666666666
+      ],
+      "prediction_counts": [
+        6,
+        34,
+        6,
+        14
+      ],
+      "confusion_matrix": [
+        [
+          6,
+          5,
+          4,
+          0
+        ],
+        [
+          0,
+          11,
+          0,
+          4
+        ],
+        [
+          0,
+          13,
+          2,
+          0
+        ],
+        [
+          0,
+          5,
+          0,
+          10
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.65,
+        "210": 0.3,
+        "330": 0.5
+      }
+    },
+    {
+      "experiment": "resampled_raw_cnn",
+      "model_kind": "raw",
+      "seed": 17,
+      "split": "train",
+      "best_epoch": 54,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "prediction_counts": [
+        30,
+        30,
+        30,
+        30
+      ],
+      "confusion_matrix": [
+        [
+          30,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          30,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          30
+        ]
+      ],
+      "accuracy_by_angle": {
+        "0": 1.0,
+        "60": 1.0,
+        "120": 1.0,
+        "180": 1.0,
+        "240": 1.0,
+        "300": 1.0
+      }
+    },
+    {
+      "experiment": "resampled_raw_cnn",
+      "model_kind": "raw",
+      "seed": 17,
+      "split": "val",
+      "best_epoch": 54,
+      "accuracy": 0.4666666666666667,
+      "macro_f1": 0.47292633292633296,
+      "per_class_recall": [
+        0.4666666666666667,
+        0.6,
+        0.4666666666666667,
+        0.3333333333333333
+      ],
+      "prediction_counts": [
+        12,
+        27,
+        10,
+        11
+      ],
+      "confusion_matrix": [
+        [
+          7,
+          5,
+          3,
+          0
+        ],
+        [
+          5,
+          9,
+          0,
+          1
+        ],
+        [
+          0,
+          3,
+          7,
+          5
+        ],
+        [
+          0,
+          10,
+          0,
+          5
+        ]
+      ],
+      "accuracy_by_angle": {
+        "30": 0.05,
+        "150": 0.65,
+        "270": 0.7
+      }
+    },
+    {
+      "experiment": "resampled_raw_cnn",
+      "model_kind": "raw",
+      "seed": 17,
+      "split": "test",
+      "best_epoch": 54,
+      "accuracy": 0.5,
+      "macro_f1": 0.46898753420492545,
+      "per_class_recall": [
+        0.3333333333333333,
+        1.0,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "prediction_counts": [
+        7,
+        31,
+        11,
+        11
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          6,
+          4,
+          0
+        ],
+        [
+          0,
+          15,
+          0,
+          0
+        ],
+        [
+          0,
+          4,
+          5,
+          6
+        ],
+        [
+          2,
+          6,
+          2,
+          5
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.6,
+        "210": 0.45,
+        "330": 0.45
+      }
+    },
+    {
+      "experiment": "resampled_raw_cnn",
+      "model_kind": "raw",
+      "seed": 29,
+      "split": "train",
+      "best_epoch": 53,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "prediction_counts": [
+        30,
+        30,
+        30,
+        30
+      ],
+      "confusion_matrix": [
+        [
+          30,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          30,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          30
+        ]
+      ],
+      "accuracy_by_angle": {
+        "0": 1.0,
+        "60": 1.0,
+        "120": 1.0,
+        "180": 1.0,
+        "240": 1.0,
+        "300": 1.0
+      }
+    },
+    {
+      "experiment": "resampled_raw_cnn",
+      "model_kind": "raw",
+      "seed": 29,
+      "split": "val",
+      "best_epoch": 53,
+      "accuracy": 0.5833333333333334,
+      "macro_f1": 0.5605867842976033,
+      "per_class_recall": [
+        0.4666666666666667,
+        0.5333333333333333,
+        0.3333333333333333,
+        1.0
+      ],
+      "prediction_counts": [
+        11,
+        13,
+        8,
+        28
+      ],
+      "confusion_matrix": [
+        [
+          7,
+          5,
+          3,
+          0
+        ],
+        [
+          3,
+          8,
+          0,
+          4
+        ],
+        [
+          1,
+          0,
+          5,
+          9
+        ],
+        [
+          0,
+          0,
+          0,
+          15
+        ]
+      ],
+      "accuracy_by_angle": {
+        "30": 0.25,
+        "150": 0.9,
+        "270": 0.6
+      }
+    },
+    {
+      "experiment": "resampled_raw_cnn",
+      "model_kind": "raw",
+      "seed": 29,
+      "split": "test",
+      "best_epoch": 53,
+      "accuracy": 0.5166666666666667,
+      "macro_f1": 0.5022595281306714,
+      "per_class_recall": [
+        0.4,
+        0.8666666666666667,
+        0.3333333333333333,
+        0.4666666666666667
+      ],
+      "prediction_counts": [
+        10,
+        23,
+        14,
+        13
+      ],
+      "confusion_matrix": [
+        [
+          6,
+          5,
+          4,
+          0
+        ],
+        [
+          0,
+          13,
+          0,
+          2
+        ],
+        [
+          1,
+          5,
+          5,
+          4
+        ],
+        [
+          3,
+          0,
+          5,
+          7
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.5,
+        "210": 0.4,
+        "330": 0.65
+      }
+    },
+    {
+      "experiment": "resampled_raw_cnn",
+      "model_kind": "raw",
+      "seed": 43,
+      "split": "train",
+      "best_epoch": 71,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "prediction_counts": [
+        30,
+        30,
+        30,
+        30
+      ],
+      "confusion_matrix": [
+        [
+          30,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          30,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          30
+        ]
+      ],
+      "accuracy_by_angle": {
+        "0": 1.0,
+        "60": 1.0,
+        "120": 1.0,
+        "180": 1.0,
+        "240": 1.0,
+        "300": 1.0
+      }
+    },
+    {
+      "experiment": "resampled_raw_cnn",
+      "model_kind": "raw",
+      "seed": 43,
+      "split": "val",
+      "best_epoch": 71,
+      "accuracy": 0.5166666666666667,
+      "macro_f1": 0.5199977106227106,
+      "per_class_recall": [
+        0.6,
+        0.4666666666666667,
+        0.4,
+        0.6
+      ],
+      "prediction_counts": [
+        12,
+        17,
+        11,
+        20
+      ],
+      "confusion_matrix": [
+        [
+          9,
+          1,
+          5,
+          0
+        ],
+        [
+          3,
+          7,
+          0,
+          5
+        ],
+        [
+          0,
+          3,
+          6,
+          6
+        ],
+        [
+          0,
+          6,
+          0,
+          9
+        ]
+      ],
+      "accuracy_by_angle": {
+        "30": 0.15,
+        "150": 0.8,
+        "270": 0.6
+      }
+    },
+    {
+      "experiment": "resampled_raw_cnn",
+      "model_kind": "raw",
+      "seed": 43,
+      "split": "test",
+      "best_epoch": 71,
+      "accuracy": 0.6166666666666667,
+      "macro_f1": 0.6006944065186286,
+      "per_class_recall": [
+        0.4,
+        1.0,
+        0.4666666666666667,
+        0.6
+      ],
+      "prediction_counts": [
+        7,
+        26,
+        14,
+        13
+      ],
+      "confusion_matrix": [
+        [
+          6,
+          4,
+          5,
+          0
+        ],
+        [
+          0,
+          15,
+          0,
+          0
+        ],
+        [
+          0,
+          4,
+          7,
+          4
+        ],
+        [
+          1,
+          3,
+          2,
+          9
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.55,
+        "210": 0.5,
+        "330": 0.8
+      }
+    },
+    {
+      "experiment": "resampled_raw_cnn",
+      "model_kind": "raw",
+      "seed": 61,
+      "split": "train",
+      "best_epoch": 28,
+      "accuracy": 0.975,
+      "macro_f1": 0.9748564416041494,
+      "per_class_recall": [
+        0.9333333333333333,
+        0.9666666666666667,
+        1.0,
+        1.0
+      ],
+      "prediction_counts": [
+        29,
+        30,
+        30,
+        31
+      ],
+      "confusion_matrix": [
+        [
+          28,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          29,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          30
+        ]
+      ],
+      "accuracy_by_angle": {
+        "0": 0.95,
+        "60": 1.0,
+        "120": 1.0,
+        "180": 0.95,
+        "240": 1.0,
+        "300": 0.95
+      }
+    },
+    {
+      "experiment": "resampled_raw_cnn",
+      "model_kind": "raw",
+      "seed": 61,
+      "split": "val",
+      "best_epoch": 28,
+      "accuracy": 0.4166666666666667,
+      "macro_f1": 0.41250000000000003,
+      "per_class_recall": [
+        0.4,
+        0.6,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "prediction_counts": [
+        15,
+        21,
+        9,
+        15
+      ],
+      "confusion_matrix": [
+        [
+          6,
+          5,
+          4,
+          0
+        ],
+        [
+          2,
+          9,
+          0,
+          4
+        ],
+        [
+          2,
+          2,
+          5,
+          6
+        ],
+        [
+          5,
+          5,
+          0,
+          5
+        ]
+      ],
+      "accuracy_by_angle": {
+        "30": 0.05,
+        "150": 0.65,
+        "270": 0.55
+      }
+    },
+    {
+      "experiment": "resampled_raw_cnn",
+      "model_kind": "raw",
+      "seed": 61,
+      "split": "test",
+      "best_epoch": 28,
+      "accuracy": 0.4666666666666667,
+      "macro_f1": 0.44007121910347713,
+      "per_class_recall": [
+        0.2,
+        0.8,
+        0.3333333333333333,
+        0.5333333333333333
+      ],
+      "prediction_counts": [
+        7,
+        27,
+        10,
+        16
+      ],
+      "confusion_matrix": [
+        [
+          3,
+          4,
+          5,
+          3
+        ],
+        [
+          3,
+          12,
+          0,
+          0
+        ],
+        [
+          1,
+          4,
+          5,
+          5
+        ],
+        [
+          0,
+          7,
+          0,
+          8
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.55,
+        "210": 0.45,
+        "330": 0.4
+      }
+    },
+    {
+      "experiment": "resampled_raw_cnn",
+      "model_kind": "raw",
+      "seed": 89,
+      "split": "train",
+      "best_epoch": 23,
+      "accuracy": 0.9416666666666667,
+      "macro_f1": 0.9419329443363899,
+      "per_class_recall": [
+        0.9,
+        0.9333333333333333,
+        0.9666666666666667,
+        0.9666666666666667
+      ],
+      "prediction_counts": [
+        31,
+        29,
+        30,
+        30
+      ],
+      "confusion_matrix": [
+        [
+          27,
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          28,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          29,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          29
+        ]
+      ],
+      "accuracy_by_angle": {
+        "0": 0.95,
+        "60": 0.9,
+        "120": 0.95,
+        "180": 0.9,
+        "240": 1.0,
+        "300": 0.95
+      }
+    },
+    {
+      "experiment": "resampled_raw_cnn",
+      "model_kind": "raw",
+      "seed": 89,
+      "split": "val",
+      "best_epoch": 23,
+      "accuracy": 0.43333333333333335,
+      "macro_f1": 0.4291342857586052,
+      "per_class_recall": [
+        0.4,
+        0.6,
+        0.4,
+        0.3333333333333333
+      ],
+      "prediction_counts": [
+        12,
+        23,
+        14,
+        11
+      ],
+      "confusion_matrix": [
+        [
+          6,
+          1,
+          8,
+          0
+        ],
+        [
+          5,
+          9,
+          0,
+          1
+        ],
+        [
+          1,
+          3,
+          6,
+          5
+        ],
+        [
+          0,
+          10,
+          0,
+          5
+        ]
+      ],
+      "accuracy_by_angle": {
+        "30": 0.0,
+        "150": 0.7,
+        "270": 0.6
+      }
+    },
+    {
+      "experiment": "resampled_raw_cnn",
+      "model_kind": "raw",
+      "seed": 89,
+      "split": "test",
+      "best_epoch": 23,
+      "accuracy": 0.5166666666666667,
+      "macro_f1": 0.47342436974789914,
+      "per_class_recall": [
+        0.26666666666666666,
+        1.0,
+        0.2,
+        0.6
+      ],
+      "prediction_counts": [
+        5,
+        27,
+        9,
+        19
+      ],
+      "confusion_matrix": [
+        [
+          4,
+          1,
+          5,
+          5
+        ],
+        [
+          0,
+          15,
+          0,
+          0
+        ],
+        [
+          1,
+          6,
+          3,
+          5
+        ],
+        [
+          0,
+          5,
+          1,
+          9
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.5,
+        "210": 0.4,
+        "330": 0.65
+      }
+    },
+    {
+      "experiment": "shuffled_label",
+      "model_kind": "lstm_graph_cnn",
+      "seed": 17,
+      "split": "test",
+      "best_epoch": 32,
+      "accuracy": 0.25,
+      "macro_f1": 0.23454576698361781,
+      "per_class_recall": [
+        0.4,
+        0.06666666666666667,
+        0.3333333333333333,
+        0.2
+      ],
+      "prediction_counts": [
+        28,
+        5,
+        14,
+        13
+      ],
+      "confusion_matrix": [
+        [
+          6,
+          2,
+          3,
+          4
+        ],
+        [
+          5,
+          1,
+          5,
+          4
+        ],
+        [
+          7,
+          1,
+          5,
+          2
+        ],
+        [
+          10,
+          1,
+          1,
+          3
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.25,
+        "210": 0.35,
+        "330": 0.15
+      }
+    },
+    {
+      "experiment": "shuffled_label",
+      "model_kind": "lstm_graph_cnn",
+      "seed": 29,
+      "split": "test",
+      "best_epoch": 10,
+      "accuracy": 0.18333333333333332,
+      "macro_f1": 0.19148531648531647,
+      "per_class_recall": [
+        0.26666666666666666,
+        0.06666666666666667,
+        0.06666666666666667,
+        0.3333333333333333
+      ],
+      "prediction_counts": [
+        7,
+        18,
+        13,
+        22
+      ],
+      "confusion_matrix": [
+        [
+          4,
+          5,
+          5,
+          1
+        ],
+        [
+          0,
+          1,
+          3,
+          11
+        ],
+        [
+          2,
+          7,
+          1,
+          5
+        ],
+        [
+          1,
+          5,
+          4,
+          5
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.0,
+        "210": 0.35,
+        "330": 0.2
+      }
+    },
+    {
+      "experiment": "shuffled_label",
+      "model_kind": "lstm_graph_cnn",
+      "seed": 43,
+      "split": "test",
+      "best_epoch": 4,
+      "accuracy": 0.15,
+      "macro_f1": 0.12202380952380952,
+      "per_class_recall": [
+        0.3333333333333333,
+        0.26666666666666666,
+        0.0,
+        0.0
+      ],
+      "prediction_counts": [
+        27,
+        17,
+        6,
+        10
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          5,
+          1,
+          4
+        ],
+        [
+          9,
+          4,
+          0,
+          2
+        ],
+        [
+          8,
+          3,
+          0,
+          4
+        ],
+        [
+          5,
+          5,
+          5,
+          0
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.2,
+        "210": 0.0,
+        "330": 0.25
+      }
+    },
+    {
+      "experiment": "shuffled_label",
+      "model_kind": "lstm_graph_cnn",
+      "seed": 61,
+      "split": "test",
+      "best_epoch": 8,
+      "accuracy": 0.23333333333333334,
+      "macro_f1": 0.18647342995169083,
+      "per_class_recall": [
+        0.06666666666666667,
+        0.6666666666666666,
+        0.2,
+        0.0
+      ],
+      "prediction_counts": [
+        3,
+        31,
+        15,
+        11
+      ],
+      "confusion_matrix": [
+        [
+          1,
+          10,
+          0,
+          4
+        ],
+        [
+          1,
+          10,
+          2,
+          2
+        ],
+        [
+          1,
+          6,
+          3,
+          5
+        ],
+        [
+          0,
+          5,
+          10,
+          0
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.25,
+        "210": 0.0,
+        "330": 0.45
+      }
+    },
+    {
+      "experiment": "shuffled_label",
+      "model_kind": "lstm_graph_cnn",
+      "seed": 89,
+      "split": "test",
+      "best_epoch": 60,
+      "accuracy": 0.2833333333333333,
+      "macro_f1": 0.2565460526315789,
+      "per_class_recall": [
+        0.3333333333333333,
+        0.6,
+        0.13333333333333333,
+        0.06666666666666667
+      ],
+      "prediction_counts": [
+        17,
+        23,
+        10,
+        10
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          5,
+          4,
+          1
+        ],
+        [
+          1,
+          9,
+          0,
+          5
+        ],
+        [
+          3,
+          7,
+          2,
+          3
+        ],
+        [
+          8,
+          2,
+          4,
+          1
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.3,
+        "210": 0.3,
+        "330": 0.25
+      }
+    },
+    {
+      "experiment": "rest_only",
+      "model_kind": "lstm_graph_cnn",
+      "seed": 17,
+      "split": "train",
+      "best_epoch": 15,
+      "accuracy": 0.6833333333333333,
+      "macro_f1": 0.6795334295334295,
+      "per_class_recall": [
+        0.7666666666666667,
+        0.6333333333333333,
+        0.8,
+        0.5333333333333333
+      ],
+      "prediction_counts": [
+        36,
+        26,
+        34,
+        24
+      ],
+      "confusion_matrix": [
+        [
+          23,
+          1,
+          2,
+          4
+        ],
+        [
+          5,
+          19,
+          3,
+          3
+        ],
+        [
+          3,
+          2,
+          24,
+          1
+        ],
+        [
+          5,
+          4,
+          5,
+          16
+        ]
+      ],
+      "accuracy_by_angle": {
+        "0": 0.5,
+        "60": 0.65,
+        "120": 0.65,
+        "180": 0.6,
+        "240": 0.85,
+        "300": 0.85
+      }
+    },
+    {
+      "experiment": "rest_only",
+      "model_kind": "lstm_graph_cnn",
+      "seed": 17,
+      "split": "val",
+      "best_epoch": 15,
+      "accuracy": 0.3333333333333333,
+      "macro_f1": 0.33674812030075185,
+      "per_class_recall": [
+        0.3333333333333333,
+        0.4,
+        0.4666666666666667,
+        0.13333333333333333
+      ],
+      "prediction_counts": [
+        9,
+        13,
+        23,
+        15
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          2,
+          4,
+          4
+        ],
+        [
+          0,
+          6,
+          4,
+          5
+        ],
+        [
+          2,
+          2,
+          7,
+          4
+        ],
+        [
+          2,
+          3,
+          8,
+          2
+        ]
+      ],
+      "accuracy_by_angle": {
+        "30": 0.5,
+        "150": 0.15,
+        "270": 0.35
+      }
+    },
+    {
+      "experiment": "rest_only",
+      "model_kind": "lstm_graph_cnn",
+      "seed": 17,
+      "split": "test",
+      "best_epoch": 15,
+      "accuracy": 0.23333333333333334,
+      "macro_f1": 0.22735529215746236,
+      "per_class_recall": [
+        0.26666666666666666,
+        0.2,
+        0.3333333333333333,
+        0.13333333333333333
+      ],
+      "prediction_counts": [
+        16,
+        13,
+        23,
+        8
+      ],
+      "confusion_matrix": [
+        [
+          4,
+          4,
+          4,
+          3
+        ],
+        [
+          5,
+          3,
+          7,
+          0
+        ],
+        [
+          4,
+          3,
+          5,
+          3
+        ],
+        [
+          3,
+          3,
+          7,
+          2
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.25,
+        "210": 0.25,
+        "330": 0.2
+      }
+    },
+    {
+      "experiment": "rest_only",
+      "model_kind": "lstm_graph_cnn",
+      "seed": 29,
+      "split": "train",
+      "best_epoch": 34,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "prediction_counts": [
+        30,
+        30,
+        30,
+        30
+      ],
+      "confusion_matrix": [
+        [
+          30,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          30,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          30
+        ]
+      ],
+      "accuracy_by_angle": {
+        "0": 1.0,
+        "60": 1.0,
+        "120": 1.0,
+        "180": 1.0,
+        "240": 1.0,
+        "300": 1.0
+      }
+    },
+    {
+      "experiment": "rest_only",
+      "model_kind": "lstm_graph_cnn",
+      "seed": 29,
+      "split": "val",
+      "best_epoch": 34,
+      "accuracy": 0.45,
+      "macro_f1": 0.4485632183908046,
+      "per_class_recall": [
+        0.4666666666666667,
+        0.4,
+        0.4,
+        0.5333333333333333
+      ],
+      "prediction_counts": [
+        15,
+        14,
+        14,
+        17
+      ],
+      "confusion_matrix": [
+        [
+          7,
+          4,
+          2,
+          2
+        ],
+        [
+          4,
+          6,
+          3,
+          2
+        ],
+        [
+          0,
+          4,
+          6,
+          5
+        ],
+        [
+          4,
+          0,
+          3,
+          8
+        ]
+      ],
+      "accuracy_by_angle": {
+        "30": 0.4,
+        "150": 0.5,
+        "270": 0.45
+      }
+    },
+    {
+      "experiment": "rest_only",
+      "model_kind": "lstm_graph_cnn",
+      "seed": 29,
+      "split": "test",
+      "best_epoch": 34,
+      "accuracy": 0.13333333333333333,
+      "macro_f1": 0.12764690515704716,
+      "per_class_recall": [
+        0.2,
+        0.2,
+        0.06666666666666667,
+        0.06666666666666667
+      ],
+      "prediction_counts": [
+        18,
+        19,
+        9,
+        14
+      ],
+      "confusion_matrix": [
+        [
+          3,
+          7,
+          2,
+          3
+        ],
+        [
+          6,
+          3,
+          2,
+          4
+        ],
+        [
+          4,
+          4,
+          1,
+          6
+        ],
+        [
+          5,
+          5,
+          4,
+          1
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.1,
+        "210": 0.15,
+        "330": 0.15
+      }
+    },
+    {
+      "experiment": "rest_only",
+      "model_kind": "lstm_graph_cnn",
+      "seed": 43,
+      "split": "train",
+      "best_epoch": 4,
+      "accuracy": 0.39166666666666666,
+      "macro_f1": 0.37591141918160864,
+      "per_class_recall": [
+        0.2,
+        0.26666666666666666,
+        0.4666666666666667,
+        0.6333333333333333
+      ],
+      "prediction_counts": [
+        12,
+        24,
+        29,
+        55
+      ],
+      "confusion_matrix": [
+        [
+          6,
+          5,
+          4,
+          15
+        ],
+        [
+          5,
+          8,
+          7,
+          10
+        ],
+        [
+          1,
+          4,
+          14,
+          11
+        ],
+        [
+          0,
+          7,
+          4,
+          19
+        ]
+      ],
+      "accuracy_by_angle": {
+        "0": 0.2,
+        "60": 0.4,
+        "120": 0.4,
+        "180": 0.4,
+        "240": 0.35,
+        "300": 0.6
+      }
+    },
+    {
+      "experiment": "rest_only",
+      "model_kind": "lstm_graph_cnn",
+      "seed": 43,
+      "split": "val",
+      "best_epoch": 4,
+      "accuracy": 0.25,
+      "macro_f1": 0.25145510835913315,
+      "per_class_recall": [
+        0.13333333333333333,
+        0.3333333333333333,
+        0.13333333333333333,
+        0.4
+      ],
+      "prediction_counts": [
+        4,
+        10,
+        10,
+        36
+      ],
+      "confusion_matrix": [
+        [
+          2,
+          0,
+          1,
+          12
+        ],
+        [
+          0,
+          5,
+          1,
+          9
+        ],
+        [
+          2,
+          2,
+          2,
+          9
+        ],
+        [
+          0,
+          3,
+          6,
+          6
+        ]
+      ],
+      "accuracy_by_angle": {
+        "30": 0.15,
+        "150": 0.4,
+        "270": 0.2
+      }
+    },
+    {
+      "experiment": "rest_only",
+      "model_kind": "lstm_graph_cnn",
+      "seed": 43,
+      "split": "test",
+      "best_epoch": 4,
+      "accuracy": 0.25,
+      "macro_f1": 0.21912878787878792,
+      "per_class_recall": [
+        0.06666666666666667,
+        0.4,
+        0.06666666666666667,
+        0.4666666666666667
+      ],
+      "prediction_counts": [
+        5,
+        17,
+        9,
+        29
+      ],
+      "confusion_matrix": [
+        [
+          1,
+          5,
+          1,
+          8
+        ],
+        [
+          1,
+          6,
+          2,
+          6
+        ],
+        [
+          2,
+          4,
+          1,
+          8
+        ],
+        [
+          1,
+          2,
+          5,
+          7
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.3,
+        "210": 0.2,
+        "330": 0.25
+      }
+    },
+    {
+      "experiment": "rest_only",
+      "model_kind": "lstm_graph_cnn",
+      "seed": 61,
+      "split": "train",
+      "best_epoch": 34,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "per_class_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "prediction_counts": [
+        30,
+        30,
+        30,
+        30
+      ],
+      "confusion_matrix": [
+        [
+          30,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          30,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          30
+        ]
+      ],
+      "accuracy_by_angle": {
+        "0": 1.0,
+        "60": 1.0,
+        "120": 1.0,
+        "180": 1.0,
+        "240": 1.0,
+        "300": 1.0
+      }
+    },
+    {
+      "experiment": "rest_only",
+      "model_kind": "lstm_graph_cnn",
+      "seed": 61,
+      "split": "val",
+      "best_epoch": 34,
+      "accuracy": 0.2833333333333333,
+      "macro_f1": 0.2755113563040392,
+      "per_class_recall": [
+        0.26666666666666666,
+        0.4666666666666667,
+        0.2,
+        0.2
+      ],
+      "prediction_counts": [
+        12,
+        26,
+        13,
+        9
+      ],
+      "confusion_matrix": [
+        [
+          4,
+          7,
+          1,
+          3
+        ],
+        [
+          3,
+          7,
+          4,
+          1
+        ],
+        [
+          4,
+          6,
+          3,
+          2
+        ],
+        [
+          1,
+          6,
+          5,
+          3
+        ]
+      ],
+      "accuracy_by_angle": {
+        "30": 0.25,
+        "150": 0.3,
+        "270": 0.3
+      }
+    },
+    {
+      "experiment": "rest_only",
+      "model_kind": "lstm_graph_cnn",
+      "seed": 61,
+      "split": "test",
+      "best_epoch": 34,
+      "accuracy": 0.1,
+      "macro_f1": 0.09375,
+      "per_class_recall": [
+        0.13333333333333333,
+        0.26666666666666666,
+        0.0,
+        0.0
+      ],
+      "prediction_counts": [
+        17,
+        17,
+        12,
+        14
+      ],
+      "confusion_matrix": [
+        [
+          2,
+          5,
+          3,
+          5
+        ],
+        [
+          3,
+          4,
+          2,
+          6
+        ],
+        [
+          7,
+          5,
+          0,
+          3
+        ],
+        [
+          5,
+          3,
+          7,
+          0
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.15,
+        "210": 0.05,
+        "330": 0.1
+      }
+    },
+    {
+      "experiment": "rest_only",
+      "model_kind": "lstm_graph_cnn",
+      "seed": 89,
+      "split": "train",
+      "best_epoch": 18,
+      "accuracy": 0.75,
+      "macro_f1": 0.7461006833058426,
+      "per_class_recall": [
+        0.7,
+        0.6,
+        0.9333333333333333,
+        0.7666666666666667
+      ],
+      "prediction_counts": [
+        31,
+        23,
+        38,
+        28
+      ],
+      "confusion_matrix": [
+        [
+          21,
+          2,
+          5,
+          2
+        ],
+        [
+          6,
+          18,
+          4,
+          2
+        ],
+        [
+          0,
+          1,
+          28,
+          1
+        ],
+        [
+          4,
+          2,
+          1,
+          23
+        ]
+      ],
+      "accuracy_by_angle": {
+        "0": 0.7,
+        "60": 0.7,
+        "120": 0.65,
+        "180": 0.75,
+        "240": 0.8,
+        "300": 0.9
+      }
+    },
+    {
+      "experiment": "rest_only",
+      "model_kind": "lstm_graph_cnn",
+      "seed": 89,
+      "split": "val",
+      "best_epoch": 18,
+      "accuracy": 0.26666666666666666,
+      "macro_f1": 0.2662744641192917,
+      "per_class_recall": [
+        0.2,
+        0.2,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "prediction_counts": [
+        15,
+        9,
+        14,
+        22
+      ],
+      "confusion_matrix": [
+        [
+          3,
+          4,
+          1,
+          7
+        ],
+        [
+          3,
+          3,
+          3,
+          6
+        ],
+        [
+          4,
+          2,
+          5,
+          4
+        ],
+        [
+          5,
+          0,
+          5,
+          5
+        ]
+      ],
+      "accuracy_by_angle": {
+        "30": 0.25,
+        "150": 0.25,
+        "270": 0.3
+      }
+    },
+    {
+      "experiment": "rest_only",
+      "model_kind": "lstm_graph_cnn",
+      "seed": 89,
+      "split": "test",
+      "best_epoch": 18,
+      "accuracy": 0.18333333333333332,
+      "macro_f1": 0.1852002722547645,
+      "per_class_recall": [
+        0.26666666666666666,
+        0.13333333333333333,
+        0.26666666666666666,
+        0.06666666666666667
+      ],
+      "prediction_counts": [
+        16,
+        8,
+        17,
+        19
+      ],
+      "confusion_matrix": [
+        [
+          4,
+          1,
+          3,
+          7
+        ],
+        [
+          5,
+          2,
+          2,
+          6
+        ],
+        [
+          4,
+          2,
+          4,
+          5
+        ],
+        [
+          3,
+          3,
+          8,
+          1
+        ]
+      ],
+      "accuracy_by_angle": {
+        "90": 0.25,
+        "210": 0.15,
+        "330": 0.15
+      }
+    }
+  ]
+}

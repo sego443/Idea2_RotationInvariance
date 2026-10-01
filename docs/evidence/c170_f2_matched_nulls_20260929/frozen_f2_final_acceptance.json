@@ -1,0 +1,167 @@
+{
+  "acceptance_record_sha256": "f090443d0c4423377b2b788ebb6cb191f7bb147bb2749a0c98a758bd003742e2",
+  "artifacts": {
+    "corrected_null_validation": "matched_null_validation_metrics_frozen_f2.json",
+    "final_test_metrics": "frozen_f2_final_test_metrics.json",
+    "rule_revision": "frozen_f2_rule_revision.json",
+    "test_predictions": "frozen_f2_and_null_test_predictions.csv",
+    "validation_replay": "frozen_f2_validation_replay.json"
+  },
+  "created_utc": "2026-09-29T15:02:57+00:00",
+  "format": "c170-final-f2-acceptance",
+  "freeze_sha256": "61d2ab79191a829edbcb5435d812e85cd072204e755b61b815b2f0b8bd8cebe9",
+  "fusion_rule": "Per member, argmax raw neural logits or raw v7 KRR scores. Within complex_gram5 and learned_power10, choose the most frequent member argmax, ties to lowest class ID. The two neural family winners and v7 group_true prediction each cast one vote; choose the most frequent family vote, ties to lowest class ID.",
+  "independent_data_inventory": {
+    "hwverify_sessions": [
+      {
+        "filename_metadata": "four direction-labeled files; no wearing-angle/position field found",
+        "path": "E:\\MyCode\\codex\\Idea2\\Idea2_HWverify\\data\\OpenBCISession_2026-03-25_19-51-25"
+      },
+      {
+        "filename_metadata": "four direction-labeled files; no wearing-angle/position field found",
+        "path": "E:\\MyCode\\codex\\Idea2\\Idea2_HWverify\\data\\OpenBCISession_2026-07-30_19-58-49"
+      },
+      {
+        "filename_metadata": "A_20 through N_20; no wearing-angle/position metadata found",
+        "path": "E:\\MyCode\\codex\\Idea2\\Idea2_HWverify\\data\\OpenBCISession_2026-08-15_21-50-49"
+      }
+    ],
+    "inventory_scope": "filenames, session folders, collection plan, root project context, and existing feasibility report only; no signal contents or derived metrics read or computed.",
+    "new_unused_independent_mult_position_dataset_found": false,
+    "planned_but_uncollected_evidence": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\docs\\data_collection\\round1_rotation_poc_plan.csv",
+    "processed_c170": {
+      "metadata": "Contains the C170 dataset bundle used by this run, including the now-evaluated 320-row test split; it cannot be repartitioned as a new independent holdout.",
+      "path": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\data\\processed_c170_20260926"
+    },
+    "rotation_real_session": {
+      "metadata": "B001-B048 movement recordings label four directions across A000-A330 in 30-degree steps; feasibility report says single person/session/wear and documents prior use with held-angle evaluation. Not unused or independent.",
+      "path": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\data\\OpenBCISession_2026-08-27_14-37-15"
+    }
+  },
+  "matched_null_validation": {
+    "gate_below_0p5": true,
+    "max_macro_f1": 0.20586937018138135,
+    "rep_macro_f1": {
+      "17": 0.06592292089249494,
+      "29": 0.142741109569086,
+      "43": 0.12610612426788897,
+      "61": 0.20586937018138135,
+      "89": 0.1274327835941311
+    }
+  },
+  "rule_revision": {
+    "historical_f2_csv_rows_reproduced": 320,
+    "historical_validation_macro_f1": 0.8268715072387495,
+    "old_description_file": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\matched_null_validation_metrics.json",
+    "old_incorrect_description_preserved": true
+  },
+  "test": {
+    "accuracy": 0.678125,
+    "confusion_true_rows_pred_columns": [
+      [
+        54,
+        6,
+        4,
+        16
+      ],
+      [
+        36,
+        38,
+        0,
+        6
+      ],
+      [
+        1,
+        0,
+        63,
+        16
+      ],
+      [
+        0,
+        9,
+        9,
+        62
+      ]
+    ],
+    "macro_f1": 0.6748971788445473,
+    "matched_null_macro_f1": {
+      "null_rep_17": 0.06584399207350028,
+      "null_rep_29": 0.11842799838317744,
+      "null_rep_43": 0.1426968704270945,
+      "null_rep_61": 0.1693206109167067,
+      "null_rep_89": 0.06875867990576594
+    },
+    "n": 320,
+    "passes_macro_f1_0p80_and_recall_0p65": false,
+    "per_position": {
+      "110": {
+        "accuracy": 0.5125,
+        "macro_f1": 0.46984126984126984,
+        "n": 80,
+        "recall": [
+          1.0,
+          0.2,
+          0.3,
+          0.55
+        ],
+        "unique_predicted_classes": 4
+      },
+      "15": {
+        "accuracy": 0.8875,
+        "macro_f1": 0.8865973565441652,
+        "n": 80,
+        "recall": [
+          0.95,
+          0.65,
+          0.95,
+          1.0
+        ],
+        "unique_predicted_classes": 4
+      },
+      "150": {
+        "accuracy": 0.5875,
+        "macro_f1": 0.5188484621155288,
+        "n": 80,
+        "recall": [
+          0.0,
+          0.35,
+          1.0,
+          1.0
+        ],
+        "unique_predicted_classes": 4
+      },
+      "25": {
+        "accuracy": 0.725,
+        "macro_f1": 0.7322689345314506,
+        "n": 80,
+        "recall": [
+          0.75,
+          0.7,
+          0.9,
+          0.55
+        ],
+        "unique_predicted_classes": 4
+      }
+    },
+    "positions_mm": [
+      15,
+      25,
+      110,
+      150
+    ],
+    "recall_by_class": {
+      "DOWN": 0.475,
+      "LEFT": 0.7875,
+      "RIGHT": 0.775,
+      "UP": 0.675
+    },
+    "test_metrics_computed": true
+  },
+  "test_boundary": "no fitting, normalization fitting, checkpoint selection, threshold changes, or model/fusion modification; train-fitted neural shared scalar and v7 feature scaler only",
+  "validation_replay": {
+    "all_15_neural_members_match_saved_validation_csv": true,
+    "macro_f1": 0.8268715072387495,
+    "n": 320,
+    "test_metrics_computed": false
+  }
+}

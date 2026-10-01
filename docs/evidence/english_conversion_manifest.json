@@ -1,0 +1,417 @@
+{
+  "format": "rotation-english-conversion-v1",
+  "date": "2026-10-01",
+  "scope": "English documentation and display-text migration; no training or new waveform scoring",
+  "historical_hash_policy": "Original run source/artifact hashes are not rewritten. Translated snapshots/config descriptions are not byte-identical executed artifacts.",
+  "local_original_text_backup": "C:\\Users\\56569\\AppData\\Local\\Temp\\rotation_original_text_20261001.zip",
+  "files": [
+    {
+      "path": ".pytest_cache/c170-final-full/test_validation_only_and_final0/c170-validation-smoke/config.json",
+      "original_sha256": "497c8cd2c459ce8dc94a41b0d94f701bd9904a5d1a37aaafcd4f05f1146190f7",
+      "english_sha256": "ae238f6c3ac3864d187c800852bf0cf59081d7ad14d3394bd31c2916a14f8506",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": ".pytest_cache/c170-final-targeted/test_validation_only_and_final0/c170-validation-smoke/config.json",
+      "original_sha256": "497c8cd2c459ce8dc94a41b0d94f701bd9904a5d1a37aaafcd4f05f1146190f7",
+      "english_sha256": "ae238f6c3ac3864d187c800852bf0cf59081d7ad14d3394bd31c2916a14f8506",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": ".pytest_cache/c170-sha-full/test_validation_only_and_final0/c170-validation-smoke/config.json",
+      "original_sha256": "7fa1ad954f8c34f7bc00a103bef5a325cb2f55cdc79f86be7de1922dda5c4a52",
+      "english_sha256": "876634d9d4109c8af2d8c56030dc4cd80c20249bd45569899d3fe07bbbd87acf",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": ".pytest_cache/c170-sha-red/test_validation_only_and_final0/c170-validation-smoke/config.json",
+      "original_sha256": "497c8cd2c459ce8dc94a41b0d94f701bd9904a5d1a37aaafcd4f05f1146190f7",
+      "english_sha256": "ae238f6c3ac3864d187c800852bf0cf59081d7ad14d3394bd31c2916a14f8506",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": ".pytest_cache/c170-sha-targeted-rerun/test_validation_only_and_final0/c170-validation-smoke/config.json",
+      "original_sha256": "7fa1ad954f8c34f7bc00a103bef5a325cb2f55cdc79f86be7de1922dda5c4a52",
+      "english_sha256": "876634d9d4109c8af2d8c56030dc4cd80c20249bd45569899d3fe07bbbd87acf",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": ".pytest_cache/c170-sha-targeted/test_validation_only_and_final0/c170-validation-smoke/config.json",
+      "original_sha256": "7fa1ad954f8c34f7bc00a103bef5a325cb2f55cdc79f86be7de1922dda5c4a52",
+      "english_sha256": "876634d9d4109c8af2d8c56030dc4cd80c20249bd45569899d3fe07bbbd87acf",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": ".pytest_cache/c170-two-phase-full/test_validation_only_and_final0/c170-validation-smoke/config.json",
+      "original_sha256": "497c8cd2c459ce8dc94a41b0d94f701bd9904a5d1a37aaafcd4f05f1146190f7",
+      "english_sha256": "ae238f6c3ac3864d187c800852bf0cf59081d7ad14d3394bd31c2916a14f8506",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": ".pytest_cache/c170-two-phase-rerun/test_validation_only_and_final0/c170-validation-smoke/config.json",
+      "original_sha256": "497c8cd2c459ce8dc94a41b0d94f701bd9904a5d1a37aaafcd4f05f1146190f7",
+      "english_sha256": "ae238f6c3ac3864d187c800852bf0cf59081d7ad14d3394bd31c2916a14f8506",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": ".pytest_cache/c170-two-phase-tests/test_validation_only_and_final0/c170-validation-smoke/config.json",
+      "original_sha256": "497c8cd2c459ce8dc94a41b0d94f701bd9904a5d1a37aaafcd4f05f1146190f7",
+      "english_sha256": "ae238f6c3ac3864d187c800852bf0cf59081d7ad14d3394bd31c2916a14f8506",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "benchmark_c170_ring_compute.py",
+      "original_sha256": "22b0d2ad37457297648b8d49f7f09df267e7d79b602ba14f93ad960c3a06409d",
+      "english_sha256": "d46c38301561998c09490fbade25988f89b10cb36dc151d50f8b306a456b2d93",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "data/processed_c170_20260926/README.md",
+      "original_sha256": "7e72483e4ea8ecb8c2ae8f3cf94b6168f8c578ce4c16491cf4acd4709b79f288",
+      "english_sha256": "5d7dd3db0bde1cb7d2c033adf8a6cf619c14bd783b221b95780c9292c4a98f5d",
+      "kind": "english_document_translation"
+    },
+    {
+      "path": "data/processed_c170_20260926/manifest.json",
+      "original_sha256": "e8e5c9d3835d01b193c1c9a127e0a337c6a3f948f10d6c9c55dd8fa7dc2bd1c0",
+      "english_sha256": "c040282fe17162894ff5718cb251af0b3dda1212614a1967e7b42748256eda9b",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "docs/TRAINING_REPORT_20260930.md",
+      "original_sha256": "a1b4a8239619b85c715fb4a363bd3a168bf8de1009c87d145d96b73f740a6a46",
+      "english_sha256": "1c2edc125596de70c67f33648d8cd28892ed7b0968eec69510c0ba48b9add74c",
+      "kind": "english_document_translation"
+    },
+    {
+      "path": "docs/data_collection/round1_rotation_poc_task.md",
+      "original_sha256": "58187ae58e00d2da5d055756f8abd7b30108e8992caf35ae356eae7fb97b2439",
+      "english_sha256": "860cee9db3681696f6c541500f610130973c0a08b655e817fa0c12c4a7b935e9",
+      "kind": "english_document_translation"
+    },
+    {
+      "path": "docs/designs/2026-09-28-latent-angle-temporal-classifier.md",
+      "original_sha256": "1760677c99c1c12d1f49b9c077557c66d39fcb4f95f9e26086ae4cc550c8e6d0",
+      "english_sha256": "bec789354d536bce7ee2c4ff4905a964fba1421450feb2105a5a691ba97ccd28",
+      "kind": "english_document_translation"
+    },
+    {
+      "path": "docs/plans/2026-09-28-c170-latent-angle-cuda-experiments.md",
+      "original_sha256": "3284032aa3c70a081c15cb972720dd9da3ceb103c3363a137b25f2ed0abe66ef",
+      "english_sha256": "eadbd4c5c13c677024d38404eea8026537a946d6b16984ac8e5c6060c01d5f29",
+      "kind": "english_document_translation"
+    },
+    {
+      "path": "docs/plans/2026-09-28-c170-ring-cross-position-cuda.md",
+      "original_sha256": "3eaa87ee7c28fa245eaeec9f700053f25f01a407b649c27ea3c08be4b4a3c890",
+      "english_sha256": "e96029eeb9393aa437a74af20b7d288788c0d36792ee950aa54f45489acf1aa4",
+      "kind": "english_document_translation"
+    },
+    {
+      "path": "docs/results/2026-08-27-round1-rotation-invariance-feasibility.md",
+      "original_sha256": "894d503e45b699f843e1a28f620f73421bd8a25dfc4d6e336cc9dbec3f6fb05b",
+      "english_sha256": "edc62b15fa3f6b859e3da9315d2f6bdbf465040a86674af67af13a48b6b2ab2a",
+      "kind": "english_document_translation"
+    },
+    {
+      "path": "docs/results/2026-09-27-c170-exploratory-validation-acceptance.md",
+      "original_sha256": "d8f00ed0e825cca66d698602ac63047b22eeb19691ef7417af99c187d9561d8b",
+      "english_sha256": "cfb29aee9f5a39b20e4cbcea0598d3acaafc33fd24f223bb4bd9fead7b744581",
+      "kind": "english_document_translation"
+    },
+    {
+      "path": "docs/results/2026-09-28-c170-train-validation-quality-diagnostic.md",
+      "original_sha256": "52ef41bc9f8c1333331bf7e262986eac6bce737535564504cd6685852349fbd6",
+      "english_sha256": "18b4258def478a0bf3329607da571a5168b2b050fe0cad4946d1be7b52815972",
+      "kind": "english_document_translation"
+    },
+    {
+      "path": "docs/results/2026-09-29-c170-c4-scale-commutation-check.md",
+      "original_sha256": "cf855ea6e2d6a8a430890ac272615920ce135d935ed457278fb2c463adc06e58",
+      "english_sha256": "888e50e4bef791b8c22dcf2f43ba1fd4f79ef8390d03590c9a389d1c7385e61d",
+      "kind": "english_document_translation"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-09-27-c170-ring-representation.md",
+      "original_sha256": "4fc1c538b3da375aa7463abc44bc8f1852503e3b0a68f9a489a2bd2ddc3875db",
+      "english_sha256": "1aa4e9a0eb5018734244f80e69bab63ebc3044d23ae5a0d959d78983824eb9a6",
+      "kind": "english_document_translation"
+    },
+    {
+      "path": "outputs/c170_c4_kernel_ridge_v10_robust_selection_20260929/source_snapshot/code/run_c170_experiment.py",
+      "original_sha256": "7d8296237d45b48798a7fa342998b163311f83919dfe2cf7bc824c1aef281a6d",
+      "english_sha256": "960b56f72488f6704a1a7c2bc86f3b88a7f4f6533178f962d22b08919e521b25",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "outputs/c170_c4_kernel_ridge_v7_formal_20260929/source_snapshot/code/run_c170_experiment.py",
+      "original_sha256": "7d8296237d45b48798a7fa342998b163311f83919dfe2cf7bc824c1aef281a6d",
+      "english_sha256": "960b56f72488f6704a1a7c2bc86f3b88a7f4f6533178f962d22b08919e521b25",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "outputs/c170_c4_kernel_ridge_v8_formal_20260929/source_snapshot/code/run_c170_experiment.py",
+      "original_sha256": "7d8296237d45b48798a7fa342998b163311f83919dfe2cf7bc824c1aef281a6d",
+      "english_sha256": "960b56f72488f6704a1a7c2bc86f3b88a7f4f6533178f962d22b08919e521b25",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "outputs/c170_c4_kernel_ridge_v8_formal_retry1_20260929/source_snapshot/code/run_c170_experiment.py",
+      "original_sha256": "7d8296237d45b48798a7fa342998b163311f83919dfe2cf7bc824c1aef281a6d",
+      "english_sha256": "960b56f72488f6704a1a7c2bc86f3b88a7f4f6533178f962d22b08919e521b25",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "outputs/c170_c4_kernel_ridge_v9_formal_20260929/source_snapshot/code/run_c170_experiment.py",
+      "original_sha256": "7d8296237d45b48798a7fa342998b163311f83919dfe2cf7bc824c1aef281a6d",
+      "english_sha256": "960b56f72488f6704a1a7c2bc86f3b88a7f4f6533178f962d22b08919e521b25",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "outputs/c170_complex_regularization_v17_formal_20260930/source_snapshot/code/run_c170_experiment.py",
+      "original_sha256": "7d8296237d45b48798a7fa342998b163311f83919dfe2cf7bc824c1aef281a6d",
+      "english_sha256": "960b56f72488f6704a1a7c2bc86f3b88a7f4f6533178f962d22b08919e521b25",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "outputs/c170_complex_regularization_v17_recovery2_20260930/source_snapshot/code/run_c170_experiment.py",
+      "original_sha256": "7d8296237d45b48798a7fa342998b163311f83919dfe2cf7bc824c1aef281a6d",
+      "english_sha256": "960b56f72488f6704a1a7c2bc86f3b88a7f4f6533178f962d22b08919e521b25",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "outputs/c170_complex_regularization_v17_recovery_20260930/source_snapshot/code/run_c170_experiment.py",
+      "original_sha256": "7d8296237d45b48798a7fa342998b163311f83919dfe2cf7bc824c1aef281a6d",
+      "english_sha256": "960b56f72488f6704a1a7c2bc86f3b88a7f4f6533178f962d22b08919e521b25",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "outputs/c170_distance_holdout_20260927/config.json",
+      "original_sha256": "a699bec4740d35b6e9df6f3eb0a835fc669a76b81f8c7036def8a8cee446be1d",
+      "english_sha256": "568faa1821f1458d7cea9b3bfac8872bd4aac6a884f1451d561747f1a05f8c78",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "outputs/c170_distance_holdout_candidates_20260927/config.json",
+      "original_sha256": "d682c7314e692f14bf7f950cfa4d9a8f6c2291671003a7fe1828cceb23a50eee",
+      "english_sha256": "ddb37788fd71cc72744606eefb6c518e78d234826afb298198ff268602881a93",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "outputs/c170_f2_matched_nulls_20260929/source_snapshot/code/run_c170_experiment.py",
+      "original_sha256": "7d8296237d45b48798a7fa342998b163311f83919dfe2cf7bc824c1aef281a6d",
+      "english_sha256": "960b56f72488f6704a1a7c2bc86f3b88a7f4f6533178f962d22b08919e521b25",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "outputs/c170_harmonic_nyquist_v5_formal_cuda_20260929/source_snapshot/code/run_c170_experiment.py",
+      "original_sha256": "7d8296237d45b48798a7fa342998b163311f83919dfe2cf7bc824c1aef281a6d",
+      "english_sha256": "960b56f72488f6704a1a7c2bc86f3b88a7f4f6533178f962d22b08919e521b25",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "outputs/c170_harmonic_phase_v4_formal_cuda_20260929/source_snapshot/code/run_c170_experiment.py",
+      "original_sha256": "7d8296237d45b48798a7fa342998b163311f83919dfe2cf7bc824c1aef281a6d",
+      "english_sha256": "960b56f72488f6704a1a7c2bc86f3b88a7f4f6533178f962d22b08919e521b25",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "outputs/c170_latent_angle_formal_cuda_20260928/source_snapshot/docs/designs/2026-09-28-latent-angle-temporal-classifier.md",
+      "original_sha256": "1760677c99c1c12d1f49b9c077557c66d39fcb4f95f9e26086ae4cc550c8e6d0",
+      "english_sha256": "bec789354d536bce7ee2c4ff4905a964fba1421450feb2105a5a691ba97ccd28",
+      "kind": "historical_snapshot_document_translation"
+    },
+    {
+      "path": "outputs/c170_latent_angle_formal_cuda_20260928/source_snapshot/docs/plans/2026-09-28-c170-latent-angle-cuda-experiments.md",
+      "original_sha256": "3284032aa3c70a081c15cb972720dd9da3ceb103c3363a137b25f2ed0abe66ef",
+      "english_sha256": "eadbd4c5c13c677024d38404eea8026537a946d6b16984ac8e5c6060c01d5f29",
+      "kind": "historical_snapshot_document_translation"
+    },
+    {
+      "path": "outputs/c170_latent_angle_formal_cuda_20260928/source_snapshot/run_c170_experiment.py",
+      "original_sha256": "7d8296237d45b48798a7fa342998b163311f83919dfe2cf7bc824c1aef281a6d",
+      "english_sha256": "960b56f72488f6704a1a7c2bc86f3b88a7f4f6533178f962d22b08919e521b25",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "outputs/c170_latent_angle_formal_cuda_20260928/source_snapshot/run_c170_ring_experiment.py",
+      "original_sha256": "ab7cfb2e46efc825d52926155075890bc2848cacdcdd9c10974b250232cdf7a5",
+      "english_sha256": "c06bce9f86c4489eb3e8ad61accdd8667e76650518fba6d212cd465a0b2e75b1",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "outputs/c170_multiscale_nyquist_v16_formal_20260930/source_snapshot/code/run_c170_experiment.py",
+      "original_sha256": "7d8296237d45b48798a7fa342998b163311f83919dfe2cf7bc824c1aef281a6d",
+      "english_sha256": "960b56f72488f6704a1a7c2bc86f3b88a7f4f6533178f962d22b08919e521b25",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "outputs/c170_phase_average_kernel_v15_formal_20260930/source_snapshot/run_c170_experiment.py",
+      "original_sha256": "7d8296237d45b48798a7fa342998b163311f83919dfe2cf7bc824c1aef281a6d",
+      "english_sha256": "960b56f72488f6704a1a7c2bc86f3b88a7f4f6533178f962d22b08919e521b25",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "outputs/c170_ring_speed_probe_20260927_01/config.json",
+      "original_sha256": "b56adccdd8437120bff6e80cc19ef36d3ed1b47f1f5171d0fcebce3c91048ca0",
+      "english_sha256": "aff8f55ef9cdd2d5a999c5471db627d42574706901a991df6d458a10afdd31b6",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "outputs/c170_ring_speed_probe_20260927_02/config.json",
+      "original_sha256": "d4614268c0cb329980c1ce18f07e0f0452628dc00990e2e6261f6ec19b85856f",
+      "english_sha256": "91777bc33361ef8bf273ba6e10b012cd75d6fa6e7480a2beddc5d928dad2a558",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "outputs/c170_ring_v2_formal_cuda_20260928/slot_supcon__seed-61/run_manifest.json",
+      "original_sha256": "91015a1231fd32dad319e37411e3520dcf671edd82ea5ec01f326f204a320d5b",
+      "english_sha256": "47ec7f6a20fc83d6d66af5a5b5794816a638cff9369bdf3fc59ad9ad75145742",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "outputs/c170_ring_v2_formal_cuda_20260928/source_snapshot/code/dataset_preprocessing_helpers_run_c170_experiment.py",
+      "original_sha256": "7d8296237d45b48798a7fa342998b163311f83919dfe2cf7bc824c1aef281a6d",
+      "english_sha256": "960b56f72488f6704a1a7c2bc86f3b88a7f4f6533178f962d22b08919e521b25",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "outputs/c170_ring_v2_formal_cuda_20260928/source_snapshot/docs/2026-09-28-c170-ring-cross-position-cuda.md",
+      "original_sha256": "3eaa87ee7c28fa245eaeec9f700053f25f01a407b649c27ea3c08be4b4a3c890",
+      "english_sha256": "e96029eeb9393aa437a74af20b7d288788c0d36792ee950aa54f45489acf1aa4",
+      "kind": "historical_snapshot_document_translation"
+    },
+    {
+      "path": "outputs/c170_ring_v2_formal_cuda_20260928/source_snapshot/docs/2026-09-28-latent-angle-temporal-classifier.md",
+      "original_sha256": "1760677c99c1c12d1f49b9c077557c66d39fcb4f95f9e26086ae4cc550c8e6d0",
+      "english_sha256": "bec789354d536bce7ee2c4ff4905a964fba1421450feb2105a5a691ba97ccd28",
+      "kind": "historical_snapshot_document_translation"
+    },
+    {
+      "path": "outputs/c170_ring_v3_formal_cuda_20260929/source_snapshot/code/run_c170_experiment.py",
+      "original_sha256": "7d8296237d45b48798a7fa342998b163311f83919dfe2cf7bc824c1aef281a6d",
+      "english_sha256": "960b56f72488f6704a1a7c2bc86f3b88a7f4f6533178f962d22b08919e521b25",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "outputs/c170_sensor_adapter_v13_formal_20260930/source_snapshot/code/run_c170_experiment.py",
+      "original_sha256": "7d8296237d45b48798a7fa342998b163311f83919dfe2cf7bc824c1aef281a6d",
+      "english_sha256": "960b56f72488f6704a1a7c2bc86f3b88a7f4f6533178f962d22b08919e521b25",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "outputs/c170_sensor_normalization_v14_formal_20260930/source_snapshot/code/run_c170_experiment.py",
+      "original_sha256": "7d8296237d45b48798a7fa342998b163311f83919dfe2cf7bc824c1aef281a6d",
+      "english_sha256": "960b56f72488f6704a1a7c2bc86f3b88a7f4f6533178f962d22b08919e521b25",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "outputs/c170_temporal_phase_invariant_v6_formal_cuda_20260929/source_snapshot/code/run_c170_experiment.py",
+      "original_sha256": "7d8296237d45b48798a7fa342998b163311f83919dfe2cf7bc824c1aef281a6d",
+      "english_sha256": "960b56f72488f6704a1a7c2bc86f3b88a7f4f6533178f962d22b08919e521b25",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "outputs/c170_v11_complex_orbit_formal_20260929/source_snapshot/code/run_c170_experiment.py",
+      "original_sha256": "7d8296237d45b48798a7fa342998b163311f83919dfe2cf7bc824c1aef281a6d",
+      "english_sha256": "960b56f72488f6704a1a7c2bc86f3b88a7f4f6533178f962d22b08919e521b25",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "outputs/c170_v12_complex_gram_domain_adversarial_20260929/source_snapshot/code/run_c170_experiment.py",
+      "original_sha256": "7d8296237d45b48798a7fa342998b163311f83919dfe2cf7bc824c1aef281a6d",
+      "english_sha256": "960b56f72488f6704a1a7c2bc86f3b88a7f4f6533178f962d22b08919e521b25",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "outputs/c170_v12_complex_gram_domain_adversarial_recovery1_20260929/source_snapshot/code/run_c170_experiment.py",
+      "original_sha256": "7d8296237d45b48798a7fa342998b163311f83919dfe2cf7bc824c1aef281a6d",
+      "english_sha256": "960b56f72488f6704a1a7c2bc86f3b88a7f4f6533178f962d22b08919e521b25",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "outputs/c170_v4v6_power_extensions_formal_20260929/source_snapshot/code/run_c170_experiment.py",
+      "original_sha256": "7d8296237d45b48798a7fa342998b163311f83919dfe2cf7bc824c1aef281a6d",
+      "english_sha256": "960b56f72488f6704a1a7c2bc86f3b88a7f4f6533178f962d22b08919e521b25",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "outputs/c170_v4v6_time_crop_augmented_formal_20260929/source_snapshot/code/run_c170_experiment.py",
+      "original_sha256": "7d8296237d45b48798a7fa342998b163311f83919dfe2cf7bc824c1aef281a6d",
+      "english_sha256": "960b56f72488f6704a1a7c2bc86f3b88a7f4f6533178f962d22b08919e521b25",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "outputs/c170_work/verify.py",
+      "original_sha256": "ed8b675708d5283a5104c6d2b7f236b6f81a1d4b64c944c24d1905f7513e9f5e",
+      "english_sha256": "7354fc4f1ce2cab89f8654d5c0081f792340714c659c34f3dc451fd33ae991bc",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "outputs/conditional_directions_2026-09-26/report.md",
+      "original_sha256": "1fd8e3e2fd4894dc8cdd8d9c92e9194b2679dfb86590adf5e43f789b81e05894",
+      "english_sha256": "abc6b1177094e1f539735bb900a77143d58fabbbbb13efb905213b88e532f05b",
+      "kind": "english_document_translation"
+    },
+    {
+      "path": "outputs/lstm_graph_round1_2026-09-25/comparison_report.md",
+      "original_sha256": "9da8a7bc33c7e90a0e68daeb47baad0b1c19ad71c38c44ddd8354aaf432bf40a",
+      "english_sha256": "54b48d6e1486cd22e633dab3ce60e40ed642ec4daaa5894bfdb5da1d2a8a18c7",
+      "kind": "english_document_translation"
+    },
+    {
+      "path": "outputs/windows_c170_validation_smoke_20260928/config.json",
+      "original_sha256": "8b30f551015b6330625854b13dc7f3a84ab98e1f15970c2921e3193dc340477e",
+      "english_sha256": "a68e4d22d85765feeb2ea15a2f4dc5f5f73ada16f1294217b116de3b809ad1fd",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "plot_c170_overlays.py",
+      "original_sha256": "36b0f220f7a49000558084265d3e7162bccde87d8463fbbab742f2a43002a777",
+      "english_sha256": "ce9b4e90f7f681021045e823067bc95fec87638a9029ddc91b79898ea1165a48",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "prepare_c170_session.py",
+      "original_sha256": "39d6ef5227dda0d4dc7d9031ed8eb3dc0cd78f92bf62618f64782fc79a47d07e",
+      "english_sha256": "931e6aae6847aa248f16f1204b15eea500be172d10de6e5409cd5e050b5cef81",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "run_c170_experiment.py",
+      "original_sha256": "7d8296237d45b48798a7fa342998b163311f83919dfe2cf7bc824c1aef281a6d",
+      "english_sha256": "960b56f72488f6704a1a7c2bc86f3b88a7f4f6533178f962d22b08919e521b25",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "run_c170_ring_experiment.py",
+      "original_sha256": "ab7cfb2e46efc825d52926155075890bc2848cacdcdd9c10974b250232cdf7a5",
+      "english_sha256": "c06bce9f86c4489eb3e8ad61accdd8667e76650518fba6d212cd465a0b2e75b1",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "run_c170_validation_ensemble.py",
+      "original_sha256": "bab4640ecd99f890aac24c3a7fbe8fa134bc0730838ae145c6cc88e77089966c",
+      "english_sha256": "2fe8dee05e2a92b0ce4f4215bd7f0b4db6627d731fecd813a69f73d7f5a1378c",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "run_conditional_experiment.py",
+      "original_sha256": "00b6980cd66a983220e1713d615c8c6a5f9546eee6a0d2edae480531812aa12b",
+      "english_sha256": "fdf68a4d56c9c305d5fe0b31b2defb54ee9ff45ceb78845f0663d405deed59a5",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "run_lstm_graph_experiment.py",
+      "original_sha256": "c95591c58a1e8fe37124b522153618bc1f5356099f842193160313c1beb7952d",
+      "english_sha256": "169df384d5174acabea87a8eea8938e79f1c461310aa3dcec16c0002a879bb3c",
+      "kind": "display_text_translation"
+    },
+    {
+      "path": "tests/test_run_c170_experiment.py",
+      "original_sha256": "a5760e463770c983aed98fe872ab6e350cce510734735c9d910096f135aeb5cd",
+      "english_sha256": "fb0623b5e0de1b80a5420ae427e5100d498819bab0e9494df882e0058f387406",
+      "kind": "display_text_translation"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "format": "rotation-release-verification-v1",
+  "date": "2026-10-01",
+  "scope": "English conversion and standalone packaging; no new training, acquisition, test-waveform evaluation, or full historical checkpoint replay",
+  "english_text_scan": {
+    "status": "passed",
+    "readable_files_checked": 3789,
+    "files_with_chinese": 0,
+    "scope": "UTF-8 text and filenames; five Chinese-labeled figures regenerated in English with identical traces; sixth existing figure is English"
+  },
+  "python_syntax": {
+    "status": "passed",
+    "files_checked": 371
+  },
+  "translated_python_ast": {
+    "status": "passed",
+    "files_compared": 35,
+    "comparison": "Algorithm structure and non-string constants preserved; display string text and f-string expression ordering normalized; expression/conversion/format structure retained"
+  },
+  "translated_json": {
+    "status": "passed",
+    "files_compared": 16,
+    "comparison": "All keys, arrays, numeric/Boolean/null values and originally English strings preserved"
+  },
+  "data_and_binary_integrity": {
+    "status": "passed",
+    "files_checked": 1296,
+    "changed": 0,
+    "scope": "Raw .txt and rejected files, NPZ, checkpoints, and unchanged English PNG; hashes only"
+  },
+  "translated_figures": {
+    "status": "passed",
+    "figures": 5,
+    "numerical_traces_match_original_calculation": true,
+    "registered_test_rows_preprocessed": false,
+    "provenance": "figure_conversion_manifest.json"
+  },
+  "portable_evidence": {
+    "status": "passed",
+    "artifacts_checked": 47
+  },
+  "f2_saved_prediction_arithmetic": {
+    "status": "passed",
+    "rows": 320,
+    "macro_f1": 0.6748971788445473,
+    "accuracy": 0.678125,
+    "confusion_matrix": [
+      [
+        54,
+        6,
+        4,
+        16
+      ],
+      [
+        36,
+        38,
+        0,
+        6
+      ],
+      [
+        1,
+        0,
+        63,
+        16
+      ],
+      [
+        0,
+        9,
+        9,
+        62
+      ]
+    ],
+    "scope": "Recomputed only from existing saved predictions; no model or waveform scoring"
+  },
+  "markdown_links": {
+    "status": "passed",
+    "missing_local_targets": 0
+  },
+  "existing_unittest_contracts": {
+    "status": "passed",
+    "tests": 20,
+    "modules": [
+      "test_c170_ring_cuda_experiment_v2",
+      "test_c170_shared_scale_preprocessing_v3",
+      "test_launch_c170_ring_cuda_v2"
+    ]
+  },
+  "translated_exception_contracts": {
+    "status": "passed",
+    "cases": 2,
+    "scope": "Duplicate-position rejection and final-test position-argument rejection; direct calls without dataset loading"
+  },
+  "full_pytest_suite_run": false,
+  "clean_environment_install_run": false,
+  "git": {
+    "root": "E:/MyCode/codex/Idea2/Idea2_RotationInvariance",
+    "branch": "main",
+    "remote_configured": false,
+    "parent_index_modified_by_this_task": false,
+    "safe_directory_added_for_exact_project_path": true
+  }
+}

@@ -1,0 +1,492 @@
+{
+  "created_utc": "2026-09-29T14:33:53+00:00",
+  "dataset_sha256": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349",
+  "format": "c170-frozen-f2-matched-null-experiment",
+  "frozen_real_candidate": {
+    "complex_gram_v11_seeds": [
+      17,
+      29,
+      43,
+      61,
+      89
+    ],
+    "fusion": "one-hot average within each family; then equal 1/3 family average; argmax lowest class id on ties",
+    "learned_power_v6_seeds": [
+      17,
+      29,
+      43,
+      61,
+      89,
+      101,
+      131,
+      173,
+      211,
+      257
+    ],
+    "test_metrics_computed": false,
+    "v7_mode": "group_true",
+    "validation_macro_f1_exploration_only": 0.8268715072
+  },
+  "frozen_v7_sources": {
+    "run_manifest_sha256": "ebfa20892f1bd1af142131a2a2db1a65f85c11a01069e1a35ae2615add688d0f",
+    "summary_csv_sha256": "cc4dba7a7151aecf60b8ee980f868cb5f86eb050534dc6c456a0dca5f09ef670",
+    "validation_predictions_sha256": "29ecd7357b5c10134ef4eb5723dd1e5cdac6f111e16df528ba50e7989272f4e1"
+  },
+  "new_training_task_count": 69,
+  "new_training_tasks": [
+    {
+      "family": "complex_gram",
+      "rep": 17,
+      "seed": 29,
+      "variant": "complex_gram_shuffle"
+    },
+    {
+      "family": "complex_gram",
+      "rep": 17,
+      "seed": 43,
+      "variant": "complex_gram_shuffle"
+    },
+    {
+      "family": "complex_gram",
+      "rep": 17,
+      "seed": 61,
+      "variant": "complex_gram_shuffle"
+    },
+    {
+      "family": "complex_gram",
+      "rep": 17,
+      "seed": 89,
+      "variant": "complex_gram_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 17,
+      "seed": 29,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 17,
+      "seed": 43,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 17,
+      "seed": 61,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 17,
+      "seed": 89,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 17,
+      "seed": 101,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 17,
+      "seed": 131,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 17,
+      "seed": 173,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 17,
+      "seed": 211,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 17,
+      "seed": 257,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "complex_gram",
+      "rep": 29,
+      "seed": 17,
+      "variant": "complex_gram_shuffle"
+    },
+    {
+      "family": "complex_gram",
+      "rep": 29,
+      "seed": 29,
+      "variant": "complex_gram_shuffle"
+    },
+    {
+      "family": "complex_gram",
+      "rep": 29,
+      "seed": 43,
+      "variant": "complex_gram_shuffle"
+    },
+    {
+      "family": "complex_gram",
+      "rep": 29,
+      "seed": 61,
+      "variant": "complex_gram_shuffle"
+    },
+    {
+      "family": "complex_gram",
+      "rep": 29,
+      "seed": 89,
+      "variant": "complex_gram_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 29,
+      "seed": 17,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 29,
+      "seed": 43,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 29,
+      "seed": 61,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 29,
+      "seed": 89,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 29,
+      "seed": 101,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 29,
+      "seed": 131,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 29,
+      "seed": 173,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 29,
+      "seed": 211,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 29,
+      "seed": 257,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "complex_gram",
+      "rep": 43,
+      "seed": 17,
+      "variant": "complex_gram_shuffle"
+    },
+    {
+      "family": "complex_gram",
+      "rep": 43,
+      "seed": 29,
+      "variant": "complex_gram_shuffle"
+    },
+    {
+      "family": "complex_gram",
+      "rep": 43,
+      "seed": 43,
+      "variant": "complex_gram_shuffle"
+    },
+    {
+      "family": "complex_gram",
+      "rep": 43,
+      "seed": 61,
+      "variant": "complex_gram_shuffle"
+    },
+    {
+      "family": "complex_gram",
+      "rep": 43,
+      "seed": 89,
+      "variant": "complex_gram_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 43,
+      "seed": 17,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 43,
+      "seed": 29,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 43,
+      "seed": 61,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 43,
+      "seed": 89,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 43,
+      "seed": 101,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 43,
+      "seed": 131,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 43,
+      "seed": 173,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 43,
+      "seed": 211,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 43,
+      "seed": 257,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "complex_gram",
+      "rep": 61,
+      "seed": 17,
+      "variant": "complex_gram_shuffle"
+    },
+    {
+      "family": "complex_gram",
+      "rep": 61,
+      "seed": 29,
+      "variant": "complex_gram_shuffle"
+    },
+    {
+      "family": "complex_gram",
+      "rep": 61,
+      "seed": 43,
+      "variant": "complex_gram_shuffle"
+    },
+    {
+      "family": "complex_gram",
+      "rep": 61,
+      "seed": 61,
+      "variant": "complex_gram_shuffle"
+    },
+    {
+      "family": "complex_gram",
+      "rep": 61,
+      "seed": 89,
+      "variant": "complex_gram_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 61,
+      "seed": 17,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 61,
+      "seed": 29,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 61,
+      "seed": 43,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 61,
+      "seed": 89,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 61,
+      "seed": 101,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 61,
+      "seed": 131,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 61,
+      "seed": 173,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 61,
+      "seed": 211,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 61,
+      "seed": 257,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "complex_gram",
+      "rep": 89,
+      "seed": 17,
+      "variant": "complex_gram_shuffle"
+    },
+    {
+      "family": "complex_gram",
+      "rep": 89,
+      "seed": 29,
+      "variant": "complex_gram_shuffle"
+    },
+    {
+      "family": "complex_gram",
+      "rep": 89,
+      "seed": 43,
+      "variant": "complex_gram_shuffle"
+    },
+    {
+      "family": "complex_gram",
+      "rep": 89,
+      "seed": 61,
+      "variant": "complex_gram_shuffle"
+    },
+    {
+      "family": "complex_gram",
+      "rep": 89,
+      "seed": 89,
+      "variant": "complex_gram_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 89,
+      "seed": 17,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 89,
+      "seed": 29,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 89,
+      "seed": 43,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 89,
+      "seed": 61,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 89,
+      "seed": 101,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 89,
+      "seed": 131,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 89,
+      "seed": 173,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 89,
+      "seed": 211,
+      "variant": "learned_power_shuffle"
+    },
+    {
+      "family": "learned_power",
+      "rep": 89,
+      "seed": 257,
+      "variant": "learned_power_shuffle"
+    }
+  ],
+  "null_protocol": {
+    "cpu_threads_per_worker": 1,
+    "initialization_and_sampler_seed": "unchanged per model; independent from shuffle rep",
+    "max_workers": 6,
+    "memory_admission_system_used_gib_below": 24.0,
+    "one_mapping_per_rep_shared_across_all_families": true,
+    "per_rep_neural_members": {
+      "complex_gram": [
+        17,
+        29,
+        43,
+        61,
+        89
+      ],
+      "learned_power": [
+        17,
+        29,
+        43,
+        61,
+        89,
+        101,
+        131,
+        173,
+        211,
+        257
+      ]
+    },
+    "reps": [
+      17,
+      29,
+      43,
+      61,
+      89
+    ],
+    "test_metrics_computed": false,
+    "v7_member": "same rep's group_shuffle selected from the original 108-candidate LOPO search"
+  },
+  "reused_neural_member_count": 6,
+  "reused_v7_member_count": 5,
+  "source_snapshot": "source_snapshot/snapshot_manifest.json"
+}

@@ -1,0 +1,1253 @@
+{
+  "completed": [
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "ca20e652d612f342dc08937217f6103f3eb829f47542c1dc310a314df064be67",
+        "learning_curve": "76217993eaf5fd3ce076a0d5f404490b53cdf00ec14df2c4dde0c87ac072d0e8",
+        "safe_state_dict": "1802f865494cb99976f19d6a9cffd8c3c6c6016e437bcac6c1df1e0179e7070f",
+        "validation_predictions": "d75ebe7013680ee983180ad2779d3e07a94bf2d1ab73b9b839b64ef68712003f"
+      },
+      "config_sha256": "d6cd057efb501a40a74a00903471b40f5616547ba4a5be4b4dc2f4040580681a",
+      "family": "complex_gram",
+      "manifest_sha256": "9bbc4ea5228eb0fc4acae268e38ccabe1113d226e271dc159e297423e1ca6653",
+      "rep": 17,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-17\\complex_gram__seed-29",
+      "seed": 29,
+      "selected_epoch_one_based": 2,
+      "shuffle_seed": 10017,
+      "variant": "complex_gram_shuffle",
+      "worker_pid": 30560
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "be8fc7a1169ca0f0c930fc0ac9c9e123673d5a1e07553aea6c68e3358470848d",
+        "learning_curve": "a856590b6524480bec5f08dd3e8bf6420ce80bd336903e01521cfe6212ad9510",
+        "safe_state_dict": "4f27030923d8293e46d84af821a256ff3685bd901509309bf79150fdc0e293fc",
+        "validation_predictions": "94c115c732797ff9bac4b2cd5e84cc03c73454ccb09fcc394f26703d5c266b92"
+      },
+      "config_sha256": "81ee84481b6dfcf0cf8c0079723c3cdca23c3a55d9ccf6ddfefe688a0b11b6e7",
+      "family": "complex_gram",
+      "manifest_sha256": "bc61a39971075b97af25c75e7986ee9c51b4f6ef24843b4fc0a61896611bd5a3",
+      "rep": 17,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-17\\complex_gram__seed-61",
+      "seed": 61,
+      "selected_epoch_one_based": 3,
+      "shuffle_seed": 10017,
+      "variant": "complex_gram_shuffle",
+      "worker_pid": 11324
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "3b49158e73d996b2f09fae35cb03e2a75311a839fb18c68e448d524b6844e8f5",
+        "learning_curve": "55bd7c8a5e140cfe47171bb728c9f0b7b1002301cd0a565daab2f31210c9eb7b",
+        "safe_state_dict": "8a5b5277d11a6dec426c6d622ccc2b7de21950b9d83b108085df92ce1188f8d2",
+        "validation_predictions": "54065325e026037bb6df78019f4d36d76cf891a318fcd0e06f3b93d0e3a8c2c8"
+      },
+      "config_sha256": "f93e7d764402ecf2968fc6e5f07e67b484dfa4ca2b75239fc4eacce297c3a9bd",
+      "family": "learned_power",
+      "manifest_sha256": "46c5ee469e9cee96188e8fe2dc2cb8527d7b0a4b0c016ba1b122ce13dd3fdf34",
+      "rep": 17,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-17\\learned_power__seed-43",
+      "seed": 43,
+      "selected_epoch_one_based": 4,
+      "shuffle_seed": 10017,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 48636
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "fbcabbf0e3639f6051144e4f6a8e51c9cd6408ac6b548775f26e413cccf21309",
+        "learning_curve": "6cb35c7f57d50389ea17dd44ac025fbdc2f02eb3177eacd17c86045062f3bbbc",
+        "safe_state_dict": "cf01f4faca232caaa8d15566260020a31f0f44fe52bc9c61ce9dacf2ccdc09c0",
+        "validation_predictions": "43a8e8194df1408b5d1e2cb005b0b2468ee3dbd4a3a639f85559762e7c11a7d3"
+      },
+      "config_sha256": "aa027e1a8cb59bcac9c788987bc31e2f5072e6ff4b9b2e4c3e291547e6550802",
+      "family": "complex_gram",
+      "manifest_sha256": "54a03558b9f33a7d1eb51fa702f2ecd1213f4860fe53f873ff8a25577eb2966c",
+      "rep": 17,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-17\\complex_gram__seed-89",
+      "seed": 89,
+      "selected_epoch_one_based": 31,
+      "shuffle_seed": 10017,
+      "variant": "complex_gram_shuffle",
+      "worker_pid": 16716
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "7cb34d30e13e67fb96699654ad5de755ed99427991f8f4449fcb27dbcee349c1",
+        "learning_curve": "a9b9825b5bf66aed728ed5b755f8cc6a746195bdf18603860d3001f5e097480b",
+        "safe_state_dict": "c579c498dc490e2c23bc7f6c29bb72bf0f3324c2c482520cf2829c66f4f6a86f",
+        "validation_predictions": "c351308a50fff5a3dc70449985c3484c99785b3ed96c2ce686f69056b431d1e0"
+      },
+      "config_sha256": "d4376b51be2208d90a32269e7388bb97217700b52b50756d76c3987c5310f1e4",
+      "family": "learned_power",
+      "manifest_sha256": "40f063929b36a9040bb74b8cf0dd7e2491cbb9412edb588d0fcca2cbc93591ad",
+      "rep": 17,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-17\\learned_power__seed-29",
+      "seed": 29,
+      "selected_epoch_one_based": 8,
+      "shuffle_seed": 10017,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 4696
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "31ba493cde55692e76cb2ed0785a85f60bd9af9b8edce15aa98286fb7074bbbe",
+        "learning_curve": "277420e66f0baf7491ef603e33c52d11e3d81dd63d1f5cbb74f8ccaa7d864627",
+        "safe_state_dict": "1e0ff4370b46e8dbd5cdaaf7fa80c196809495a9b77ead72cffc011e51099501",
+        "validation_predictions": "cc0dd47c7cd76f154ae8d6023142bfe4a5935d670d0cbfa773f67ad1e3fcf336"
+      },
+      "config_sha256": "6c82c6646ec927e38a3a9601f6d70eff1afce70a7b686847823a2ddb147350d9",
+      "family": "complex_gram",
+      "manifest_sha256": "0e89609c39413bcb517f93a464914210e7d012c0c3e16fa1b0ff7f6ce5d99252",
+      "rep": 17,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-17\\complex_gram__seed-43",
+      "seed": 43,
+      "selected_epoch_one_based": 45,
+      "shuffle_seed": 10017,
+      "variant": "complex_gram_shuffle",
+      "worker_pid": 27284
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "1fa43d49b465d1c346bfc73c6574db97606f6ea317c2b095d741cebbd9f3a8d7",
+        "learning_curve": "934fe5cd78f9ee965ec2a762718f76753ce14c8d27c58b86ebd214d0fea08e7a",
+        "safe_state_dict": "2f0541ed22127c74f204d1c0641d336a7c72aed2835bab9ec821c0f718bb34d8",
+        "validation_predictions": "c53f8928e974482dafd37d57a7a72787b9f20596baedfb1f93a4a21f814f46c9"
+      },
+      "config_sha256": "fd020af8f6505e96f0201766a17cdb8b0ed745f8e3c4784878c2675bfc34051b",
+      "family": "learned_power",
+      "manifest_sha256": "4483a27e7c2044256d09c531f65b85aa6079a61e417ebe463de2566848dc16b4",
+      "rep": 17,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-17\\learned_power__seed-61",
+      "seed": 61,
+      "selected_epoch_one_based": 1,
+      "shuffle_seed": 10017,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 47792
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "eb3af5bbe52ff20d3b543ad60f9f5970e0126913c68b9be8db71fc786a4d01d2",
+        "learning_curve": "055c0329817a9d359db0237d0b4c9e1c19b278fc0884ee319f51d66004009071",
+        "safe_state_dict": "87654588c5cb319701851734cd75185e0770d6d1a4947e5e329a90a61ae0b052",
+        "validation_predictions": "30a089f12b60fcb299f58173d8c884f3b14b39f32d4d2ef5e78765cd893457fa"
+      },
+      "config_sha256": "9dcdbba59c5de78f250eddf4a4ecf56669feb3a9c935c68143883ec1ff609ad1",
+      "family": "learned_power",
+      "manifest_sha256": "eb2161427a5110fde5a258934880a3c842fe8f31ef5f6659d6dc6667f1a5ddb5",
+      "rep": 17,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-17\\learned_power__seed-89",
+      "seed": 89,
+      "selected_epoch_one_based": 1,
+      "shuffle_seed": 10017,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 47672
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "627e9c7eb66e36c857138476f87e74ef1e90da8da00eb67f37a9686c18d867dc",
+        "learning_curve": "527bb24f58e10a2b6ced03481cacf676af46ae040c8aaa9e091478ecbb51f47c",
+        "safe_state_dict": "7e9470c8cc0212e556bb5ba09ce29eaa9b983779b226bd457b5c553a7a0f0506",
+        "validation_predictions": "10235ed54317172ce5ef570174896c044658240af8e660636976ca1d0f326a3e"
+      },
+      "config_sha256": "9dda1b7c975ecc2b9b522c5d5e1485fa5679d8f6c1fc22e73da2913b3d95e5a9",
+      "family": "learned_power",
+      "manifest_sha256": "4810eeebeeacd5eef7b3981de3e0ab0b81a9151600b1a3aaa56bfef86e97c804",
+      "rep": 17,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-17\\learned_power__seed-131",
+      "seed": 131,
+      "selected_epoch_one_based": 5,
+      "shuffle_seed": 10017,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 15804
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "2cc7e3238f7763046f95c7af3f3dc8f334e0ce177e4219d392b06f47fbcc7d4b",
+        "learning_curve": "5803d0584d853a471ac1c54a3c5493d96e4be4a01524cd78c2426fbb71271a57",
+        "safe_state_dict": "e40196ec4faa9d2cfb1e7f40bf345037a9849570d0635a2da337f379a943afa8",
+        "validation_predictions": "2f2f31bb11ad4edb72f238166b541fcff5a92f9ed42604cd62fe20e8a8fc2854"
+      },
+      "config_sha256": "f6358ce8fd1df3a4ebc8fa464f383e6ddebb62ccd5d8e771d2fc59b77d4a80d1",
+      "family": "learned_power",
+      "manifest_sha256": "7646b8a16028ba677d2cedaecb4be11883ac2fa04ff8386672d4bf3ec14f0b18",
+      "rep": 17,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-17\\learned_power__seed-211",
+      "seed": 211,
+      "selected_epoch_one_based": 1,
+      "shuffle_seed": 10017,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 43076
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "984d89258a600e8e63efb02d8dcb0940cf822bf45bd325da430bf7c5e1a9c080",
+        "learning_curve": "0729e0ac0e4d3ab4a80702c2cee8544f7e61df3258f2f64a289506e0fd43de6e",
+        "safe_state_dict": "f6ef6414c836718a1170700eb8617220cbff2b2227823120ff2b8fd59db3bb36",
+        "validation_predictions": "dfcd77ccd8caeec7412b47c180fb5d7729be0c8d906295f734b52d5fe679b972"
+      },
+      "config_sha256": "fc632f4f8c5d48d18ceb98dd1f7a907553b2b53c17280b60e2585bdca83a219c",
+      "family": "learned_power",
+      "manifest_sha256": "5ec1ecf07740835c5b27dba360da4300b3d373bada75ed8abdaeb18a7153adac",
+      "rep": 17,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-17\\learned_power__seed-101",
+      "seed": 101,
+      "selected_epoch_one_based": 17,
+      "shuffle_seed": 10017,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 46492
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "e6102887a919b16c2b64ebfb9ef7a149ba1b2b4a827c7dac6cfb2f583c0775e0",
+        "learning_curve": "50ad2e75c45bb4aa89ff3460cbd2522259a56df0fa82f9b9f246d1ffca5c21d1",
+        "safe_state_dict": "155b6d2dfa2fcc6cbe9e6c2302ad51fa3c3d10e76af0e93e74ffbfffa5c81375",
+        "validation_predictions": "4867b0e65bf4255db90b3ba4fba533308e99207809f4211a5eb94d5e063d4d43"
+      },
+      "config_sha256": "e95bfcf391ac2f5e697640f3fe582f340d7a69662f91eb86ea43842a7ac54d70",
+      "family": "learned_power",
+      "manifest_sha256": "e8f4797de3233881d9ffe18dfac85632df217633a416912557959861c6a2d1bf",
+      "rep": 17,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-17\\learned_power__seed-173",
+      "seed": 173,
+      "selected_epoch_one_based": 11,
+      "shuffle_seed": 10017,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 14508
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "e50609d5992379423612810d3e15907f519cfa9e76bdc68995a8574fed41b2d5",
+        "learning_curve": "30eb79944f6756f9fd9b38939225861f5ce7281739faf150b1030d9ab5a39c2d",
+        "safe_state_dict": "d456d558436acd4b5590ea9abd27cb48f9da2e056bc7960ae26284e6c7d00189",
+        "validation_predictions": "879c60c77c18e036999bd785f6618322613ad19e4c74cbc16e26d56d0da15bb2"
+      },
+      "config_sha256": "ab61797aba44c9ec98ee8ca1fac9e5c9c16b89d00641aaa5d29690712f844880",
+      "family": "complex_gram",
+      "manifest_sha256": "8d2df8bbc323f314b6c58ad2ba40ed0f000f2389db56d61b32d15fbe31f3f278",
+      "rep": 29,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-29\\complex_gram__seed-17",
+      "seed": 17,
+      "selected_epoch_one_based": 9,
+      "shuffle_seed": 10029,
+      "variant": "complex_gram_shuffle",
+      "worker_pid": 45804
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "37271324bdd98a313ae63cd8f36a4f18be34f0825ad6f38596dd9bba29d17cf6",
+        "learning_curve": "923e8c014be7f5db78d0ec0fa782c57d7d3dd4ca378a31969e1335aa2953464b",
+        "safe_state_dict": "8de0d944af0480edb10104019a6b0012f2a912b9776ac137f1045f22044a0661",
+        "validation_predictions": "42a3040c4e06add6e9eae273245136d51e62e8d78e2150d98986181550ff600f"
+      },
+      "config_sha256": "70d12df83d8aa817b86766420fb6c2d113833437429a8a0f857ee9b6d54c1c99",
+      "family": "learned_power",
+      "manifest_sha256": "5a17eb26069dac14d4b1275f13054a1c68c11a789db39f3e45bac301f738ff36",
+      "rep": 17,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-17\\learned_power__seed-257",
+      "seed": 257,
+      "selected_epoch_one_based": 8,
+      "shuffle_seed": 10017,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 43656
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "a8057313a98bbbfecd1307529b49bcfc540f1ec4da886a89a5eccc1051ba8ac4",
+        "learning_curve": "5bc657f3b5409087da988a7de5ad3f530a40ca14946c3e1e7b1dbb50bd0af839",
+        "safe_state_dict": "da9b52585ecfac6d0ca0faa2955db3084981f49f11696d5475cc595eb0379619",
+        "validation_predictions": "2cff8eba00e30243ac5ff0b48e416e15d4162f1d17100d278f2cfaabd4a3dee4"
+      },
+      "config_sha256": "1320db12d91a5cd728dc6bf8c4afb1c966b5d3155855601b053368996fe537b1",
+      "family": "complex_gram",
+      "manifest_sha256": "b46812b7b00fe4e9e9446d9e235866fc4dbcddd5254333374b4b06eb48b98794",
+      "rep": 29,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-29\\complex_gram__seed-43",
+      "seed": 43,
+      "selected_epoch_one_based": 8,
+      "shuffle_seed": 10029,
+      "variant": "complex_gram_shuffle",
+      "worker_pid": 4444
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "4d867b0cfb1277ddde009eba997fc8764940d56a5a16ffd7c95ef79c7fa9c560",
+        "learning_curve": "029ed752bf870ba2faed655b22bf9854aae618027283ce10732e6d116ae06029",
+        "safe_state_dict": "f7f051e407c0d8ac4b56b33be43a704743c4283e0a73d60c521821896e3a1386",
+        "validation_predictions": "2f79bc710ae6b9baafc246e108625ce614791bd12064e2261f037c04f2b579bb"
+      },
+      "config_sha256": "5b2408a06b644a017c918293cf2c5a2d7cedb65f291fe50ab833ff58f96df199",
+      "family": "learned_power",
+      "manifest_sha256": "3ac532ff7f2f125c9a408ed18dfd765435a3505ebb9b279f83746691c0065e37",
+      "rep": 29,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-29\\learned_power__seed-17",
+      "seed": 17,
+      "selected_epoch_one_based": 7,
+      "shuffle_seed": 10029,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 7648
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "a4c070397b7efb9f413ca129f26056a1606b4a361545f5343e8a7afe9530cb73",
+        "learning_curve": "96a3570b2db2e850a73181f32b8ae4b1c0423b675b20dbf92e14d400ee8005c6",
+        "safe_state_dict": "0affcd3bf495b6f72ff5a88030b2a56798fd999d6d3193f94daff4d5f7c3adce",
+        "validation_predictions": "8496bcaac529f670e4293376247d29ba5d05b20fa8e18540f0f1c65309847dd9"
+      },
+      "config_sha256": "78b609017c8db8db28591d2b36394062336da1579d5898ef50cbb6f57ded250f",
+      "family": "learned_power",
+      "manifest_sha256": "1f984ea9490437628b1020a019d245530f718cf094ef9bfe13a367a81623f09b",
+      "rep": 29,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-29\\learned_power__seed-61",
+      "seed": 61,
+      "selected_epoch_one_based": 3,
+      "shuffle_seed": 10029,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 46704
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "3d4e4ea1b2cdb0be779830eec0421001a8c914dda4c08471edcd74f6be1b2cc2",
+        "learning_curve": "3d166abbfdd82e671bdfb92e5c25f33c41aa4d02403c0b6f433bfc1a3e6cc230",
+        "safe_state_dict": "ed645793e830ce7f8fb2a969ab782fff62d9ce5829ab910c92fcb6956686634b",
+        "validation_predictions": "6eb246672032ad6504e68dbc2059f2d8ab889326b175e17d3d4a544fda7269f8"
+      },
+      "config_sha256": "3fc186208487c027912fb99c9b5cb30960f72160bce0e8e11c4640231e368fb2",
+      "family": "complex_gram",
+      "manifest_sha256": "677c6abdd35a41be83dd4550a0676d0f63670c54c639fea38f109415e57899b1",
+      "rep": 29,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-29\\complex_gram__seed-89",
+      "seed": 89,
+      "selected_epoch_one_based": 63,
+      "shuffle_seed": 10029,
+      "variant": "complex_gram_shuffle",
+      "worker_pid": 9420
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "c978c48cf00fc2e264abb597d27d5119688840d33e1375fe0d13c857cc1aee5d",
+        "learning_curve": "d2f9ea1f5a67c67ce53d33e56df71407c0076fc63330b36e6a54253087ec941b",
+        "safe_state_dict": "93369f58da8443068def8612060c0e0febb45dab1639eab77e769af5064aff70",
+        "validation_predictions": "d05f29ef3709883b5915a9e49a3fd161bdccf994c99b6e993ca38e01f4c7d8e6"
+      },
+      "config_sha256": "f302d086bda935cfa679b7ea2b0019574ba414d938117142b7dbdf3a24641e49",
+      "family": "complex_gram",
+      "manifest_sha256": "2c501297da3f68a25ab5caf41b4d13697e0191bdcaa5bd878de7a60e2612bebf",
+      "rep": 29,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-29\\complex_gram__seed-29",
+      "seed": 29,
+      "selected_epoch_one_based": 82,
+      "shuffle_seed": 10029,
+      "variant": "complex_gram_shuffle",
+      "worker_pid": 6164
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "ec2c0e80f640e1592801f8286995d27e84bff9097550a88c207b70f43b42cb0d",
+        "learning_curve": "2481bb4324e71aa46c6bedb7268dddf1064d5618e1cb836e026aa3c683a142eb",
+        "safe_state_dict": "07b0371496ba9f6d4456b505e80c51c1a3cabe483b1dba09ecd8aa2723f78e5e",
+        "validation_predictions": "d65cd2b7a5baea914ba7d5c812e7d5f96448d4ba3e8766087e455f415b007c07"
+      },
+      "config_sha256": "5ee48aa630d218b4335d7c04d1fcd1091b4e134c010fa61fa1d60569325ce06e",
+      "family": "complex_gram",
+      "manifest_sha256": "bc0e3e956100d4087aba8d068ba7274e50b35ad92854c9403d04ccb9ed36bd09",
+      "rep": 29,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-29\\complex_gram__seed-61",
+      "seed": 61,
+      "selected_epoch_one_based": 90,
+      "shuffle_seed": 10029,
+      "variant": "complex_gram_shuffle",
+      "worker_pid": 48568
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "7441178d985034cace86796506763e9989853786ecd348886796bf3855ac60bf",
+        "learning_curve": "4fec6e43a2946c9b359a40c14883afca5b6ac74a4413734960bf36eeff7d0205",
+        "safe_state_dict": "f1e352dd44dc0ef237f6ee5de1814eba514651f3bd16431f43fcf3accbb70857",
+        "validation_predictions": "44d9fa558bed481ac8c5a9aca34d521bb64a7afa8b86402ec90666834823864c"
+      },
+      "config_sha256": "5f7ef43ee2ae28d50d179ac498e8ce005d08c362d94e58ea667025cb1670a731",
+      "family": "learned_power",
+      "manifest_sha256": "59e655bd5250371709bbc6879cd7e20df6d7208cba14ef417c5d80303d6eedce",
+      "rep": 29,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-29\\learned_power__seed-43",
+      "seed": 43,
+      "selected_epoch_one_based": 41,
+      "shuffle_seed": 10029,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 48040
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "4089a69c5a8e300ca40e2944a413aa593b7dc94a9cfa749182abf9c8aca8a4bd",
+        "learning_curve": "64fccff2f474dd572163066d2fe98cece7bacd84255f39751a18e1a8801d9b01",
+        "safe_state_dict": "37f7a973fd152159ca32061799988a3883fdf581c0a321f6f8e6c4162c9b0d40",
+        "validation_predictions": "4d3e94504a99b4600c3bfc0d5d7d7be997896472ba0eadfc5544da45540dca44"
+      },
+      "config_sha256": "562318590e29516e4e4216f22b2c508a9853aed8f0f60e04b3d3cee648fd5c69",
+      "family": "learned_power",
+      "manifest_sha256": "91f719f865cfd9842103434160045f9fdf3c7a61c3e23ba2dc134f4de02b3dde",
+      "rep": 29,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-29\\learned_power__seed-89",
+      "seed": 89,
+      "selected_epoch_one_based": 4,
+      "shuffle_seed": 10029,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 20528
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "d7da697194e8ab1da00d6eef4ed4d4a80fbf963c6a3cd8a543bcedf5376beb2c",
+        "learning_curve": "577d98f784c0614484dc7520eee2a73d2ec2ad520cb140884f0b663420373335",
+        "safe_state_dict": "efd76140f46cf7dcac06f16bcf2d0ba052abc6e4d3e0b93bdadb27912c5aafcb",
+        "validation_predictions": "924178530ab04f0e5b9d57a23a06b5eca1656b02f10d4b7eb7f8f6e5284b122e"
+      },
+      "config_sha256": "c926b8a1b5a10f0da0679c854b0c9e7a33c0e2dcff8e7eec8772f151b52a3788",
+      "family": "learned_power",
+      "manifest_sha256": "3420834b5f1d911448356a469ac0ee79e7d1f2a919c587b1561f019fde9e74fa",
+      "rep": 29,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-29\\learned_power__seed-173",
+      "seed": 173,
+      "selected_epoch_one_based": 9,
+      "shuffle_seed": 10029,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 46344
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "f520b8ce1dd04269511eb0d8aaee66247d40f8bde88e95f55aeed16a15707d47",
+        "learning_curve": "dc735b1da639eca3371668477f5bdd410a351063feba6936a55af02b95183a71",
+        "safe_state_dict": "897c02ebe530625e86f6c2b2afd33cfc9774290d405d5658928f5b8525a72acd",
+        "validation_predictions": "06d8329f8d1c77006bf2e76b836571e9d86650dffbbadfc00f4eda772e1a3091"
+      },
+      "config_sha256": "bd7573c5669ca8a77841030e48ec91f961275c3eb2f5b1c824ada6af5a643d1b",
+      "family": "learned_power",
+      "manifest_sha256": "bbd45c3c9bcef78984ff0476fa9dff42b13eff8fe32985b6d4969c657695b500",
+      "rep": 29,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-29\\learned_power__seed-101",
+      "seed": 101,
+      "selected_epoch_one_based": 33,
+      "shuffle_seed": 10029,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 40540
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "d10bc6d73b3cdc376757ec416d9632cfe9f943502a51f6b7e67212bae827fe1b",
+        "learning_curve": "59ccc152bd73d48bcfe8f144d0451fbb22bd7e3616b66df296c0113236d78ea6",
+        "safe_state_dict": "66be5bc8a2bc6f31c4c2630dabe98da4428fd120dc311a68dd6725b5da0962ef",
+        "validation_predictions": "f7288ebac8dc5fdb6d6accc082a88a1434362f08346b20614bfe81da6fa7fb5c"
+      },
+      "config_sha256": "4cfd86e1ffc35b6ba11ff61c7237f9deeeef9dba64dd05c6954dc9082ef7fabc",
+      "family": "learned_power",
+      "manifest_sha256": "2ff81f733b44e1a3271579e4df912fefb3fe3a56a75f25a42d754f0a4c2372f2",
+      "rep": 29,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-29\\learned_power__seed-131",
+      "seed": 131,
+      "selected_epoch_one_based": 25,
+      "shuffle_seed": 10029,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 48252
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "be738d75acbc8238d72c676cd0938cdd1c854e393337eb25ad4ebab444eac7a7",
+        "learning_curve": "4120f717d7971ff86ae5836fa2755a4b538f462bc4d881644769cb866674e4dd",
+        "safe_state_dict": "010fdc88cb97c67baded02897d5000a0bd77f17131e70f053daea1743f16a396",
+        "validation_predictions": "970352f580c3d1de9a883efa87c59105837d536e314e39a9a6d7d4c48297278b"
+      },
+      "config_sha256": "50f874cfe12942beaba113bb3073d45b116908ae2afa2e5f103825ce5550a987",
+      "family": "learned_power",
+      "manifest_sha256": "42a249506561835eceb4a08cb3bca27c57f3b710aebbd70b73bc5283e62bbfb1",
+      "rep": 29,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-29\\learned_power__seed-257",
+      "seed": 257,
+      "selected_epoch_one_based": 7,
+      "shuffle_seed": 10029,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 43552
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "26a3ae75578d922fae07cccadf5aee0a09c633d9d47660ed9423fe6d8811ace8",
+        "learning_curve": "1be118dda9358ff1fcfd4c5184ebc9ad4a71cd416a0c9b7b2a8cdcb2788f2439",
+        "safe_state_dict": "04cec7ddc26c956f481c02372f3e6121bb1cada1d0a786380b073f52261ab4ba",
+        "validation_predictions": "0cbecdce62a6b49718baa5f25e502906f07647c593e916fdd3c14e0793276c90"
+      },
+      "config_sha256": "8234b5e9549c2c67362f4f6cdc50aa85b0e0128db5dd0ff2bf8703e5d67d712b",
+      "family": "learned_power",
+      "manifest_sha256": "104e2fc5b076d83b5f3aff354334bc86f7576e84340f2458aec481704ca82b9b",
+      "rep": 29,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-29\\learned_power__seed-211",
+      "seed": 211,
+      "selected_epoch_one_based": 19,
+      "shuffle_seed": 10029,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 47080
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "22e9643598284ba070e5a90c3e0670c88aa10b3b5602401692ba2a5529276235",
+        "learning_curve": "f2167eb41d14d7d9c3ee48d6f850e91c9c62d328934a5a51388e37717a62db08",
+        "safe_state_dict": "d9979baccd30c6b845d7798d870c6b31a05e04f237f6df27202d3e5f7c30e640",
+        "validation_predictions": "5e9aa79a2e08ec5f7262a2a0118e60c03301aaab98c37fedebd62743b0d34970"
+      },
+      "config_sha256": "91f565b83526b53aec7ae56c4a852a58440d29d7a9e83d12af0040716add8907",
+      "family": "complex_gram",
+      "manifest_sha256": "e64fedade6087e9114a9a7f885828614cea08317cf27ba043e78e12f4ed6f409",
+      "rep": 43,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-43\\complex_gram__seed-17",
+      "seed": 17,
+      "selected_epoch_one_based": 42,
+      "shuffle_seed": 10043,
+      "variant": "complex_gram_shuffle",
+      "worker_pid": 38336
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "274d7d624bab061028d85430d896e1026e8404f1befb87ddc37872b179989760",
+        "learning_curve": "74a76c69cdf1ce5a4e35ea0b94abcde02314792ee5c6ffda26dde67ef10af547",
+        "safe_state_dict": "25eb3eb70d8168ee17e37c4d79e537df3f1a2124294001a2410904d89929d1d8",
+        "validation_predictions": "958d4ef51dfd7d8dc4fae538a971d89c72855766669a4437110cabaf988477b3"
+      },
+      "config_sha256": "afdd4f46a4e94f02b2813fa96858127364cc074b33f0b1d52cd9b98f3a9b65d9",
+      "family": "complex_gram",
+      "manifest_sha256": "c585a85204b12b4a435e14250e4c502578dbb62ffa7bcaab4e5557655295db25",
+      "rep": 43,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-43\\complex_gram__seed-29",
+      "seed": 29,
+      "selected_epoch_one_based": 47,
+      "shuffle_seed": 10043,
+      "variant": "complex_gram_shuffle",
+      "worker_pid": 48732
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "1386fabf8d16d5a0da2e4bd0e9e56236709ffa897d7d8801e0fb8a5374b7b82f",
+        "learning_curve": "3ca6dbeb966ed38e71cf9a868b7061c922eb0be7978adda03bbd2930d8bf9aaf",
+        "safe_state_dict": "ad49d4841c5255f5cdff3a4f926d03fbbe4cefd1d1691cffcdee8c7b95eeac45",
+        "validation_predictions": "ac756c20a5db8f12ca46c086104364c7d1a5b33422adfcecd81b6a39af591d4c"
+      },
+      "config_sha256": "0fb6d5c080996f242ecd8c6ea1c6e253d34e620e93b6189a143952597f68ee10",
+      "family": "complex_gram",
+      "manifest_sha256": "93f3e0cbc8d0727b52c10591516074ee215334fe2620be998da5a40a3a8e460e",
+      "rep": 43,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-43\\complex_gram__seed-89",
+      "seed": 89,
+      "selected_epoch_one_based": 39,
+      "shuffle_seed": 10043,
+      "variant": "complex_gram_shuffle",
+      "worker_pid": 44152
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "a44dec9cc1088b6a6dafb0f88d0deef42c3132caba83e050ab9247b02999d815",
+        "learning_curve": "d45c026dbb659dd079d76c3a54a3c66c5ef4144616d7552345e828eb711ffe05",
+        "safe_state_dict": "0de0ee21ce06026325842a24340f4ebaa030de2245c72ef642abe7166fdfb985",
+        "validation_predictions": "07bdfa6ee0456f3f3b0d3510236c75741a9d5ec16ada29ca51bd0412d876e097"
+      },
+      "config_sha256": "39b96cd81e646cf53c7704b85ae71765eecacac25c352d30b09a157cde7732f3",
+      "family": "learned_power",
+      "manifest_sha256": "8a094a650712cb3734c8fb03124c5fd2d650a5a9ef46709ca31bb02e1247ccf0",
+      "rep": 43,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-43\\learned_power__seed-17",
+      "seed": 17,
+      "selected_epoch_one_based": 4,
+      "shuffle_seed": 10043,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 47236
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "3282a5d2bbb29ca69b4841775fa7e4a8bf0a0fc812d6d10a07f56ecd4cf43f7d",
+        "learning_curve": "8dbfc1a5ac415f74dc27d644bf59ff6b8aba2570e9b43f4f1593d49c34f6c175",
+        "safe_state_dict": "2888283eb087a82a4892b9ff2a4d06c428e9eaed9574d916ffd08350b3013ddc",
+        "validation_predictions": "a078dc28316eec740c99ab0730fb9cefaf458c553f7d3e10707d2e4aff249a12"
+      },
+      "config_sha256": "0804497b9edaf018654b816304e461912406b9218c0e07efecb0407f32c5c7a2",
+      "family": "complex_gram",
+      "manifest_sha256": "9c5aaef8a8f40a18152466ddfa518167ac431c6f3f56764b8bbd93e8496e9cb4",
+      "rep": 43,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-43\\complex_gram__seed-43",
+      "seed": 43,
+      "selected_epoch_one_based": 42,
+      "shuffle_seed": 10043,
+      "variant": "complex_gram_shuffle",
+      "worker_pid": 26172
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "8237780abe8de5367ce5559806e9b43d3f04b29fa97b262cccf71e587be48682",
+        "learning_curve": "2a6d2b615c765a8f0404f793012cf4a798bc8f8f233f3269788fba0592216919",
+        "safe_state_dict": "445d12f30c9e7c6523549b1be5cba3ddcfe224c9740802ea8295578b4ef7e449",
+        "validation_predictions": "8f3523005e9abaca745dfda6666f2d80e8866d74c562d249d9ce0201d9ea1d65"
+      },
+      "config_sha256": "13a557048428aed6b37c46b91a97b1a8f7e7fd31bbc06581a2a8874f654709d3",
+      "family": "complex_gram",
+      "manifest_sha256": "b957dcf986484f5d8f11fd61c2d1ce918e1c0c556218b89e18f8516195088e23",
+      "rep": 43,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-43\\complex_gram__seed-61",
+      "seed": 61,
+      "selected_epoch_one_based": 53,
+      "shuffle_seed": 10043,
+      "variant": "complex_gram_shuffle",
+      "worker_pid": 24056
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "c1b231b43b64d1ea63ec279f55e2a4ed38e6eed04f4d49c7d1f61841a1128fda",
+        "learning_curve": "6d86bf58d57d19eb001ffac0d715f24d1599d55df561046af00f66a23ceb34d0",
+        "safe_state_dict": "f9d1c6214533e2b097f446e75b7dff1555fe8cd7bd03c7355630ee4f8ae13987",
+        "validation_predictions": "b3236275897846f61a7c67fd8de760b1e1a4cc5e8daae3b36a1fd954466d481d"
+      },
+      "config_sha256": "5163ac5b6147c76708d2a80600c04a753144a548168d4dff7536ea4c1f688af8",
+      "family": "learned_power",
+      "manifest_sha256": "b0de9bbb91aad65664c57b1aa0633071cb160011e3d20b979b77c5f9aa93015e",
+      "rep": 43,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-43\\learned_power__seed-29",
+      "seed": 29,
+      "selected_epoch_one_based": 21,
+      "shuffle_seed": 10043,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 44556
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "2867cedeec4a23b3df0dd467c04e40f4f2eafbc70bceafba6b2af1bddb9c0757",
+        "learning_curve": "f6813aae346ae154fe73248e88a8905bb600bff6b83570b39de796c42804a8c7",
+        "safe_state_dict": "ec5c7fd81a354a8377a9f09f7d50d9d0f041ddf094dec262e16741eb76002365",
+        "validation_predictions": "543af59db01ba10000792dba77e5f78589e17c99f514d677956a60e992fc4a58"
+      },
+      "config_sha256": "f8241d892b6941757dcc311394e720fbd18919540031c0cf641ddce5b6f196ef",
+      "family": "learned_power",
+      "manifest_sha256": "7179aee71056ee528832d0c35c2ff0299bb85789e755f5e3cf03a7f3344d1a23",
+      "rep": 43,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-43\\learned_power__seed-101",
+      "seed": 101,
+      "selected_epoch_one_based": 1,
+      "shuffle_seed": 10043,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 46608
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "bca495e8b2c753e8104ede7e1d26552483d11fdf60a81df6c9e9d26a5f270690",
+        "learning_curve": "fad8a9e829c9a3d4a37c7c17c75a81d827d62b218ff8771893f5d43391bdcac8",
+        "safe_state_dict": "8495bb7802a1916dd4f36e0c1c81036b67a59ce7506adfa45e6dba9bccd69e25",
+        "validation_predictions": "50de6171cdfd2aaeb28390628014997ffa6f6b2bba7ef0b0db8c4fdc34130f23"
+      },
+      "config_sha256": "985ab85451758860de63ce4303e51396c0865e0a4299eb6560c78e4e1c17b2c9",
+      "family": "learned_power",
+      "manifest_sha256": "2a0d4ccc55d0db140c81ddc7f717800cae3f1e592798105e3a37499a191c07f1",
+      "rep": 43,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-43\\learned_power__seed-61",
+      "seed": 61,
+      "selected_epoch_one_based": 25,
+      "shuffle_seed": 10043,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 42032
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "8edf9faecbf95eaeee9d885b8516d4d324a0adb0788caafeecaaa8165850b490",
+        "learning_curve": "d1f309d6f170312a6fc6726bbe2ff03dd1791c371159f03696619de8292f8ec6",
+        "safe_state_dict": "452bf5f8414a41fba84060eee8eef96b2369e6545f7fe960503f8868395675a1",
+        "validation_predictions": "493eb3781987d985035ec79cfa16efd3c6775b636e7555ec06b439054c81165c"
+      },
+      "config_sha256": "903490b5f0e9a7e19ad0ef5f17476b0e08c9461048c14ede4e5ddbc0a49275bc",
+      "family": "learned_power",
+      "manifest_sha256": "08ac26e081076b2f97bdee2e8001164bd51970d6f19b5617df9d954761b30aaa",
+      "rep": 43,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-43\\learned_power__seed-89",
+      "seed": 89,
+      "selected_epoch_one_based": 12,
+      "shuffle_seed": 10043,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 30584
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "593679aab740adb2c09ef970ed6f8ff0053e1e356a3a2ff3b27c98bac55e9e81",
+        "learning_curve": "121d9448c4a1da5442e0c8dbf1557a30381e50cde58d6d9dc0b1bb9ac188ee5b",
+        "safe_state_dict": "545487e012b52877170393703decb7764f336491853b54d92266fbe2bc714c65",
+        "validation_predictions": "d4d450198755d917c0127299d5dc7b9cb34e864c7cbd35654da4c6b3fd9d313e"
+      },
+      "config_sha256": "7564c94d1832337906589e49df2f9a3bcf384f15f66db31241dcffb97f48e51a",
+      "family": "learned_power",
+      "manifest_sha256": "00997875c77b54ba6f73f2148022c9e02f8d26b853fee12fcaed109c9609f709",
+      "rep": 43,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-43\\learned_power__seed-131",
+      "seed": 131,
+      "selected_epoch_one_based": 11,
+      "shuffle_seed": 10043,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 3520
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "3d2cc8be55fc20a65486fc41cc31cbfe3889c49e8b2c0dfa9ec62cb6a2c4dc56",
+        "learning_curve": "7439b29e1638d110d9981406375917db8cc61d90ea25a668ebd9ced30db75f54",
+        "safe_state_dict": "8f836bd8b7649d0c520ad340f0f3323ed5d97d46f4139984f3c7f92607fca1a4",
+        "validation_predictions": "e46b54d202a27801418086fee08062bf3f10e643cc286eb0ff58328d60952021"
+      },
+      "config_sha256": "a8e53b9e3f1bdbd8a68c4a0720cadc28746f3b931a33ecb781b238388c9abf85",
+      "family": "learned_power",
+      "manifest_sha256": "c1b009a57d9c0e41f1bde9e1cec8652c3e17f8951bbb6a1a2ad75b3a73043ef8",
+      "rep": 43,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-43\\learned_power__seed-173",
+      "seed": 173,
+      "selected_epoch_one_based": 9,
+      "shuffle_seed": 10043,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 22408
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "cdc97ab891c38513d4b2aad8e486b89da99c6943a41d1ce518cb4065c254fbcf",
+        "learning_curve": "57a34c070c5b05786fc1804d9f16eaf0012dc47b909f4d6afb5e5090eed2c701",
+        "safe_state_dict": "da020cf66d6eeab61ab1291282163ca079a3f3853727df870e2d907dd9db382d",
+        "validation_predictions": "487d9c677c35331bee3527b71dfd96be794712af60bac746e9e6023ef88c532d"
+      },
+      "config_sha256": "64abc14e4603b52598081dc554756c64f73961cb0782c56c7a7ef033b2443db3",
+      "family": "learned_power",
+      "manifest_sha256": "38a65bf589bccbe02a78f8ae336d9c632bfa64e2d2bafd00c468e490b65a796b",
+      "rep": 43,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-43\\learned_power__seed-211",
+      "seed": 211,
+      "selected_epoch_one_based": 11,
+      "shuffle_seed": 10043,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 46512
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "2746acbfc9e517c869f7f7219deac0c41b7c425f44eb36eed02b371906698f74",
+        "learning_curve": "a766b73f1783774785faa2b18fb94bf9b2e13c96f5391ed87c6621fb07ac39fd",
+        "safe_state_dict": "7468245ab2fbcb283acb356cd583bcce85f84e5715f5e23a0193a9e4f1a23d1a",
+        "validation_predictions": "deae69e3c175b710cd4bd5831f01591c4ec9190d1c53bf91baf138dab7fd4838"
+      },
+      "config_sha256": "f81b27e990c52ae9a84e4f790e9bb66744d7f432c40a48f8295beb9764377122",
+      "family": "complex_gram",
+      "manifest_sha256": "c392473d592881ac4046a8901542b76b32e0f688c9c009466b58b03652be2276",
+      "rep": 61,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-61\\complex_gram__seed-17",
+      "seed": 17,
+      "selected_epoch_one_based": 3,
+      "shuffle_seed": 10061,
+      "variant": "complex_gram_shuffle",
+      "worker_pid": 42180
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "9ce43e972dce1532f0c98cf9015a0ecb34f0c2e78761974d887739c515538ade",
+        "learning_curve": "c5a926c353087039f32c696fb972beebe42fce9a0a8192dde92e90b8ad3b0b73",
+        "safe_state_dict": "43ed89c1d160be434ade7bf21fb6c47883a0c170c9c8549ced8a71f78c9487f7",
+        "validation_predictions": "8dfd03e23baa380c50a4e59b2a03829d44859e126c910a8e99cd18e098c4b5c7"
+      },
+      "config_sha256": "b5d48f470dd828b701e34474994ae6335697550064ed34e99e9165d5d3487bf3",
+      "family": "learned_power",
+      "manifest_sha256": "495d83322d7c1222104d2bea9f27d9cd750e724b50cf1c5ce6c700813e2a05bf",
+      "rep": 43,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-43\\learned_power__seed-257",
+      "seed": 257,
+      "selected_epoch_one_based": 7,
+      "shuffle_seed": 10043,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 44400
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "d69535dd78a61042b2e35cf0ee71fb52b443b3c1e2a885e84bdd548c5fecda3e",
+        "learning_curve": "cd0397feb99499d641091fa86d9799000c73592d8631c6f5d610aaaf4d88fad0",
+        "safe_state_dict": "1b671dbd950647625f1efcedf677f09a457f9d16eb533ce581dc884273b045b4",
+        "validation_predictions": "5a8382a40b10f8031530ad842f5a7f380bbee6ac71535728d5429521eeb8b6e8"
+      },
+      "config_sha256": "e3668c9381f4fbf2e6100d617514061fddde84305c73107aaa5acb5db26c95e4",
+      "family": "complex_gram",
+      "manifest_sha256": "703d7d46d52afa58d25edbe4c437865e447d31c8f4742ff2c0dec436a1d32230",
+      "rep": 61,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-61\\complex_gram__seed-29",
+      "seed": 29,
+      "selected_epoch_one_based": 11,
+      "shuffle_seed": 10061,
+      "variant": "complex_gram_shuffle",
+      "worker_pid": 21796
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "1e705f78b57af151f82d915a334ee920780cfbd06ef9f629987ebb2fff4dca78",
+        "learning_curve": "09e9f4cc9ce0b7ac2249d99641dce58abc0cfe4b470685764d9bf8212812623a",
+        "safe_state_dict": "37c655e9c913a6eefff4dfe37273d0c32b2d861365eace20e39d9e2b8b2259cd",
+        "validation_predictions": "27c91e26a1029209a206ec156d65f3249b57694792a867fd09fa307d432147b7"
+      },
+      "config_sha256": "95e0933b06f715a519bf421982a1e60da8b03d4f9d6865079c21125fbc628044",
+      "family": "complex_gram",
+      "manifest_sha256": "ba6a77931740e7ffaf0b067b85fc8ee8cc76d9da5938474f524204f6b8e8c7a8",
+      "rep": 61,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-61\\complex_gram__seed-43",
+      "seed": 43,
+      "selected_epoch_one_based": 1,
+      "shuffle_seed": 10061,
+      "variant": "complex_gram_shuffle",
+      "worker_pid": 23596
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "fe0591d01a3550bd795da65de2eaaff03aaf4e655ee626ab1db57e0287ea6914",
+        "learning_curve": "1ca114c0e7ccf6f30660dfa0e4400073231ae41ab437c53109ba3059cae22e93",
+        "safe_state_dict": "25b8ce8f6930a45d1330864f1f4c6bace33537a0f6bd4b0d5aa109be4d970050",
+        "validation_predictions": "7131c62c7d5993d74d8c619406818443a76aad5c73e1c0f1f66466bea65a5732"
+      },
+      "config_sha256": "936c15b6679c3faa604f3265ad7223e30a394337caf534f5804bc7316bcb95c8",
+      "family": "complex_gram",
+      "manifest_sha256": "7de160ff3c933ac09c7eb3a78b96ed294303904b72bcf5dc9c97bf8758cbd5f2",
+      "rep": 61,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-61\\complex_gram__seed-61",
+      "seed": 61,
+      "selected_epoch_one_based": 2,
+      "shuffle_seed": 10061,
+      "variant": "complex_gram_shuffle",
+      "worker_pid": 43300
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "0ec91eff85d58cb67a74de7a2eec7e164d467054c3b60e4dfb536798faffced0",
+        "learning_curve": "0352a085cc4d0b0f99aadd4b84c4dd31f4829e01cfe0e51758cc6105cfbad405",
+        "safe_state_dict": "626f1de59586a76c4beda1b7522de887261774d41ec9894b9c21546f52b058f4",
+        "validation_predictions": "75fc0667bfe52c851ac0fee4518c42029a993f9380e0ac70dc259c9c1e902a37"
+      },
+      "config_sha256": "48cf90631cddbf0f11db24d1e65a55c250163cfe539fb69682549b93289cc35a",
+      "family": "complex_gram",
+      "manifest_sha256": "30225d92aa08083620b16ebde9eaa4b7821c347492fd844ac70b6a1b5fe7b0c4",
+      "rep": 61,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-61\\complex_gram__seed-89",
+      "seed": 89,
+      "selected_epoch_one_based": 2,
+      "shuffle_seed": 10061,
+      "variant": "complex_gram_shuffle",
+      "worker_pid": 6308
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "0a4079b6de90841fd2790d679954ee6624550af21bf76d3e990deaddc430f04b",
+        "learning_curve": "605da9af297ffae699e4124bbeedad43678e9518de6f2938b6e784b2eece4464",
+        "safe_state_dict": "470d3a62f8b2d66d84a58ff1b19af62aff452a29572aae87337651fbfd276ee7",
+        "validation_predictions": "cd884631201b462ec215acb68d6c4801bc30281061ad76f9a6ba9e5f86d08000"
+      },
+      "config_sha256": "2906f963dd7fef6b4f78fb43a399409530fb090d11e0c713ddd0dca6b965fb75",
+      "family": "learned_power",
+      "manifest_sha256": "5897bb125d280c4accfd1b71bd1bd3151d8f3fcb32552b52ce4cf629675a52f3",
+      "rep": 61,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-61\\learned_power__seed-29",
+      "seed": 29,
+      "selected_epoch_one_based": 5,
+      "shuffle_seed": 10061,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 10496
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "3e1519f79670b92bddde8ad74158a3c726a1e4f5b80e35f9e9537219b3523c9a",
+        "learning_curve": "5ad85baf1f9023f5d62663f9b649fa72cd7eec07be23d603392805f187d6ac56",
+        "safe_state_dict": "5483f567e239f519e296203e73cd12dbf11146c0117000d1cae0f62f13fc3454",
+        "validation_predictions": "c0c8da32fbeafe63b59ba34dbc7af81b3ebf244c570c89d4671467cfd82da35b"
+      },
+      "config_sha256": "d664979f7f307892f5286905a4b94acca08aef566ee76c05947337201ee547f0",
+      "family": "learned_power",
+      "manifest_sha256": "01d93de7439cbcd6baee4779c66a11add9b840af535c426a8071e02a191248a3",
+      "rep": 61,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-61\\learned_power__seed-17",
+      "seed": 17,
+      "selected_epoch_one_based": 16,
+      "shuffle_seed": 10061,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 45356
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "b3514b21873342df02e5ac4bfd015a5f5410e14b923ae9400b3eb58f43cdde13",
+        "learning_curve": "1d343fa5ee284a6c2fdde4ff054cd942f360dcd071cffc951d0e5a6921ca8bfd",
+        "safe_state_dict": "e1d05a2ba201f988dd5247187748f94fe6ccb6f58da3a09fed5fdfbdd9accd52",
+        "validation_predictions": "9346fbb5baac5d95c0959321293aeff3c687b793e37432ac63c8c53bcf210563"
+      },
+      "config_sha256": "63e7782dc55bb31fbb071d9998fae9ee2f60aada72bbbbfd16f77f7fc8a6e137",
+      "family": "learned_power",
+      "manifest_sha256": "7994e1be88b4c863da836654a63e8345843105234891384837e45f4d65281899",
+      "rep": 61,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-61\\learned_power__seed-43",
+      "seed": 43,
+      "selected_epoch_one_based": 8,
+      "shuffle_seed": 10061,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 48756
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "d0771399608bd3125a8f5f370a3daaae2f3ec83027e2e7554e5c0e670dcbbdd7",
+        "learning_curve": "a6f7f714d290d4ccb0329b1ea9892a68740ee96686818e915e1217d9ee859568",
+        "safe_state_dict": "67766cbebafc146fa1e39375a1d73caab38196b0c1896b5a1ca2a22e064e2c47",
+        "validation_predictions": "78f1308536281098839d6fef18b1840d9d609f90cdcc8c4f1e66725c8eaca5fc"
+      },
+      "config_sha256": "45708c11b6916edcd5082d634045e0e3162b5ae5d99fa4e5f6ad98af74c9711b",
+      "family": "learned_power",
+      "manifest_sha256": "0371156163d200697c88fd614f2beb574df4b60d99d270910cf08e8c3af12555",
+      "rep": 61,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-61\\learned_power__seed-101",
+      "seed": 101,
+      "selected_epoch_one_based": 7,
+      "shuffle_seed": 10061,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 37664
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "d95f5431cd72dbcb18f6264fe3c0a6981d4f9e2688dd9654997511f4038de536",
+        "learning_curve": "3a7633f84c01f6234cdf7e54585fead9104bda965f106a942ab57761527d93a2",
+        "safe_state_dict": "dc3da6808ffa2d8cc394dfcfbdfd8ebf2e821b92f728445a73bb8445da0ecf64",
+        "validation_predictions": "deda87761b5ce74652522c96c0b1447bfcf6f080f6adf2c8079464db0092c4ca"
+      },
+      "config_sha256": "9b76da08ac4fb81b6aafd7b3aefc84b1948c35538d44f2437102b3ae421f884f",
+      "family": "learned_power",
+      "manifest_sha256": "eb575f92e65a75180c65e43cd69146ac30844b572ded14c9de5e49c8200981c6",
+      "rep": 61,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-61\\learned_power__seed-131",
+      "seed": 131,
+      "selected_epoch_one_based": 12,
+      "shuffle_seed": 10061,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 46524
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "fb04d4834fdecaaea3a322da6dff78340481743dfa166b9c15261245372fabe0",
+        "learning_curve": "1fc48139ae264b990b48ddf66835e39c62fd45ccaffed1083375e8b180e99964",
+        "safe_state_dict": "4bb3b799aceac4195aac5abe5b99ff958f3bd4455968256773a257d369b444de",
+        "validation_predictions": "37a9c5c379f2b89e519a046224143ea910aea6e6bd29d706bc272b4a13535546"
+      },
+      "config_sha256": "8e1f572ed6ec843b65e98d72fbdf80d09b3f3d454df7d7663baf144d11d58dc3",
+      "family": "learned_power",
+      "manifest_sha256": "729f0e171f6c59648ea8d495293a7506ec708e36616513ba846caea572c98757",
+      "rep": 61,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-61\\learned_power__seed-211",
+      "seed": 211,
+      "selected_epoch_one_based": 1,
+      "shuffle_seed": 10061,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 34160
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "5ec9d0cffe9620937210de722226fe08aeedd4588f43e1b8f62671abf118de72",
+        "learning_curve": "0d7f0851572e909a9d1ea5aa94427a3b13c3249f119048729c27c971f6ab8363",
+        "safe_state_dict": "b0647e74ab297ea1a1bdd061e8994c9504a5f82b0edaa20ede5417a57ccceb81",
+        "validation_predictions": "8637ca296e720d028d3bb91a08f83883764238beeb66134fe6d7b3f19712d69c"
+      },
+      "config_sha256": "168453cbf40190429aae6be6bf4aa689b6ba34d18925908952f05556614da65f",
+      "family": "complex_gram",
+      "manifest_sha256": "6eae666556d3abde5208c3338ed63eb59a13ee518606c905f0dc0c483307d217",
+      "rep": 89,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-89\\complex_gram__seed-17",
+      "seed": 17,
+      "selected_epoch_one_based": 8,
+      "shuffle_seed": 10089,
+      "variant": "complex_gram_shuffle",
+      "worker_pid": 20640
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "6902485aeae27aee9d338722c3a862b3084e44277be9e6b1d9430c07945b43fa",
+        "learning_curve": "b77ce84e64c937a816020e4e830eb92a9b60c8746f87e5941974582468874221",
+        "safe_state_dict": "a8e78360029a15a431b34eaca41038474706128ba9fd120c53338a6275e4f286",
+        "validation_predictions": "b3a3d79a2f4c60fe1b418431527028122c3d4629afd3d8078d1dd25fda7e4981"
+      },
+      "config_sha256": "57702839029bbee5953562c4e36f479e217c95df9aeb9f7e622c7bd84feddecc",
+      "family": "complex_gram",
+      "manifest_sha256": "72750f38a1362db799fca2a99cfcdd7171990fa18fd986c9a4cacef317e6e26a",
+      "rep": 89,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-89\\complex_gram__seed-29",
+      "seed": 29,
+      "selected_epoch_one_based": 11,
+      "shuffle_seed": 10089,
+      "variant": "complex_gram_shuffle",
+      "worker_pid": 42444
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "ba03331f3c1ba13dcbea63479c0b176e808a179880e05947d12c61e107c6845d",
+        "learning_curve": "36fe5a9efdb1257aca23c7935409cc5694bf7be80956e8d8cbd938b3c7754907",
+        "safe_state_dict": "dc2a79707af6c731f3fd8a1c612157d18908a521215d2920e908b4c0fd70bf00",
+        "validation_predictions": "d85cc7d5d3d1a5696b22fdf5e341054fe36580d33ae6f315123c8016b0392db1"
+      },
+      "config_sha256": "2b9ea089b21a5c5b7118f076bcf2147c34c05a68514ed8c86a62a691f9ffa6d5",
+      "family": "learned_power",
+      "manifest_sha256": "a7a3e208cc1014d52ac7d9c87c54c189616300a7ab8b2e256ecf3615646998c7",
+      "rep": 61,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-61\\learned_power__seed-89",
+      "seed": 89,
+      "selected_epoch_one_based": 56,
+      "shuffle_seed": 10061,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 46340
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "b6e3c04082c1f933c39f45b606cca7b698965d68aa63c75086a4635b7f8c8fef",
+        "learning_curve": "696fb1f80595b92b8d9f0de08cecdc907517e2c9ca3e82ab7019925e35c87d4a",
+        "safe_state_dict": "b87569bb03cfd959aef1fada93ad8f4d05c2622085042c9f9a26c359fa712e58",
+        "validation_predictions": "5f4564f40a86caa9bfbd30f243f7a53aef4f2f0976756ab326cc2d8fd3c38399"
+      },
+      "config_sha256": "2eabfbdd1a38974b180b3af747a1519c46cf6d3a7f0ba48264137cff7b67756e",
+      "family": "learned_power",
+      "manifest_sha256": "1891f78687b68ae056f37a5ffae5f72a9a28d11996305977a32952e1c8dca387",
+      "rep": 61,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-61\\learned_power__seed-257",
+      "seed": 257,
+      "selected_epoch_one_based": 22,
+      "shuffle_seed": 10061,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 48800
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "ae7db9c7f08caa7f1de9af4b325667aa39993d840df94c4764ab23343776ed51",
+        "learning_curve": "7e49e8a185ece6e525898bfb2539476583987b36b86f07416af72805644c40a2",
+        "safe_state_dict": "344bc1e4872483fa11f28de0124bf010fdb65b46d586d1f64aa1b6587c999fc4",
+        "validation_predictions": "2bd15dde6b5ab7f5106876e58c01995b66809fb2e4ec6196dc769fe9fbf18415"
+      },
+      "config_sha256": "4ed4cc2363b9f69b8e18f7add7bcd1811cd5ddbf5044ea7396359732f1c6a3bf",
+      "family": "complex_gram",
+      "manifest_sha256": "d8abd418d94d74b3a8435977f2cf67d0bb9be7c21cc9fc1f0bfd733fc2c96cba",
+      "rep": 89,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-89\\complex_gram__seed-61",
+      "seed": 61,
+      "selected_epoch_one_based": 7,
+      "shuffle_seed": 10089,
+      "variant": "complex_gram_shuffle",
+      "worker_pid": 45004
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "f8f7a1801ef2e54ce1c78fb4c85d82b7b7ccb329414700b1f50ac69274584bf0",
+        "learning_curve": "b3bb6dc288f11927b19b3e18f74dce511c4bea5172981840bbac535b786499d9",
+        "safe_state_dict": "194d99faac01e7900b7ad6d74a3ce4a7741c157c022fd06682165fd75f971f12",
+        "validation_predictions": "716cee9e9cc7d27b03830f3cac1001fffe4864499f2f000a76d5f0bf4054c6c1"
+      },
+      "config_sha256": "d3d4b6c8cdac5192a4acfbd5070f7fbf2f865ac5303709e8af66ca946a40b3c3",
+      "family": "complex_gram",
+      "manifest_sha256": "184adbd246d9ea525795118cc1d61935c83ab427dc7aaad1bdf77a962f7a095d",
+      "rep": 89,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-89\\complex_gram__seed-89",
+      "seed": 89,
+      "selected_epoch_one_based": 5,
+      "shuffle_seed": 10089,
+      "variant": "complex_gram_shuffle",
+      "worker_pid": 21040
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "e7aea1bdb8300a9cd5df9567d7f3ab3fc2f02c53fafe16a0389c614afc92ec54",
+        "learning_curve": "8731cb6c7099e82f3773d834c04fb3a259c32a4c8c71364d1023269562519da7",
+        "safe_state_dict": "56bba1481a90c934c7fdf5d56a96c53de115a4199ccd437a8944b7645dbf5324",
+        "validation_predictions": "06b69337aff38cecc46479cd80c01e88503bb61c4f2670e8c4dd395e00e2b36b"
+      },
+      "config_sha256": "3786a018cb099cb0c5746b8f7693d8212e8061fcdb6d9c8e871eefa97c1e1b43",
+      "family": "complex_gram",
+      "manifest_sha256": "9dd85fc51e00185d7d01c431f27164b3f1de49397ec8042d4ade4c621d23f611",
+      "rep": 89,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-89\\complex_gram__seed-43",
+      "seed": 43,
+      "selected_epoch_one_based": 15,
+      "shuffle_seed": 10089,
+      "variant": "complex_gram_shuffle",
+      "worker_pid": 29748
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "f71138eeb238d535de755279ea4d676692e5c021a568786ada03cff8fa9f5e58",
+        "learning_curve": "56b9a220a2e0a812605eb8522a911adb609ba89be51f5527a0ab8a9e1dedac4c",
+        "safe_state_dict": "bdaef6499da3c5911f9777dce129578152f2ecc5f3147141e56b5d569853e71c",
+        "validation_predictions": "4173162bdb88ab8dc47e9b22c206607b7ee5f7c38c5ad017b010727dbf6df255"
+      },
+      "config_sha256": "21f0ddef3e7595af204bb3bfd8dceda2e44149039cc5d7f59d738e795d153b7c",
+      "family": "learned_power",
+      "manifest_sha256": "fb70dbab5eda8083b04fb146356488b2d669c73de20793cb5009dae267276d26",
+      "rep": 61,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-61\\learned_power__seed-173",
+      "seed": 173,
+      "selected_epoch_one_based": 50,
+      "shuffle_seed": 10061,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 27220
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "82bbf1130e895f2e5d90779e071d9e82d519e502137c52896bdf6592a1c04f44",
+        "learning_curve": "dae06c4698c02b7998b249a35746e403b08608aec2c30ac3f93af975d21f358c",
+        "safe_state_dict": "4bd29d8da2a03beda02d8ccfa4bd3eac5856dadc70e6223858cc2eec0cc5e08d",
+        "validation_predictions": "37f652100e6fd0ea066ea56e02ea679a51ff28a4d7555fd115d03bf70542a47c"
+      },
+      "config_sha256": "71d91e7d9f2d39acca21fd3df4f5723e3c5b12d373b453b17b2274e093d0d2b2",
+      "family": "learned_power",
+      "manifest_sha256": "5825544f6df97a61261e096847667718a79dcff9dccadef9259a16214036e65f",
+      "rep": 89,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-89\\learned_power__seed-17",
+      "seed": 17,
+      "selected_epoch_one_based": 2,
+      "shuffle_seed": 10089,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 20356
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "86de11e83d188a031f3141a320310911a2916f483947dd571c884220b57ef91a",
+        "learning_curve": "27b337618c6eda691d0b53b82249621902451a9902e7a762df30ca713050e3fe",
+        "safe_state_dict": "813a97d78d07eef9a7211359bad71aa7e5db0a31bf3c47ee328da7abbb266f85",
+        "validation_predictions": "84d16c93090c3006ae21edc1118d850b5a48a9e6cd490020323f3b72d03ecc97"
+      },
+      "config_sha256": "931663cd368a58eb59238552cf262984dab78ac000cda981374e84faa4c37cd7",
+      "family": "learned_power",
+      "manifest_sha256": "2aeb3fc05adc53fe81b9f83ded6df22a29ebb3c91276ec91da91963029b8137d",
+      "rep": 89,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-89\\learned_power__seed-29",
+      "seed": 29,
+      "selected_epoch_one_based": 1,
+      "shuffle_seed": 10089,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 41232
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "f1b41798a9613136586797d1e59609f0d29931c84c54371d8dbc2faf5e6597f4",
+        "learning_curve": "99665f8b0d50bdcffe27cb3d3fc0420f6ca0d041dd0e35f38aa95a53b3b3ad59",
+        "safe_state_dict": "c897ffd4946cc2c02928d3203156a904beed4e1f9108ad9615530f54b726842c",
+        "validation_predictions": "b1872dcc0efa3c533e930060f122fabb67c31509bec7b8f7490c691ab6efb49b"
+      },
+      "config_sha256": "8c8bc61d13cafe8ba84fc4afd3b29ffe657debe83e289363f62b8d4ab61ed856",
+      "family": "learned_power",
+      "manifest_sha256": "9011238872d57f61a65965c9f747da41a976b759ff9706ee1997ff70e323629a",
+      "rep": 89,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-89\\learned_power__seed-43",
+      "seed": 43,
+      "selected_epoch_one_based": 2,
+      "shuffle_seed": 10089,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 12844
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "0cdcfb27d077110a8b002ddce2ee906fa8bdb1b913ad8d1fffb53af95b8de13f",
+        "learning_curve": "f9501905a029df93a5308ea6b6b3cb680835f106a6f2caaea02b9f706de863f5",
+        "safe_state_dict": "1830e4eaa9b28aaeb47a7a9bf98b993145b139d1d1b3211a2033b492c2cb773e",
+        "validation_predictions": "d642df3b4e14d8a35164ac5c59ec645f40bddebc1f6a95fbaa4aafba4b1d4ebb"
+      },
+      "config_sha256": "1d4605bebaa9902a52bb8ebeb7d836881c0f86e1f5cdd16344fe8c7af204b738",
+      "family": "learned_power",
+      "manifest_sha256": "deb0dffa08d176b41e503aa69871e9631fed50c33e5350ac86ad780695c9e4cd",
+      "rep": 89,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-89\\learned_power__seed-101",
+      "seed": 101,
+      "selected_epoch_one_based": 1,
+      "shuffle_seed": 10089,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 25740
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "369af0fd79ec66b6a9a9a699529ccd66533c848c279887bdebee24dcefbde814",
+        "learning_curve": "8a30e91a03ad2affba5d7427266f6c52bca8ed64212d0f116ddaf5c2121a1a70",
+        "safe_state_dict": "0342c846b28d24e053dbc4b9b9a674488b64bc98a0abc113eaced7a3eedff417",
+        "validation_predictions": "22d5351119e03363e070cefbd9a8f85e45d63db84d4e8b1d65ab855f52e25c2a"
+      },
+      "config_sha256": "21becf4b263e5f36a68e8d2a84373307e901a944843b4eb26f3ee3e57ea231b6",
+      "family": "learned_power",
+      "manifest_sha256": "208b5d971f3c42ae1bc04566ea802fc875564419ef6fe5f30b6eca9dc863e09a",
+      "rep": 89,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-89\\learned_power__seed-131",
+      "seed": 131,
+      "selected_epoch_one_based": 2,
+      "shuffle_seed": 10089,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 11524
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "f94b91703fa95c4c67f5b080441933a9bf18b69117ebe26cdf502fc28c6ff798",
+        "learning_curve": "d77ba6b319e26da4a7daedffd329ede5a7a5739dc0c8baf9dc8cad3f162332ab",
+        "safe_state_dict": "a827f2b3b5c3ccc611ffadc25c2508ab8af2f013def7e8c9f5b1f64b51205c2c",
+        "validation_predictions": "3ddb3010def27aa85dfe6c17809ad8702972c7ff204133f0339cdbbf0d0b8ba4"
+      },
+      "config_sha256": "a03bf072e9f6c8dbb346f5559a1f4d80a12a7ede6ac8fee54a35d08f18eb320b",
+      "family": "learned_power",
+      "manifest_sha256": "060f10aed53a95322c03178faf03eb0c7a1852c1ee164d69eb038ff7e75885c6",
+      "rep": 89,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-89\\learned_power__seed-173",
+      "seed": 173,
+      "selected_epoch_one_based": 1,
+      "shuffle_seed": 10089,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 43808
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "92a01760388d9a9cf712e0ade512454c5ba1550f4f29e0e159023a5a159ecf87",
+        "learning_curve": "e674c0e3ba784d861117739f9cbd22e95eb12b0b62c11b8ea782413d6570dc67",
+        "safe_state_dict": "92a8405070ade4de56d003d27f6be42bb26fe6ffcd330ede4b1f4e4e85cc04aa",
+        "validation_predictions": "6f1d0cb9f8c313add727a563c7a567800e805b5e78945c88114eff11f987d453"
+      },
+      "config_sha256": "e1731567e1589494dd76620aa9e1fe38316ae7e60ddd4e3c22090f19dc2e616d",
+      "family": "learned_power",
+      "manifest_sha256": "aab142095420ad0f6fbed18a904eb7e6ead0283f9a3a0443b7af7a888cc4ca4f",
+      "rep": 89,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-89\\learned_power__seed-211",
+      "seed": 211,
+      "selected_epoch_one_based": 1,
+      "shuffle_seed": 10089,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 45284
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "7e6065dc714283dcce74cb47d6bbfa21ac31e16e0bd4f88f0a096c2ef0435531",
+        "learning_curve": "effa14e18497ae9277d1af2bad5d75fd42c9bc1dbd6d9408e85c20cbded4e168",
+        "safe_state_dict": "fde248f06796f16e7975c4f70f89392de375c2d7d1ccd10dc9a76fa5cb399d4d",
+        "validation_predictions": "5ef828dd6023d6d4413ee3e4461c13fa000a3935320632ffdcf3c3db08ac5703"
+      },
+      "config_sha256": "44f8651aecd9e60b4fceedfa4dd2ed080f4ac21600c120f8079725260c482cd5",
+      "family": "learned_power",
+      "manifest_sha256": "e00aa605ccdb5aa0d600853d6c3849f3f42234b47ddb09e30b343e61d345cdc3",
+      "rep": 89,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-89\\learned_power__seed-61",
+      "seed": 61,
+      "selected_epoch_one_based": 34,
+      "shuffle_seed": 10089,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 38728
+    },
+    {
+      "artifact_sha256": {
+        "best_checkpoint": "d1e7cc82b4c47a8dcddd4a085bced563c9ad3057fb3d5c562d9b92cdfe207657",
+        "learning_curve": "f611173919fd3aa3ee363c00a7227c752821673d09b274ee347b24c86d815b5f",
+        "safe_state_dict": "0f0e8de157fa1195d4bf939986bfeb8221fb111ac7ec036e2d711539cfeb6933",
+        "validation_predictions": "b094b287bb58b16d292fd257c9ff37e9490ed4851b93bd589a08de748605e37e"
+      },
+      "config_sha256": "3be0ed1e4b70bef6462407d85f60caacb160de2fb8d0ee6ee910b14d24196ef1",
+      "family": "learned_power",
+      "manifest_sha256": "a989eb36bce683aa9dcaddda432b88e7cde388d03bd9f7883d5c27f877d5671a",
+      "rep": 89,
+      "run_dir": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929\\rep-89\\learned_power__seed-257",
+      "seed": 257,
+      "selected_epoch_one_based": 1,
+      "shuffle_seed": 10089,
+      "variant": "learned_power_shuffle",
+      "worker_pid": 30744
+    }
+  ],
+  "created_utc": "2026-09-29T14:33:53+00:00",
+  "failed": [],
+  "pending_count": 0,
+  "root": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\outputs\\c170_f2_matched_nulls_20260929",
+  "running": [],
+  "tasks": [],
+  "updated_utc": "2026-09-29T14:43:26+00:00"
+}

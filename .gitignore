@@ -1,0 +1,15 @@
+# Local environments and caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.DS_Store
+# Acquisition data and generated experiment artifacts are distributed separately.
+/data/OpenBCISession*/
+/data/**/*.npz
+/outputs/
+# Temporary files and local secrets
+*.tmp
+.env
+.env.*
+!.env.example
