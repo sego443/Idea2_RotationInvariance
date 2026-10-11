@@ -9,9 +9,7 @@ import numpy as np
 import torch
 from scipy import signal
 
-import run_c170_experiment as c170
-
-
+from scripts.runners import run_c170_experiment as c170
 SAMPLE_RATE_HZ = 250.0
 CHANNEL_COUNT = 4
 WINDOW_LENGTH = 500

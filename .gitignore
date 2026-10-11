@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 .pytest_cache/
+.tmp/
 .venv/
 .DS_Store
 # Acquisition data and generated experiment artifacts are distributed separately.

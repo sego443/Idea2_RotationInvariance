@@ -4,6 +4,8 @@ Updated: 2026-10-01. This release translates existing project text and consolida
 
 | Document | Purpose |
 |---|---|
+| [Repository layout](REPOSITORY_LAYOUT.md) | Directory roles, cleanup policy, migration, and local artifact navigation |
+| [Script catalog](../scripts/README.md) | Commands grouped by responsibility and method family |
 | [Experimental design](EXPERIMENT_DESIGN.md) | Questions, acquisition, representations, controls, split, gates, and proposed independent follow-up |
 | [Experimental procedure](EXPERIMENT_PROCEDURE.md) | Data preparation, training, selection, run artifacts, recovery, and scoring boundaries |
 | [Experimental results](EXPERIMENT_RESULTS.md) | Historical chronology, batch comparisons, frozen F2 test, nulls, failures, and limitations |
@@ -17,7 +19,7 @@ Updated: 2026-10-01. This release translates existing project text and consolida
 
 - [W01 collection](data_collection/round1_rotation_poc_task.md) and [feasibility results](results/2026-08-27-round1-rotation-invariance-feasibility.md)
 - [C170 exploratory acceptance](results/2026-09-27-c170-exploratory-validation-acceptance.md)
-- [Original temporal ring plan](superpowers/plans/2026-09-27-c170-ring-representation.md)
+- [Original temporal ring plan](plans/2026-09-27-c170-ring-representation.md)
 - [Latent-angle design](designs/2026-09-28-latent-angle-temporal-classifier.md), [execution plan](plans/2026-09-28-c170-latent-angle-cuda-experiments.md), and [launcher guide](usage/c170-latent-angle-cuda-launcher.md)
 - [Ring v2 plan](plans/2026-09-28-c170-ring-cross-position-cuda.md) and [protocol review](results/2026-09-28-c170-ring-v2-runner-protocol-review.md)
 - [Train/validation quality](results/2026-09-28-c170-train-validation-quality-diagnostic.md), [scale commutation](results/2026-09-29-c170-c4-scale-commutation-check.md), and [later v3 checkpoint check](results/2026-09-29-c170-v3-sharedscale-checkpoint-c4-check.md)

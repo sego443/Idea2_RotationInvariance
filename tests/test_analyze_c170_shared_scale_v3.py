@@ -8,7 +8,7 @@ import json
 from pathlib import Path
 from tempfile import TemporaryDirectory
 
-from analyze_c170_shared_scale_v3_results import (
+from scripts.analysis.analyze_c170_shared_scale_v3_results import (
     AuditError,
     FORMAL_SEEDS,
     FORMAL_VARIANTS,
@@ -55,11 +55,11 @@ def _row(variant: str, seed: int, macro_f1: float) -> dict[str, object]:
 class SharedScaleV3AggregationTests(unittest.TestCase):
     def test_snapshot_verification_hashes_copied_source_files(self) -> None:
         source_files = {
-            "runner": "run_c170_ring_cuda_experiment_v3.py",
+            "runner": 'scripts/runners/run_c170_ring_cuda_experiment_v3.py',
             "shared_scale_preprocessing": "src/c170_shared_scale_preprocessing_v3.py",
             "ring_representation": "src/c170_ring_representation.py",
-            "frozen_v2_training_helpers": "run_c170_ring_cuda_experiment_v2.py",
-            "dataset_preprocessing_helpers": "run_c170_experiment.py",
+            "frozen_v2_training_helpers": 'scripts/runners/run_c170_ring_cuda_experiment_v2.py',
+            "dataset_preprocessing_helpers": 'scripts/runners/run_c170_experiment.py',
             "preprocessing_transitive_signal_processing": "src/rotation_poc.py",
         }
         with TemporaryDirectory() as temp:
@@ -87,6 +87,21 @@ class SharedScaleV3AggregationTests(unittest.TestCase):
             )
             _path, verified, _snapshot = _read_v3_snapshot(root)
             self.assertEqual(verified, code_hashes)
+
+            # The same verifier must still accept original frozen root-level paths.
+            for relative in list(file_hashes):
+                if relative.startswith("scripts/runners/"):
+                    legacy = Path(relative).name
+                    (code_dir / relative).rename(code_dir / legacy)
+                    file_hashes[legacy] = file_hashes.pop(relative)
+            manifest_path = snapshot_dir / "snapshot_manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            manifest["snapshot_file_sha256"] = file_hashes
+            manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
+            self.assertEqual(_read_v3_snapshot(root)[1], code_hashes)
+            (code_dir / "run_c170_experiment.py").write_text("tampered", encoding="utf-8")
+            with self.assertRaises(AuditError):
+                _read_v3_snapshot(root)
 
     def test_matrix_requires_exact_two_by_five_variant_seed_pairs(self) -> None:
         rows = [

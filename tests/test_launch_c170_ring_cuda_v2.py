@@ -11,7 +11,7 @@ import unittest
 PROJECT_DIR = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_DIR))
 
-from launch_c170_ring_cuda_v2 import (  # noqa: E402
+from scripts.launchers.launch_c170_ring_cuda_v2 import (  # noqa: E402
     LauncherError,
     RunSpec,
     _make_command,

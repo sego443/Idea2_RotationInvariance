@@ -9,10 +9,8 @@ import pytest
 PROJECT_DIR = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_DIR))
 
-import run_c170_experiment as c170
-import run_c170_ring_experiment as ring_experiment
-
-
+from scripts.runners import run_c170_experiment as c170
+from scripts.runners import run_c170_ring_experiment as ring_experiment
 def test_fixed_ring_plan_records_train_val_and_registered_test_distances() -> None:
     plan = ring_experiment.build_experiment_plan(speed_probe=True)
 

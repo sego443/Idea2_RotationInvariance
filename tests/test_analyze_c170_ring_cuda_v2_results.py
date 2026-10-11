@@ -6,7 +6,7 @@ import unittest
 from pathlib import Path
 from tempfile import TemporaryDirectory
 
-from analyze_c170_ring_cuda_v2_results import (
+from scripts.analysis.analyze_c170_ring_cuda_v2_results import (
     AuditError,
     FORMAL_SEEDS,
     FORMAL_VARIANTS,

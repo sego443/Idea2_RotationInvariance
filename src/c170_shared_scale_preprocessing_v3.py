@@ -6,9 +6,7 @@ from collections.abc import Mapping
 
 import numpy as np
 
-import run_c170_experiment as c170
-
-
+from scripts.runners import run_c170_experiment as c170
 SAMPLE_RATE_HZ = 250
 CHANNEL_COUNT = 4
 

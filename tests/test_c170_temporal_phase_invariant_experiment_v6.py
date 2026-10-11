@@ -10,7 +10,7 @@ from pathlib import Path
 import numpy as np
 import torch
 
-from run_c170_temporal_phase_invariant_experiment_v6 import (
+from scripts.runners.run_c170_temporal_phase_invariant_experiment_v6 import (
     EXPECTED_SHARED_SCALE,
     _batches_for_epoch,
     _load_numpy_state_dict,

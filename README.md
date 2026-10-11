@@ -16,19 +16,19 @@ Research code for recognizing four presegmented movement directions from four ci
 ## Repository layout
 
 ```text
-src/                  Model, representation, preprocessing, and loss modules
-tests/                Existing unit and protocol tests
-docs/data_collection/ Collection plans and acquisition prompts
-docs/designs/         Dated model designs
-docs/plans/           Dated execution protocols
-docs/results/         Dated diagnostic and result reports
-docs/evidence/        Portable result summaries and provenance index
-data/processed_c170_20260926/ Metadata; dataset.npz provided separately
-run_*.py              Experiment runners
-launch_*.py           Batch launchers, including historical Windows launchers
-analyze_*.py          Saved-artifact analyzers
-outputs/              Local generated artifacts, excluded from Git
+scripts/runners/      Experiment runners, including versioned research methods
+scripts/launchers/    Batch launchers and recovery workflows
+scripts/analysis/     Saved-artifact analysis, evaluation, plotting, benchmarks
+scripts/data/         Recording segmentation and dataset preparation
+scripts/validation/   Synthetic numerical invariance/equivariance checks
+src/                  Reusable model, representation, preprocessing, loss modules
+tests/                Unit and experimental protocol tests
+docs/                 Living guides and dated research records
+data/                 Original recordings and processed dataset metadata
+outputs/              Local run bundles and frozen snapshots, excluded from Git
 ```
+
+See the [repository guide](docs/REPOSITORY_LAYOUT.md) for preservation rules and the [script catalog](scripts/README.md) for entry points. Execution plans now share `docs/plans/`. The [migration ledger](docs/evidence/reorganization_manifest_20261011.json) maps historical root-level script names to current paths; frozen run bundles retain their original source paths and hashes.
 
 The task is four-way classification of **already segmented** UP/DOWN/LEFT/RIGHT strokes. These experiments do not implement word recognition, an open vocabulary, or automatic movement-boundary detection in a continuous stream.
 
@@ -51,7 +51,7 @@ Raw recordings, NPZ datasets, checkpoints, and complete run directories are dist
 From the project root, using a new output directory:
 
 ```bash
-python run_c170_experiment.py --phase validation-only --dataset data/processed_c170_20260926/dataset.npz --output-dir outputs/c170_new_validation --train-distance-mm 0 10 20 30 50 60 80 100 120 140 160 --val-distance-mm 5 40 90 130 --test-distance-mm 15 25 110 150 --confirm-physical-order
+python scripts/runners/run_c170_experiment.py --phase validation-only --dataset data/processed_c170_20260926/dataset.npz --output-dir outputs/c170_new_validation --train-distance-mm 0 10 20 30 50 60 80 100 120 140 160 --val-distance-mm 5 40 90 130 --test-distance-mm 15 25 110 150 --confirm-physical-order
 ```
 
 The frozen split excludes 70 mm and the copied B019 window, yielding 879/320/320 train/validation/registered-test windows. The flag confirms a verified physical sensor order; it is not a substitute for checking a new dataset's mapping. The legacy loader decodes/finite-checks the complete NPZ, but this phase trains and selects checkpoints on train/validation without test prediction or scoring.

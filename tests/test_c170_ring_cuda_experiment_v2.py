@@ -7,7 +7,7 @@ import unittest
 import numpy as np
 import torch
 
-from run_c170_ring_cuda_experiment_v2 import (
+from scripts.runners.run_c170_ring_cuda_experiment_v2 import (
     VARIANT_CONFIG,
     _batches_for_epoch,
     _classification_metrics,

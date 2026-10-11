@@ -9,7 +9,7 @@ import torch
 
 
 def runner():
-    return import_module("run_c170_experiment")
+    return import_module("scripts.runners.run_c170_experiment")
 
 
 def test_load_dataset_excludes_duplicate_rows_and_keeps_source_indices() -> None:

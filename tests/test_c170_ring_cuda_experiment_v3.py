@@ -8,7 +8,7 @@ from unittest import mock
 import numpy as np
 import torch
 
-from run_c170_ring_cuda_experiment_v3 import (
+from scripts.runners.run_c170_ring_cuda_experiment_v3 import (
     VARIANT_CONFIG,
     _load_numpy_state_dict,
     _manifest_base_v3,

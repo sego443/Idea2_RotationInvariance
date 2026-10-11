@@ -6,7 +6,7 @@ import pytest
 
 
 def ensemble_runner():
-    return import_module("run_c170_validation_ensemble")
+    return import_module("scripts.runners.run_c170_validation_ensemble")
 
 
 def test_ensemble_definitions_use_fixed_members_and_equal_probability_average() -> None:

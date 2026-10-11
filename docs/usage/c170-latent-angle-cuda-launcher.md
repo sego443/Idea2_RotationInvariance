@@ -1,6 +1,6 @@
 # C170 latent-angle CUDA launcher
 
-`launch_c170_latent_angle_cuda.py` runs the approved train/validation experiment with one runner process per seed. Each experiment needs a new output directory. Probe output and formal output must use separate directories.
+`scripts/launchers/launch_c170_latent_angle_cuda.py` runs the approved train/validation experiment with one runner process per seed. Each experiment needs a new output directory. Probe output and formal output must use separate directories.
 
 The launcher uses Python 3.10 with PyTorch 1.13.1+cu117, requires CUDA and `nvidia-smi`, and records GPU utilization and memory every two seconds. Each child process uses the configured CPU thread count (default 2). Runner stdout and stderr go to a separate `<variant>__seed-<seed>.stdout.log` file.
 

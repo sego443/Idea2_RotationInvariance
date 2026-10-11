@@ -11,8 +11,8 @@ PROJECT_DIR = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_DIR))
 sys.path.insert(0, str(PROJECT_DIR / "src"))
 
-import run_c170_experiment as c170
-import run_c170_ring_experiment as ring_experiment
+from scripts.runners import run_c170_experiment as c170
+from scripts.runners import run_c170_ring_experiment as ring_experiment
 from c170_ring_representation import (
     RingRepresentationClassifier,
     build_balanced_batches,

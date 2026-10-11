@@ -6,9 +6,7 @@ from collections.abc import Mapping
 
 import numpy as np
 
-import run_c170_experiment as c170
-
-
+from scripts.runners import run_c170_experiment as c170
 NORMALIZATIONS = ("sensor_median", "sensor_rms", "window_sensor_rms", "bounded_sensor_gain")
 SCALE_FLOOR = 1e-6
 GAIN_BOUND = 0.1

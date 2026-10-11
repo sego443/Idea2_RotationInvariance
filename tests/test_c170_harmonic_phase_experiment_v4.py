@@ -9,7 +9,7 @@ from pathlib import Path
 import numpy as np
 import torch
 
-from run_c170_harmonic_phase_experiment_v4 import (
+from scripts.runners.run_c170_harmonic_phase_experiment_v4 import (
     EXPECTED_SHARED_SCALE,
     _batches_for_epoch,
     _load_numpy_state_dict,

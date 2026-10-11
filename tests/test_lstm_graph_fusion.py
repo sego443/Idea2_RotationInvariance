@@ -3,7 +3,7 @@ import torch
 
 from lstm_graph_fusion import FourChannelLSTMGraphFusion
 from rotation_poc import predict_temporal_model, train_temporal_model
-from run_lstm_graph_experiment import prepare_model_inputs
+from scripts.runners.run_lstm_graph_experiment import prepare_model_inputs
 
 
 def test_four_channel_lstm_parameters_are_independent() -> None:

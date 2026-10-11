@@ -8,7 +8,7 @@ Record session, participant/wrist/wear, hardware/gain/firmware, sample rate, ori
 
 C170 metadata must agree with X_raw `(1600,500,4)`, 250 Hz, 80 complete/56 short files, one duplicate and two verified EXG maps. Fixed split counts are 879/320/320 after excluding all 70 mm and the B019 copy. Position labels are not measured physical angles.
 
-prepare_c170_session.py validates metadata/channels/prompts, localizes centers and checks spacing/bounds, then writes an exclusive new directory. Localization uses 0.5–12 Hz/75-sample envelope; output windows retain raw samples. Record source rows, detected counts, trimming and the prescribed copy/source. Its hashlib.file_digest call requires Python 3.11+; use a separate preprocessing environment from historical Python 3.10 training. Do not edit the NPZ to fit a model or silently repair labels/counts.
+scripts/data/prepare_c170_session.py validates metadata/channels/prompts, localizes centers and checks spacing/bounds, then writes an exclusive new directory. Localization uses 0.5–12 Hz/75-sample envelope; output windows retain raw samples. Record source rows, detected counts, trimming and the prescribed copy/source. Its hashlib.file_digest call requires Python 3.11+; use a separate preprocessing environment from historical Python 3.10 training. Do not edit the NPZ to fit a model or silently repair labels/counts.
 
 ## 2. Preprocessing and access boundary
 

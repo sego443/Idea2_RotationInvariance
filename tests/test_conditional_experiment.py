@@ -6,7 +6,7 @@ import pytest
 
 def experiment():
     try:
-        return importlib.import_module("run_conditional_experiment")
+        return importlib.import_module("scripts.runners.run_conditional_experiment")
     except ModuleNotFoundError as error:
         pytest.fail(f"conditional experiment runner is missing: {error}")
 

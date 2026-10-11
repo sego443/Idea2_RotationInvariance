@@ -10,7 +10,7 @@ from pathlib import Path
 import numpy as np
 import torch
 
-from run_c170_harmonic_nyquist_experiment_v5 import (
+from scripts.runners.run_c170_harmonic_nyquist_experiment_v5 import (
     EXPECTED_SHARED_SCALE,
     _batches_for_epoch,
     _load_numpy_state_dict,
