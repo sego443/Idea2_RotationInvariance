@@ -23,7 +23,7 @@ def load_c170(path: Path = C170_PATH) -> dict[str, np.ndarray]:
         positions = archive["distance_mm"][keep].astype(int)
         return {
             "X": archive["X_raw"][keep].astype(np.float32),
-            "y": np.array([CLASSES.index(value) for value in archive["direction"][keep]]),
+            "y": np.array([CLASSES.index(value) for value in archive["direction"][keep]], dtype=np.int64),
             "group": np.array([f"C170_P{p:03d}" for p in positions]),
             "position": positions,
             "block": archive["block"][keep].astype(int),
@@ -42,7 +42,7 @@ def load_w01(path: Path = W01_PATH) -> dict[str, np.ndarray]:
         angles = archive["angles"].astype(int)
         return {
             "X": archive["strokes"].astype(np.float32),
-            "y": archive["labels"].astype(int),
+            "y": archive["labels"].astype(np.int64),
             "group": np.array([f"W01_A{a:03d}" for a in angles]),
             "position": angles,
             "block": archive["blocks"].astype(int) + 10_000,

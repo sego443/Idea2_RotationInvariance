@@ -10,6 +10,7 @@ Research code for recognizing four presegmented movement directions from four ci
 - [Detailed experimental design](docs/EXPERIMENT_DESIGN.md)
 - [Execution and artifact procedure](docs/EXPERIMENT_PROCEDURE.md)
 - [Results, controls, and limitations](docs/EXPERIMENT_RESULTS.md)
+- [Fresh v22 window and normalization ablations (exploratory)](docs/results/2026-10-12-v22-window-normalization-ablation.md)
 - [Environment and reproduction](docs/REPRODUCIBILITY.md)
 - [Standalone Git and remote release](docs/RELEASE.md)
 

@@ -6,6 +6,22 @@ from src import v21_data
 from src import v21_wear_calibrated as v21
 
 
+@pytest.mark.parametrize("source", ["c170", "w01"])
+def test_loaded_labels_support_cross_entropy_on_windows(tmp_path, source):
+    path = tmp_path / "dataset.npz"
+    if source == "c170":
+        np.savez(path, X_raw=np.zeros((4, 500, 4)), is_duplicate=np.zeros(4, dtype=bool),
+                 distance_mm=np.zeros(4), direction=v21_data.CLASSES,
+                 block=np.arange(4), repetition=np.ones(4))
+        labels = v21_data.load_c170(path)["y"]
+    else:
+        np.savez(path, strokes=np.zeros((4, 500, 4)), angles=np.zeros(4),
+                 labels=np.arange(4, dtype=np.int32), blocks=np.arange(4), repetitions=np.ones(4))
+        labels = v21_data.load_w01(path)["y"]
+    loss = torch.nn.functional.cross_entropy(torch.randn(4, 4), torch.as_tensor(labels))
+    assert torch.isfinite(loss)
+
+
 @pytest.mark.parametrize("backbone", v21.BACKBONES)
 def test_embeddings_are_unit_norm_and_logits_have_four_classes(backbone: str) -> None:
     model = v21.WearCalibratedClassifier(backbone).eval()
@@ -46,7 +62,7 @@ def test_augment_preserves_shape_and_identity_settings_return_input() -> None:
 def test_episode_loss_is_finite_and_differentiable() -> None:
     model = v21.WearCalibratedClassifier("b2_signed_cnn")
     samples = torch.randn(40, 500, 4)
-    labels = torch.tensor(np.tile(np.repeat(np.arange(4), 5), 2))
+    labels = torch.tensor(np.tile(np.repeat(np.arange(4, dtype=np.int64), 5), 2))
     groups = np.repeat(["A", "B"], 20)
     loss = v21.episode_loss(model, samples, labels, groups, np.random.default_rng(0), shots=2, tau=4.0, max_query=12)
     assert torch.isfinite(loss)

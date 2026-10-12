@@ -1,0 +1,41 @@
+{
+  "status": "preflight",
+  "created_local": "2026-10-12T18:28:25.0674218+08:00",
+  "pulled_commit": "79a03c5",
+  "input": {
+    "c170": "data/processed_c170_20260926/dataset.npz",
+    "w01": "outputs/round1_rotation_poc_2026-08-27/segmented_dataset.npz"
+  },
+  "data_sha256": {
+    "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349",
+    "w01": "29246cf45f8fb17ac398ddf1d5c58dbef1df88970bb8739fad8513fa110b9179"
+  },
+  "classes": [
+    "UP",
+    "DOWN",
+    "LEFT",
+    "RIGHT"
+  ],
+  "cropping": "Existing raw 500-sample windows at 250 Hz; full, prefix_200/250/300, outbound_valley oracle and return_only. Filter each visible span independently; demean; 20-sample cut-edge taper; zero pad.",
+  "filter": "Third-order Butterworth 0.5-40 Hz, zero-phase SOS",
+  "channels": "C170 stored S0,S1,S2,S3: EXG 0,2,4,6 or 0,1,2,3, user-confirmed physical order in processed README. W01 stored EXG 0,1,2,3; physical ring order is not newly independently verified; B2 has no invariance claim.",
+  "normalization": "Shared scalar fit on training only; per-window RMS alternatives; group_sensor transductive per-group/channel medians including scored inputs, explicitly authorized by user on 2026-10-12.",
+  "split": "Complete C170 position groups. fixed_split excludes 70 mm and duplicate; w01_transfer trains all 1599 nonduplicate C170 strokes including 70 mm.",
+  "labels": "True labels and within-group complete-direction-block label permutations; real seeds 17/29/43; null model seed 17 and null seed 17.",
+  "output": "outputs/v22_window_norm_ablation_cuda_20261012",
+  "overwrite_protection": "Fresh grid root; each runner mkdir exist_ok=False. Incomplete smoke outputs preserved. Retry suffixes preserve interrupted runs.",
+  "epochs": 120,
+  "checkpoint_selection": "Final fixed epoch, no held-out checkpoint selection",
+  "test_access_boundary": "NPZ decoded in split loader before training; only train labels enter optimization. After fixed 120 epochs, evaluate old validation and exposed C170 registered test together, then summarize separately. W01 transfer trains all C170 and scores W01 after training. CAL uses 2 labeled strokes/direction from same scored recording, or neighboring held-out recording for CALNB; UNSUP uses other scored unlabeled strokes. No untouched holdout accessed.",
+  "planned_runs": 81,
+  "smoke": "outputs/v22_cuda_smoke_20261012 failed on int32 labels before evaluation; retry1 is one epoch pipeline verification, excluded from research scores",
+  "environment": {
+    "numpy": "1.26.4",
+    "python": "3.10.18",
+    "torch": "2.6.0+cu124",
+    "driver": "591.86",
+    "gpu": "RTX 2080 Ti",
+    "sklearn": "1.7.0",
+    "scipy": "1.15.2"
+  }
+}

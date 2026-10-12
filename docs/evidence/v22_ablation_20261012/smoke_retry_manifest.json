@@ -1,0 +1,97 @@
+{
+  "arguments": {
+    "protocol": "fixed_split",
+    "backbone": "b2_signed_cnn",
+    "window": "full",
+    "norm": "shared",
+    "episodic_weight": "1.0",
+    "episode_support": "same",
+    "augment": "1",
+    "seed": "17",
+    "null_seed": "None",
+    "epochs": "1",
+    "batch_size": "64",
+    "lr": "0.001",
+    "weight_decay": "0.001",
+    "cpu_threads": "2",
+    "device": "cuda",
+    "output_dir": "outputs\\v22_cuda_smoke_20261012_retry1"
+  },
+  "status": "exploratory v22 window/normalization ablation on existing data",
+  "train_groups": [
+    "C170_P000",
+    "C170_P010",
+    "C170_P020",
+    "C170_P030",
+    "C170_P050",
+    "C170_P060",
+    "C170_P080",
+    "C170_P100",
+    "C170_P120",
+    "C170_P140",
+    "C170_P160"
+  ],
+  "n_train": 879,
+  "evaluations": {
+    "c170_heldout": {
+      "groups": [
+        "C170_P005",
+        "C170_P015",
+        "C170_P025",
+        "C170_P040",
+        "C170_P090",
+        "C170_P110",
+        "C170_P130",
+        "C170_P150"
+      ],
+      "n_scored": 576
+    }
+  },
+  "window_statistics": {
+    "train": {
+      "variant": "full",
+      "n": 879,
+      "visible_samples_median": 500.0,
+      "visible_samples_iqr": [
+        500.0,
+        500.0
+      ],
+      "two_bursts_found_fraction": 1.0
+    },
+    "c170_heldout": {
+      "variant": "full",
+      "n": 640,
+      "visible_samples_median": 500.0,
+      "visible_samples_iqr": [
+        500.0,
+        500.0
+      ],
+      "two_bursts_found_fraction": 1.0
+    }
+  },
+  "shared_scale": 11123.02734375,
+  "cal_shots_per_direction": 2,
+  "taus": [
+    1.0,
+    4.0,
+    16.0
+  ],
+  "train_tau": 4.0,
+  "data_sha256": {
+    "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349"
+  },
+  "source_sha256": {
+    "scripts\\runners\\run_v22_window_norm_ablation.py": "e5908cb4c03fffa7545c53ec3c5b22ec0907693d8290c502e43a18933b02b175",
+    "scripts\\runners\\run_v21_wear_calibrated.py": "816eb9cba5c9c4b8e5c993dc9bac3557fb6776dc08d79f0f149c128b2a37e646",
+    "src\\v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+    "src\\v21_data.py": "6f03523ce716046cbee555aa0990bec8b42d3e725e25bfa057e741028e8829e5",
+    "src\\v22_window_norm.py": "03d9919caa3f2030c3e6a9897d13217d685f3b5f7a86eef295ff0d83e933fe4c"
+  },
+  "environment": {
+    "python": "3.10.18",
+    "torch": "2.6.0+cu124",
+    "machine": "AMD64",
+    "pid": 5504
+  },
+  "runtime_s": 7.6
+}

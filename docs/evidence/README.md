@@ -1,6 +1,8 @@
 # Portable experiment evidence
 
-Copied on2026-10-01 from existing local outputs. These are historical artifacts, not fresh training results. [artifact_index.json](artifact_index.json) records original output paths, current SHA-256 and sizes. [english_conversion_manifest.json](english_conversion_manifest.json) records text migration; original run hashes remain historical. [release_verification.json](release_verification.json) records current checks.
+The table below contains historical artifacts copied on 2026-10-01, not fresh training results. [artifact_index.json](artifact_index.json) records their original output paths, SHA-256 and sizes. [english_conversion_manifest.json](english_conversion_manifest.json) records text migration; original run hashes remain historical. [release_verification.json](release_verification.json) records that release's checks.
+
+Fresh October 12 v22 evidence lives separately in [v22_ablation_20261012](v22_ablation_20261012/summary.json): 81 new completed runs, [preflight](v22_ablation_20261012/preflight.json), [score table](v22_ablation_20261012/score_table.md), [verified run records](v22_ablation_20261012/verified_run_evidence.json) and [verification](v22_ablation_20261012/verification.json). See the [dated report](../results/2026-10-12-v22-window-normalization-ablation.md) for interpretation and test-access boundaries.
 
 Some copied JSON files refer to additional checkpoints/run directories not included here; obtain the complete local artifact bundle for replay. Machine paths are provenance.
 

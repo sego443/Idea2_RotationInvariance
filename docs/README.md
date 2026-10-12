@@ -1,6 +1,6 @@
 # Documentation index
 
-Updated: 2026-10-01. This release translates existing project text and consolidates saved evidence; it does not rerun training or collect new data.
+Updated: 2026-10-12. The October 1 documentation release translated existing text and consolidated historical evidence. The dated v22 report below records fresh exploratory training on existing data; no new acquisition was performed.
 
 | Document | Purpose |
 |---|---|
@@ -15,12 +15,13 @@ Updated: 2026-10-01. This release translates existing project text and consolida
 | [September 30 closeout](TRAINING_REPORT_20260930.md) | Dated final training summary |
 | [Evidence index](evidence/README.md) | Portable summaries and their original local sources |
 
-## Next study (proposed, not executed)
+## W02 next study and exploratory development
 
 - [W02 rewear acquisition protocol](data_collection/w02_rewear_protocol.md)
 - [v21 wear-calibrated classifier design and pre-registered endpoints](designs/2026-10-12-v21-wear-calibrated-classifier.md)
 - [v21 development on existing data (exploratory)](results/2026-10-12-v21-development-on-existing-data.md)
 - [C170 calibration pilot (exploratory)](results/2026-10-12-c170-calibration-pilot.md)
+- [Fresh v22 time-window and normalization ablations (81 completed CUDA runs)](results/2026-10-12-v22-window-normalization-ablation.md)
 - Stage-1 freeze manifest: `evidence/v21_freeze/v21_freeze_S1.json`
 
 ## Historical protocols and diagnostics

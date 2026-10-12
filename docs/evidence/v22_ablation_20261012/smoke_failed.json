@@ -1,0 +1,9 @@
+{
+  "status": "failed",
+  "phase": "first training minibatch before evaluation",
+  "error": "RuntimeError: nll_loss_forward_reduce_cuda_kernel_2d_index not implemented for Int",
+  "cause": "C170 labels inherited NumPy default int32 on Windows",
+  "command": "python -m scripts.runners.run_v22_window_norm_ablation --protocol fixed_split --backbone b2_signed_cnn --window full --norm shared --seed 17 --epochs 1 --device cuda --output-dir outputs/v22_cuda_smoke_20261012",
+  "completed": false,
+  "preserved": "Original incomplete directory; no completion marker; retry1 completed separately."
+}

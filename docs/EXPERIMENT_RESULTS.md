@@ -1,6 +1,6 @@
 # Experimental results and evidence report
 
-Report date: 2026-10-01. Historical acquisition/training spans 2026-08-27 to 2026-09-30. This report consolidates current saved artifacts; training was not rerun, and no new test-waveform scoring was performed during documentation work. The copied JSON/CSV summaries have current checksums in [the evidence index](evidence/artifact_index.json).
+Historical report date: 2026-10-01; fresh-run addendum: 2026-10-12 (section 8). Sections 1–7 consolidate acquisition/training from 2026-08-27 to 2026-09-30; training was not rerun and no new test-waveform scoring was performed during that documentation release. The copied historical JSON/CSV summaries have checksums in [the evidence index](evidence/artifact_index.json).
 
 ## Overall finding
 
@@ -187,3 +187,9 @@ No0.90 target was reached. The next confirmatory evidence needs a new independen
 ## 7. Figures and documentation verification
 
 See the [English figure gallery](FIGURES.md). Five existing overlays were regenerated from the same selected train/validation/excluded-position windows, with traces exactly matching the original calculation and no registered-test preprocessing. The original English W01 result figure is unchanged. [Release verification](evidence/release_verification.json) records current text, source, metadata, data-hash, saved-prediction arithmetic and Git checks; it is distinct from a training rerun.
+
+## 8. Fresh v22 exploratory ablations (2026-10-12)
+
+The [dated v22 report](results/2026-10-12-v22-window-normalization-ablation.md) records 81 completed CUDA runs: time-window and amplitude-normalization ablations, three real-label seeds per variant/protocol and 15 matched block-permuted controls. It explicitly scores the already exposed C170 held-out positions and reused W01 data after fixed 120-epoch training; these are exploratory results, not new confirmatory evidence. The original v22 group_sensor design uses an authorized transductive evaluation input pool.
+
+W01 ZERO macro-F1 remains weak (fresh full/shared mean 0.233; best exploratory mean 0.337 for prefix_200/shared). Full/group_sensor CAL reaches a 0.944 mean, but its matched training-label null also scores about 0.944 with true calibration support. High same-recording calibration therefore does not establish correctly learned cross-session direction semantics or physical rotation invariance. See the dated report for per-class, per-position, channel-map and access-boundary detail; no W02 data was collected or evaluated.
