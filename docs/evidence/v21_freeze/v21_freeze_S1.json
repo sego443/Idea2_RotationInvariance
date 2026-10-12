@@ -1,0 +1,516 @@
+{
+  "stage": "S1",
+  "created_utc": "2026-10-11T21:36:21.236455+00:00",
+  "classes": [
+    "UP",
+    "DOWN",
+    "LEFT",
+    "RIGHT"
+  ],
+  "endpoints": {
+    "E1": {
+      "backbone": "b2_signed_cnn",
+      "tau": 1.0,
+      "support": "labeled C prefix (8 strokes) of the same trial recording"
+    },
+    "E1b": {
+      "backbone": "b1_complex_gram",
+      "tau": 16.0,
+      "support": "labeled C prefixes of the other trial recordings of the same wear"
+    },
+    "E2": {
+      "backbone": "b1_complex_gram",
+      "tau": 1.0,
+      "support": "same-recording prefix with labels ignored plus earlier body strokes (causal)"
+    },
+    "E3": {
+      "backbone": "b1_complex_gram"
+    }
+  },
+  "scored_strokes": "body (S) strokes of every trial recording of the evaluated parts; prefix strokes are never scored",
+  "evaluate_parts": [
+    "A",
+    "B"
+  ],
+  "ensemble_rule": "per-seed argmax, majority vote across seeds, ties to lowest class ID",
+  "gate": {
+    "macro_f1_min": 0.8,
+    "per_class_recall_min": 0.65,
+    "applies_to": "E1"
+  },
+  "bootstrap": {
+    "unit": "wear",
+    "resamples": 10000,
+    "seed": 20261012
+  },
+  "real_runs": [
+    {
+      "run": "outputs/v21_stage1_candidates_20261012/b1_complex_gram__real__s17",
+      "checkpoint_sha256": "b84c8223506ea5d5a68938f4cf7b886a387376ff39db55e6d6558788999dd58b",
+      "arguments": {
+        "protocol": "all_current",
+        "backbone": "b1_complex_gram",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "w02_dataset": "None",
+        "w02_parts": "()",
+        "seed": "17",
+        "null_seed": "None",
+        "epochs": "120",
+        "batch_size": "64",
+        "lr": "0.001",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage1_candidates_20261012/b1_complex_gram__real__s17"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "785038b8e64efa00033b72a5f3a74d7651fe9898501c9eb66a9f3277096aa3e7",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "44d9aa24d35922a53bf7c2f25f589b6083941ac57d3a9641454091a77634d329"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349",
+        "w01": "29246cf45f8fb17ac398ddf1d5c58dbef1df88970bb8739fad8513fa110b9179"
+      }
+    },
+    {
+      "run": "outputs/v21_stage1_candidates_20261012/b1_complex_gram__real__s29",
+      "checkpoint_sha256": "1d60ad12e3a8bd4905fc423e703d6cb0a70d1f5f0f819d493a2c41b42cb72399",
+      "arguments": {
+        "protocol": "all_current",
+        "backbone": "b1_complex_gram",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "w02_dataset": "None",
+        "w02_parts": "()",
+        "seed": "29",
+        "null_seed": "None",
+        "epochs": "120",
+        "batch_size": "64",
+        "lr": "0.001",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage1_candidates_20261012/b1_complex_gram__real__s29"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "785038b8e64efa00033b72a5f3a74d7651fe9898501c9eb66a9f3277096aa3e7",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "44d9aa24d35922a53bf7c2f25f589b6083941ac57d3a9641454091a77634d329"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349",
+        "w01": "29246cf45f8fb17ac398ddf1d5c58dbef1df88970bb8739fad8513fa110b9179"
+      }
+    },
+    {
+      "run": "outputs/v21_stage1_candidates_20261012/b1_complex_gram__real__s43",
+      "checkpoint_sha256": "4b0a9cfa876e34cb8c5035a3263262ed04ab3f1563e2c820f3481bd8cf8a01fd",
+      "arguments": {
+        "protocol": "all_current",
+        "backbone": "b1_complex_gram",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "w02_dataset": "None",
+        "w02_parts": "()",
+        "seed": "43",
+        "null_seed": "None",
+        "epochs": "120",
+        "batch_size": "64",
+        "lr": "0.001",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage1_candidates_20261012/b1_complex_gram__real__s43"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "785038b8e64efa00033b72a5f3a74d7651fe9898501c9eb66a9f3277096aa3e7",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "44d9aa24d35922a53bf7c2f25f589b6083941ac57d3a9641454091a77634d329"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349",
+        "w01": "29246cf45f8fb17ac398ddf1d5c58dbef1df88970bb8739fad8513fa110b9179"
+      }
+    },
+    {
+      "run": "outputs/v21_stage1_candidates_20261012/b1_complex_gram__real__s61",
+      "checkpoint_sha256": "4212fb68798537e1a5a61329b62d0ecedd5259629a99bae4be1437c97c83d7ce",
+      "arguments": {
+        "protocol": "all_current",
+        "backbone": "b1_complex_gram",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "w02_dataset": "None",
+        "w02_parts": "()",
+        "seed": "61",
+        "null_seed": "None",
+        "epochs": "120",
+        "batch_size": "64",
+        "lr": "0.001",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage1_candidates_20261012/b1_complex_gram__real__s61"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "785038b8e64efa00033b72a5f3a74d7651fe9898501c9eb66a9f3277096aa3e7",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "44d9aa24d35922a53bf7c2f25f589b6083941ac57d3a9641454091a77634d329"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349",
+        "w01": "29246cf45f8fb17ac398ddf1d5c58dbef1df88970bb8739fad8513fa110b9179"
+      }
+    },
+    {
+      "run": "outputs/v21_stage1_candidates_20261012/b1_complex_gram__real__s89",
+      "checkpoint_sha256": "9a4747441961916a379eb6b4916ef3c1d1d8f229c604cc6929d6290378a4dbb1",
+      "arguments": {
+        "protocol": "all_current",
+        "backbone": "b1_complex_gram",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "w02_dataset": "None",
+        "w02_parts": "()",
+        "seed": "89",
+        "null_seed": "None",
+        "epochs": "120",
+        "batch_size": "64",
+        "lr": "0.001",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage1_candidates_20261012/b1_complex_gram__real__s89"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "785038b8e64efa00033b72a5f3a74d7651fe9898501c9eb66a9f3277096aa3e7",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "44d9aa24d35922a53bf7c2f25f589b6083941ac57d3a9641454091a77634d329"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349",
+        "w01": "29246cf45f8fb17ac398ddf1d5c58dbef1df88970bb8739fad8513fa110b9179"
+      }
+    },
+    {
+      "run": "outputs/v21_stage1_candidates_20261012/b2_signed_cnn__real__s17",
+      "checkpoint_sha256": "721a3b626c03dc5be7e69a7375cfa8594424a7de563348de3e3c7b82d32d4d30",
+      "arguments": {
+        "protocol": "all_current",
+        "backbone": "b2_signed_cnn",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "w02_dataset": "None",
+        "w02_parts": "()",
+        "seed": "17",
+        "null_seed": "None",
+        "epochs": "120",
+        "batch_size": "64",
+        "lr": "0.001",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage1_candidates_20261012/b2_signed_cnn__real__s17"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "785038b8e64efa00033b72a5f3a74d7651fe9898501c9eb66a9f3277096aa3e7",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "44d9aa24d35922a53bf7c2f25f589b6083941ac57d3a9641454091a77634d329"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349",
+        "w01": "29246cf45f8fb17ac398ddf1d5c58dbef1df88970bb8739fad8513fa110b9179"
+      }
+    },
+    {
+      "run": "outputs/v21_stage1_candidates_20261012/b2_signed_cnn__real__s29",
+      "checkpoint_sha256": "b8b97d13a7bc0850fd29e8d8f9c43ba6c277a4255770c09182b7039b4e39f382",
+      "arguments": {
+        "protocol": "all_current",
+        "backbone": "b2_signed_cnn",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "w02_dataset": "None",
+        "w02_parts": "()",
+        "seed": "29",
+        "null_seed": "None",
+        "epochs": "120",
+        "batch_size": "64",
+        "lr": "0.001",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage1_candidates_20261012/b2_signed_cnn__real__s29"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "785038b8e64efa00033b72a5f3a74d7651fe9898501c9eb66a9f3277096aa3e7",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "44d9aa24d35922a53bf7c2f25f589b6083941ac57d3a9641454091a77634d329"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349",
+        "w01": "29246cf45f8fb17ac398ddf1d5c58dbef1df88970bb8739fad8513fa110b9179"
+      }
+    },
+    {
+      "run": "outputs/v21_stage1_candidates_20261012/b2_signed_cnn__real__s43",
+      "checkpoint_sha256": "7c4363d4d1cab7b94d465f672e8b34359dbabc4a385d5594aa15836027ff662a",
+      "arguments": {
+        "protocol": "all_current",
+        "backbone": "b2_signed_cnn",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "w02_dataset": "None",
+        "w02_parts": "()",
+        "seed": "43",
+        "null_seed": "None",
+        "epochs": "120",
+        "batch_size": "64",
+        "lr": "0.001",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage1_candidates_20261012/b2_signed_cnn__real__s43"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "785038b8e64efa00033b72a5f3a74d7651fe9898501c9eb66a9f3277096aa3e7",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "44d9aa24d35922a53bf7c2f25f589b6083941ac57d3a9641454091a77634d329"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349",
+        "w01": "29246cf45f8fb17ac398ddf1d5c58dbef1df88970bb8739fad8513fa110b9179"
+      }
+    },
+    {
+      "run": "outputs/v21_stage1_candidates_20261012/b2_signed_cnn__real__s61",
+      "checkpoint_sha256": "643450f1d17a0bbc3fcd4231804488756a2de0b980981e3ea9547e430f944004",
+      "arguments": {
+        "protocol": "all_current",
+        "backbone": "b2_signed_cnn",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "w02_dataset": "None",
+        "w02_parts": "()",
+        "seed": "61",
+        "null_seed": "None",
+        "epochs": "120",
+        "batch_size": "64",
+        "lr": "0.001",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage1_candidates_20261012/b2_signed_cnn__real__s61"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "785038b8e64efa00033b72a5f3a74d7651fe9898501c9eb66a9f3277096aa3e7",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "44d9aa24d35922a53bf7c2f25f589b6083941ac57d3a9641454091a77634d329"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349",
+        "w01": "29246cf45f8fb17ac398ddf1d5c58dbef1df88970bb8739fad8513fa110b9179"
+      }
+    },
+    {
+      "run": "outputs/v21_stage1_candidates_20261012/b2_signed_cnn__real__s89",
+      "checkpoint_sha256": "9d0dce16a8b8b1f52c5ae0278e9540def5fc734df2043c2405f8fb61b39dbbb8",
+      "arguments": {
+        "protocol": "all_current",
+        "backbone": "b2_signed_cnn",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "w02_dataset": "None",
+        "w02_parts": "()",
+        "seed": "89",
+        "null_seed": "None",
+        "epochs": "120",
+        "batch_size": "64",
+        "lr": "0.001",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage1_candidates_20261012/b2_signed_cnn__real__s89"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "785038b8e64efa00033b72a5f3a74d7651fe9898501c9eb66a9f3277096aa3e7",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "44d9aa24d35922a53bf7c2f25f589b6083941ac57d3a9641454091a77634d329"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349",
+        "w01": "29246cf45f8fb17ac398ddf1d5c58dbef1df88970bb8739fad8513fa110b9179"
+      }
+    }
+  ],
+  "null_runs": [
+    {
+      "run": "outputs/v21_stage1_candidates_20261012/b2_signed_cnn__null__s17",
+      "checkpoint_sha256": "5ebbff458c8c4a228e10629ba171a5717b0338e7129eeaf1b839a25b62ba1f63",
+      "arguments": {
+        "protocol": "all_current",
+        "backbone": "b2_signed_cnn",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "w02_dataset": "None",
+        "w02_parts": "()",
+        "seed": "17",
+        "null_seed": "17",
+        "epochs": "120",
+        "batch_size": "64",
+        "lr": "0.001",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage1_candidates_20261012/b2_signed_cnn__null__s17"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "785038b8e64efa00033b72a5f3a74d7651fe9898501c9eb66a9f3277096aa3e7",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "44d9aa24d35922a53bf7c2f25f589b6083941ac57d3a9641454091a77634d329"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349",
+        "w01": "29246cf45f8fb17ac398ddf1d5c58dbef1df88970bb8739fad8513fa110b9179"
+      }
+    },
+    {
+      "run": "outputs/v21_stage1_candidates_20261012/b2_signed_cnn__null__s29",
+      "checkpoint_sha256": "cd4b11f453c3871326810eb4077863ac73e052891f0f32d0180506ba9248a653",
+      "arguments": {
+        "protocol": "all_current",
+        "backbone": "b2_signed_cnn",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "w02_dataset": "None",
+        "w02_parts": "()",
+        "seed": "29",
+        "null_seed": "29",
+        "epochs": "120",
+        "batch_size": "64",
+        "lr": "0.001",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage1_candidates_20261012/b2_signed_cnn__null__s29"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "785038b8e64efa00033b72a5f3a74d7651fe9898501c9eb66a9f3277096aa3e7",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "44d9aa24d35922a53bf7c2f25f589b6083941ac57d3a9641454091a77634d329"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349",
+        "w01": "29246cf45f8fb17ac398ddf1d5c58dbef1df88970bb8739fad8513fa110b9179"
+      }
+    },
+    {
+      "run": "outputs/v21_stage1_candidates_20261012/b2_signed_cnn__null__s43",
+      "checkpoint_sha256": "81f4e910d8fb066c3c3d4f198ba7495555c14d2aa6281cbf844a7a73e7fd3334",
+      "arguments": {
+        "protocol": "all_current",
+        "backbone": "b2_signed_cnn",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "w02_dataset": "None",
+        "w02_parts": "()",
+        "seed": "43",
+        "null_seed": "43",
+        "epochs": "120",
+        "batch_size": "64",
+        "lr": "0.001",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage1_candidates_20261012/b2_signed_cnn__null__s43"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "785038b8e64efa00033b72a5f3a74d7651fe9898501c9eb66a9f3277096aa3e7",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "44d9aa24d35922a53bf7c2f25f589b6083941ac57d3a9641454091a77634d329"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349",
+        "w01": "29246cf45f8fb17ac398ddf1d5c58dbef1df88970bb8739fad8513fa110b9179"
+      }
+    },
+    {
+      "run": "outputs/v21_stage1_candidates_20261012/b2_signed_cnn__null__s61",
+      "checkpoint_sha256": "2974c7bde95a1ca3d37fdaf3fd5129500f0737871643d7fb2fe65498bab41e74",
+      "arguments": {
+        "protocol": "all_current",
+        "backbone": "b2_signed_cnn",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "w02_dataset": "None",
+        "w02_parts": "()",
+        "seed": "61",
+        "null_seed": "61",
+        "epochs": "120",
+        "batch_size": "64",
+        "lr": "0.001",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage1_candidates_20261012/b2_signed_cnn__null__s61"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "785038b8e64efa00033b72a5f3a74d7651fe9898501c9eb66a9f3277096aa3e7",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "44d9aa24d35922a53bf7c2f25f589b6083941ac57d3a9641454091a77634d329"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349",
+        "w01": "29246cf45f8fb17ac398ddf1d5c58dbef1df88970bb8739fad8513fa110b9179"
+      }
+    },
+    {
+      "run": "outputs/v21_stage1_candidates_20261012/b2_signed_cnn__null__s89",
+      "checkpoint_sha256": "203d8348639a2a9b198de45bbf9b91d500d7ac4d5de83bf0b3dc9c03fc6f40e7",
+      "arguments": {
+        "protocol": "all_current",
+        "backbone": "b2_signed_cnn",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "w02_dataset": "None",
+        "w02_parts": "()",
+        "seed": "89",
+        "null_seed": "89",
+        "epochs": "120",
+        "batch_size": "64",
+        "lr": "0.001",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage1_candidates_20261012/b2_signed_cnn__null__s89"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "785038b8e64efa00033b72a5f3a74d7651fe9898501c9eb66a9f3277096aa3e7",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "44d9aa24d35922a53bf7c2f25f589b6083941ac57d3a9641454091a77634d329"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349",
+        "w01": "29246cf45f8fb17ac398ddf1d5c58dbef1df88970bb8739fad8513fa110b9179"
+      }
+    }
+  ],
+  "scorer_sha256": "2094004acfe07bbfab3f0d9b531cb79cc2f270e13c710e4f3e3260007e1fa275"
+}

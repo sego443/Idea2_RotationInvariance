@@ -105,13 +105,25 @@ Versioned files are distinct experiment methods, controls, or dependencies. Reco
 - [analyze_c170_temporal_phase_invariant_v6_results.py](analysis/analyze_c170_temporal_phase_invariant_v6_results.py)
 - [analyze_c170_v4_v6_power_validation_fusion.py](analysis/analyze_c170_v4_v6_power_validation_fusion.py)
 - [benchmark_c170_ring_compute.py](analysis/benchmark_c170_ring_compute.py)
+- [evaluate_v21_frozen_w02.py](analysis/evaluate_v21_frozen_w02.py) — one-shot frozen v21 evaluation on W02 wears (exclusive start marker)
+- [make_v21_freeze_manifest.py](analysis/make_v21_freeze_manifest.py) — v21 freeze manifest with checkpoint/scorer hashes and endpoints
+- [summarize_v21_dev_grid.py](analysis/summarize_v21_dev_grid.py) — v21 development grid summaries
+- [diagnose_c170_calibration_pilot.py](analysis/diagnose_c170_calibration_pilot.py) — exploratory linear LOPO pilot for the W02/v21 design; train/old-validation positions only
 - [evaluate_c170_frozen_f2_nulls_and_test.py](analysis/evaluate_c170_frozen_f2_nulls_and_test.py)
 - [plot_c170_overlays.py](analysis/plot_c170_overlays.py)
 - [summarize_c170_temporal_gram_v19.py](analysis/summarize_c170_temporal_gram_v19.py)
 
+### v21 runner and launcher
+
+- [runners/run_v21_wear_calibrated.py](runners/run_v21_wear_calibrated.py) — one v21 run (training plus ZERO/CAL/UNSUP evaluation)
+- [launchers/launch_v21_stage2.py](launchers/launch_v21_stage2.py) — midday Stage-2 fine-tuning and freeze
+- [validation/rehearse_w02_pipeline.py](validation/rehearse_w02_pipeline.py) — synthetic end-to-end rehearsal of the acquisition day
+
 ### Data
 
 - [prepare_c170_session.py](data/prepare_c170_session.py)
+- [prepare_w02_session.py](data/prepare_w02_session.py) — segments W02 recordings by prompt sequence; flags count mismatches
+- [make_w02_session_plan.py](data/make_w02_session_plan.py) — randomized W02 rewear plan and OpenBCI prompts; writes a new directory only
 
 ### Validation
 

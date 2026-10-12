@@ -86,6 +86,9 @@ Repeated old-validation selection is exploratory. The C170 test was opened for f
 
 ## 7. Proposed independent follow-up, not executed
 
+Superseded on 2026-10-12 by the [W02 rewear protocol](data_collection/w02_rewear_protocol.md) and the [v21 design](designs/2026-10-12-v21-wear-calibrated-classifier.md); the original outline is kept below.
+
+
 Collect a new W02 rewear after freezing model/checkpoints/scales/classes/seeds/scorer and their hashes. Keep participant/hardware fixed if isolating rewearing; randomize or balance angle order and directions. Use the same 12 measured/reference angles, four directions, and five repetitions per combination, start/end rest and rest/RMS every three angles. Record actual angle, wrist, wear, hardware/firmware/gain/channel identity, times, interruptions, and prespecified exclusion/retry rules. Keep interrupted/repaired wears separate.
 
 Score W02 separately without refitting, tuning, or pooling it into C170. If it motivates any change, label it development and collect W03. Add irregular-angle, cross-day, or cross-participant studies only with corresponding frozen plans and untouched grouped holdouts. W02 and irregular challenges are not claimed as collected by this release.

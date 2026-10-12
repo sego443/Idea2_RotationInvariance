@@ -15,6 +15,14 @@ Updated: 2026-10-01. This release translates existing project text and consolida
 | [September 30 closeout](TRAINING_REPORT_20260930.md) | Dated final training summary |
 | [Evidence index](evidence/README.md) | Portable summaries and their original local sources |
 
+## Next study (proposed, not executed)
+
+- [W02 rewear acquisition protocol](data_collection/w02_rewear_protocol.md)
+- [v21 wear-calibrated classifier design and pre-registered endpoints](designs/2026-10-12-v21-wear-calibrated-classifier.md)
+- [v21 development on existing data (exploratory)](results/2026-10-12-v21-development-on-existing-data.md)
+- [C170 calibration pilot (exploratory)](results/2026-10-12-c170-calibration-pilot.md)
+- Stage-1 freeze manifest: `evidence/v21_freeze/v21_freeze_S1.json`
+
 ## Historical protocols and diagnostics
 
 - [W01 collection](data_collection/round1_rotation_poc_task.md) and [feasibility results](results/2026-08-27-round1-rotation-invariance-feasibility.md)
