@@ -1,0 +1,517 @@
+{
+  "stage": "S1",
+  "created_utc": "2026-10-13T18:11:31.801326+00:00",
+  "classes": [
+    "UP",
+    "DOWN",
+    "LEFT",
+    "RIGHT"
+  ],
+  "endpoints": {
+    "E1": {
+      "backbone": "b2_signed_cnn",
+      "tau": 1.0,
+      "support": "labeled C prefix (8 strokes) of the same trial recording"
+    },
+    "E1b": {
+      "backbone": "b1_complex_gram",
+      "tau": 16.0,
+      "support": "labeled C prefixes of the other trial recordings of the same wear"
+    },
+    "E2": {
+      "backbone": "b1_complex_gram",
+      "tau": 1.0,
+      "support": "same-recording prefix with labels ignored plus earlier body strokes (causal)"
+    },
+    "E3": {
+      "backbone": "b1_complex_gram"
+    }
+  },
+  "training_data": "C170 (all non-duplicate windows); W01 excluded",
+  "scored_strokes": "body (S) strokes of every trial recording of the evaluated parts; prefix strokes are never scored",
+  "evaluate_parts": [
+    "A",
+    "B"
+  ],
+  "ensemble_rule": "per-seed argmax, majority vote across seeds, ties to lowest class ID",
+  "gate": {
+    "macro_f1_min": 0.8,
+    "per_class_recall_min": 0.65,
+    "applies_to": "E1"
+  },
+  "bootstrap": {
+    "unit": "wear",
+    "resamples": 10000,
+    "seed": 20261012
+  },
+  "real_runs": [
+    {
+      "run": "outputs/v21_stage1_c170_20261014/b1_complex_gram__real__s17",
+      "checkpoint_sha256": "8d9403830b5c34d5f2c0d19ded598bf01f630418ffaa2609b9cd39f842c47fe2",
+      "arguments": {
+        "protocol": "c170_all",
+        "backbone": "b1_complex_gram",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "init_checkpoint": "None",
+        "w02_dataset": "None",
+        "w02_parts": "()",
+        "seed": "17",
+        "null_seed": "None",
+        "epochs": "120",
+        "batch_size": "64",
+        "lr": "0.001",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage1_c170_20261014/b1_complex_gram__real__s17"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "9468ad36f456356d435fef632621f590acd54e33b116e0370bcb5eeeadfe7fc1",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "6f03523ce716046cbee555aa0990bec8b42d3e725e25bfa057e741028e8829e5"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349"
+      }
+    },
+    {
+      "run": "outputs/v21_stage1_c170_20261014/b1_complex_gram__real__s29",
+      "checkpoint_sha256": "5e9aa1e0a24f70193f54365e1e8d6499e310f6999f87e5fda5bf6e7290e48888",
+      "arguments": {
+        "protocol": "c170_all",
+        "backbone": "b1_complex_gram",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "init_checkpoint": "None",
+        "w02_dataset": "None",
+        "w02_parts": "()",
+        "seed": "29",
+        "null_seed": "None",
+        "epochs": "120",
+        "batch_size": "64",
+        "lr": "0.001",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage1_c170_20261014/b1_complex_gram__real__s29"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "9468ad36f456356d435fef632621f590acd54e33b116e0370bcb5eeeadfe7fc1",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "6f03523ce716046cbee555aa0990bec8b42d3e725e25bfa057e741028e8829e5"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349"
+      }
+    },
+    {
+      "run": "outputs/v21_stage1_c170_20261014/b1_complex_gram__real__s43",
+      "checkpoint_sha256": "6bb8df70be114c0942327b5be4fba77aff18457c93ac77cf788ba2345fc719f4",
+      "arguments": {
+        "protocol": "c170_all",
+        "backbone": "b1_complex_gram",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "init_checkpoint": "None",
+        "w02_dataset": "None",
+        "w02_parts": "()",
+        "seed": "43",
+        "null_seed": "None",
+        "epochs": "120",
+        "batch_size": "64",
+        "lr": "0.001",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage1_c170_20261014/b1_complex_gram__real__s43"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "9468ad36f456356d435fef632621f590acd54e33b116e0370bcb5eeeadfe7fc1",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "6f03523ce716046cbee555aa0990bec8b42d3e725e25bfa057e741028e8829e5"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349"
+      }
+    },
+    {
+      "run": "outputs/v21_stage1_c170_20261014/b1_complex_gram__real__s61",
+      "checkpoint_sha256": "c2f93877d8db529ec696fde4cc49e98de086fc30c7006d0dfc670c1bd3035931",
+      "arguments": {
+        "protocol": "c170_all",
+        "backbone": "b1_complex_gram",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "init_checkpoint": "None",
+        "w02_dataset": "None",
+        "w02_parts": "()",
+        "seed": "61",
+        "null_seed": "None",
+        "epochs": "120",
+        "batch_size": "64",
+        "lr": "0.001",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage1_c170_20261014/b1_complex_gram__real__s61"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "9468ad36f456356d435fef632621f590acd54e33b116e0370bcb5eeeadfe7fc1",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "6f03523ce716046cbee555aa0990bec8b42d3e725e25bfa057e741028e8829e5"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349"
+      }
+    },
+    {
+      "run": "outputs/v21_stage1_c170_20261014/b1_complex_gram__real__s89",
+      "checkpoint_sha256": "9de03c54c91da2eeb2dd8a8dc15b10163267aa6ba0bc93930784f4433feb79a8",
+      "arguments": {
+        "protocol": "c170_all",
+        "backbone": "b1_complex_gram",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "init_checkpoint": "None",
+        "w02_dataset": "None",
+        "w02_parts": "()",
+        "seed": "89",
+        "null_seed": "None",
+        "epochs": "120",
+        "batch_size": "64",
+        "lr": "0.001",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage1_c170_20261014/b1_complex_gram__real__s89"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "9468ad36f456356d435fef632621f590acd54e33b116e0370bcb5eeeadfe7fc1",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "6f03523ce716046cbee555aa0990bec8b42d3e725e25bfa057e741028e8829e5"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349"
+      }
+    },
+    {
+      "run": "outputs/v21_stage1_c170_20261014/b2_signed_cnn__real__s17",
+      "checkpoint_sha256": "d2e1f64d2874807318c9fa199e55f30b2192e6aad68b8eeffa8d2c7219b891ea",
+      "arguments": {
+        "protocol": "c170_all",
+        "backbone": "b2_signed_cnn",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "init_checkpoint": "None",
+        "w02_dataset": "None",
+        "w02_parts": "()",
+        "seed": "17",
+        "null_seed": "None",
+        "epochs": "120",
+        "batch_size": "64",
+        "lr": "0.001",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage1_c170_20261014/b2_signed_cnn__real__s17"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "9468ad36f456356d435fef632621f590acd54e33b116e0370bcb5eeeadfe7fc1",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "6f03523ce716046cbee555aa0990bec8b42d3e725e25bfa057e741028e8829e5"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349"
+      }
+    },
+    {
+      "run": "outputs/v21_stage1_c170_20261014/b2_signed_cnn__real__s29",
+      "checkpoint_sha256": "026117dd32b708c45cfda24db52d05670101f6e7da338dbaa6370f2f99c9926f",
+      "arguments": {
+        "protocol": "c170_all",
+        "backbone": "b2_signed_cnn",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "init_checkpoint": "None",
+        "w02_dataset": "None",
+        "w02_parts": "()",
+        "seed": "29",
+        "null_seed": "None",
+        "epochs": "120",
+        "batch_size": "64",
+        "lr": "0.001",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage1_c170_20261014/b2_signed_cnn__real__s29"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "9468ad36f456356d435fef632621f590acd54e33b116e0370bcb5eeeadfe7fc1",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "6f03523ce716046cbee555aa0990bec8b42d3e725e25bfa057e741028e8829e5"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349"
+      }
+    },
+    {
+      "run": "outputs/v21_stage1_c170_20261014/b2_signed_cnn__real__s43",
+      "checkpoint_sha256": "185dcbb271a7626ab637bb30ecc6fd25ff372f56f4d6e2e8239c8431633cbd00",
+      "arguments": {
+        "protocol": "c170_all",
+        "backbone": "b2_signed_cnn",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "init_checkpoint": "None",
+        "w02_dataset": "None",
+        "w02_parts": "()",
+        "seed": "43",
+        "null_seed": "None",
+        "epochs": "120",
+        "batch_size": "64",
+        "lr": "0.001",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage1_c170_20261014/b2_signed_cnn__real__s43"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "9468ad36f456356d435fef632621f590acd54e33b116e0370bcb5eeeadfe7fc1",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "6f03523ce716046cbee555aa0990bec8b42d3e725e25bfa057e741028e8829e5"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349"
+      }
+    },
+    {
+      "run": "outputs/v21_stage1_c170_20261014/b2_signed_cnn__real__s61",
+      "checkpoint_sha256": "21cffabf70be33be72fcc89861c103523cb6ad28e2928864f3cae06265cc416e",
+      "arguments": {
+        "protocol": "c170_all",
+        "backbone": "b2_signed_cnn",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "init_checkpoint": "None",
+        "w02_dataset": "None",
+        "w02_parts": "()",
+        "seed": "61",
+        "null_seed": "None",
+        "epochs": "120",
+        "batch_size": "64",
+        "lr": "0.001",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage1_c170_20261014/b2_signed_cnn__real__s61"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "9468ad36f456356d435fef632621f590acd54e33b116e0370bcb5eeeadfe7fc1",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "6f03523ce716046cbee555aa0990bec8b42d3e725e25bfa057e741028e8829e5"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349"
+      }
+    },
+    {
+      "run": "outputs/v21_stage1_c170_20261014/b2_signed_cnn__real__s89",
+      "checkpoint_sha256": "b17691263a56c5e001b8a24bb508f0a40e5884e6560e6ce0f92420ece1751afe",
+      "arguments": {
+        "protocol": "c170_all",
+        "backbone": "b2_signed_cnn",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "init_checkpoint": "None",
+        "w02_dataset": "None",
+        "w02_parts": "()",
+        "seed": "89",
+        "null_seed": "None",
+        "epochs": "120",
+        "batch_size": "64",
+        "lr": "0.001",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage1_c170_20261014/b2_signed_cnn__real__s89"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "9468ad36f456356d435fef632621f590acd54e33b116e0370bcb5eeeadfe7fc1",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "6f03523ce716046cbee555aa0990bec8b42d3e725e25bfa057e741028e8829e5"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349"
+      }
+    }
+  ],
+  "null_runs": [
+    {
+      "run": "outputs/v21_stage1_c170_20261014/b2_signed_cnn__null__s17",
+      "checkpoint_sha256": "edbdd1c95ab6babe37913d25a46715466e6aaf183bbbb6bb6a710fc76ec2f126",
+      "arguments": {
+        "protocol": "c170_all",
+        "backbone": "b2_signed_cnn",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "init_checkpoint": "None",
+        "w02_dataset": "None",
+        "w02_parts": "()",
+        "seed": "17",
+        "null_seed": "17",
+        "epochs": "120",
+        "batch_size": "64",
+        "lr": "0.001",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage1_c170_20261014/b2_signed_cnn__null__s17"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "9468ad36f456356d435fef632621f590acd54e33b116e0370bcb5eeeadfe7fc1",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "6f03523ce716046cbee555aa0990bec8b42d3e725e25bfa057e741028e8829e5"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349"
+      }
+    },
+    {
+      "run": "outputs/v21_stage1_c170_20261014/b2_signed_cnn__null__s29",
+      "checkpoint_sha256": "694e0331f892a805dc44f65921185dec81392b3b4a27ab24e0e678b639ef99b0",
+      "arguments": {
+        "protocol": "c170_all",
+        "backbone": "b2_signed_cnn",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "init_checkpoint": "None",
+        "w02_dataset": "None",
+        "w02_parts": "()",
+        "seed": "29",
+        "null_seed": "29",
+        "epochs": "120",
+        "batch_size": "64",
+        "lr": "0.001",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage1_c170_20261014/b2_signed_cnn__null__s29"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "9468ad36f456356d435fef632621f590acd54e33b116e0370bcb5eeeadfe7fc1",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "6f03523ce716046cbee555aa0990bec8b42d3e725e25bfa057e741028e8829e5"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349"
+      }
+    },
+    {
+      "run": "outputs/v21_stage1_c170_20261014/b2_signed_cnn__null__s43",
+      "checkpoint_sha256": "49147bcb036287a8f347d0da9feb29cbf78675f542467d20d399323261ad1050",
+      "arguments": {
+        "protocol": "c170_all",
+        "backbone": "b2_signed_cnn",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "init_checkpoint": "None",
+        "w02_dataset": "None",
+        "w02_parts": "()",
+        "seed": "43",
+        "null_seed": "43",
+        "epochs": "120",
+        "batch_size": "64",
+        "lr": "0.001",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage1_c170_20261014/b2_signed_cnn__null__s43"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "9468ad36f456356d435fef632621f590acd54e33b116e0370bcb5eeeadfe7fc1",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "6f03523ce716046cbee555aa0990bec8b42d3e725e25bfa057e741028e8829e5"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349"
+      }
+    },
+    {
+      "run": "outputs/v21_stage1_c170_20261014/b2_signed_cnn__null__s61",
+      "checkpoint_sha256": "c8944057a21a625eaee2c8b6f09135667e724a22e881a7921ad781c66508aaaf",
+      "arguments": {
+        "protocol": "c170_all",
+        "backbone": "b2_signed_cnn",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "init_checkpoint": "None",
+        "w02_dataset": "None",
+        "w02_parts": "()",
+        "seed": "61",
+        "null_seed": "61",
+        "epochs": "120",
+        "batch_size": "64",
+        "lr": "0.001",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage1_c170_20261014/b2_signed_cnn__null__s61"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "9468ad36f456356d435fef632621f590acd54e33b116e0370bcb5eeeadfe7fc1",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "6f03523ce716046cbee555aa0990bec8b42d3e725e25bfa057e741028e8829e5"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349"
+      }
+    },
+    {
+      "run": "outputs/v21_stage1_c170_20261014/b2_signed_cnn__null__s89",
+      "checkpoint_sha256": "c6811ae567eb85d08ad81105d65ad1d653675ed63067cc9bc51e994e3f05c17a",
+      "arguments": {
+        "protocol": "c170_all",
+        "backbone": "b2_signed_cnn",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "init_checkpoint": "None",
+        "w02_dataset": "None",
+        "w02_parts": "()",
+        "seed": "89",
+        "null_seed": "89",
+        "epochs": "120",
+        "batch_size": "64",
+        "lr": "0.001",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage1_c170_20261014/b2_signed_cnn__null__s89"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "9468ad36f456356d435fef632621f590acd54e33b116e0370bcb5eeeadfe7fc1",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "6f03523ce716046cbee555aa0990bec8b42d3e725e25bfa057e741028e8829e5"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349"
+      }
+    }
+  ],
+  "scorer_sha256": "2094004acfe07bbfab3f0d9b531cb79cc2f270e13c710e4f3e3260007e1fa275"
+}
