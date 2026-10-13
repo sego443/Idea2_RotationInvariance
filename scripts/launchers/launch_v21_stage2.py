@@ -1,4 +1,4 @@
-"""Midday-break launcher: fine-tune every frozen Stage-1 checkpoint on C170 + W01 + W02 Part A, then write S2's manifest.
+"""Midday-break launcher: fine-tune every frozen Stage-1 checkpoint on C170 + W02 Part A, then write S2's manifest.
 
 The recipe is fixed in docs/designs/2026-10-12-v21-wear-calibrated-classifier.md:
 - every real and null S1 run is fine-tuned for 30 epochs at lr 3e-4 (null runs keep their null seed);
@@ -35,11 +35,14 @@ def main() -> None:
     parser.add_argument("--output-root", type=Path, required=True)
     parser.add_argument("--s2-freeze-output", type=Path, required=True)
     parser.add_argument("--workers", type=int, default=4)
+    parser.add_argument("--device", default="cpu", help="Torch device for every run, e.g. cuda")
     parser.add_argument("--epochs", type=int, default=FINETUNE_EPOCHS, help="Rehearsal only")
     args = parser.parse_args()
     s1 = json.loads(args.s1_freeze.read_text())
     if s1["stage"] != "S1":
         raise ValueError("--s1-freeze must be a Stage-1 manifest")
+    if any(entry["arguments"]["protocol"] != "c170_all" for entry in s1["real_runs"] + s1["null_runs"]):
+        raise ValueError("--s1-freeze contains runs trained with W01; refreeze S1 with launch_v21_stage1")
     args.output_root.mkdir(parents=True, exist_ok=False)
 
     jobs = {"real": [], "null": []}
@@ -49,12 +52,12 @@ def main() -> None:
             arguments = entry["arguments"]
             name = f"{arguments['backbone']}__{kind}__s{arguments['seed']}"
             out = args.output_root / name
-            command = ["--protocol", "all_current_plus_w02", "--w02-dataset", str(args.w02_dataset.resolve()),
+            command = ["--protocol", "c170_plus_w02", "--w02-dataset", str(args.w02_dataset.resolve()),
                        "--w02-parts", "A", "--backbone", arguments["backbone"], "--seed", arguments["seed"],
                        "--episode-support", arguments.get("episode_support", "same"),
                        "--epochs", str(args.epochs), "--lr", str(FINETUNE_LR),
                        "--init-checkpoint", str(Path(entry["run"]).resolve() / "checkpoint.pt"),
-                       "--cpu-threads", "2", "--output-dir", str(out)]
+                       "--cpu-threads", "2", "--device", args.device, "--output-dir", str(out)]
             if arguments.get("null_seed") not in (None, "None"):
                 command += ["--null-seed", arguments["null_seed"]]
             commands.append(command)

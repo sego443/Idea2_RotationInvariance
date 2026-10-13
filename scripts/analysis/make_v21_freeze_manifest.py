@@ -1,5 +1,9 @@
 """Write a v21 freeze manifest from completed all-data training runs, before any W02 test wear is collected.
 
+Candidates must be trained without W01 (protocols c170_all for S1 and c170_plus_w02 for S2): W01 was a preliminary,
+non-rigorous collection and is excluded from training frozen models since 2026-10-12. The historical S1 manifest
+docs/evidence/v21_freeze/v21_freeze_S1.json (C170 + W01) is superseded and kept unchanged.
+
 The manifest fixes the real and matched-null checkpoints (with hashes), the inference rule for every endpoint, the
 calibration strength tau, the gate, the scorer source hash and the bootstrap seed. Commit it to Git before
 collecting the wears it will be evaluated on. The output file must not exist.
@@ -14,6 +18,7 @@ from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 SCORER = PROJECT_ROOT / "scripts" / "analysis" / "evaluate_v21_frozen_w02.py"
+FREEZE_PROTOCOLS = ("c170_all", "c170_plus_w02")
 
 
 def sha256(path: Path) -> str:
@@ -24,8 +29,8 @@ def checkpoint_entry(run: Path) -> dict:
     if not (run / "RUN_COMPLETE.json").exists():
         raise FileNotFoundError(f"incomplete run: {run}")
     manifest = json.loads((run / "run_manifest.json").read_text())
-    if manifest["arguments"]["protocol"] not in ("all_current", "all_current_plus_w02"):
-        raise ValueError(f"freeze candidates must be all-data runs: {run}")
+    if manifest["arguments"]["protocol"] not in FREEZE_PROTOCOLS:
+        raise ValueError(f"freeze candidates must be C170(+W02) all-data runs without W01: {run}")
     return {"run": str(run), "checkpoint_sha256": sha256(run / "checkpoint.pt"),
             "arguments": manifest["arguments"], "source_sha256": manifest["source_sha256"],
             "data_sha256": manifest["data_sha256"]}
@@ -65,6 +70,8 @@ def main() -> None:
                    "support": "same-recording prefix with labels ignored plus earlier body strokes (causal)"},
             "E3": {"backbone": args.e3_backbone},
         },
+        "training_data": "C170 (all non-duplicate windows)" + (" + W02 Part A" if args.stage == "S2" else "")
+                         + "; W01 excluded",
         "scored_strokes": "body (S) strokes of every trial recording of the evaluated parts; prefix strokes are never scored",
         "evaluate_parts": args.evaluate_parts,
         "ensemble_rule": "per-seed argmax, majority vote across seeds, ties to lowest class ID",

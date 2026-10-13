@@ -20,7 +20,7 @@ The first two do not establish the last three. Sensor mismatch, contact pressure
 
 ### W01, 2026-08-27
 
-One nominal participant/session/wear, 12 angles in 30-degree steps, four paper strokes, five repetitions per combination: 48 movement files and 240 windows. Two rest baselines were planned. EXG 0–3 at 250 Hz. The task-coordinate directions are fixed as the band rotates. A roughly 4 cm stroke, lifting the pen without a return stroke, is specified in the collection protocol.
+One nominal participant/session/wear, 12 angles in 30-degree steps, four paper strokes, five repetitions per combination: 48 movement files and 240 windows. Two rest baselines were planned. EXG 0–3 at 250 Hz. The task-coordinate directions are fixed as the band rotates. A roughly 4 cm stroke, lifting the pen without a return stroke, is specified in the collection protocol. Correction (2026-10-12, from the participant): W01 and C170 were both performed as the same in-air swipe followed by a return to centre, so each window holds an outward and a return burst. The pen-stroke wording does not describe the executed movement.
 
 Frozen angles: train 0/60/120/180/240/300, validation 30/150/270, test 90/210/330 degrees, giving 120/60/60 movements. Angles/directions were collected sequentially, so acquisition time is a confound. Thirty-one movement files violate the 20-second minimum, and some wear metadata is absent. The [dated report](results/2026-08-27-round1-rotation-invariance-feasibility.md) discloses these deviations.
 

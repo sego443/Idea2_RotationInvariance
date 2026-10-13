@@ -1,0 +1,36 @@
+{
+  "arguments": {
+    "participant": "P01",
+    "part": "B",
+    "first_wear": "7",
+    "day": "1",
+    "n_wears": "6",
+    "n_trials": "6",
+    "cal_per_direction": "2",
+    "trial_per_direction": "3",
+    "seed": "443",
+    "output_dir": "data/w02_plans/P01_BD1_timed"
+  },
+  "generator_sha256": "eccf792a80e25223ea95098d85d87e524d8fc914def4ee228bab7318880d7c32",
+  "plan_sha256": "c1dd9077ca132db6b62e6414c121ac2c47af89888336a5db5518461afe3dbc52",
+  "prompts_sha256": "e90570ea00d9db75a79cb604b81968790ab9ab23a4a9dadd6f8683193c717b57",
+  "n_recordings": 42,
+  "n_strokes": 720,
+  "scheduled_tape_mm_in_wear_order": [
+    80,
+    160,
+    95,
+    125,
+    5,
+    30
+  ],
+  "scheduled_angles_in_wear_order": [
+    193,
+    3,
+    225,
+    289,
+    34,
+    87
+  ],
+  "estimated_recording_minutes": 41.6
+}

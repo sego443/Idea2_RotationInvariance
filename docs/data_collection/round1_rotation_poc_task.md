@@ -2,6 +2,8 @@
 
 Version: 2026-08-27. Operator: the participant. This is a preliminary proof of concept. Collect data without inspecting model results or changing test angles.
 
+> **Correction added 2026-10-12 (participant report).** The movements were performed as an in-air swipe in each direction followed by a return to centre, the same movement as in C170, not as pen strokes on paper. The pen, paper and "no return line" wording below records the plan as written, not the executed movement. The angle direction stated below (clockwise viewed from the hand toward the elbow) has not been reconciled with the C170/W02 wrist tape, which increases counter-clockwise in that view on the right wrist.
+
 ## Deliverables and scope
 
 Collect one participant, one wrist, one wearing episode, and one session. Do not remove or retighten the band. Use angles `0/30/60/90/120/150/180/210/240/270/300/330 degrees`, four short paper strokes `up/down/left/right`, and five consecutive repetitions per angle-direction combination. This yields 48 accepted movement recordings and 240 strokes, plus one start and one end rest recording: 50 accepted files. Preserve rejected takes separately. Estimated duration: 45–60 minutes.

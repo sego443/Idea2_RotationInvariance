@@ -3,9 +3,15 @@
 Protocols:
   fixed_split   train C170 F2-train positions; evaluate the 8 held-out positions (old validation + exposed registered test)
   w01_transfer  train all C170 (including 70 mm); evaluate W01, a different session/day with 12 angles
-  all_current   train all C170 and W01; no evaluation (freeze candidate for the next acquisition)
-  all_current_plus_w02  as all_current plus the requested W02 parts (--w02-dataset, --w02-parts); no evaluation
-  w01_half      train all C170 + W01 angles 0/60/.../300; evaluate W01 angles 30/90/.../330 (stage-2 analog)
+  c170_all      train all C170; no evaluation (Stage-1 freeze candidate)
+  c170_plus_w02 train all C170 plus the requested W02 parts (--w02-dataset, --w02-parts); no evaluation (Stage 2)
+  all_current   historical: train all C170 and W01; no evaluation
+  all_current_plus_w02  historical: as all_current plus the requested W02 parts; no evaluation
+  w01_half      historical: train all C170 + W01 angles 0/60/.../300; evaluate W01 angles 30/90/.../330
+
+W01 was a preliminary, non-rigorous feasibility collection. Since 2026-10-12 it is excluded from training any
+model that is frozen or reported as a candidate; the all_current* and w01_half protocols remain only to reproduce
+earlier exploratory runs. w01_transfer uses W01 for evaluation only.
 
 --init-checkpoint starts from a saved v21 checkpoint of the same backbone (fine-tuning).
 
@@ -40,7 +46,8 @@ from src import v21_wear_calibrated as v21
 from src.c170_shared_scale_preprocessing_v3 import calibrate_windows_shared_scale_v3
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-PROTOCOLS = ("fixed_split", "w01_transfer", "all_current", "all_current_plus_w02", "w01_half")
+PROTOCOLS = ("fixed_split", "w01_transfer", "c170_all", "c170_plus_w02", "all_current", "all_current_plus_w02", "w01_half")
+W01_TRAINING_PROTOCOLS = ("all_current", "all_current_plus_w02", "w01_half")
 W01_HALF_TRAIN_DEG = (0, 60, 120, 180, 240, 300)
 CAL_SHOTS = data_module.EXISTING_CAL_SHOTS
 FIXED_SPLIT_CAL_SOURCE = {5: 15, 15: 5, 25: 15, 40: 25, 90: 110, 110: 90, 130: 150, 150: 130}
@@ -67,6 +74,13 @@ def split_protocol(protocol: str, w02_dataset: Path | None = None, w02_parts: tu
         held_out = data_module.C170_OLD_VALIDATION_MM + data_module.C170_EXPOSED_TEST_MM
         evaluations = {"c170_heldout": data_module.subset(c170, np.isin(c170["position"], held_out))}
         return train, evaluations
+    if protocol == "c170_all":
+        return c170, {}
+    if protocol == "c170_plus_w02":
+        if w02_dataset is None or not w02_parts:
+            raise ValueError("c170_plus_w02 requires --w02-dataset and --w02-parts")
+        w02 = data_module.load_w02(w02_dataset)
+        return data_module.concatenate(c170, data_module.subset(w02, np.isin(w02["part"], w02_parts))), {}
     w01 = data_module.load_w01()
     if protocol == "w01_transfer":
         return c170, {"w01": w01}
@@ -296,7 +310,10 @@ def main() -> None:
         "taus": TAUS,
         "train_tau": TRAIN_TAU,
         "data_sha256": {"c170": sha256(data_module.C170_PATH),
-                        **({"w01": sha256(data_module.W01_PATH)} if args.protocol != "fixed_split" else {})},
+                        **({"w01": sha256(data_module.W01_PATH)}
+                           if args.protocol in W01_TRAINING_PROTOCOLS + ("w01_transfer",) else {}),
+                        **({"w02": sha256(args.w02_dataset)} if args.w02_dataset is not None else {})},
+        "trains_on_w01": args.protocol in W01_TRAINING_PROTOCOLS,
         "source_sha256": source_hashes,
         "environment": {"python": platform.python_version(), "torch": torch.__version__, "machine": platform.machine(),
                         "pid": os.getpid()},

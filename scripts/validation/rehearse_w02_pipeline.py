@@ -1,7 +1,7 @@
 """Rehearse the W02 acquisition-day pipeline end to end on synthetic OpenBCI files.
 
 Steps: plan generation (parts A and B) -> synthetic raw recordings with direction-dependent bursts -> segmentation
--> short S1-style runs on C170 + W01 -> S1 freeze -> Stage-2 launcher (fine-tuning with synthetic part A, S2 freeze)
+-> Stage-1 launcher (short C170-only runs, W01 excluded, S1 freeze) -> Stage-2 launcher (fine-tuning with synthetic part A, S2 freeze)
 -> one-shot S1 (parts A+B) and S2 (part B) evaluations. Scores are meaningless; the rehearsal only checks that every step runs and that artifacts and
 hash checks line up. Everything is written below a new --output-dir.
 """
@@ -53,17 +53,18 @@ def main() -> None:
     session.mkdir()
     rng = np.random.default_rng(0)
     plans = []
-    for part, first in (("A", 1), ("B", 5)):
+    for part, first in (("A", 1), ("B", 5)):  # 4 wears per part; the first two of each are synthesized
         run("-m", "scripts.data.make_w02_session_plan", "--part", part, "--day", "1", "--n-wears", "4",
             "--first-wear", str(first), "--seed", str(first), "--output-dir", str(root / f"plan_{part}"))
         plan = next((root / f"plan_{part}").glob("*_plan.csv"))
         with plan.open(encoding="utf-8") as file:
             rows = list(csv.DictReader(file))
-        for row in rows[:8]:
-            write_recording(session / f"OpenBCI-RAW-synthetic_{row['prompt']}.txt", row["sequence"], rng)
-            row.update(accepted="yes", actual_angle_deg=row["scheduled_angle_deg"])
-        for row in rows[8:]:
-            row.update(accepted="no", notes="not synthesized")
+        for row in rows:
+            if int(row["wear"]) < first + 2:
+                write_recording(session / f"OpenBCI-RAW-synthetic_{row['prompt']}.txt", row["sequence"], rng)
+                row.update(accepted="yes", actual_tape_mm=row["scheduled_tape_mm"])
+            else:
+                row.update(accepted="no", notes="not synthesized")
         completed = root / f"completed_plan_{part}.csv"
         with completed.open("w", newline="", encoding="utf-8") as file:
             writer = csv.DictWriter(file, fieldnames=list(rows[0]))
@@ -73,22 +74,9 @@ def main() -> None:
     run("-m", "scripts.data.prepare_w02_session", "--session-dir", str(session), "--plan", str(plans[0]),
         "--plan", str(plans[1]), "--output-dir", str(root / "w02_dataset"))
     dataset = root / "w02_dataset" / "dataset.npz"
-    runs = {}
-    for backbone in ("b1_complex_gram", "b2_signed_cnn"):
-        for kind, extra in (("real", []), ("null", ["--null-seed", "17"])):
-            if backbone == "b1_complex_gram" and kind == "null":
-                continue
-            out = root / f"stage1_{backbone}_{kind}"
-            run("-m", "scripts.runners.run_v21_wear_calibrated", "--protocol", "all_current", "--backbone", backbone,
-                "--seed", "17", "--epochs", str(args.epochs), "--output-dir", str(out), *extra)
-            runs[(backbone, kind)] = out
     s1 = root / "v21_freeze_S1.json"
-    run("-m", "scripts.analysis.make_v21_freeze_manifest", "--stage", "S1",
-        "--real-run", str(runs[("b1_complex_gram", "real")]), "--real-run", str(runs[("b2_signed_cnn", "real")]),
-        "--null-run", str(runs[("b2_signed_cnn", "null")]),
-        "--e1-backbone", "b2_signed_cnn", "--e1-tau", "1", "--e1b-backbone", "b1_complex_gram", "--e1b-tau", "16",
-        "--e2-backbone", "b1_complex_gram", "--e2-tau", "1", "--e3-backbone", "b1_complex_gram",
-        "--evaluate-parts", "A", "B", "--output", str(s1))
+    run("-m", "scripts.launchers.launch_v21_stage1", "--output-root", str(root / "stage1_runs"),
+        "--s1-freeze-output", str(s1), "--epochs", str(args.epochs))
     s2 = root / "v21_freeze_S2.json"
     run("-m", "scripts.launchers.launch_v21_stage2", "--s1-freeze", str(s1), "--w02-dataset", str(dataset),
         "--output-root", str(root / "stage2_runs"), "--s2-freeze-output", str(s2), "--epochs", str(args.epochs))

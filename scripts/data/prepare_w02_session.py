@@ -5,7 +5,8 @@ rows with accepted=yes are used; their files are found by prompt suffix. Stroke 
 parameters (0.5-12 Hz, 75-sample envelope, distance 525, prominence 1.5) but requires exactly the planned number
 of strokes; any other count flags the recording instead of repairing it. Labels come from the prompt letters in
 order; strokes from the C prefix are marked is_prefix (calibration strokes, never scored). REST recordings provide non-overlapping 2 s windows for unsupervised gain estimates. Raw files are never
-modified; the output directory must not exist.
+modified; the output directory must not exist. Wear positions come from the plan's actual_tape_mm (the wrist-tape
+reading at the S3/S0 midpoint) and are converted to the S0 band angle with make_w02_session_plan.band_angle_deg.
 """
 from __future__ import annotations
 
@@ -19,6 +20,7 @@ from pathlib import Path
 import numpy as np
 from scipy import signal
 
+from scripts.data.make_w02_session_plan import band_angle_deg
 from scripts.data.prepare_c170_session import active_channels, load_recording
 
 SAMPLE_RATE = 250
@@ -26,7 +28,7 @@ WINDOW_SAMPLES = 500
 CLASSES = ("UP", "DOWN", "LEFT", "RIGHT")
 LETTERS = {"U": 0, "D": 1, "L": 2, "R": 3}
 PROMPT_RE = re.compile(
-    r"(?P<participant>[A-Za-z0-9]+)_(?P<part>[AB])D(?P<day>\d+)_W(?P<wear>\d{2})_A(?P<angle>\d{3})_"
+    r"(?P<participant>[A-Za-z0-9]+)_(?P<part>[AB])D(?P<day>\d+)_W(?P<wear>\d{2})_M(?P<tape>\d{3})_"
     r"(?P<recording>REST|T\d)(?:_C(?P<prefix>[UDLR]+)_S(?P<body>[UDLR]+))?")
 
 
@@ -46,6 +48,8 @@ def stroke_centers(samples: np.ndarray, channels: np.ndarray) -> np.ndarray:
 
 
 def find_file(session_dirs: list[Path], prompt: str) -> Path:
+    if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_-]*", prompt):
+        raise ValueError(f"invalid filename label: {prompt}")
     matches = [path for directory in session_dirs for path in directory.glob(f"*_{prompt}.txt")]
     if len(matches) != 1:
         raise ValueError(f"expected exactly one accepted file for {prompt}, found {len(matches)}")
@@ -68,12 +72,14 @@ def prepare(session_dirs: list[Path], plan_paths: list[Path], output_dir: Path) 
         match = PROMPT_RE.fullmatch(row["prompt"])
         if match is None:
             raise ValueError(f"invalid prompt: {row['prompt']}")
-        path = find_file(session_dirs, row["prompt"])
+        path = find_file(session_dirs, row.get("filename_label") or row["prompt"])
         samples = load_recording(path)
         channels = active_channels(samples, path)
-        actual_angle = int(row["actual_angle_deg"]) if row["actual_angle_deg"].strip() else None
+        actual_tape = float(row["actual_tape_mm"]) if row["actual_tape_mm"].strip() else None
         meta = {"participant": match["participant"], "part": match["part"], "day": int(match["day"]),
-                "wear": int(match["wear"]), "scheduled_angle_deg": int(match["angle"]), "actual_angle_deg": actual_angle,
+                "wear": int(match["wear"]), "scheduled_tape_mm": int(match["tape"]),
+                "scheduled_angle_deg": round(band_angle_deg(int(match["tape"]))), "actual_tape_mm": actual_tape,
+                "actual_angle_deg": None if actual_tape is None else round(band_angle_deg(actual_tape)),
                 "recording": match["recording"], "source_filename": path.name,
                 "channel_map": ",".join(map(str, channels))}
         record = {**meta, "sha256": sha256(path), "raw_rows": len(samples)}
@@ -99,7 +105,7 @@ def prepare(session_dirs: list[Path], plan_paths: list[Path], output_dir: Path) 
         recording_rows.append({**record, "status": "segmented", "detected": len(centers)})
 
     output_dir.mkdir(parents=True)
-    keys = ("participant", "part", "day", "wear", "scheduled_angle_deg", "recording", "source_filename")
+    keys = ("participant", "part", "day", "wear", "scheduled_tape_mm", "recording", "source_filename")
     np.savez_compressed(
         output_dir / "dataset.npz",
         X_raw=np.stack(windows) if windows else np.zeros((0, WINDOW_SAMPLES, 4), np.float32),
@@ -109,8 +115,11 @@ def prepare(session_dirs: list[Path], plan_paths: list[Path], output_dir: Path) 
         recording=np.array([r["recording"] for r in stroke_rows]),
         position_in_recording=np.array([r["position_in_recording"] for r in stroke_rows], dtype=np.int64),
         is_prefix=np.array([r["is_prefix"] for r in stroke_rows], dtype=bool),
+        scheduled_tape_mm=np.array([r["scheduled_tape_mm"] for r in stroke_rows], dtype=np.int64),
+        actual_tape_mm=np.array([np.nan if r["actual_tape_mm"] is None else r["actual_tape_mm"] for r in stroke_rows]),
         scheduled_angle_deg=np.array([r["scheduled_angle_deg"] for r in stroke_rows], dtype=np.int64),
-        actual_angle_deg=np.array([-1 if r["actual_angle_deg"] is None else r["actual_angle_deg"] for r in stroke_rows]),
+        actual_angle_deg=np.array([-1 if r["actual_angle_deg"] is None else r["actual_angle_deg"] for r in stroke_rows],
+                                  dtype=np.int64),
         participant=np.array([r["participant"] for r in stroke_rows]),
         rest_X_raw=np.stack(rests) if rests else np.zeros((0, WINDOW_SAMPLES, 4), np.float32),
         rest_wear=np.array([r["wear"] for r in rest_rows], dtype=np.int64),

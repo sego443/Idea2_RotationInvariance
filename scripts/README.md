@@ -116,7 +116,8 @@ Versioned files are distinct experiment methods, controls, or dependencies. Reco
 ### v21 runner and launcher
 
 - [runners/run_v21_wear_calibrated.py](runners/run_v21_wear_calibrated.py) — one v21 run (training plus ZERO/CAL/UNSUP evaluation)
-- [launchers/launch_v21_stage2.py](launchers/launch_v21_stage2.py) — midday Stage-2 fine-tuning and freeze
+- [launchers/launch_v21_stage1.py](launchers/launch_v21_stage1.py) — Stage-1 training on C170 only (W01 excluded) and S1 freeze
+- [launchers/launch_v21_stage2.py](launchers/launch_v21_stage2.py) — midday Stage-2 fine-tuning (C170 + W02 Part A) and freeze
 - [validation/rehearse_w02_pipeline.py](validation/rehearse_w02_pipeline.py) — synthetic end-to-end rehearsal of the acquisition day
 
 ### Data

@@ -1,0 +1,36 @@
+{
+  "arguments": {
+    "participant": "P01",
+    "part": "A",
+    "first_wear": "1",
+    "day": "1",
+    "n_wears": "6",
+    "n_trials": "6",
+    "cal_per_direction": "2",
+    "trial_per_direction": "3",
+    "seed": "443",
+    "output_dir": "data/w02_plans/P01_AD1_timed"
+  },
+  "generator_sha256": "eccf792a80e25223ea95098d85d87e524d8fc914def4ee228bab7318880d7c32",
+  "plan_sha256": "ad915925388a5c14e68963f6efb645d4ca0c3c09b2ac8a6c4a506d268f0a6d49",
+  "prompts_sha256": "d7b71619f0e41786869f66519ff9929df8fd4963bac69f9707da8c451dae5254",
+  "n_recordings": 42,
+  "n_strokes": 720,
+  "scheduled_tape_mm_in_wear_order": [
+    80,
+    160,
+    95,
+    125,
+    5,
+    30
+  ],
+  "scheduled_angles_in_wear_order": [
+    193,
+    3,
+    225,
+    289,
+    34,
+    87
+  ],
+  "estimated_recording_minutes": 41.6
+}
