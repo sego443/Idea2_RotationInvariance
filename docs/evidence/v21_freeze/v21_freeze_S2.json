@@ -1,0 +1,531 @@
+{
+  "stage": "S2",
+  "created_utc": "2026-10-13T18:42:48.386386+00:00",
+  "classes": [
+    "UP",
+    "DOWN",
+    "LEFT",
+    "RIGHT"
+  ],
+  "endpoints": {
+    "E1": {
+      "backbone": "b2_signed_cnn",
+      "tau": 1.0,
+      "support": "labeled C prefix (8 strokes) of the same trial recording"
+    },
+    "E1b": {
+      "backbone": "b1_complex_gram",
+      "tau": 16.0,
+      "support": "labeled C prefixes of the other trial recordings of the same wear"
+    },
+    "E2": {
+      "backbone": "b1_complex_gram",
+      "tau": 1.0,
+      "support": "same-recording prefix with labels ignored plus earlier body strokes (causal)"
+    },
+    "E3": {
+      "backbone": "b1_complex_gram"
+    }
+  },
+  "training_data": "C170 (all non-duplicate windows) + W02 Part A; W01 excluded",
+  "scored_strokes": "body (S) strokes of every trial recording of the evaluated parts; prefix strokes are never scored",
+  "evaluate_parts": [
+    "B"
+  ],
+  "ensemble_rule": "per-seed argmax, majority vote across seeds, ties to lowest class ID",
+  "gate": {
+    "macro_f1_min": 0.8,
+    "per_class_recall_min": 0.65,
+    "applies_to": "E1"
+  },
+  "bootstrap": {
+    "unit": "wear",
+    "resamples": 10000,
+    "seed": 20261012
+  },
+  "real_runs": [
+    {
+      "run": "outputs/v21_stage2_20261014/b1_complex_gram__real__s17",
+      "checkpoint_sha256": "330e5f341547f9a4679d8c8614c0eff1752d7b49086720d69cff32bcc49ddfb5",
+      "arguments": {
+        "protocol": "c170_plus_w02",
+        "backbone": "b1_complex_gram",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "init_checkpoint": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/v21_stage1_c170_20261014/b1_complex_gram__real__s17/checkpoint.pt",
+        "w02_dataset": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/w02_partA_20261014_r2/dataset.npz",
+        "w02_parts": "['A']",
+        "seed": "17",
+        "null_seed": "None",
+        "epochs": "30",
+        "batch_size": "64",
+        "lr": "0.0003",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage2_20261014/b1_complex_gram__real__s17"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "9468ad36f456356d435fef632621f590acd54e33b116e0370bcb5eeeadfe7fc1",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "6f03523ce716046cbee555aa0990bec8b42d3e725e25bfa057e741028e8829e5"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349",
+        "w02": "c8a8c5e8f6107d6a69f9ba3aa967350ac697a451051f77a3529eaa227ed7dcc8"
+      }
+    },
+    {
+      "run": "outputs/v21_stage2_20261014/b1_complex_gram__real__s29",
+      "checkpoint_sha256": "b6440e91232af497c595727d25671d80d61b601adcd2c3da62319fd6db25ca43",
+      "arguments": {
+        "protocol": "c170_plus_w02",
+        "backbone": "b1_complex_gram",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "init_checkpoint": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/v21_stage1_c170_20261014/b1_complex_gram__real__s29/checkpoint.pt",
+        "w02_dataset": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/w02_partA_20261014_r2/dataset.npz",
+        "w02_parts": "['A']",
+        "seed": "29",
+        "null_seed": "None",
+        "epochs": "30",
+        "batch_size": "64",
+        "lr": "0.0003",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage2_20261014/b1_complex_gram__real__s29"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "9468ad36f456356d435fef632621f590acd54e33b116e0370bcb5eeeadfe7fc1",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "6f03523ce716046cbee555aa0990bec8b42d3e725e25bfa057e741028e8829e5"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349",
+        "w02": "c8a8c5e8f6107d6a69f9ba3aa967350ac697a451051f77a3529eaa227ed7dcc8"
+      }
+    },
+    {
+      "run": "outputs/v21_stage2_20261014/b1_complex_gram__real__s43",
+      "checkpoint_sha256": "a1405182a9e58f94e13b72890a6196ecb6a5a67455a31222232122a7d859067e",
+      "arguments": {
+        "protocol": "c170_plus_w02",
+        "backbone": "b1_complex_gram",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "init_checkpoint": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/v21_stage1_c170_20261014/b1_complex_gram__real__s43/checkpoint.pt",
+        "w02_dataset": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/w02_partA_20261014_r2/dataset.npz",
+        "w02_parts": "['A']",
+        "seed": "43",
+        "null_seed": "None",
+        "epochs": "30",
+        "batch_size": "64",
+        "lr": "0.0003",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage2_20261014/b1_complex_gram__real__s43"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "9468ad36f456356d435fef632621f590acd54e33b116e0370bcb5eeeadfe7fc1",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "6f03523ce716046cbee555aa0990bec8b42d3e725e25bfa057e741028e8829e5"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349",
+        "w02": "c8a8c5e8f6107d6a69f9ba3aa967350ac697a451051f77a3529eaa227ed7dcc8"
+      }
+    },
+    {
+      "run": "outputs/v21_stage2_20261014/b1_complex_gram__real__s61",
+      "checkpoint_sha256": "acc5f1eb63f4b3c2372ee9cbdede8ba281cca51b7eb4d86f7bb4ac61408f156f",
+      "arguments": {
+        "protocol": "c170_plus_w02",
+        "backbone": "b1_complex_gram",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "init_checkpoint": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/v21_stage1_c170_20261014/b1_complex_gram__real__s61/checkpoint.pt",
+        "w02_dataset": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/w02_partA_20261014_r2/dataset.npz",
+        "w02_parts": "['A']",
+        "seed": "61",
+        "null_seed": "None",
+        "epochs": "30",
+        "batch_size": "64",
+        "lr": "0.0003",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage2_20261014/b1_complex_gram__real__s61"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "9468ad36f456356d435fef632621f590acd54e33b116e0370bcb5eeeadfe7fc1",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "6f03523ce716046cbee555aa0990bec8b42d3e725e25bfa057e741028e8829e5"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349",
+        "w02": "c8a8c5e8f6107d6a69f9ba3aa967350ac697a451051f77a3529eaa227ed7dcc8"
+      }
+    },
+    {
+      "run": "outputs/v21_stage2_20261014/b1_complex_gram__real__s89",
+      "checkpoint_sha256": "8e6eea96351a4e2e0f187cb4b834f7583d1173bfc471cf6613c1b892c3fc9ae2",
+      "arguments": {
+        "protocol": "c170_plus_w02",
+        "backbone": "b1_complex_gram",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "init_checkpoint": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/v21_stage1_c170_20261014/b1_complex_gram__real__s89/checkpoint.pt",
+        "w02_dataset": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/w02_partA_20261014_r2/dataset.npz",
+        "w02_parts": "['A']",
+        "seed": "89",
+        "null_seed": "None",
+        "epochs": "30",
+        "batch_size": "64",
+        "lr": "0.0003",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage2_20261014/b1_complex_gram__real__s89"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "9468ad36f456356d435fef632621f590acd54e33b116e0370bcb5eeeadfe7fc1",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "6f03523ce716046cbee555aa0990bec8b42d3e725e25bfa057e741028e8829e5"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349",
+        "w02": "c8a8c5e8f6107d6a69f9ba3aa967350ac697a451051f77a3529eaa227ed7dcc8"
+      }
+    },
+    {
+      "run": "outputs/v21_stage2_20261014/b2_signed_cnn__real__s17",
+      "checkpoint_sha256": "5aa9cb380413c0ef0384d3aee92399d24373a20fdd7a4328769e0a70a7cf0478",
+      "arguments": {
+        "protocol": "c170_plus_w02",
+        "backbone": "b2_signed_cnn",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "init_checkpoint": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/v21_stage1_c170_20261014/b2_signed_cnn__real__s17/checkpoint.pt",
+        "w02_dataset": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/w02_partA_20261014_r2/dataset.npz",
+        "w02_parts": "['A']",
+        "seed": "17",
+        "null_seed": "None",
+        "epochs": "30",
+        "batch_size": "64",
+        "lr": "0.0003",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage2_20261014/b2_signed_cnn__real__s17"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "9468ad36f456356d435fef632621f590acd54e33b116e0370bcb5eeeadfe7fc1",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "6f03523ce716046cbee555aa0990bec8b42d3e725e25bfa057e741028e8829e5"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349",
+        "w02": "c8a8c5e8f6107d6a69f9ba3aa967350ac697a451051f77a3529eaa227ed7dcc8"
+      }
+    },
+    {
+      "run": "outputs/v21_stage2_20261014/b2_signed_cnn__real__s29",
+      "checkpoint_sha256": "ac73037945f55703d5f775b869f983c687f680bcc5403c6e55999256788f9fd3",
+      "arguments": {
+        "protocol": "c170_plus_w02",
+        "backbone": "b2_signed_cnn",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "init_checkpoint": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/v21_stage1_c170_20261014/b2_signed_cnn__real__s29/checkpoint.pt",
+        "w02_dataset": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/w02_partA_20261014_r2/dataset.npz",
+        "w02_parts": "['A']",
+        "seed": "29",
+        "null_seed": "None",
+        "epochs": "30",
+        "batch_size": "64",
+        "lr": "0.0003",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage2_20261014/b2_signed_cnn__real__s29"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "9468ad36f456356d435fef632621f590acd54e33b116e0370bcb5eeeadfe7fc1",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "6f03523ce716046cbee555aa0990bec8b42d3e725e25bfa057e741028e8829e5"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349",
+        "w02": "c8a8c5e8f6107d6a69f9ba3aa967350ac697a451051f77a3529eaa227ed7dcc8"
+      }
+    },
+    {
+      "run": "outputs/v21_stage2_20261014/b2_signed_cnn__real__s43",
+      "checkpoint_sha256": "c02c340d709a7b0ca6e79f93d8df8da8222796d9a3b667edeaa27fa48c7806ad",
+      "arguments": {
+        "protocol": "c170_plus_w02",
+        "backbone": "b2_signed_cnn",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "init_checkpoint": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/v21_stage1_c170_20261014/b2_signed_cnn__real__s43/checkpoint.pt",
+        "w02_dataset": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/w02_partA_20261014_r2/dataset.npz",
+        "w02_parts": "['A']",
+        "seed": "43",
+        "null_seed": "None",
+        "epochs": "30",
+        "batch_size": "64",
+        "lr": "0.0003",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage2_20261014/b2_signed_cnn__real__s43"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "9468ad36f456356d435fef632621f590acd54e33b116e0370bcb5eeeadfe7fc1",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "6f03523ce716046cbee555aa0990bec8b42d3e725e25bfa057e741028e8829e5"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349",
+        "w02": "c8a8c5e8f6107d6a69f9ba3aa967350ac697a451051f77a3529eaa227ed7dcc8"
+      }
+    },
+    {
+      "run": "outputs/v21_stage2_20261014/b2_signed_cnn__real__s61",
+      "checkpoint_sha256": "3551a692f07237716af76b3116d06a5ccce938c55e06b860ad9ed8d0f86bb932",
+      "arguments": {
+        "protocol": "c170_plus_w02",
+        "backbone": "b2_signed_cnn",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "init_checkpoint": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/v21_stage1_c170_20261014/b2_signed_cnn__real__s61/checkpoint.pt",
+        "w02_dataset": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/w02_partA_20261014_r2/dataset.npz",
+        "w02_parts": "['A']",
+        "seed": "61",
+        "null_seed": "None",
+        "epochs": "30",
+        "batch_size": "64",
+        "lr": "0.0003",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage2_20261014/b2_signed_cnn__real__s61"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "9468ad36f456356d435fef632621f590acd54e33b116e0370bcb5eeeadfe7fc1",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "6f03523ce716046cbee555aa0990bec8b42d3e725e25bfa057e741028e8829e5"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349",
+        "w02": "c8a8c5e8f6107d6a69f9ba3aa967350ac697a451051f77a3529eaa227ed7dcc8"
+      }
+    },
+    {
+      "run": "outputs/v21_stage2_20261014/b2_signed_cnn__real__s89",
+      "checkpoint_sha256": "294c7d0a3992d5f94078f117b739ebe1ea8f207d9b5d7c4af7284ef0d4eec297",
+      "arguments": {
+        "protocol": "c170_plus_w02",
+        "backbone": "b2_signed_cnn",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "init_checkpoint": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/v21_stage1_c170_20261014/b2_signed_cnn__real__s89/checkpoint.pt",
+        "w02_dataset": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/w02_partA_20261014_r2/dataset.npz",
+        "w02_parts": "['A']",
+        "seed": "89",
+        "null_seed": "None",
+        "epochs": "30",
+        "batch_size": "64",
+        "lr": "0.0003",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage2_20261014/b2_signed_cnn__real__s89"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "9468ad36f456356d435fef632621f590acd54e33b116e0370bcb5eeeadfe7fc1",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "6f03523ce716046cbee555aa0990bec8b42d3e725e25bfa057e741028e8829e5"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349",
+        "w02": "c8a8c5e8f6107d6a69f9ba3aa967350ac697a451051f77a3529eaa227ed7dcc8"
+      }
+    }
+  ],
+  "null_runs": [
+    {
+      "run": "outputs/v21_stage2_20261014/b2_signed_cnn__null__s17",
+      "checkpoint_sha256": "486412b8e2b099171af4b16c7435cb771bac345de20c6eb3d818793dddd491ea",
+      "arguments": {
+        "protocol": "c170_plus_w02",
+        "backbone": "b2_signed_cnn",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "init_checkpoint": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/v21_stage1_c170_20261014/b2_signed_cnn__null__s17/checkpoint.pt",
+        "w02_dataset": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/w02_partA_20261014_r2/dataset.npz",
+        "w02_parts": "['A']",
+        "seed": "17",
+        "null_seed": "17",
+        "epochs": "30",
+        "batch_size": "64",
+        "lr": "0.0003",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage2_20261014/b2_signed_cnn__null__s17"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "9468ad36f456356d435fef632621f590acd54e33b116e0370bcb5eeeadfe7fc1",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "6f03523ce716046cbee555aa0990bec8b42d3e725e25bfa057e741028e8829e5"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349",
+        "w02": "c8a8c5e8f6107d6a69f9ba3aa967350ac697a451051f77a3529eaa227ed7dcc8"
+      }
+    },
+    {
+      "run": "outputs/v21_stage2_20261014/b2_signed_cnn__null__s29",
+      "checkpoint_sha256": "7078b32d36ecbc8f3d23175fee72181b7440d0c054b8b8a1de262f707a770a5d",
+      "arguments": {
+        "protocol": "c170_plus_w02",
+        "backbone": "b2_signed_cnn",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "init_checkpoint": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/v21_stage1_c170_20261014/b2_signed_cnn__null__s29/checkpoint.pt",
+        "w02_dataset": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/w02_partA_20261014_r2/dataset.npz",
+        "w02_parts": "['A']",
+        "seed": "29",
+        "null_seed": "29",
+        "epochs": "30",
+        "batch_size": "64",
+        "lr": "0.0003",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage2_20261014/b2_signed_cnn__null__s29"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "9468ad36f456356d435fef632621f590acd54e33b116e0370bcb5eeeadfe7fc1",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "6f03523ce716046cbee555aa0990bec8b42d3e725e25bfa057e741028e8829e5"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349",
+        "w02": "c8a8c5e8f6107d6a69f9ba3aa967350ac697a451051f77a3529eaa227ed7dcc8"
+      }
+    },
+    {
+      "run": "outputs/v21_stage2_20261014/b2_signed_cnn__null__s43",
+      "checkpoint_sha256": "d4070143de4f9300050f150ce5cc908766a60a986d37b0586db9be328dc82728",
+      "arguments": {
+        "protocol": "c170_plus_w02",
+        "backbone": "b2_signed_cnn",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "init_checkpoint": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/v21_stage1_c170_20261014/b2_signed_cnn__null__s43/checkpoint.pt",
+        "w02_dataset": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/w02_partA_20261014_r2/dataset.npz",
+        "w02_parts": "['A']",
+        "seed": "43",
+        "null_seed": "43",
+        "epochs": "30",
+        "batch_size": "64",
+        "lr": "0.0003",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage2_20261014/b2_signed_cnn__null__s43"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "9468ad36f456356d435fef632621f590acd54e33b116e0370bcb5eeeadfe7fc1",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "6f03523ce716046cbee555aa0990bec8b42d3e725e25bfa057e741028e8829e5"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349",
+        "w02": "c8a8c5e8f6107d6a69f9ba3aa967350ac697a451051f77a3529eaa227ed7dcc8"
+      }
+    },
+    {
+      "run": "outputs/v21_stage2_20261014/b2_signed_cnn__null__s61",
+      "checkpoint_sha256": "a31ef8bbd96a30acc0f45998e7e015e40712d25ac28483e02cc044b736462599",
+      "arguments": {
+        "protocol": "c170_plus_w02",
+        "backbone": "b2_signed_cnn",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "init_checkpoint": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/v21_stage1_c170_20261014/b2_signed_cnn__null__s61/checkpoint.pt",
+        "w02_dataset": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/w02_partA_20261014_r2/dataset.npz",
+        "w02_parts": "['A']",
+        "seed": "61",
+        "null_seed": "61",
+        "epochs": "30",
+        "batch_size": "64",
+        "lr": "0.0003",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage2_20261014/b2_signed_cnn__null__s61"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "9468ad36f456356d435fef632621f590acd54e33b116e0370bcb5eeeadfe7fc1",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "6f03523ce716046cbee555aa0990bec8b42d3e725e25bfa057e741028e8829e5"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349",
+        "w02": "c8a8c5e8f6107d6a69f9ba3aa967350ac697a451051f77a3529eaa227ed7dcc8"
+      }
+    },
+    {
+      "run": "outputs/v21_stage2_20261014/b2_signed_cnn__null__s89",
+      "checkpoint_sha256": "6f5ef447119df85b8bb1f333ea2f6c469d1cd4a0a77f6d6d6b53c523e2e2c224",
+      "arguments": {
+        "protocol": "c170_plus_w02",
+        "backbone": "b2_signed_cnn",
+        "episodic_weight": "1.0",
+        "episode_support": "same",
+        "augment": "1",
+        "init_checkpoint": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/v21_stage1_c170_20261014/b2_signed_cnn__null__s89/checkpoint.pt",
+        "w02_dataset": "/Users/sego/Code/Idea2/Idea2_RotationInvariance/outputs/w02_partA_20261014_r2/dataset.npz",
+        "w02_parts": "['A']",
+        "seed": "89",
+        "null_seed": "89",
+        "epochs": "30",
+        "batch_size": "64",
+        "lr": "0.0003",
+        "weight_decay": "0.001",
+        "cpu_threads": "2",
+        "device": "cpu",
+        "output_dir": "outputs/v21_stage2_20261014/b2_signed_cnn__null__s89"
+      },
+      "source_sha256": {
+        "scripts/runners/run_v21_wear_calibrated.py": "9468ad36f456356d435fef632621f590acd54e33b116e0370bcb5eeeadfe7fc1",
+        "src/v21_wear_calibrated.py": "9e33d4108a3b7a9d8c070eefe0e4cfb72064b74f6e524b903d86059d21a6ad22",
+        "src/v21_data.py": "6f03523ce716046cbee555aa0990bec8b42d3e725e25bfa057e741028e8829e5"
+      },
+      "data_sha256": {
+        "c170": "d57a7fef61ae4930b3a91fd917ce44ef481a7a84e58b261deb44a3040569e349",
+        "w02": "c8a8c5e8f6107d6a69f9ba3aa967350ac697a451051f77a3529eaa227ed7dcc8"
+      }
+    }
+  ],
+  "scorer_sha256": "2094004acfe07bbfab3f0d9b531cb79cc2f270e13c710e4f3e3260007e1fa275"
+}
