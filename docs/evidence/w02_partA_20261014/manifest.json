@@ -1,0 +1,33 @@
+{
+  "plans": {
+    "data/w02_plans/P01_AD1_timed/w02_P01_AD1_plan_completed.csv": "8bdbf359322c1dc55cc8e220644575dadfe28f6917833c9aa2eddd32fd2a6d48"
+  },
+  "session_dirs": [
+    "data/raw/w02_data/P01_AD1/OpenBCISession_2026-10-13_17-58-39",
+    "data/raw/w02_data/P01_AD1/OpenBCISession_2026-10-13_20-37-53",
+    "data/raw/w02_data/P01_AD1/OpenBCISession_2026-10-13_21-00-37",
+    "data/raw/w02_data/P01_AD1/OpenBCISession_2026-10-13_21-25-07",
+    "data/raw/w02_data/P01_AD1/OpenBCISession_2026-10-13_21-51-15",
+    "data/raw/w02_data/P01_AD1/OpenBCISession_2026-10-13_22-23-55"
+  ],
+  "source_sha256": "c0a3710f8819930936ffe261e2f59688076100575e97f8986c79dc85dd4767d3",
+  "n_strokes": 700,
+  "n_rest_windows": 42,
+  "n_flagged_recordings": 1,
+  "counts_by_class": {
+    "UP": 175,
+    "DOWN": 175,
+    "LEFT": 175,
+    "RIGHT": 175
+  },
+  "dataset_sha256": "c8a8c5e8f6107d6a69f9ba3aa967350ac697a451051f77a3529eaa227ed7dcc8",
+  "group_keys": [
+    "participant",
+    "part",
+    "day",
+    "wear",
+    "scheduled_tape_mm",
+    "recording",
+    "source_filename"
+  ]
+}

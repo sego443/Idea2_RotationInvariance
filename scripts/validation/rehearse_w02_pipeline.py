@@ -61,7 +61,7 @@ def main() -> None:
             rows = list(csv.DictReader(file))
         for row in rows:
             if int(row["wear"]) < first + 2:
-                write_recording(session / f"OpenBCI-RAW-synthetic_{row['prompt']}.txt", row["sequence"], rng)
+                write_recording(session / f"OpenBCI-RAW-synthetic_{row['filename_label']}.txt", row["sequence"], rng)
                 row.update(accepted="yes", actual_tape_mm=row["scheduled_tape_mm"])
             else:
                 row.update(accepted="no", notes="not synthesized")

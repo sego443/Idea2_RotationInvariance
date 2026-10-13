@@ -1,0 +1,2 @@
+participant,part,day,wear,scheduled_tape_mm,scheduled_angle_deg,actual_tape_mm,actual_angle_deg,recording,source_filename,channel_map,sha256,raw_rows,expected,detected
+P01,A,1,2,160,3,160.0,3,T1,OpenBCI-RAW-2026-10-13_20-45-49_P01_AD1_W02_M160_T1.txt,"0,1,2,3",4b1c187d06c6d0173162430a2e7cac051bdbfe723cbed6393fd8a5a93792349b,16486,20,19
