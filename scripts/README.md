@@ -106,6 +106,8 @@ Versioned files are distinct experiment methods, controls, or dependencies. Reco
 - [analyze_c170_v4_v6_power_validation_fusion.py](analysis/analyze_c170_v4_v6_power_validation_fusion.py)
 - [benchmark_c170_ring_compute.py](analysis/benchmark_c170_ring_compute.py)
 - [evaluate_v21_frozen_w02.py](analysis/evaluate_v21_frozen_w02.py) — one-shot frozen v21 evaluation on W02 wears (exclusive start marker)
+- [evaluate_w02_cov_recipes.py](analysis/evaluate_w02_cov_recipes.py) — covariance recipes (src/w02_cov_fewshot.py) on W02: leave-one-wear-out on development wears, or once on the sealed wears (exclusive start marker)
+- explore_w02_fewshot.py, explore_w02_zerocal.py, explore_w02_labelfree.py, explore_w02_borrowed_metric.py, explore_w02_windows.py (analysis/) — exploratory W02 development-wear experiments; refuse sealed wears
 - [make_v21_freeze_manifest.py](analysis/make_v21_freeze_manifest.py) — v21 freeze manifest with checkpoint/scorer hashes and endpoints
 - [summarize_v21_dev_grid.py](analysis/summarize_v21_dev_grid.py) — v21 development grid summaries
 - [diagnose_c170_calibration_pilot.py](analysis/diagnose_c170_calibration_pilot.py) — exploratory linear LOPO pilot for the W02/v21 design; train/old-validation positions only

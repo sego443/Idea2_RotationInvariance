@@ -25,4 +25,4 @@ Every angle of a sealed wear also occurs in Part A (same tape readings), so the 
 
 ## 3. Frozen baseline on the development wears
 
-The frozen S1 and S2 manifests are scored once each with the unchanged scorer, on the development dataset only (S1: Parts A and B → nine wears; S2: Part B → W08, W09, W11). These are exploratory baselines for the development work, not the retired one-shot tests. Results follow in a separate record.
+The frozen S1 and S2 manifests are scored once each with the unchanged scorer, on the development dataset only (S1: Parts A and B → nine wears; S2: Part B → W08, W09, W11). These are exploratory baselines for the development work, not the retired one-shot tests. Results: [exploratory development record](2026-10-15-w02-exploratory-development.md) §1.

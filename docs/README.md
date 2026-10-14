@@ -25,6 +25,7 @@ Updated: 2026-10-12. The October 1 documentation release translated existing tex
 - [W02 Part A and v21 Stage-1/Stage-2 freezes (2026-10-14; no W02 scores)](results/2026-10-14-w02-part-a-and-v21-freezes.md)
 - [W02 grid segmentation and rejected-take deletion (2026-10-15; no W02 scores)](results/2026-10-15-w02-grid-segmentation.md)
 - [W02 sealed holdout and switch to exploratory development (2026-10-15)](results/2026-10-15-w02-seal-and-exploratory-switch.md)
+- [W02 exploratory development: frozen baseline and covariance recipes (2026-10-15; development wears only)](results/2026-10-15-w02-exploratory-development.md)
 - Freeze manifests: `evidence/v21_freeze/v21_freeze_S1_c170.json` (S1, C170 only) and `evidence/v21_freeze/v21_freeze_S2.json` (S2); `v21_freeze_S1.json` is superseded ([index](evidence/v21_freeze/README.md))
 
 ## Historical protocols and diagnostics
