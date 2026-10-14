@@ -21,7 +21,7 @@ Record environment output for each new run. A clean installation was not perform
 
 Git excludes raw sessions, dataset.npz, checkpoints and generated outputs. It includes processed metadata and docs/evidence summaries. Review summaries without training data; full checkpoint replay needs the separate artifact bundle.
 
-Provide C170 data/processed_c170_20260926/dataset.npz and verify SHA-256 against original configuration/evidence. For W01, provide data/OpenBCISession_2026-08-27_14-37-15, preserving rejected takes/hashes. Historical absolute paths are provenance; pass current --dataset/--session-dir rather than rewriting historical records.
+Provide C170 data/processed_c170_20260926/dataset.npz and verify SHA-256 against original configuration/evidence. For W01, provide data/OpenBCISession_2026-08-27_14-37-15. Historical absolute paths are provenance; pass current --dataset/--session-dir rather than rewriting historical records.
 
 ## CLI and portability
 

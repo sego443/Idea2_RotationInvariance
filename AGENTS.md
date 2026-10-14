@@ -3,7 +3,7 @@
 This is an independent research repository. All maintained documentation, source comments, user-facing strings, and generated report text must be written in English.
 
 - Work only within this project unless a task explicitly spans projects. Preserve existing user changes and the parent repository's state.
-- Preserve original recordings and rejected takes. Before batch processing, record input, cropping, channels, filters, labels, output location, and overwrite protection.
+- Preserve original accepted recordings. Rejected takes (`.rejected`) are deleted; no inventory, hashes or reasons are kept for them. Before batch processing, record input, cropping, channels, filters, labels, output location, and overwrite protection.
 - Current files/data and fresh verification take precedence over saved artifacts, historical summaries, designs, and proposals, in that order. Do not describe a plan as an executed result or a historical score as a fresh rerun.
 - Four-direction presegmented classification does not establish continuous detection, handwriting transcription, or open-vocabulary recognition.
 - Validate physical sensor order. Cyclic reindexing is not the same transformation as moving sensors to new anatomical locations.

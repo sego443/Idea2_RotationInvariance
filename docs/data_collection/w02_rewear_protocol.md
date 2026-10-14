@@ -75,7 +75,7 @@ If Stage 2 cannot be frozen during the break, skip it rather than delaying Part 
    - With a 20-BPM cue (one beat every 3 s), make one movement per beat: the same **in-air swipe** as in C170 and W01 (U=up, D=down, L=left, R=right), immediately followed by the **return to centre** at a natural, steady speed, without a pause at the far end. Then hold still in the centre posture until the next beat.
    - Keep the swipe extent and speed as in C170. Do not switch to swipe-and-hold: the frozen models were trained on swipe-and-return, and the return carries class information (v22 ablation).
    - Stay still for 3 s after the last movement. The widget stops recording automatically. **Stop** interrupts it early.
-   - After the file closes, choose **Accept** to proceed or **Reject / Redo** to preserve the rejected file and repeat the same recording. Starting another recording or loading another prompt file requires this decision.
+   - After the file closes, choose **Accept** to proceed or **Reject / Redo** to repeat the same recording. Starting another recording or loading another prompt file requires this decision.
 6. Do not adjust the band, touch the sensors or move the cables within a wear. Any adjustment ends the wear. Mark its remaining recordings rejected and redo the whole wear at the end of its part, with the same scheduled angle and a new wear number.
 
 ## 6. Integrity checks and retries
@@ -89,17 +89,17 @@ After each recording, check only integrity:
 
 Do not classify or plot class-wise signals.
 
-Reject and repeat a recording for a wrong or skipped letter, an extra movement, a missing or paused return, an interruption, speech, a cough, an impact or a failed channel. Keep the rejected file (rename it to `.rejected`), set `accepted=no` with a reason, and append a retry row with `retry_of`. Repeating a recording within the same wear is allowed, because the band is not touched. Stop if a channel fails in two consecutive recordings; after repair, start a new wear from REST.
+The widget renames the rejected file to `.rejected`.
 
 ## 7. Data handling
 
-Use session folders named `data/OpenBCISession_<date>_W02_P01_<part>D1/`, together with the completed plan CSVs, the generator manifests and one reference photo per part showing S0, S3 and the wrist tape at the band line. Raw and rejected files are never edited. Segment with:
+Use session folders named `data/OpenBCISession_<date>_W02_P01_<part>D1/`, together with the completed plan CSVs, the generator manifests and one reference photo per part showing S0, S3 and the wrist tape at the band line. Accepted raw files are never edited. Segment with:
 
 ```bash
 python -m scripts.data.prepare_w02_session --session-dir <folder> --plan <completed plan CSV> --output-dir <new dir>
 ```
 
-Segmentation must detect exactly 20 strokes per trial recording. Any other count flags the recording without repairing it. Labels come from the prompt letters.
+Segmentation follows the widget timing grid, anchored at the first sample of the file: 3 s of preparation, then one 3 s slot per prompt letter. Stroke k takes the label of the k-th prompt letter. Its 2 s window is centred on the maximum of the C170 localizer energy inside slot k. Every slot gives a window. A recording is flagged only when it ends before its last slot. Each stroke records its offset in the slot and whether the slot contains a C170 localizer peak; these are diagnostics and never drop a stroke (2026-10-15 change; earlier segmentations required exactly 20 localizer peaks).
 
 ## 8. Optional cross-person extension
 

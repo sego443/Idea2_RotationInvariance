@@ -17,6 +17,7 @@ MIDPOINT_TO_S0_MM = TAPE_CIRCUMFERENCE_MM / 8  # four equally spaced sensors; th
 MAX_RUN_LENGTH = 2
 REST_SECONDS = 20
 STROKE_PERIOD_S = 3
+PREPARE_SECONDS = 3
 RECORDING_MARGIN_S = 6
 PLAN_COLUMNS = (
     "row", "participant", "part", "day", "wear", "scheduled_tape_mm", "scheduled_angle_deg", "recording", "kind",
@@ -95,7 +96,7 @@ def build_widget_prompts(rows: list[dict]) -> dict:
         prompts.append({
             "filename_label": row["filename_label"],
             "bpm": 60 / STROKE_PERIOD_S if sequence else 60 / REST_SECONDS,
-            "prepare_seconds": 3 if sequence else 0,
+            "prepare_seconds": PREPARE_SECONDS if sequence else 0,
             "actions": [f"{DIRECTION_CODES[code]} - return to centre" for code in sequence]
                        if sequence else ["Hold still in centre"],
             "finish_seconds": 3 if sequence else 0,

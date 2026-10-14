@@ -4,7 +4,7 @@ Updated 2026-10-01. This describes existing pipelines and historical execution; 
 
 ## 1. Input identity and segmentation
 
-Record session, participant/wrist/wear, hardware/gain/firmware, sample rate, original channel columns and S0–S3 identity. Preserve raw and rejected files. Hash inputs and retain collection plans/prompts; a historical machine path alone does not identify data.
+Record session, participant/wrist/wear, hardware/gain/firmware, sample rate, original channel columns and S0–S3 identity. Preserve accepted raw files; delete rejected takes without keeping a record of them. Hash inputs and retain collection plans/prompts; a historical machine path alone does not identify data.
 
 C170 metadata must agree with X_raw `(1600,500,4)`, 250 Hz, 80 complete/56 short files, one duplicate and two verified EXG maps. Fixed split counts are 879/320/320 after excluding all 70 mm and the B019 copy. Position labels are not measured physical angles.
 

@@ -123,7 +123,7 @@ Versioned files are distinct experiment methods, controls, or dependencies. Reco
 ### Data
 
 - [prepare_c170_session.py](data/prepare_c170_session.py)
-- [prepare_w02_session.py](data/prepare_w02_session.py) — segments W02 recordings by prompt sequence; flags count mismatches
+- [prepare_w02_session.py](data/prepare_w02_session.py) — segments W02 recordings on the 3 s prompt grid (energy maximum per slot); flags truncated recordings
 - [make_w02_session_plan.py](data/make_w02_session_plan.py) — randomized W02 rewear plan and OpenBCI prompts; writes a new directory only
 
 ### Validation
