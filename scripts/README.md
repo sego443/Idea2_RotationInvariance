@@ -124,6 +124,7 @@ Versioned files are distinct experiment methods, controls, or dependencies. Reco
 
 - [prepare_c170_session.py](data/prepare_c170_session.py)
 - [prepare_w02_session.py](data/prepare_w02_session.py) — segments W02 recordings on the 3 s prompt grid (energy maximum per slot); flags truncated recordings
+- [complete_w02_plan.py](data/complete_w02_plan.py) — fills a W02 plan with its accepted takes; duplicate takes need an explicit --choose
 - [make_w02_session_plan.py](data/make_w02_session_plan.py) — randomized W02 rewear plan and OpenBCI prompts; writes a new directory only
 
 ### Validation

@@ -1,7 +1,8 @@
 """Segment a W02 session into labeled stroke windows using the prompt timing grid and the plan's prompt sequences.
 
 Inputs: one or more OpenBCI session folders and the completed plan CSV(s) from make_w02_session_plan.py. Only plan
-rows with accepted=yes are used; their files are found by filename_label. W02 recordings are paced by the Sequence
+rows with accepted=yes are used; their files are the plan's actual_filename, or else the single file
+ending in the row's filename_label. W02 recordings are paced by the Sequence
 Collection widget: PREPARE_SECONDS of rest, then one STROKE_PERIOD_S slot per prompt letter, anchored at the first
 sample of the file. Stroke k is labeled by the k-th prompt letter and its 2 s window is centred on the maximum of
 the C170 localizer energy (0.5-12 Hz, 75-sample envelope) inside slot k. Every slot yields a window; a recording is
@@ -63,10 +64,15 @@ def slot_centers(samples: np.ndarray, channels: np.ndarray, n_strokes: int) -> t
     return centers, has_peak
 
 
-def find_file(session_dirs: list[Path], prompt: str) -> Path:
+def find_file(session_dirs: list[Path], prompt: str, actual_filename: str = "") -> Path:
     if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_-]*", prompt):
         raise ValueError(f"invalid filename label: {prompt}")
-    matches = [path for directory in session_dirs for path in directory.glob(f"*_{prompt}.txt")]
+    if actual_filename:
+        if not actual_filename.endswith(f"_{prompt}.txt") or "/" in actual_filename:
+            raise ValueError(f"actual_filename {actual_filename} does not match label {prompt}")
+        matches = [directory / actual_filename for directory in session_dirs if (directory / actual_filename).is_file()]
+    else:
+        matches = [path for directory in session_dirs for path in directory.glob(f"*_{prompt}.txt")]
     if len(matches) != 1:
         raise ValueError(f"expected exactly one accepted file for {prompt}, found {len(matches)}")
     return matches[0]
@@ -88,7 +94,7 @@ def prepare(session_dirs: list[Path], plan_paths: list[Path], output_dir: Path) 
         match = PROMPT_RE.fullmatch(row["prompt"])
         if match is None:
             raise ValueError(f"invalid prompt: {row['prompt']}")
-        path = find_file(session_dirs, row.get("filename_label") or row["prompt"])
+        path = find_file(session_dirs, row.get("filename_label") or row["prompt"], row.get("actual_filename", "").strip())
         samples = load_recording(path)
         channels = active_channels(samples, path)
         actual_tape = float(row["actual_tape_mm"]) if row["actual_tape_mm"].strip() else None

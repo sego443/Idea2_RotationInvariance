@@ -20,6 +20,13 @@ def test_file_lookup_uses_independent_label_and_preserves_rejected_files(tmp_pat
     assert rejected.exists()
     with pytest.raises(ValueError, match="invalid filename label"):
         module().find_file([tmp_path], "*")
+    second = tmp_path / f"OpenBCI-RAW-2026-10-20_09-30-00_{label}.txt"
+    second.touch()
+    with pytest.raises(ValueError, match="exactly one"):
+        module().find_file([tmp_path], label)
+    assert module().find_file([tmp_path], label, second.name) == second
+    with pytest.raises(ValueError, match="does not match"):
+        module().find_file([tmp_path], label, "OpenBCI-RAW-2026-10-20_09-30-00_P01_AD1_W01_M030_T2.txt")
 
 
 def write_recording(path: Path, n_strokes: int, seed: int, silent: tuple[int, ...] = ()) -> None:

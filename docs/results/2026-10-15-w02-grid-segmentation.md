@@ -50,8 +50,29 @@ On the user's instruction, all 72 `.rejected` files under `data/raw/w02_data/` w
 1. The frozen S2 models were fine-tuned on the peak-counting Part A dataset (`c8a8c5e8…`). Part B, and the Part A wears scored by S1, will be segmented with the grid method. For Part A the two methods differ in 20 W02 T1 strokes and one moved centre (§2).
 2. The segmenter changed after both freezes and after Part B was recorded, before any W02 stroke was scored. The freeze manifests do not hash the segmenter.
 
-## 5. Remaining steps (not executed)
+## 5. Part B and the combined segmentation
 
-1. Complete the Part B plan (`data/w02_plans/P01_BD1_timed/`). Only accepted takes are entered; rejected takes get no rows.
-2. Segment Parts A and B together with the grid method into a new directory.
-3. Run the two one-shot evaluations once each, with these deviations and those of the 2026-10-14 record attached.
+Part B (wears W07–W12) was recorded on 2026-10-14, 16:53–23:20, in `data/raw/w02_data/P01_BD1/` (three session folders; not in Git).
+
+Both plans were refilled with accepted takes only by `scripts/data/complete_w02_plan.py`, into `data/w02_plans/P01_<part>D1_timed/w02_P01_<part>D1_plan_accepted.csv`:
+
+- Part A: the 42 entered files equal the accepted files of the 2026-10-14 completion. The 2026-10-14 file `w02_P01_AD1_plan_completed.csv` is kept because the frozen S2 dataset was built from it.
+- Part B: W07 REST, T1 and T2 each had two non-rejected takes, 16:53–16:59 and 17:03–17:05. On the operator's choice, the later set was entered (`--choose`), making W07 one continuous REST→T6 run, 17:03–17:11. The three earlier takes and eight unlabeled files in Part B are not entered and are kept unchanged.
+- `prepare_w02_session.py` now opens the plan's `actual_filename` when one is given, so extra takes with the same label are never read.
+
+Combined segmentation (output not in Git; manifest and per-recording table in [`docs/evidence/w02_day1_grid_20261015/`](../evidence/w02_day1_grid_20261015/)):
+
+```bash
+python -m scripts.data.prepare_w02_session --session-dir <six P01_AD1 folders> --session-dir <three P01_BD1 folders> \
+  --plan data/w02_plans/P01_AD1_timed/w02_P01_AD1_plan_accepted.csv \
+  --plan data/w02_plans/P01_BD1_timed/w02_P01_BD1_plan_accepted.csv --output-dir outputs/w02_day1_grid_20261015
+```
+
+- 1,440 strokes (per part 288 prefix + 432 body), 360 per class, 85 REST windows, 0 flagged recordings. Dataset SHA-256 `9bf6f77d7add5d388e792ad88aef024643b825a4e669bec35e5282dcc17ac30e`.
+- Part A strokes (files, positions, labels, centres, diagnostics) equal `outputs/w02_partA_grid_20261015` up to row order.
+- Part B: 42 recordings, channel map `0,1,2,3` in all; trial files 16,475–16,496 rows; REST files 4,987–5,003 rows.
+- Slots without a localizer peak: Part A 1 (W02 T1 position 9); Part B 3 (W08 T4 positions 12 and 17, W09 T4 position 12), all body strokes. Window centres lie 0.19–2.49 s into their slots in Part B (1st/50th/99th percentile 0.66 / 1.36 / 2.00 s); none within 0.1 s of a slot edge.
+
+## 6. Remaining steps (not executed)
+
+1. Run the two one-shot evaluations on `outputs/w02_day1_grid_20261015/dataset.npz` (design §6), once each, with these deviations and those of the 2026-10-14 record attached.

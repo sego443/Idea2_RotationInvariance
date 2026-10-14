@@ -1,0 +1,37 @@
+{
+  "plans": {
+    "data/w02_plans/P01_AD1_timed/w02_P01_AD1_plan_accepted.csv": "6d62a66f2958c8115ba2d1475da1972468bdb96068ff463a867fe15d677a759c",
+    "data/w02_plans/P01_BD1_timed/w02_P01_BD1_plan_accepted.csv": "5818cee2477bdeaf8941216ba96e59b6f46f0740e62a94b80f054d8f9b48fd33"
+  },
+  "session_dirs": [
+    "data/raw/w02_data/P01_AD1/OpenBCISession_2026-10-13_17-58-39",
+    "data/raw/w02_data/P01_AD1/OpenBCISession_2026-10-13_20-37-53",
+    "data/raw/w02_data/P01_AD1/OpenBCISession_2026-10-13_21-00-37",
+    "data/raw/w02_data/P01_AD1/OpenBCISession_2026-10-13_21-25-07",
+    "data/raw/w02_data/P01_AD1/OpenBCISession_2026-10-13_21-51-15",
+    "data/raw/w02_data/P01_AD1/OpenBCISession_2026-10-13_22-23-55",
+    "data/raw/w02_data/P01_BD1/OpenBCISession_2026-10-14_16-33-53",
+    "data/raw/w02_data/P01_BD1/OpenBCISession_2026-10-14_17-14-44",
+    "data/raw/w02_data/P01_BD1/OpenBCISession_2026-10-14_21-52-09"
+  ],
+  "source_sha256": "966933a683fc4bdcdaf7463e77b67c1ce77b86fdb67ebe73ecf28e557989a0be",
+  "n_strokes": 1440,
+  "n_rest_windows": 85,
+  "n_flagged_recordings": 0,
+  "counts_by_class": {
+    "UP": 360,
+    "DOWN": 360,
+    "LEFT": 360,
+    "RIGHT": 360
+  },
+  "dataset_sha256": "9bf6f77d7add5d388e792ad88aef024643b825a4e669bec35e5282dcc17ac30e",
+  "group_keys": [
+    "participant",
+    "part",
+    "day",
+    "wear",
+    "scheduled_tape_mm",
+    "recording",
+    "source_filename"
+  ]
+}
