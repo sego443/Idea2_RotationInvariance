@@ -7,6 +7,8 @@ Status:
 - **W01 is excluded from training (amendment, 2026-10-12, before any W02 collection).** W01 was a preliminary, non-rigorous feasibility collection. The first Stage-1 freeze, `docs/evidence/v21_freeze/v21_freeze_S1.json`, was trained on C170 + W01; it is superseded and kept unchanged as a historical record. Stage 1 must be retrained on C170 only with `scripts/launchers/launch_v21_stage1.py` and re-frozen as `docs/evidence/v21_freeze/v21_freeze_S1_c170.json`. Recipe, seeds, endpoints and τ values are unchanged. The W01 results in §1 were used to choose the design and remain exploratory development evidence; they are not training data for any frozen model;
 - **update 2026-10-14:** W02 Part A is collected; S1 (C170 only) and S2 are frozen. S1 was frozen after Part A was recorded, a deviation from §3, before any W02 stroke was scored. No W02 result is claimed. See the [2026-10-14 record](../results/2026-10-14-w02-part-a-and-v21-freezes.md).
 
+- **update 2026-10-15:** the one-shot S1/S2 tests in §3 and §6 are **retired** before any W02 stroke was scored. W02 wears W07, W10 and W12 are sealed; all other W02 wears are exploratory development data. See the [2026-10-15 record](../results/2026-10-15-w02-seal-and-exploratory-switch.md).
+
 v20 is an unrelated earlier proposal. The protocol is in [W02 one-day protocol](../data_collection/w02_rewear_protocol.md).
 
 ## 1. Evidence that shaped the design

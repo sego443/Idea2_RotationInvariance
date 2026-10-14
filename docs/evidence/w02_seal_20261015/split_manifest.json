@@ -1,0 +1,61 @@
+{
+  "source_dataset": "outputs/w02_day1_grid_20261015/dataset.npz",
+  "source_dataset_sha256": "9bf6f77d7add5d388e792ad88aef024643b825a4e669bec35e5282dcc17ac30e",
+  "seed": 20261015,
+  "sectors_deg": [
+    [
+      0,
+      120
+    ],
+    [
+      120,
+      240
+    ],
+    [
+      240,
+      360
+    ]
+  ],
+  "part_b_wear_angles": {
+    "7": 193,
+    "8": 3,
+    "9": 225,
+    "10": 289,
+    "11": 34,
+    "12": 87
+  },
+  "sealed_wears": [
+    7,
+    10,
+    12
+  ],
+  "source_sha256": "de9be8503ab44ffe76b7dfe5cad1b143511fb3ed571be5cc18e1b51f92d522f6",
+  "outputs": {
+    "outputs/w02_dev_20261015": {
+      "dataset_sha256": "f5ec8530ab51a3114e6b7909678ec8ca2ebe1bf8073f4c326433c04af43ea764",
+      "n_strokes": 1080,
+      "n_rest_windows": 63,
+      "wears": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        11
+      ]
+    },
+    "outputs/w02_sealed_20261015": {
+      "dataset_sha256": "cb8e397ba6504c12db09756f8f93af9ea3c9ba2269c4a3ed11e6c65fe395a227",
+      "n_strokes": 360,
+      "n_rest_windows": 22,
+      "wears": [
+        7,
+        10,
+        12
+      ]
+    }
+  }
+}
