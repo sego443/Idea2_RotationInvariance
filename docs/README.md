@@ -28,6 +28,10 @@ Updated: 2026-10-12. The October 1 documentation release translated existing tex
 - [W02 exploratory development: frozen baseline and covariance recipes (2026-10-15; development wears only)](results/2026-10-15-w02-exploratory-development.md)
 - Freeze manifests: `evidence/v21_freeze/v21_freeze_S1_c170.json` (S1, C170 only) and `evidence/v21_freeze/v21_freeze_S2.json` (S2); `v21_freeze_S1.json` is superseded ([index](evidence/v21_freeze/README.md))
 
+## Application module
+
+- [Four-key agent-assisted PC control, MVP design (2026-10-17; proposed, not implemented)](designs/2026-10-17-four-key-agent-pc-control-mvp.md)
+
 ## Historical protocols and diagnostics
 
 - [W01 collection](data_collection/round1_rotation_poc_task.md) and [feasibility results](results/2026-08-27-round1-rotation-invariance-feasibility.md)
