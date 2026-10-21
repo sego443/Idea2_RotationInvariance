@@ -1,0 +1,8 @@
+{
+  "verified_utc": "2026-10-21T13:59:41.393213+00:00",
+  "primary_true_rows_replayed": 2,
+  "primary_original_null_rows_replayed": 10,
+  "cross_family_exact_prediction_identities": 8,
+  "scope": "Selected post-sweep label-free pipeline only; does not imply independent new data or full original-null replay. The training std is label-free; per-wear anchor class permutation is the only labeled dependency.",
+  "script_sha256": "d9eaa9bf48f854cc0d4897b7b25967e6e7364e75ca372347bf16b72234e27e1f"
+}

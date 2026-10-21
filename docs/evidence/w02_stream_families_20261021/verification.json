@@ -1,0 +1,29 @@
+{
+  "verified_utc": "2026-10-21T13:54:56.735146+00:00",
+  "job_real_rows": {
+    "A_adapt": 660,
+    "B_features": 175,
+    "C_fewer_b0.1": 87,
+    "C_fewer_b0.05": 87,
+    "D_feedback_b0.1": 117,
+    "D_feedback_b0.05": 117,
+    "E_drift": 0,
+    "F_usage": 320
+  },
+  "real_rows_verified": 1563,
+  "null_aggregate_rows_checked": 7815,
+  "null_prediction_replay": "Not possible from runner outputs: null predictions were not saved. Aggregate range/count consistency checked only; no blanket null replay claim.",
+  "baseline_real_rows_reproduced": 4,
+  "checks": [
+    "All eight child exit codes zero, source/data/plan hashes unchanged",
+    "Exact prediction-key coverage and expected row counts",
+    "Independent anchor/query masks and chronological ordering for all real rows",
+    "All real accuracy/F1/recall/counts/position/recording/boundary/wear/angle/minute metrics recomputed",
+    "D no-action substitutions independently reproduced and actual action counts/F1 exported separately",
+    "E timing metadata independently reproduced; remaining E diagnostic numbers not yet replayed",
+    "A tangent NC and B cov_base NC reproduce both previous startup NC4 draws"
+  ],
+  "tests": "4 focused existing tests passed in 2.33s; NumPy imported before pytest capture",
+  "scope": "Exploratory development data only; no sealed/C170 data access, no full repository suite",
+  "verification_script_sha256": "cb5dc1f9f2d9720c7fd67902992335b62117c04c8ff8febdb3d8024f5710b8c8"
+}

@@ -1,0 +1,466 @@
+{
+  "A_adapt": {
+    "started_utc": "2026-10-21T13:51:36.840781+00:00",
+    "script": "explore_w02_stream_adapt.py",
+    "script_sha256": "5365ba8b8bd1ac2d331364e0139b631725002cd4ab791169bff6a14ce679d07a",
+    "lib_sha256": "257ea0fa889e6f4e76e2380d4758b20095e8aadf36fbaa4a460a78c2fbf6a15d",
+    "recipe_source_sha256": "0043aacc09853cb90af98b91736c6f3fe9dd16a1ece62ca0f91bee6dc554af8a",
+    "dataset": "outputs\\w02_dev_20261015\\dataset.npz",
+    "dataset_sha256": "f5ec8530ab51a3114e6b7909678ec8ca2ebe1bf8073f4c326433c04af43ea764",
+    "class_order": [
+      "UP",
+      "DOWN",
+      "LEFT",
+      "RIGHT"
+    ],
+    "settings": {
+      "updates": [
+        "none",
+        "cum_g0.0",
+        "cum_g0.1",
+        "cum_g0.2",
+        "cum_g0.3",
+        "ema_a0.1_g0.0",
+        "ema_a0.1_g0.2",
+        "ema_a0.2_g0.0",
+        "ema_a0.2_g0.2",
+        "ema_a0.3_g0.0",
+        "ema_a0.3_g0.2"
+      ],
+      "null_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "test_access": "development wears only; sealed wears W07/W10/W12 refused; exploratory"
+  },
+  "B_features": {
+    "started_utc": "2026-10-21T13:51:36.893246+00:00",
+    "script": "explore_w02_stream_features.py",
+    "script_sha256": "8e0f82c5adff043584835c81e973a59bf0eac87d1f7427a34505a866b3a6786d",
+    "lib_sha256": "257ea0fa889e6f4e76e2380d4758b20095e8aadf36fbaa4a460a78c2fbf6a15d",
+    "recipe_source_sha256": "0043aacc09853cb90af98b91736c6f3fe9dd16a1ece62ca0f91bee6dc554af8a",
+    "dataset": "outputs\\w02_dev_20261015\\dataset.npz",
+    "dataset_sha256": "f5ec8530ab51a3114e6b7909678ec8ca2ebe1bf8073f4c326433c04af43ea764",
+    "class_order": [
+      "UP",
+      "DOWN",
+      "LEFT",
+      "RIGHT"
+    ],
+    "settings": {
+      "cov": {
+        "cov_base": [
+          [
+            0.5,
+            12.0
+          ],
+          [
+            0,
+            5,
+            10,
+            15,
+            20,
+            25,
+            30
+          ],
+          "none"
+        ],
+        "cov_trace": [
+          [
+            0.5,
+            12.0
+          ],
+          [
+            0,
+            5,
+            10,
+            15,
+            20,
+            25,
+            30
+          ],
+          "trace"
+        ],
+        "cov_corr": [
+          [
+            0.5,
+            12.0
+          ],
+          [
+            0,
+            5,
+            10,
+            15,
+            20,
+            25,
+            30
+          ],
+          "corr"
+        ],
+        "cov_band0.5-6": [
+          [
+            0.5,
+            6.0
+          ],
+          [
+            0,
+            5,
+            10,
+            15,
+            20,
+            25,
+            30
+          ],
+          "none"
+        ],
+        "cov_band1-20": [
+          [
+            1.0,
+            20.0
+          ],
+          [
+            0,
+            5,
+            10,
+            15,
+            20,
+            25,
+            30
+          ],
+          "none"
+        ],
+        "cov_band0.1-12": [
+          [
+            0.1,
+            12.0
+          ],
+          [
+            0,
+            5,
+            10,
+            15,
+            20,
+            25,
+            30
+          ],
+          "none"
+        ],
+        "cov_lag0": [
+          [
+            0.5,
+            12.0
+          ],
+          [
+            0
+          ],
+          "none"
+        ],
+        "cov_lags0-20": [
+          [
+            0.5,
+            12.0
+          ],
+          [
+            0,
+            10,
+            20
+          ],
+          "none"
+        ],
+        "cov_lags0-50": [
+          [
+            0.5,
+            12.0
+          ],
+          [
+            0,
+            10,
+            20,
+            30,
+            40,
+            50
+          ],
+          "none"
+        ],
+        "cov_corr_lags0-20": [
+          [
+            0.5,
+            12.0
+          ],
+          [
+            0,
+            10,
+            20
+          ],
+          "corr"
+        ]
+      },
+      "wave": {
+        "wave_global": [
+          [
+            0.5,
+            12.0
+          ],
+          10,
+          "global"
+        ],
+        "wave_channel": [
+          [
+            0.5,
+            12.0
+          ],
+          10,
+          "channel"
+        ],
+        "wave_none": [
+          [
+            0.5,
+            12.0
+          ],
+          10,
+          "none"
+        ],
+        "wave_band0.5-6": [
+          [
+            0.5,
+            6.0
+          ],
+          10,
+          "global"
+        ],
+        "wave_step5": [
+          [
+            0.5,
+            12.0
+          ],
+          5,
+          "global"
+        ]
+      },
+      "null_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "test_access": "development wears only; sealed wears W07/W10/W12 refused; exploratory"
+  },
+  "C_fewer_b0.1": {
+    "started_utc": "2026-10-21T13:51:36.919050+00:00",
+    "script": "explore_w02_stream_fewer.py",
+    "script_sha256": "8040313843ff5105158a161df117ccdc8f333a271ba62ba0e44c4ed3b65a1ca4",
+    "lib_sha256": "257ea0fa889e6f4e76e2380d4758b20095e8aadf36fbaa4a460a78c2fbf6a15d",
+    "recipe_source_sha256": "0043aacc09853cb90af98b91736c6f3fe9dd16a1ece62ca0f91bee6dc554af8a",
+    "dataset": "outputs\\w02_dev_20261015\\dataset.npz",
+    "dataset_sha256": "f5ec8530ab51a3114e6b7909678ec8ca2ebe1bf8073f4c326433c04af43ea764",
+    "class_order": [
+      "UP",
+      "DOWN",
+      "LEFT",
+      "RIGHT"
+    ],
+    "settings": {
+      "beta": 0.1,
+      "new_class_factor": 1.0,
+      "seed_count": 1.0,
+      "transforms": [
+        "id",
+        "rev",
+        "neg",
+        "ring1",
+        "ring2",
+        "ring3",
+        "refl0",
+        "refl1",
+        "rev+ring1",
+        "rev+ring2",
+        "rev+ring3",
+        "rev+refl0",
+        "rev+refl1"
+      ],
+      "null_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "test_access": "development wears only; sealed wears W07/W10/W12 refused; exploratory"
+  },
+  "C_fewer_b0.05": {
+    "started_utc": "2026-10-21T13:51:36.990835+00:00",
+    "script": "explore_w02_stream_fewer.py",
+    "script_sha256": "8040313843ff5105158a161df117ccdc8f333a271ba62ba0e44c4ed3b65a1ca4",
+    "lib_sha256": "257ea0fa889e6f4e76e2380d4758b20095e8aadf36fbaa4a460a78c2fbf6a15d",
+    "recipe_source_sha256": "0043aacc09853cb90af98b91736c6f3fe9dd16a1ece62ca0f91bee6dc554af8a",
+    "dataset": "outputs\\w02_dev_20261015\\dataset.npz",
+    "dataset_sha256": "f5ec8530ab51a3114e6b7909678ec8ca2ebe1bf8073f4c326433c04af43ea764",
+    "class_order": [
+      "UP",
+      "DOWN",
+      "LEFT",
+      "RIGHT"
+    ],
+    "settings": {
+      "beta": 0.05,
+      "new_class_factor": 1.0,
+      "seed_count": 1.0,
+      "transforms": [
+        "id",
+        "rev",
+        "neg",
+        "ring1",
+        "ring2",
+        "ring3",
+        "refl0",
+        "refl1",
+        "rev+ring1",
+        "rev+ring2",
+        "rev+ring3",
+        "rev+refl0",
+        "rev+refl1"
+      ],
+      "null_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "test_access": "development wears only; sealed wears W07/W10/W12 refused; exploratory"
+  },
+  "D_feedback_b0.1": {
+    "started_utc": "2026-10-21T13:51:36.999794+00:00",
+    "script": "explore_w02_stream_feedback.py",
+    "script_sha256": "484aa720a7bc653e0f61e2475405bd9274868909fc6a16a4678ffc513f39ea72",
+    "lib_sha256": "257ea0fa889e6f4e76e2380d4758b20095e8aadf36fbaa4a460a78c2fbf6a15d",
+    "recipe_source_sha256": "0043aacc09853cb90af98b91736c6f3fe9dd16a1ece62ca0f91bee6dc554af8a",
+    "dataset": "outputs\\w02_dev_20261015\\dataset.npz",
+    "dataset_sha256": "f5ec8530ab51a3114e6b7909678ec8ca2ebe1bf8073f4c326433c04af43ea764",
+    "class_order": [
+      "UP",
+      "DOWN",
+      "LEFT",
+      "RIGHT"
+    ],
+    "settings": {
+      "beta": 0.1,
+      "policies": [
+        "correct",
+        "correct_p50",
+        "query0.1",
+        "query0.2",
+        "query0.3"
+      ],
+      "null_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "test_access": "development wears only; sealed wears W07/W10/W12 refused; exploratory"
+  },
+  "D_feedback_b0.05": {
+    "started_utc": "2026-10-21T13:51:37.021507+00:00",
+    "script": "explore_w02_stream_feedback.py",
+    "script_sha256": "484aa720a7bc653e0f61e2475405bd9274868909fc6a16a4678ffc513f39ea72",
+    "lib_sha256": "257ea0fa889e6f4e76e2380d4758b20095e8aadf36fbaa4a460a78c2fbf6a15d",
+    "recipe_source_sha256": "0043aacc09853cb90af98b91736c6f3fe9dd16a1ece62ca0f91bee6dc554af8a",
+    "dataset": "outputs\\w02_dev_20261015\\dataset.npz",
+    "dataset_sha256": "f5ec8530ab51a3114e6b7909678ec8ca2ebe1bf8073f4c326433c04af43ea764",
+    "class_order": [
+      "UP",
+      "DOWN",
+      "LEFT",
+      "RIGHT"
+    ],
+    "settings": {
+      "beta": 0.05,
+      "policies": [
+        "correct",
+        "correct_p50",
+        "query0.1",
+        "query0.2",
+        "query0.3"
+      ],
+      "null_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "test_access": "development wears only; sealed wears W07/W10/W12 refused; exploratory"
+  },
+  "E_drift": {
+    "started_utc": "2026-10-21T13:51:37.018985+00:00",
+    "script": "explore_w02_stream_drift.py",
+    "script_sha256": "1d6de405d0c26305a2561fa4582dde7b751b7e85ca95dec6645c0f8ef972a950",
+    "lib_sha256": "257ea0fa889e6f4e76e2380d4758b20095e8aadf36fbaa4a460a78c2fbf6a15d",
+    "recipe_source_sha256": "0043aacc09853cb90af98b91736c6f3fe9dd16a1ece62ca0f91bee6dc554af8a",
+    "dataset": "outputs\\w02_dev_20261015\\dataset.npz",
+    "dataset_sha256": "f5ec8530ab51a3114e6b7909678ec8ca2ebe1bf8073f4c326433c04af43ea764",
+    "class_order": [
+      "UP",
+      "DOWN",
+      "LEFT",
+      "RIGHT"
+    ],
+    "settings": {
+      "null_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "test_access": "development wears only; sealed wears W07/W10/W12 refused; exploratory"
+  },
+  "F_usage": {
+    "started_utc": "2026-10-21T13:51:37.041967+00:00",
+    "script": "explore_w02_stream_usage.py",
+    "script_sha256": "7763d817648b1840a0b2307cdeeba8873e66ff3170e907ae91fa66495627bb30",
+    "lib_sha256": "257ea0fa889e6f4e76e2380d4758b20095e8aadf36fbaa4a460a78c2fbf6a15d",
+    "recipe_source_sha256": "0043aacc09853cb90af98b91736c6f3fe9dd16a1ece62ca0f91bee6dc554af8a",
+    "dataset": "outputs\\w02_dev_20261015\\dataset.npz",
+    "dataset_sha256": "f5ec8530ab51a3114e6b7909678ec8ca2ebe1bf8073f4c326433c04af43ea764",
+    "class_order": [
+      "UP",
+      "DOWN",
+      "LEFT",
+      "RIGHT"
+    ],
+    "settings": {
+      "pipelines": [
+        "static",
+        "adapt",
+        "rc0.02",
+        "rc0.05",
+        "rc0.1",
+        "rcbal0.02",
+        "rcbal0.05",
+        "rcbal0.1"
+      ],
+      "null_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "test_access": "development wears only; sealed wears W07/W10/W12 refused; exploratory"
+  }
+}

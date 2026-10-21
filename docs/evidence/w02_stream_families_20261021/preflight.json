@@ -1,0 +1,139 @@
+{
+  "recorded_utc": "2026-10-21T13:51:32.446551+00:00",
+  "status": "preflight_passed_not_an_experiment_result",
+  "code_commit": "4e6e10a3fe54e56a53d7ee94c11239fbf62d2e80",
+  "command": [
+    "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\.venv\\Scripts\\python.exe",
+    "-u",
+    "-m",
+    "scripts.analysis.launch_w02_stream_families",
+    "--root",
+    "outputs/w02_explore_20261015/stream_families_v1"
+  ],
+  "jobs": {
+    "A_adapt": [
+      "scripts.analysis.explore_w02_stream_adapt",
+      []
+    ],
+    "B_features": [
+      "scripts.analysis.explore_w02_stream_features",
+      []
+    ],
+    "C_fewer_b0.1": [
+      "scripts.analysis.explore_w02_stream_fewer",
+      [
+        "--beta",
+        "0.1"
+      ]
+    ],
+    "C_fewer_b0.05": [
+      "scripts.analysis.explore_w02_stream_fewer",
+      [
+        "--beta",
+        "0.05"
+      ]
+    ],
+    "D_feedback_b0.1": [
+      "scripts.analysis.explore_w02_stream_feedback",
+      [
+        "--beta",
+        "0.1"
+      ]
+    ],
+    "D_feedback_b0.05": [
+      "scripts.analysis.explore_w02_stream_feedback",
+      [
+        "--beta",
+        "0.05"
+      ]
+    ],
+    "E_drift": [
+      "scripts.analysis.explore_w02_stream_drift",
+      []
+    ],
+    "F_usage": [
+      "scripts.analysis.explore_w02_stream_usage",
+      []
+    ]
+  },
+  "input": "outputs/w02_dev_20261015/dataset.npz",
+  "dataset_sha256": "f5ec8530ab51a3114e6b7909678ec8ca2ebe1bf8073f4c326433c04af43ea764",
+  "source_sha256": {
+    "scripts/analysis/launch_w02_stream_families.py": "5d84c224facdcde3e20d3a5f0c494ecc559da023f9640be7df7a50595c4134cd",
+    "scripts/analysis/w02_stream_lib.py": "257ea0fa889e6f4e76e2380d4758b20095e8aadf36fbaa4a460a78c2fbf6a15d",
+    "src/v21_data.py": "6f03523ce716046cbee555aa0990bec8b42d3e725e25bfa057e741028e8829e5",
+    "src/w02_cov_fewshot.py": "0043aacc09853cb90af98b91736c6f3fe9dd16a1ece62ca0f91bee6dc554af8a",
+    "scripts/analysis/explore_w02_stream_adapt.py": "5365ba8b8bd1ac2d331364e0139b631725002cd4ab791169bff6a14ce679d07a",
+    "scripts/analysis/explore_w02_stream_drift.py": "1d6de405d0c26305a2561fa4582dde7b751b7e85ca95dec6645c0f8ef972a950",
+    "scripts/analysis/explore_w02_stream_features.py": "8e0f82c5adff043584835c81e973a59bf0eac87d1f7427a34505a866b3a6786d",
+    "scripts/analysis/explore_w02_stream_feedback.py": "484aa720a7bc653e0f61e2475405bd9274868909fc6a16a4678ffc513f39ea72",
+    "scripts/analysis/explore_w02_stream_fewer.py": "8040313843ff5105158a161df117ccdc8f333a271ba62ba0e44c4ed3b65a1ca4",
+    "scripts/analysis/explore_w02_stream_usage.py": "7763d817648b1840a0b2307cdeeba8873e66ff3170e907ae91fa66495627bb30"
+  },
+  "plan_sha256": {
+    "data/w02_plans/P01_AD1_timed/w02_P01_AD1_plan_accepted.csv": "6d62a66f2958c8115ba2d1475da1972468bdb96068ff463a867fe15d677a759c",
+    "data/w02_plans/P01_BD1_timed/w02_P01_BD1_plan_accepted.csv": "5818cee2477bdeaf8941216ba96e59b6f46f0740e62a94b80f054d8f9b48fd33"
+  },
+  "environment": {
+    "python": "3.10.6 (tags/v3.10.6:9c7b4bd, Aug  1 2022, 21:53:49) [MSC v.1932 64 bit (AMD64)]",
+    "executable": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\.venv\\Scripts\\python.exe",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "numpy": "1.23.5",
+    "scipy": "1.10.1",
+    "scikit_learn": "1.3.2"
+  },
+  "cropping": "Existing prompt-grid localized 500-sample (2 s at 250 Hz) windows. No raw re-cut or original recording modification.",
+  "channels": "Four stored channels; fresh metadata check of 63 development trial/REST recordings: map 0,1,2,3. Physical S0-S3 order follows increasing tape order in acquisition protocol; no new anatomical inspection. C ring transformations are synthetic feature tests, not physical sensor moves.",
+  "filters": "Default third-order zero-phase 0.5-12 Hz Butterworth, demeaning, 28x28 lag covariance at 0,5,...,30 samples and tangent/log-Euclidean vectors. B varies bands, lags, trace/correlation normalization, downsampled waveforms and log band powers; see source/run settings.",
+  "class_order": [
+    "UP",
+    "DOWN",
+    "LEFT",
+    "RIGHT"
+  ],
+  "wears": [
+    "W02_P01_A_W01",
+    "W02_P01_A_W02",
+    "W02_P01_A_W03",
+    "W02_P01_A_W04",
+    "W02_P01_A_W05",
+    "W02_P01_A_W06",
+    "W02_P01_B_W08",
+    "W02_P01_B_W09",
+    "W02_P01_B_W11"
+  ],
+  "counts": {
+    "strokes": 1080,
+    "recordings": 54,
+    "prefix": 432,
+    "body": 648,
+    "per_class": [
+      270,
+      270,
+      270,
+      270
+    ]
+  },
+  "duplicates": "Unique recording/stroke identities verified; W02 has no marked duplicate field.",
+  "output": "outputs/w02_explore_20261015/stream_families_v1",
+  "overwrite_protection": "Root and adjacent metadata/log absent; exclusive creation. Launcher root mkdir(exist_ok=False), per-job exclusive logs. Preserve every incomplete job and exit marker.",
+  "test_access": "Development NPZ only; sealed B W07/W10/W12 absent and refused; sealed NPZ and C170 data not accessed. Accepted plans/metadata read for timing/order only.",
+  "preprocessing": "Population scaling/PCA/precision/model/transform choices leave one complete wear out. Target anchors and past strokes used as specified; E uses all target labels and batch recentering as diagnostic. F constructs artificial usage subsets using labels.",
+  "startup_order": "Selected first-recording prefix anchors treated as performed first; unselected earlier strokes can be scored after those anchors. Not literal acquisition-order replay.",
+  "null_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "null_boundary": "A/B calibrated/E/F permute startup/reference class labels; A mahal retains true training labels. B zero and C block-permute training labels; C also selects anchors under permuted labels and applies an additional label permutation. D uses independent random per-stroke teacher labels, not matched recording-block permutations. Report these distinctions explicitly.",
+  "epochs": "No neural training or selected epoch. A PCA random_state=None; no fixed population-model RNG seed. B logistic C=0.1/max_iter=3000. Other sampling RNG seeds are explicit in sources.",
+  "launcher_status_boundary": "Launcher exits successfully even when a child fails; inspect all eight child exit records and output completeness independently.",
+  "feedback_metric_boundary": "D encodes no-action outcomes as (true label + 1) mod 4 for generic F1/counts. Accuracy is correct under no-action-as-error, but reported D F1/counts are synthetic substitutions; audit actual actions and abstentions separately.",
+  "thread_environment_per_job": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  }
+}

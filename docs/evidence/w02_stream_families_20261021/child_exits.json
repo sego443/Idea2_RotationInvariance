@@ -1,0 +1,122 @@
+{
+  "A_adapt": {
+    "job": "A_adapt",
+    "command": [
+      "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\.venv\\Scripts\\python.exe",
+      "-u",
+      "-m",
+      "scripts.analysis.explore_w02_stream_adapt",
+      "--output-dir",
+      "outputs\\w02_explore_20261015\\stream_families_v1\\A_adapt"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 172.8,
+    "finished_utc": "2026-10-21T13:54:27.047062+00:00"
+  },
+  "B_features": {
+    "job": "B_features",
+    "command": [
+      "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\.venv\\Scripts\\python.exe",
+      "-u",
+      "-m",
+      "scripts.analysis.explore_w02_stream_features",
+      "--output-dir",
+      "outputs\\w02_explore_20261015\\stream_families_v1\\B_features"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 92.5,
+    "finished_utc": "2026-10-21T13:53:06.747526+00:00"
+  },
+  "C_fewer_b0.1": {
+    "job": "C_fewer_b0.1",
+    "command": [
+      "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\.venv\\Scripts\\python.exe",
+      "-u",
+      "-m",
+      "scripts.analysis.explore_w02_stream_fewer",
+      "--output-dir",
+      "outputs\\w02_explore_20261015\\stream_families_v1\\C_fewer_b0.1",
+      "--beta",
+      "0.1"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 30.2,
+    "finished_utc": "2026-10-21T13:52:04.451015+00:00"
+  },
+  "C_fewer_b0.05": {
+    "job": "C_fewer_b0.05",
+    "command": [
+      "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\.venv\\Scripts\\python.exe",
+      "-u",
+      "-m",
+      "scripts.analysis.explore_w02_stream_fewer",
+      "--output-dir",
+      "outputs\\w02_explore_20261015\\stream_families_v1\\C_fewer_b0.05",
+      "--beta",
+      "0.05"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 30.2,
+    "finished_utc": "2026-10-21T13:52:04.461287+00:00"
+  },
+  "D_feedback_b0.1": {
+    "job": "D_feedback_b0.1",
+    "command": [
+      "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\.venv\\Scripts\\python.exe",
+      "-u",
+      "-m",
+      "scripts.analysis.explore_w02_stream_feedback",
+      "--output-dir",
+      "outputs\\w02_explore_20261015\\stream_families_v1\\D_feedback_b0.1",
+      "--beta",
+      "0.1"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 44.2,
+    "finished_utc": "2026-10-21T13:52:18.529655+00:00"
+  },
+  "D_feedback_b0.05": {
+    "job": "D_feedback_b0.05",
+    "command": [
+      "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\.venv\\Scripts\\python.exe",
+      "-u",
+      "-m",
+      "scripts.analysis.explore_w02_stream_feedback",
+      "--output-dir",
+      "outputs\\w02_explore_20261015\\stream_families_v1\\D_feedback_b0.05",
+      "--beta",
+      "0.05"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 44.2,
+    "finished_utc": "2026-10-21T13:52:18.529655+00:00"
+  },
+  "E_drift": {
+    "job": "E_drift",
+    "command": [
+      "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\.venv\\Scripts\\python.exe",
+      "-u",
+      "-m",
+      "scripts.analysis.explore_w02_stream_drift",
+      "--output-dir",
+      "outputs\\w02_explore_20261015\\stream_families_v1\\E_drift"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 6.0,
+    "finished_utc": "2026-10-21T13:51:40.323198+00:00"
+  },
+  "F_usage": {
+    "job": "F_usage",
+    "command": [
+      "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\.venv\\Scripts\\python.exe",
+      "-u",
+      "-m",
+      "scripts.analysis.explore_w02_stream_usage",
+      "--output-dir",
+      "outputs\\w02_explore_20261015\\stream_families_v1\\F_usage"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 30.2,
+    "finished_utc": "2026-10-21T13:52:04.461287+00:00"
+  }
+}

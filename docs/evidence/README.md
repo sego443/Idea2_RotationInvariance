@@ -6,6 +6,8 @@ Fresh October 12 v22 evidence lives separately in [v22_ablation_20261012](v22_ab
 
 Fresh October 21 W02 startup-curve evidence is in [w02_startup_curve_20261021](w02_startup_curve_20261021/README.md): 98 real rows, 490 matched recording-block null rows, 19 summaries and saved-prediction verification. See the [dated report](../results/2026-10-21-w02-startup-curve.md) for the reordered-startup assumption and per-wear failures. Only nine development wears were scored; no sealed waveform or C170 data was accessed.
 
+Fresh October 21 W02 stream-family evidence is in [w02_stream_families_20261021](w02_stream_families_20261021/README.md): eight successful jobs, 1,563 verified real rows, 7,815 original control aggregates and 75 supplementary recording-block feedback controls. The [report](../results/2026-10-21-w02-stream-families.md) distinguishes calibrated causal scores, oracle feedback, label-assisted drift diagnostics, artificial usage scenarios and incomplete original null replay. No sealed waveform or C170 data was accessed.
+
 Some copied JSON files refer to additional checkpoints/run directories not included here; obtain the complete local artifact bundle for replay. Machine paths are provenance.
 
 | Artifact | Original local source |

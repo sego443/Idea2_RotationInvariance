@@ -1,0 +1,16 @@
+started A_adapt: E:\MyCode\codex\Idea2\Idea2_RotationInvariance\.venv\Scripts\python.exe -u -m scripts.analysis.explore_w02_stream_adapt --output-dir outputs\w02_explore_20261015\stream_families_v1\A_adapt
+started B_features: E:\MyCode\codex\Idea2\Idea2_RotationInvariance\.venv\Scripts\python.exe -u -m scripts.analysis.explore_w02_stream_features --output-dir outputs\w02_explore_20261015\stream_families_v1\B_features
+started C_fewer_b0.1: E:\MyCode\codex\Idea2\Idea2_RotationInvariance\.venv\Scripts\python.exe -u -m scripts.analysis.explore_w02_stream_fewer --output-dir outputs\w02_explore_20261015\stream_families_v1\C_fewer_b0.1 --beta 0.1
+started C_fewer_b0.05: E:\MyCode\codex\Idea2\Idea2_RotationInvariance\.venv\Scripts\python.exe -u -m scripts.analysis.explore_w02_stream_fewer --output-dir outputs\w02_explore_20261015\stream_families_v1\C_fewer_b0.05 --beta 0.05
+started D_feedback_b0.1: E:\MyCode\codex\Idea2\Idea2_RotationInvariance\.venv\Scripts\python.exe -u -m scripts.analysis.explore_w02_stream_feedback --output-dir outputs\w02_explore_20261015\stream_families_v1\D_feedback_b0.1 --beta 0.1
+started D_feedback_b0.05: E:\MyCode\codex\Idea2\Idea2_RotationInvariance\.venv\Scripts\python.exe -u -m scripts.analysis.explore_w02_stream_feedback --output-dir outputs\w02_explore_20261015\stream_families_v1\D_feedback_b0.05 --beta 0.05
+started E_drift: E:\MyCode\codex\Idea2\Idea2_RotationInvariance\.venv\Scripts\python.exe -u -m scripts.analysis.explore_w02_stream_drift --output-dir outputs\w02_explore_20261015\stream_families_v1\E_drift
+started F_usage: E:\MyCode\codex\Idea2\Idea2_RotationInvariance\.venv\Scripts\python.exe -u -m scripts.analysis.explore_w02_stream_usage --output-dir outputs\w02_explore_20261015\stream_families_v1\F_usage
+finished E_drift: exit 0 after 6.0 s
+finished C_fewer_b0.1: exit 0 after 30.2 s
+finished C_fewer_b0.05: exit 0 after 30.2 s
+finished F_usage: exit 0 after 30.2 s
+finished D_feedback_b0.1: exit 0 after 44.2 s
+finished D_feedback_b0.05: exit 0 after 44.2 s
+finished B_features: exit 0 after 92.5 s
+finished A_adapt: exit 0 after 172.8 s

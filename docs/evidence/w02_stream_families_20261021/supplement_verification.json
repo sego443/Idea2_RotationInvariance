@@ -1,0 +1,12 @@
+{
+  "verified_utc": "2026-10-21T13:57:36.067946+00:00",
+  "cartesian_coverage": "All families independently enumerated and exact keys verified",
+  "D_real_trajectories_and_action_costs_replayed": 234,
+  "C_summary_entries_verified": 22,
+  "D_summary_entries_verified": 42,
+  "E_diagnostic_replay": "All channel gains, common/class/noise/separation statistics and real/null transfer metrics reproduced",
+  "supplementary_recording_block_controls": 75,
+  "selected_D_configurations": 15,
+  "supplementary_scope": "Extra exploratory controls after sweep; not replacements for original random-teacher controls. Full original null predictions remain unavailable.",
+  "script_sha256": "145b5eeef5612cf560f372d4b06c7a4cea83fbc77d5a4b0acb6ce703fab84bd7"
+}
