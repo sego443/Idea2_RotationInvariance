@@ -1,0 +1,102 @@
+{
+  "recorded_utc": "2026-10-21T06:55:33.335921+00:00",
+  "status": "preflight_passed_not_an_experiment_result",
+  "input": "outputs\\w02_dev_20261015\\dataset.npz",
+  "dataset_sha256": "f5ec8530ab51a3114e6b7909678ec8ca2ebe1bf8073f4c326433c04af43ea764",
+  "data_repository_commit": "76bca414ac24c8d17ca7e47379f1a96650668dfe",
+  "code_commit": "2039d19086562d997f4552b29ffff4176b8590bb",
+  "source_sha256": {
+    "scripts/analysis/explore_w02_kshot_naming.py": "383a00a0ffbc3d75fb6114b0679a1f5659a6f2a0bf29aafee1d0eb492ceeefe5",
+    "src/w02_cov_fewshot.py": "0043aacc09853cb90af98b91736c6f3fe9dd16a1ece62ca0f91bee6dc554af8a",
+    "src/v21_data.py": "6f03523ce716046cbee555aa0990bec8b42d3e725e25bfa057e741028e8829e5"
+  },
+  "environment": {
+    "python": "3.10.6 (tags/v3.10.6:9c7b4bd, Aug  1 2022, 21:53:49) [MSC v.1932 64 bit (AMD64)]",
+    "executable": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\.venv\\Scripts\\python.exe",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "numpy": "1.23.5",
+    "scipy": "1.10.1",
+    "scikit_learn": "1.3.2"
+  },
+  "cropping": "Existing 500-sample (2 s at 250 Hz) grid-localized windows; no raw re-cut; see 2026-10-15 grid report.",
+  "channels": "Four channels, stored order; development acquisition table has channel_map 0,1,2,3 throughout. Metadata validation only; no new physical inspection.",
+  "filters": "Third-order zero-phase Butterworth 0.5-12 Hz; temporal demeaning; lags 0,5,...,30; 28x28 covariance; tangent features.",
+  "labels": [
+    "UP",
+    "DOWN",
+    "LEFT",
+    "RIGHT"
+  ],
+  "wears": [
+    [
+      "A",
+      1
+    ],
+    [
+      "A",
+      2
+    ],
+    [
+      "A",
+      3
+    ],
+    [
+      "A",
+      4
+    ],
+    [
+      "A",
+      5
+    ],
+    [
+      "A",
+      6
+    ],
+    [
+      "B",
+      8
+    ],
+    [
+      "B",
+      9
+    ],
+    [
+      "B",
+      11
+    ]
+  ],
+  "n_recordings": 54,
+  "angles_deg": [
+    3,
+    34,
+    87,
+    193,
+    225,
+    289
+  ],
+  "counts": {
+    "strokes": 1080,
+    "prefix": 432,
+    "scored_body": 648,
+    "per_class_body": 162
+  },
+  "duplicates": "No duplicate (part,wear,recording,position_in_recording) identities; W02 archive has no marked duplicate field.",
+  "output": "outputs\\w02_explore_20261015\\kshot_naming_v1",
+  "overwrite_protection": "Output and log verified absent; runner uses mkdir(exist_ok=False); retain failures and choose a new name for retries.",
+  "test_access": "Development wears only; sealed W07/W10/W12 absent from supplied repository. No C170 input or test accessed.",
+  "seeds": {
+    "null": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "kmeans": 0,
+    "bootstrap": 20261015,
+    "pca": "random_state unspecified by unchanged source"
+  },
+  "epochs": "Not applicable: covariance/PCA/logistic regression/k-means; no neural training or epoch selection.",
+  "adaptation": "Global PCA/precision and logistic scaling fit on other wears. Explicit transductive within-recording reference, scaling, clustering and body refinement use held-out unlabeled strokes.",
+  "null_scope": "Zero model training labels and held-out support labels permuted. Borrowed within-class precision remains fitted on real training labels; null does not remove that information."
+}

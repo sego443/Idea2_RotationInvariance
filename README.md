@@ -11,6 +11,7 @@ Research code for recognizing four presegmented movement directions from four ci
 - [Execution and artifact procedure](docs/EXPERIMENT_PROCEDURE.md)
 - [Results, controls, and limitations](docs/EXPERIMENT_RESULTS.md)
 - [Fresh v22 window and normalization ablations (exploratory)](docs/results/2026-10-12-v22-window-normalization-ablation.md)
+- [Fresh W02 k-shot cluster naming results (exploratory)](docs/results/2026-10-21-w02-kshot-naming.md)
 - [Environment and reproduction](docs/REPRODUCIBILITY.md)
 - [Standalone Git and remote release](docs/RELEASE.md)
 

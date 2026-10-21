@@ -1,0 +1,43 @@
+{
+  "created_utc": "2026-10-21T06:58:30.021139+00:00",
+  "local_run": "outputs/w02_explore_20261015/kshot_naming_v1",
+  "artifacts": {
+    "exit.json": {
+      "sha256": "038b95b3c2ba1f376e183b47c6507580a7d429d61e8c97d91fb1dbbaf01fb0d9",
+      "bytes": 75
+    },
+    "packages.txt": {
+      "sha256": "73ad156ff3d28c9efe42a70298b35a400c36b778a4e4e569e67cb4ceef4e9a30",
+      "bytes": 2077
+    },
+    "preflight.json": {
+      "sha256": "0bdaa2f21dfcbae4a8a24904016f1d5f207ba68ca8f9d3f64e71326375db2807",
+      "bytes": 3323
+    },
+    "results.json": {
+      "sha256": "b7fa176a2c849cda9b281925f16877c8598ca6dc15d4de9be07e3ca6ad18f440",
+      "bytes": 132677
+    },
+    "row_metrics.csv": {
+      "sha256": "ef7a8e290a4fcf78768b2f88e210ab64dd6aaf96765b55a8ee53f2d1948f492c",
+      "bytes": 18744
+    },
+    "run.json": {
+      "sha256": "e2ac9ceb2c3e0b149cccf4407b86090f535e5f75bd842b6bc2211b7bd80d4a30",
+      "bytes": 680
+    },
+    "stdout.log": {
+      "sha256": "625f6f4ce1d07c822153ac27494762826f2231977f66b316919c01012f010290",
+      "bytes": 9711
+    },
+    "tests_retry.log": {
+      "sha256": "910ce34b9ae42be36735b227094aa2a65ce763b2dd54fb72c667f9419e9423cb",
+      "bytes": 100
+    },
+    "verification.json": {
+      "sha256": "f3bc58bff494c0bbcd5721eba4c008c2e34b1b2388f3067016aa4053f420eeed",
+      "bytes": 1381
+    }
+  },
+  "note": "Original run/preflight/log bytes retained; no raw signals or sealed data included."
+}

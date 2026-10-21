@@ -1,0 +1,94 @@
+fold W02_P01_A_W01 ready
+fold W02_P01_A_W02 ready
+fold W02_P01_A_W03 ready
+fold W02_P01_A_W04 ready
+fold W02_P01_A_W05 ready
+fold W02_P01_A_W06 ready
+fold W02_P01_B_W08 ready
+fold W02_P01_B_W09 ready
+fold W02_P01_B_W11 ready
+cluster_oracle (ceiling)      F1 0.989
+cluster_zero       b=0 -                  F1 0.601 min recall 0.41 pred [163, 161, 164, 160] naming failures 33/54 null 0.221
+cluster_zero       b=1 UP                 F1 0.912 min recall 0.84 pred [163, 161, 164, 160] naming failures 9/54 null 0.228
+cluster_zero       b=1 DOWN               F1 0.791 min recall 0.61 pred [161, 162, 166, 159] naming failures 20/54 null 0.234
+cluster_zero       b=1 LEFT               F1 0.644 min recall 0.43 pred [163, 161, 166, 158] naming failures 32/54 null 0.230
+cluster_zero       b=1 RIGHT              F1 0.798 min recall 0.60 pred [163, 161, 166, 158] naming failures 21/54 null 0.226
+cluster_zero       b=2 UP+DOWN            F1 0.954 min recall 0.91 pred [161, 162, 166, 159] naming failures 4/54 null 0.240
+cluster_zero       b=2 UP+LEFT            F1 0.927 min recall 0.86 pred [163, 161, 166, 158] naming failures 7/54 null 0.223
+cluster_zero       b=2 UP+RIGHT           F1 0.964 min recall 0.94 pred [163, 161, 166, 158] naming failures 3/54 null 0.248
+cluster_zero       b=2 DOWN+LEFT          F1 0.818 min recall 0.65 pred [161, 162, 166, 159] naming failures 18/54 null 0.243
+cluster_zero       b=2 DOWN+RIGHT         F1 0.980 min recall 0.97 pred [161, 163, 166, 158] naming failures 1/54 null 0.209
+cluster_zero       b=2 LEFT+RIGHT         F1 0.798 min recall 0.60 pred [163, 161, 166, 158] naming failures 21/54 null 0.233
+cluster_zero       b=3 UP+DOWN+LEFT       F1 0.963 min recall 0.93 pred [161, 162, 166, 159] naming failures 3/54 null 0.238
+cluster_zero       b=3 UP+DOWN+RIGHT      F1 0.971 min recall 0.94 pred [161, 163, 166, 158] naming failures 2/54 null 0.236
+cluster_zero       b=3 UP+LEFT+RIGHT      F1 0.964 min recall 0.94 pred [163, 161, 166, 158] naming failures 3/54 null 0.232
+cluster_zero       b=3 DOWN+LEFT+RIGHT    F1 0.980 min recall 0.97 pred [161, 163, 166, 158] naming failures 1/54 null 0.234
+cluster_zero       b=4 UP+DOWN+LEFT+RIGHT F1 0.971 min recall 0.94 pred [161, 163, 166, 158] naming failures 2/54 null 0.237
+cluster_flat       b=0 -                  F1 0.247 min recall 0.13 pred [163, 166, 160, 159] naming failures 53/54 null 0.247
+cluster_flat       b=1 UP                 F1 0.450 min recall 0.20 pred [163, 166, 160, 159] naming failures 45/54 null 0.236
+cluster_flat       b=1 DOWN               F1 0.475 min recall 0.28 pred [164, 162, 164, 158] naming failures 46/54 null 0.231
+cluster_flat       b=1 LEFT               F1 0.529 min recall 0.28 pred [162, 161, 166, 159] naming failures 44/54 null 0.274
+cluster_flat       b=1 RIGHT              F1 0.467 min recall 0.24 pred [164, 164, 162, 158] naming failures 49/54 null 0.233
+cluster_flat       b=2 UP+DOWN            F1 0.687 min recall 0.39 pred [162, 162, 166, 158] naming failures 32/54 null 0.235
+cluster_flat       b=2 UP+LEFT            F1 0.728 min recall 0.46 pred [163, 160, 166, 159] naming failures 28/54 null 0.240
+cluster_flat       b=2 UP+RIGHT           F1 0.674 min recall 0.39 pred [163, 164, 163, 158] naming failures 33/54 null 0.245
+cluster_flat       b=2 DOWN+LEFT          F1 0.752 min recall 0.50 pred [163, 162, 166, 157] naming failures 26/54 null 0.237
+cluster_flat       b=2 DOWN+RIGHT         F1 0.739 min recall 0.50 pred [165, 163, 162, 158] naming failures 27/54 null 0.235
+cluster_flat       b=2 LEFT+RIGHT         F1 0.753 min recall 0.52 pred [161, 163, 166, 158] naming failures 26/54 null 0.253
+cluster_flat       b=3 UP+DOWN+LEFT       F1 0.955 min recall 0.91 pred [162, 162, 166, 158] naming failures 4/54 null 0.238
+cluster_flat       b=3 UP+DOWN+RIGHT      F1 0.944 min recall 0.93 pred [162, 164, 164, 158] naming failures 4/54 null 0.227
+cluster_flat       b=3 UP+LEFT+RIGHT      F1 0.964 min recall 0.94 pred [163, 161, 166, 158] naming failures 3/54 null 0.228
+cluster_flat       b=3 DOWN+LEFT+RIGHT    F1 0.981 min recall 0.96 pred [161, 162, 166, 159] naming failures 1/54 null 0.237
+cluster_flat       b=4 UP+DOWN+LEFT+RIGHT F1 0.957 min recall 0.93 pred [163, 160, 166, 159] naming failures 4/54 null 0.230
+anchored_zero      b=0 -                  F1 0.570 min recall 0.41 pred [162, 169, 158, 159] naming failures 24/54 null 0.223
+anchored_zero      b=1 UP                 F1 0.694 min recall 0.44 pred [72, 187, 189, 200] naming failures 12/54 null 0.219
+anchored_zero      b=1 DOWN               F1 0.583 min recall 0.31 pred [215, 50, 192, 191] naming failures 24/54 null 0.241
+anchored_zero      b=1 LEFT               F1 0.546 min recall 0.41 pred [178, 193, 85, 192] naming failures 29/54 null 0.214
+anchored_zero      b=1 RIGHT              F1 0.604 min recall 0.31 pred [192, 201, 204, 51] naming failures 19/54 null 0.227
+anchored_zero      b=2 UP+DOWN            F1 0.610 min recall 0.45 pred [86, 73, 238, 251] naming failures 10/54 null 0.244
+anchored_zero      b=2 UP+LEFT            F1 0.790 min recall 0.57 pred [92, 219, 123, 214] naming failures 2/54 null 0.225
+anchored_zero      b=2 UP+RIGHT           F1 0.705 min recall 0.39 pred [87, 241, 257, 63] naming failures 0/54 null 0.229
+anchored_zero      b=2 DOWN+LEFT          F1 0.645 min recall 0.38 pred [235, 61, 127, 225] naming failures 17/54 null 0.237
+anchored_zero      b=2 DOWN+RIGHT         F1 0.699 min recall 0.48 pred [258, 77, 233, 80] naming failures 1/54 null 0.229
+anchored_zero      b=2 LEFT+RIGHT         F1 0.636 min recall 0.45 pred [204, 234, 136, 74] naming failures 16/54 null 0.236
+anchored_zero      b=3 UP+DOWN+LEFT       F1 0.806 min recall 0.60 pred [99, 109, 150, 290] naming failures 0/54 null 0.240
+anchored_zero      b=3 UP+DOWN+RIGHT      F1 0.720 min recall 0.52 pred [107, 111, 339, 91] naming failures 2/54 null 0.236
+anchored_zero      b=3 UP+LEFT+RIGHT      F1 0.794 min recall 0.60 pred [99, 288, 158, 103] naming failures 1/54 null 0.239
+anchored_zero      b=3 DOWN+LEFT+RIGHT    F1 0.810 min recall 0.64 pred [285, 106, 153, 104] naming failures 0/54 null 0.249
+anchored_zero      b=4 UP+DOWN+LEFT+RIGHT F1 0.933 min recall 0.90 pred [154, 157, 169, 168] naming failures 0/54 null 0.239 agree(rec1) 1.000
+anchored_farthest  b=0 -                  F1 0.561 min recall 0.36 pred [160, 156, 170, 162] naming failures 32/54 null 0.220
+anchored_farthest  b=1 UP                 F1 0.768 min recall 0.65 pred [144, 151, 180, 173] naming failures 14/54 null 0.224
+anchored_farthest  b=1 DOWN               F1 0.649 min recall 0.44 pred [162, 130, 190, 166] naming failures 27/54 null 0.241
+anchored_farthest  b=1 LEFT               F1 0.581 min recall 0.36 pred [155, 151, 195, 147] naming failures 30/54 null 0.213
+anchored_farthest  b=1 RIGHT              F1 0.711 min recall 0.52 pred [149, 159, 169, 171] naming failures 21/54 null 0.244
+anchored_farthest  b=2 UP+DOWN            F1 0.751 min recall 0.57 pred [154, 136, 196, 162] naming failures 18/54 null 0.253
+anchored_farthest  b=2 UP+LEFT            F1 0.817 min recall 0.70 pred [146, 157, 192, 153] naming failures 9/54 null 0.213
+anchored_farthest  b=2 UP+RIGHT           F1 0.829 min recall 0.77 pred [141, 165, 160, 182] naming failures 9/54 null 0.240
+anchored_farthest  b=2 DOWN+LEFT          F1 0.653 min recall 0.41 pred [158, 124, 215, 151] naming failures 24/54 null 0.239
+anchored_farthest  b=2 DOWN+RIGHT         F1 0.798 min recall 0.71 pred [153, 132, 171, 192] naming failures 11/54 null 0.231
+anchored_farthest  b=2 LEFT+RIGHT         F1 0.753 min recall 0.54 pred [155, 154, 176, 163] naming failures 19/54 null 0.229
+anchored_farthest  b=3 UP+DOWN+LEFT       F1 0.792 min recall 0.60 pred [149, 132, 215, 152] naming failures 11/54 null 0.225
+anchored_farthest  b=3 UP+DOWN+RIGHT      F1 0.794 min recall 0.67 pred [143, 137, 160, 208] naming failures 11/54 null 0.243
+anchored_farthest  b=3 UP+LEFT+RIGHT      F1 0.916 min recall 0.88 pred [155, 164, 172, 157] naming failures 2/54 null 0.239
+anchored_farthest  b=3 DOWN+LEFT+RIGHT    F1 0.872 min recall 0.77 pred [150, 143, 179, 176] naming failures 4/54 null 0.239
+anchored_farthest  b=4 UP+DOWN+LEFT+RIGHT F1 0.933 min recall 0.90 pred [154, 157, 169, 168] naming failures 0/54 null 0.239 agree(rec1) 1.000
+cluster_zero/b0          mean F1 0.601 [0.601, 0.601] null 0.221
+cluster_zero/b1          mean F1 0.786 [0.644, 0.912] null 0.229
+cluster_zero/b2          mean F1 0.907 [0.798, 0.980] null 0.233
+cluster_zero/b3          mean F1 0.969 [0.963, 0.980] null 0.235
+cluster_zero/b4          mean F1 0.971 [0.971, 0.971] null 0.237
+cluster_flat/b0          mean F1 0.247 [0.247, 0.247] null 0.247
+cluster_flat/b1          mean F1 0.480 [0.450, 0.529] null 0.244
+cluster_flat/b2          mean F1 0.722 [0.674, 0.753] null 0.241
+cluster_flat/b3          mean F1 0.961 [0.944, 0.981] null 0.232
+cluster_flat/b4          mean F1 0.957 [0.957, 0.957] null 0.23
+anchored_zero/b0         mean F1 0.570 [0.570, 0.570] null 0.223
+anchored_zero/b1         mean F1 0.607 [0.546, 0.694] null 0.225
+anchored_zero/b2         mean F1 0.681 [0.610, 0.790] null 0.233
+anchored_zero/b3         mean F1 0.782 [0.720, 0.810] null 0.241
+anchored_zero/b4         mean F1 0.933 [0.933, 0.933] null 0.239
+anchored_farthest/b0     mean F1 0.561 [0.561, 0.561] null 0.22
+anchored_farthest/b1     mean F1 0.677 [0.581, 0.768] null 0.23
+anchored_farthest/b2     mean F1 0.767 [0.653, 0.829] null 0.234
+anchored_farthest/b3     mean F1 0.844 [0.792, 0.916] null 0.237
+anchored_farthest/b4     mean F1 0.933 [0.933, 0.933] null 0.239

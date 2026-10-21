@@ -1,6 +1,6 @@
 # Documentation index
 
-Updated: 2026-10-12. The October 1 documentation release translated existing text and consolidated historical evidence. The dated v22 report below records fresh exploratory training on existing data; no new acquisition was performed.
+Updated: 2026-10-21. The October 1 documentation release translated existing text and consolidated historical evidence. Dated reports below distinguish fresh exploratory runs from historical results and proposed evaluations.
 
 | Document | Purpose |
 |---|---|
@@ -26,6 +26,7 @@ Updated: 2026-10-12. The October 1 documentation release translated existing tex
 - [W02 grid segmentation and rejected-take deletion (2026-10-15; no W02 scores)](results/2026-10-15-w02-grid-segmentation.md)
 - [W02 sealed holdout and switch to exploratory development (2026-10-15)](results/2026-10-15-w02-seal-and-exploratory-switch.md)
 - [W02 exploratory development: frozen baseline and covariance recipes (2026-10-15; development wears only)](results/2026-10-15-w02-exploratory-development.md)
+- [Fresh W02 k-shot cluster naming (2026-10-21; 64 exploratory rows, development wears only)](results/2026-10-21-w02-kshot-naming.md)
 - Freeze manifests: `evidence/v21_freeze/v21_freeze_S1_c170.json` (S1, C170 only) and `evidence/v21_freeze/v21_freeze_S2.json` (S2); `v21_freeze_S1.json` is superseded ([index](evidence/v21_freeze/README.md))
 
 ## Application module
