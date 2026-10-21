@@ -1,0 +1,14 @@
+{
+  "job": "G_robust",
+  "command": [
+    "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\.venv\\Scripts\\python.exe",
+    "-u",
+    "-m",
+    "scripts.analysis.explore_w02_stream_robust",
+    "--output-dir",
+    "outputs\\w02_explore_20261015\\stream_families_G_v1\\G_robust"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 62.3,
+  "finished_utc": "2026-10-21T14:24:07.902015+00:00"
+}

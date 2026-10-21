@@ -1,0 +1,49 @@
+{
+  "started_utc": "2026-10-21T14:23:07.331502+00:00",
+  "script": "explore_w02_stream_robust.py",
+  "script_sha256": "89aea0c82fadb5ab6053f58172fb4e59eed10824239569d7a61f7a55324a7d5c",
+  "lib_sha256": "257ea0fa889e6f4e76e2380d4758b20095e8aadf36fbaa4a460a78c2fbf6a15d",
+  "recipe_source_sha256": "0043aacc09853cb90af98b91736c6f3fe9dd16a1ece62ca0f91bee6dc554af8a",
+  "dataset": "outputs\\w02_dev_20261015\\dataset.npz",
+  "dataset_sha256": "f5ec8530ab51a3114e6b7909678ec8ca2ebe1bf8073f4c326433c04af43ea764",
+  "class_order": [
+    "UP",
+    "DOWN",
+    "LEFT",
+    "RIGHT"
+  ],
+  "settings": {
+    "pipelines": [
+      "static",
+      "adapt",
+      "rc0.05",
+      "rc0.1",
+      "rc0.15",
+      "rc0.2",
+      "rc0.3",
+      "rcconf0.05",
+      "rcconf0.1",
+      "rcconf0.15",
+      "rcconf0.2",
+      "rcconf0.3",
+      "rcres0.05",
+      "rcres0.1",
+      "rcres0.15",
+      "rcres0.2",
+      "rcres0.3",
+      "rcresconf0.05",
+      "rcresconf0.1",
+      "rcresconf0.15",
+      "rcresconf0.2",
+      "rcresconf0.3"
+    ],
+    "null_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "test_access": "development wears only; sealed wears W07/W10/W12 refused; exploratory"
+}

@@ -1,0 +1,308 @@
+[
+ {
+  "wear": "W02_P01_A_W01",
+  "draw": 0,
+  "assigned": [
+   1,
+   0,
+   3,
+   2
+  ],
+  "correct_labels": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "false_alarm": true
+ },
+ {
+  "wear": "W02_P01_A_W01",
+  "draw": 1,
+  "assigned": [
+   3,
+   0,
+   1,
+   2
+  ],
+  "correct_labels": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "false_alarm": true
+ },
+ {
+  "wear": "W02_P01_A_W02",
+  "draw": 0,
+  "assigned": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "correct_labels": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "false_alarm": false
+ },
+ {
+  "wear": "W02_P01_A_W02",
+  "draw": 1,
+  "assigned": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "correct_labels": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "false_alarm": false
+ },
+ {
+  "wear": "W02_P01_A_W03",
+  "draw": 0,
+  "assigned": [
+   2,
+   1,
+   3,
+   0
+  ],
+  "correct_labels": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "false_alarm": true
+ },
+ {
+  "wear": "W02_P01_A_W03",
+  "draw": 1,
+  "assigned": [
+   3,
+   1,
+   0,
+   2
+  ],
+  "correct_labels": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "false_alarm": true
+ },
+ {
+  "wear": "W02_P01_A_W04",
+  "draw": 0,
+  "assigned": [
+   0,
+   1,
+   3,
+   2
+  ],
+  "correct_labels": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "false_alarm": true
+ },
+ {
+  "wear": "W02_P01_A_W04",
+  "draw": 1,
+  "assigned": [
+   0,
+   1,
+   3,
+   2
+  ],
+  "correct_labels": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "false_alarm": true
+ },
+ {
+  "wear": "W02_P01_A_W05",
+  "draw": 0,
+  "assigned": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "correct_labels": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "false_alarm": false
+ },
+ {
+  "wear": "W02_P01_A_W05",
+  "draw": 1,
+  "assigned": [
+   0,
+   1,
+   3,
+   2
+  ],
+  "correct_labels": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "false_alarm": true
+ },
+ {
+  "wear": "W02_P01_A_W06",
+  "draw": 0,
+  "assigned": [
+   3,
+   1,
+   2,
+   0
+  ],
+  "correct_labels": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "false_alarm": true
+ },
+ {
+  "wear": "W02_P01_A_W06",
+  "draw": 1,
+  "assigned": [
+   0,
+   1,
+   3,
+   2
+  ],
+  "correct_labels": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "false_alarm": true
+ },
+ {
+  "wear": "W02_P01_B_W08",
+  "draw": 0,
+  "assigned": [
+   0,
+   1,
+   3,
+   2
+  ],
+  "correct_labels": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "false_alarm": true
+ },
+ {
+  "wear": "W02_P01_B_W08",
+  "draw": 1,
+  "assigned": [
+   0,
+   1,
+   3,
+   2
+  ],
+  "correct_labels": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "false_alarm": true
+ },
+ {
+  "wear": "W02_P01_B_W09",
+  "draw": 0,
+  "assigned": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "correct_labels": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "false_alarm": false
+ },
+ {
+  "wear": "W02_P01_B_W09",
+  "draw": 1,
+  "assigned": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "correct_labels": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "false_alarm": false
+ },
+ {
+  "wear": "W02_P01_B_W11",
+  "draw": 0,
+  "assigned": [
+   3,
+   1,
+   2,
+   0
+  ],
+  "correct_labels": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "false_alarm": true
+ },
+ {
+  "wear": "W02_P01_B_W11",
+  "draw": 1,
+  "assigned": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "correct_labels": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "false_alarm": false
+ }
+]

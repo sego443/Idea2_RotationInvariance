@@ -28,6 +28,7 @@ Updated: 2026-10-21. The October 1 documentation release translated existing tex
 - [W02 exploratory development: frozen baseline and covariance recipes (2026-10-15; development wears only)](results/2026-10-15-w02-exploratory-development.md)
 - [Fresh W02 startup curve (2026-10-21; 98 real rows and 490 matched null rows, development wears only)](results/2026-10-21-w02-startup-curve.md)
 - [Fresh W02 stream families (2026-10-21; eight jobs, 1,563 real rows and 7,815 original control aggregates, development wears only)](results/2026-10-21-w02-stream-families.md)
+- [Fresh W02 family G robustness (2026-10-21; 1,156 real rows and 5,500 replayed original controls, development wears only)](results/2026-10-21-w02-stream-G-robustness.md)
 - Freeze manifests: `evidence/v21_freeze/v21_freeze_S1_c170.json` (S1, C170 only) and `evidence/v21_freeze/v21_freeze_S2.json` (S2); `v21_freeze_S1.json` is superseded ([index](evidence/v21_freeze/README.md))
 
 ## Application module

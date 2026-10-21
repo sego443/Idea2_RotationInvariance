@@ -1,0 +1,28 @@
+{
+  "verified_utc": "2026-10-21T14:28:10.998043+00:00",
+  "real_rows_verified": 1156,
+  "part1_original_null_trajectories_replayed": 5500,
+  "summary_entries_verified": 448,
+  "part2_part3_real_prediction_and_action_trajectories_replayed": 56,
+  "calibration_check_raw_flags_verified": 216,
+  "part2_matched_training_block_check_cases": 90,
+  "part3_supplementary_recording_block_controls": 210,
+  "previous_F_baselines_exactly_reproduced": 152,
+  "checks": [
+    "Exact Cartesian configuration/prediction-key coverage",
+    "All real masks/order/metrics/counts/recalls/recording/boundary/wear/angle/minute metrics recomputed",
+    "All 5500 original null accuracies/counts replayed from features; predictions saved and null F1/recall exported",
+    "All part 2/3 prediction and action costs replayed including exclusion of initial and redo anchors",
+    "All Hungarian assignments and original raw check flags reconstructed",
+    "All 448 summary means/minima/null/action means recomputed",
+    "Input/source/plan hashes unchanged; child exit code zero"
+  ],
+  "tests": "4 focused existing covariance/segmentation tests passed in 2.08s; NumPy imported before pytest capture",
+  "supplement_scope": "Post-sweep extra controls, not original G outputs. Check prototypes refit under training-block labels with consistently permuted target calibration labels; feedback uses consistent recording-block teachers and anchor labels, retaining swaps and fixed true-row masks. No check+redo stream null was added.",
+  "test_access": "Development only; sealed and C170 waveforms not accessed",
+  "script_sha256": "79efba4024490cc3fb841ebd087887e4ae7655cb478d6a729147d2e4844594fb",
+  "reused_independent_metric_source": {
+    "path": "outputs/w02_explore_20261015/verify_stream_families_v1.py",
+    "sha256": "cb5dc1f9f2d9720c7fd67902992335b62117c04c8ff8febdb3d8024f5710b8c8"
+  }
+}

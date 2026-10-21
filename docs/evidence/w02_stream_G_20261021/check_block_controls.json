@@ -1,0 +1,1262 @@
+[
+ {
+  "seed": 0,
+  "wear": "W02_P01_A_W01",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 0,
+  "wear": "W02_P01_A_W01",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 0,
+  "wear": "W02_P01_A_W02",
+  "draw": 0,
+  "flag_correct_under_block_labels": false,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 0,
+  "wear": "W02_P01_A_W02",
+  "draw": 1,
+  "flag_correct_under_block_labels": false,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 0,
+  "wear": "W02_P01_A_W03",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 0,
+  "wear": "W02_P01_A_W03",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   false,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 0,
+  "wear": "W02_P01_A_W04",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 0,
+  "wear": "W02_P01_A_W04",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   false,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 0,
+  "wear": "W02_P01_A_W05",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 0,
+  "wear": "W02_P01_A_W05",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 0,
+  "wear": "W02_P01_A_W06",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 0,
+  "wear": "W02_P01_A_W06",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 0,
+  "wear": "W02_P01_B_W08",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 0,
+  "wear": "W02_P01_B_W08",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 0,
+  "wear": "W02_P01_B_W09",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 0,
+  "wear": "W02_P01_B_W09",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   false,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 0,
+  "wear": "W02_P01_B_W11",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 0,
+  "wear": "W02_P01_B_W11",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 1,
+  "wear": "W02_P01_A_W01",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   false,
+   true
+  ]
+ },
+ {
+  "seed": 1,
+  "wear": "W02_P01_A_W01",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 1,
+  "wear": "W02_P01_A_W02",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   false
+  ]
+ },
+ {
+  "seed": 1,
+  "wear": "W02_P01_A_W02",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 1,
+  "wear": "W02_P01_A_W03",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 1,
+  "wear": "W02_P01_A_W03",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 1,
+  "wear": "W02_P01_A_W04",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 1,
+  "wear": "W02_P01_A_W04",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 1,
+  "wear": "W02_P01_A_W05",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   false,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 1,
+  "wear": "W02_P01_A_W05",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   false,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 1,
+  "wear": "W02_P01_A_W06",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 1,
+  "wear": "W02_P01_A_W06",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 1,
+  "wear": "W02_P01_B_W08",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 1,
+  "wear": "W02_P01_B_W08",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 1,
+  "wear": "W02_P01_B_W09",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   false,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 1,
+  "wear": "W02_P01_B_W09",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 1,
+  "wear": "W02_P01_B_W11",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   false,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 1,
+  "wear": "W02_P01_B_W11",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   false,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 2,
+  "wear": "W02_P01_A_W01",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 2,
+  "wear": "W02_P01_A_W01",
+  "draw": 1,
+  "flag_correct_under_block_labels": false,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 2,
+  "wear": "W02_P01_A_W02",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   false,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 2,
+  "wear": "W02_P01_A_W02",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 2,
+  "wear": "W02_P01_A_W03",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 2,
+  "wear": "W02_P01_A_W03",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 2,
+  "wear": "W02_P01_A_W04",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 2,
+  "wear": "W02_P01_A_W04",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 2,
+  "wear": "W02_P01_A_W05",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 2,
+  "wear": "W02_P01_A_W05",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 2,
+  "wear": "W02_P01_A_W06",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   false
+  ]
+ },
+ {
+  "seed": 2,
+  "wear": "W02_P01_A_W06",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 2,
+  "wear": "W02_P01_B_W08",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   false,
+   true
+  ]
+ },
+ {
+  "seed": 2,
+  "wear": "W02_P01_B_W08",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   false,
+   true
+  ]
+ },
+ {
+  "seed": 2,
+  "wear": "W02_P01_B_W09",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   false,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 2,
+  "wear": "W02_P01_B_W09",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 2,
+  "wear": "W02_P01_B_W11",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   false,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 2,
+  "wear": "W02_P01_B_W11",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   false,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 3,
+  "wear": "W02_P01_A_W01",
+  "draw": 0,
+  "flag_correct_under_block_labels": false,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 3,
+  "wear": "W02_P01_A_W01",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   false
+  ]
+ },
+ {
+  "seed": 3,
+  "wear": "W02_P01_A_W02",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   false,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 3,
+  "wear": "W02_P01_A_W02",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 3,
+  "wear": "W02_P01_A_W03",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 3,
+  "wear": "W02_P01_A_W03",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 3,
+  "wear": "W02_P01_A_W04",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   false,
+   true
+  ]
+ },
+ {
+  "seed": 3,
+  "wear": "W02_P01_A_W04",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 3,
+  "wear": "W02_P01_A_W05",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 3,
+  "wear": "W02_P01_A_W05",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   false,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 3,
+  "wear": "W02_P01_A_W06",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 3,
+  "wear": "W02_P01_A_W06",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 3,
+  "wear": "W02_P01_B_W08",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   false,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 3,
+  "wear": "W02_P01_B_W08",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   false,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 3,
+  "wear": "W02_P01_B_W09",
+  "draw": 0,
+  "flag_correct_under_block_labels": false,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 3,
+  "wear": "W02_P01_B_W09",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 3,
+  "wear": "W02_P01_B_W11",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   false,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 3,
+  "wear": "W02_P01_B_W11",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 4,
+  "wear": "W02_P01_A_W01",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 4,
+  "wear": "W02_P01_A_W01",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 4,
+  "wear": "W02_P01_A_W02",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 4,
+  "wear": "W02_P01_A_W02",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 4,
+  "wear": "W02_P01_A_W03",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 4,
+  "wear": "W02_P01_A_W03",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 4,
+  "wear": "W02_P01_A_W04",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 4,
+  "wear": "W02_P01_A_W04",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   false,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 4,
+  "wear": "W02_P01_A_W05",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 4,
+  "wear": "W02_P01_A_W05",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 4,
+  "wear": "W02_P01_A_W06",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 4,
+  "wear": "W02_P01_A_W06",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 4,
+  "wear": "W02_P01_B_W08",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 4,
+  "wear": "W02_P01_B_W08",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 4,
+  "wear": "W02_P01_B_W09",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 4,
+  "wear": "W02_P01_B_W09",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   false,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 4,
+  "wear": "W02_P01_B_W11",
+  "draw": 0,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "seed": 4,
+  "wear": "W02_P01_B_W11",
+  "draw": 1,
+  "flag_correct_under_block_labels": true,
+  "flag_each_swap": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ }
+]

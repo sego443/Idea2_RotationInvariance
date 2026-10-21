@@ -13,6 +13,7 @@ Research code for recognizing four presegmented movement directions from four ci
 - [Fresh v22 window and normalization ablations (exploratory)](docs/results/2026-10-12-v22-window-normalization-ablation.md)
 - [Fresh W02 startup curve: 0-4 calibration actions and sequential recognition (exploratory)](docs/results/2026-10-21-w02-startup-curve.md)
 - [Fresh W02 stream families: adaptation, feedback, drift and usage robustness (exploratory)](docs/results/2026-10-21-w02-stream-families.md)
+- [Fresh W02 family G: recentering robustness, calibration checks and repair costs (exploratory)](docs/results/2026-10-21-w02-stream-G-robustness.md)
 - [Environment and reproduction](docs/REPRODUCIBILITY.md)
 - [Standalone Git and remote release](docs/RELEASE.md)
 

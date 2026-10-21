@@ -8,6 +8,8 @@ Fresh October 21 W02 startup-curve evidence is in [w02_startup_curve_20261021](w
 
 Fresh October 21 W02 stream-family evidence is in [w02_stream_families_20261021](w02_stream_families_20261021/README.md): eight successful jobs, 1,563 verified real rows, 7,815 original control aggregates and 75 supplementary recording-block feedback controls. The [report](../results/2026-10-21-w02-stream-families.md) distinguishes calibrated causal scores, oracle feedback, label-assisted drift diagnostics, artificial usage scenarios and incomplete original null replay. No sealed waveform or C170 data was accessed.
 
+Fresh October 21 W02 family G evidence is in [w02_stream_G_20261021](w02_stream_G_20261021/README.md): 1,156 verified real rows, all 5,500 original null trajectories replayed, 90 supplementary training-block calibration-check cases and 210 supplementary recording-block feedback controls. The [report](../results/2026-10-21-w02-stream-G-robustness.md) records recentering tradeoffs, 66.67% false alarms on correct calibration, changed redo scoring masks and oracle-correction costs. No sealed waveform or C170 data was accessed.
+
 Some copied JSON files refer to additional checkpoints/run directories not included here; obtain the complete local artifact bundle for replay. Machine paths are provenance.
 
 | Artifact | Original local source |

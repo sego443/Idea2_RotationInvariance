@@ -1,0 +1,175 @@
+{
+  "created_utc": "2026-10-21T14:33:37.340844+00:00",
+  "code_commit": "10ff6cde6d17b56d26bf701f4d00c6c157e1c6b0",
+  "dataset_sha256": "f5ec8530ab51a3114e6b7909678ec8ca2ebe1bf8073f4c326433c04af43ea764",
+  "report": {
+    "path": "docs/results/2026-10-21-w02-stream-G-robustness.md",
+    "sha256": "42cb3e352e23144d2423abf70fa7e92de6c75bc6125b6d1c02a911a55d90b288"
+  },
+  "included": {
+    "action_costs.csv": {
+      "sha256": "5f72bdccb2d77f3e3bc4ab1b3cec6536a6f3912cbee3610bd8de55f7a1dbf944",
+      "bytes": 5682,
+      "original_local_source": "outputs/w02_explore_20261015/stream_families_G_v1_audit/action_costs.csv"
+    },
+    "check_assignments.json": {
+      "sha256": "f173293318b35ba3ec788e0903206dd8e70bd5ad54dc36c82fc222f4d5c45fc3",
+      "bytes": 3249,
+      "original_local_source": "outputs/w02_explore_20261015/stream_families_G_v1_audit/check_assignments.json"
+    },
+    "check_block_controls.json": {
+      "sha256": "8d1c83fe531b0aa09887ea875f57e086d8dd77665247ad800c5e605b019c15ae",
+      "bytes": 17674,
+      "original_local_source": "outputs/w02_explore_20261015/stream_families_G_v1_audit/check_block_controls.json"
+    },
+    "child_exit.json": {
+      "sha256": "9d3ccb6ab279f1b066ff4ab77f600b7c44795a21db38cfceb378f6ae977f90d4",
+      "bytes": 399,
+      "original_local_source": "outputs/w02_explore_20261015/stream_families_G_v1/G_robust.exit.json"
+    },
+    "feedback_block_controls.json": {
+      "sha256": "47c6cf58ccdb205b1efe2d6e1709aaf08f101f1bc87df15fcfd1841b590c3c67",
+      "bytes": 69369,
+      "original_local_source": "outputs/w02_explore_20261015/stream_families_G_v1_audit/feedback_block_controls.json"
+    },
+    "intervention_tradeoffs.png": {
+      "sha256": "627d04a8cb836355c8fd475ae782fd9a6d264eb626f7e2d9b5e77e395c67e7bb",
+      "bytes": 99541
+    },
+    "launcher.log": {
+      "sha256": "c0c79d06fb04003a51489873ca64f7ad5a5acb1eb40f3d8b9ff44b63d2a2a3b0",
+      "bytes": 252,
+      "original_local_source": "outputs/w02_explore_20261015/stream_families_G_v1_launcher.log"
+    },
+    "launcher_exit.json": {
+      "sha256": "a731fca566ac3cd7f5897b8872670accd14ff897960ace5adf26cd2e16f00c50",
+      "bytes": 105,
+      "original_local_source": "outputs/w02_explore_20261015/stream_families_G_v1_launcher_exit.json"
+    },
+    "original_null_metrics.csv": {
+      "sha256": "1a0670201dcc0c9e98f12c791a17712c751afe374f237d71d4aa77ef95fd8d72",
+      "bytes": 873072,
+      "original_local_source": "outputs/w02_explore_20261015/stream_families_G_v1_audit/original_null_metrics.csv"
+    },
+    "preflight.json": {
+      "sha256": "c67151f2443eaec0cffdaf1dff8b89e2e92271b37ce5e5f6e821fd34b896515f",
+      "bytes": 5459,
+      "original_local_source": "outputs/w02_explore_20261015/stream_families_G_v1_preflight.json"
+    },
+    "README.md": {
+      "sha256": "c881ddeb28ce28af7f6a54ccfde74c9fb6992e46cb7693e0c27ecca0b450978a",
+      "bytes": 2181
+    },
+    "row_metrics.csv": {
+      "sha256": "edfcfc777af18f7f939e455a2fcdf7de5b109596a019f6df5203237d38e8482a",
+      "bytes": 899112,
+      "original_local_source": "outputs/w02_explore_20261015/stream_families_G_v1_audit/row_metrics.csv"
+    },
+    "run.json": {
+      "sha256": "0de703064ca200cd575a07a135665e419afa39bb09e2b8df543ed21599bbf4c7",
+      "bytes": 1240,
+      "original_local_source": "outputs/w02_explore_20261015/stream_families_G_v1/G_robust/run.json"
+    },
+    "selected_rows.json": {
+      "sha256": "4a435f9481693e0408ab2d5f2e6cfb814cb866cf0e355a461552cc2dc87179da",
+      "bytes": 179260
+    },
+    "summaries_and_checks.json": {
+      "sha256": "7de1d08991f1152ad1ddaf6cf39342becf8c8b61a16821d8dd9e79b9e781b23a",
+      "bytes": 103177
+    },
+    "tests.log": {
+      "sha256": "9a9e3c8b72d39017f89b7092e973e4a15138bd2f8570ceec15fddf759766936c",
+      "bytes": 100,
+      "original_local_source": "outputs/w02_explore_20261015/stream_families_G_v1_tests.log"
+    },
+    "usage_tradeoffs.png": {
+      "sha256": "b83e222db88cb50e2574ede62dcf5c7196eb357482f19b72d93721af30fbb9c2",
+      "bytes": 141651
+    },
+    "verification.json": {
+      "sha256": "37bac60957eebb8551a9f6a76989c20117cf3ff21fefaeb0520953e98b8826ae",
+      "bytes": 1896,
+      "original_local_source": "outputs/w02_explore_20261015/stream_families_G_v1_audit/verification.json"
+    }
+  },
+  "retained_local_not_published": {
+    "outputs/w02_explore_20261015/stream_families_G_v1/G_robust.exit.json": {
+      "sha256": "9d3ccb6ab279f1b066ff4ab77f600b7c44795a21db38cfceb378f6ae977f90d4",
+      "bytes": 399
+    },
+    "outputs/w02_explore_20261015/stream_families_G_v1/G_robust.log": {
+      "sha256": "fb088491fd0113e1b6a489e150d00a8d3551942b2d272c241738a212d1c49f5d",
+      "bytes": 163143
+    },
+    "outputs/w02_explore_20261015/stream_families_G_v1/G_robust/predictions.npz": {
+      "sha256": "5593cd936b6d9b6ae084e50fbb9dea4ad35515df4d5bc5fe7b16d7871b372586",
+      "bytes": 685099
+    },
+    "outputs/w02_explore_20261015/stream_families_G_v1/G_robust/results.json": {
+      "sha256": "2cace4a24190134364d5cda74c5f58c4ffef256da5ae89b62eb7f68926814bf1",
+      "bytes": 2667165
+    },
+    "outputs/w02_explore_20261015/stream_families_G_v1/G_robust/run.json": {
+      "sha256": "0de703064ca200cd575a07a135665e419afa39bb09e2b8df543ed21599bbf4c7",
+      "bytes": 1240
+    },
+    "outputs/w02_explore_20261015/stream_families_G_v1_audit/action_costs.csv": {
+      "sha256": "5f72bdccb2d77f3e3bc4ab1b3cec6536a6f3912cbee3610bd8de55f7a1dbf944",
+      "bytes": 5682
+    },
+    "outputs/w02_explore_20261015/stream_families_G_v1_audit/check_assignments.json": {
+      "sha256": "f173293318b35ba3ec788e0903206dd8e70bd5ad54dc36c82fc222f4d5c45fc3",
+      "bytes": 3249
+    },
+    "outputs/w02_explore_20261015/stream_families_G_v1_audit/check_block_controls.json": {
+      "sha256": "8d1c83fe531b0aa09887ea875f57e086d8dd77665247ad800c5e605b019c15ae",
+      "bytes": 17674
+    },
+    "outputs/w02_explore_20261015/stream_families_G_v1_audit/feedback_block_controls.json": {
+      "sha256": "47c6cf58ccdb205b1efe2d6e1709aaf08f101f1bc87df15fcfd1841b590c3c67",
+      "bytes": 69369
+    },
+    "outputs/w02_explore_20261015/stream_families_G_v1_audit/feedback_block_predictions.npz": {
+      "sha256": "9fb483f27b2ee17c28eb563e77143204e9c61eb558479ed96f9e5611955a30cd",
+      "bytes": 142274
+    },
+    "outputs/w02_explore_20261015/stream_families_G_v1_audit/original_null_metrics.csv": {
+      "sha256": "1a0670201dcc0c9e98f12c791a17712c751afe374f237d71d4aa77ef95fd8d72",
+      "bytes": 873072
+    },
+    "outputs/w02_explore_20261015/stream_families_G_v1_audit/original_null_replay_predictions.npz": {
+      "sha256": "790cd1fec428547f83224a7b415cbf66578bdd53b4c0ce35990a363d19eeecfd",
+      "bytes": 3492855
+    },
+    "outputs/w02_explore_20261015/stream_families_G_v1_audit/row_metrics.csv": {
+      "sha256": "edfcfc777af18f7f939e455a2fcdf7de5b109596a019f6df5203237d38e8482a",
+      "bytes": 899112
+    },
+    "outputs/w02_explore_20261015/stream_families_G_v1_audit/verification.json": {
+      "sha256": "37bac60957eebb8551a9f6a76989c20117cf3ff21fefaeb0520953e98b8826ae",
+      "bytes": 1896
+    },
+    "outputs/w02_explore_20261015/stream_families_G_v1_packages.txt": {
+      "sha256": "73ad156ff3d28c9efe42a70298b35a400c36b778a4e4e569e67cb4ceef4e9a30",
+      "bytes": 2077
+    },
+    "outputs/w02_explore_20261015/run_stream_G_v1.py": {
+      "sha256": "0fc39057abcc01e999722050923b9abe8e91d142aadd8fc4019e1f48da17006c",
+      "bytes": 6323
+    },
+    "outputs/w02_explore_20261015/verify_stream_G_v1.py": {
+      "sha256": "79efba4024490cc3fb841ebd087887e4ae7655cb478d6a729147d2e4844594fb",
+      "bytes": 16171
+    },
+    "outputs/w02_explore_20261015/package_stream_G_v1.py": {
+      "sha256": "a944bcaa98cacef066f697883575433823be54743fc5418a695b667ab25ae3df",
+      "bytes": 31188
+    },
+    "outputs/w02_explore_20261015/verify_stream_families_v1.py": {
+      "sha256": "cb5dc1f9f2d9720c7fd67902992335b62117c04c8ff8febdb3d8024f5710b8c8",
+      "bytes": 13174
+    }
+  },
+  "scope": "Fresh exploratory G execution and separately labeled supplementary controls; no sealed/C170 waveforms accessed, no historical hash replacement."
+}
