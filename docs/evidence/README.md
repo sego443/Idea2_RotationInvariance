@@ -6,6 +6,8 @@ Fresh October 12 v22 evidence lives separately in [v22_ablation_20261012](v22_ab
 
 Fresh October 21 W02 k-shot evidence is in [w02_kshot_naming_20261021](w02_kshot_naming_20261021/README.md): 64 real rows, 320 matched-null scores, per-class/per-wear/per-angle metrics, execution records and hashes. See the [English results report](../results/2026-10-21-w02-kshot-naming.md). Only development wears were accessed; sealed W07/W10/W12 were absent from the supplied data package.
 
+The subsequent [W02 naming robustness bundle](w02_naming_robustness_20261021/README.md) contains 1,600 real rows and 8,000 null rows under incomplete/unbalanced pools, saved integer predictions, sample metadata and replay verification. See its [English report](../results/2026-10-21-w02-naming-robustness.md). This also used development wears only.
+
 Some copied JSON files refer to additional checkpoints/run directories not included here; obtain the complete local artifact bundle for replay. Machine paths are provenance.
 
 | Artifact | Original local source |

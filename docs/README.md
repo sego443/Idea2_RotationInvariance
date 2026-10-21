@@ -27,6 +27,7 @@ Updated: 2026-10-21. The October 1 documentation release translated existing tex
 - [W02 sealed holdout and switch to exploratory development (2026-10-15)](results/2026-10-15-w02-seal-and-exploratory-switch.md)
 - [W02 exploratory development: frozen baseline and covariance recipes (2026-10-15; development wears only)](results/2026-10-15-w02-exploratory-development.md)
 - [Fresh W02 k-shot cluster naming (2026-10-21; 64 exploratory rows, development wears only)](results/2026-10-21-w02-kshot-naming.md)
+- [Fresh W02 naming robustness (2026-10-21; 1,600 real rows and 8,000 null rows, development wears only)](results/2026-10-21-w02-naming-robustness.md)
 - Freeze manifests: `evidence/v21_freeze/v21_freeze_S1_c170.json` (S1, C170 only) and `evidence/v21_freeze/v21_freeze_S2.json` (S2); `v21_freeze_S1.json` is superseded ([index](evidence/v21_freeze/README.md))
 
 ## Application module
