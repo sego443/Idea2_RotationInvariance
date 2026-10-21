@@ -39,7 +39,7 @@ Prediction counts are balanced for every recipe (148–173 per class).
 
 **Recipe details:**
 - `rec_nc` needs no training data.
-- `rec1_borrowed` learns a within-class covariance on the training wears (PCA 30, then Ledoit-Wolf). It refines the class means with the recording's unlabeled body strokes.
+- `rec1_borrowed` learns a within-class covariance on the training wears (PCA 30, then Ledoit-Wolf). It refines the class means with the recording's unlabeled body strokes. It labels only 4 strokes, but its tangent reference is the mean of all 8 prefix strokes, and the refinement uses the 12 later body strokes of the same recording. The user must therefore perform all 8 prefix strokes, and the body strokes are classified as a batch, not as they arrive.
 - `zero_logreg` cyclically shifts the channels by round(−θ/90). It re-centers each wear at the mean of its unlabeled strokes, which is transductive over the wear.
 
 ## 3. What was tried
@@ -51,7 +51,7 @@ All settings were tuned on the development wears. Logs are in `outputs/w02_explo
   - Lagged covariance in tangent space reaches 0.94–0.96. Dense lags (0–30 in steps of 5) score best; most variants fall within ±0.02 of each other.
   - LDA fails with 8 support strokes (0.18–0.56) and works with 48.
   - Using other recordings' prefixes (as E1b does) reaches 0.95 with covariance features. So E1b's 0.68 came from the B1 model, not from cross-recording drift.
-- **Calibration size:** 1 stroke per class gives 0.873 with nearest centroid and 0.933 with the borrowed metric. 2 per class give 0.963.
+- **Calibration size:** 1 stroke per class gives 0.873 with nearest centroid and 0.933 with the borrowed metric. 2 per class give 0.963. Only the nearest-centroid figures use nothing but the labeled strokes: the tangent reference is the mean of the support strokes, and each body stroke is classified on its own. 0.873 is therefore the result for 4 startup actions, and 0.963 (`rec_nc`) for 8. The 0.933 borrowed-metric figure also uses the other 4 prefix strokes and the recording's later strokes (see `rec1_borrowed` above).
 - **Transfer without calibration** (`explore_w02_zerocal.py`, leaving one wear out):
 
   | Method | Macro-F1 |
@@ -85,7 +85,7 @@ All settings were tuned on the development wears. Logs are in `outputs/w02_explo
 
 ## 4. Interpretation and limits
 
-- With 2 labeled strokes per direction from the same recording, a training-free covariance classifier separates the four directions on these development wears (0.963). With 1 stroke per direction plus a metric borrowed from other wears, it reaches 0.933.
+- With 2 labeled strokes per direction from the same recording, a training-free covariance classifier separates the four directions on these development wears (0.963). With 1 stroke per direction (4 startup actions) and nothing else from the recording, nearest centroid reaches 0.873. The 0.933 of `rec1_borrowed` is not a 4-action result: it also needs the other 4 prefix strokes and batch refinement on the recording's later strokes.
 - **These are exploratory.** The settings were chosen on these wears. They cover one participant, two days and re-wears at six band angles. They concern presegmented strokes only: no continuous detection, handwriting or open vocabulary.
 - Recognition with no labels from the new wear remains poor (≤0.57). Label-free clustering is unreliable. The rotation-invariance hypothesis is only partly supported by the angle check (§3).
 - The calibrated recipes do not use the band angle at all. Their performance therefore does not show rotation invariance; it shows that per-wear calibration works.
