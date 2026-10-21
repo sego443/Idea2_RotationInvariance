@@ -26,6 +26,7 @@ JOBS = {
     "D_feedback_b0.05": ("scripts.analysis.explore_w02_stream_feedback", ["--beta", "0.05"]),
     "E_drift": ("scripts.analysis.explore_w02_stream_drift", []),
     "F_usage": ("scripts.analysis.explore_w02_stream_usage", []),
+    "G_robust": ("scripts.analysis.explore_w02_stream_robust", []),
 }
 
 
