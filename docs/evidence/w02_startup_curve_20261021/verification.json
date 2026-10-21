@@ -1,0 +1,25 @@
+{
+  "verified_utc": "2026-10-21T12:50:59.763835+00:00",
+  "real_rows_verified": 98,
+  "null_rows_verified": 490,
+  "summary_rows_verified": 19,
+  "prediction_arrays": 588,
+  "sample_count": 1080,
+  "exit_code": 0,
+  "checks": [
+    "Exact Cartesian configuration coverage",
+    "Source and dataset hashes match preflight and run",
+    "All real/null scored masks independently reconstructed including seed-dependent anchor removal",
+    "All real accuracy/F1/recall/prediction counts/stream bins/recording/wear/angle metrics recomputed",
+    "All null accuracy/first-10/counts recomputed and additional null F1/recall exported",
+    "All summary means/minima/null means recomputed",
+    "One channel-map stratum: 0,1,2,3; 63 development trial/REST records",
+    "Sealed wear IDs absent; no sealed waveforms accessed"
+  ],
+  "tests": {
+    "initial": "pytest collection failed importing NumPy DLL under fd capture; failed log preserved locally",
+    "retry": "NumPy imported before pytest.main; same four focused tests: 4 passed in 3.09s",
+    "scope": "Focused covariance recipe and segmentation tests only; no full suite, no second model fit, no sealed evaluation"
+  },
+  "verification_script_sha256": "9192add8199a3341c220a6649f1e8592a26d1bd35b4fba38288283e51fea5247"
+}

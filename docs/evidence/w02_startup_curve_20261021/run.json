@@ -1,0 +1,23 @@
+{
+  "started_utc": "2026-10-21T12:46:47.609174+00:00",
+  "dataset": "outputs\\w02_dev_20261015\\dataset.npz",
+  "dataset_sha256": "f5ec8530ab51a3114e6b7909678ec8ca2ebe1bf8073f4c326433c04af43ea764",
+  "script_sha256": "d47556db87bf5d81c601ca587c6f589079c5475a8a23ed4fa01abc4faa511420",
+  "recipe_source_sha256": "0043aacc09853cb90af98b91736c6f3fe9dd16a1ece62ca0f91bee6dc554af8a",
+  "class_order": [
+    "UP",
+    "DOWN",
+    "LEFT",
+    "RIGHT"
+  ],
+  "derotate": "none",
+  "prior_count": 3.0,
+  "null_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "test_access": "development wears only (leave-one-wear-out); sealed wears W07/W10/W12 refused; exploratory"
+}

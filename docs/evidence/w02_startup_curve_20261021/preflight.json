@@ -1,0 +1,88 @@
+{
+  "recorded_utc": "2026-10-21T12:46:43.837454+00:00",
+  "status": "preflight_passed_not_an_experiment_result",
+  "command": [
+    "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\.venv\\Scripts\\python.exe",
+    "-u",
+    "-m",
+    "scripts.analysis.explore_w02_startup_curve",
+    "--output-dir",
+    "outputs/w02_explore_20261015/startup_curve_v1"
+  ],
+  "code_commit": "e001e3b64342110d485fef39ecfecb0d11604d59",
+  "input": "outputs/w02_dev_20261015/dataset.npz",
+  "dataset_sha256": "f5ec8530ab51a3114e6b7909678ec8ca2ebe1bf8073f4c326433c04af43ea764",
+  "source_sha256": {
+    "scripts/analysis/explore_w02_startup_curve.py": "d47556db87bf5d81c601ca587c6f589079c5475a8a23ed4fa01abc4faa511420",
+    "src/w02_cov_fewshot.py": "0043aacc09853cb90af98b91736c6f3fe9dd16a1ece62ca0f91bee6dc554af8a",
+    "src/v21_data.py": "6f03523ce716046cbee555aa0990bec8b42d3e725e25bfa057e741028e8829e5"
+  },
+  "environment": {
+    "python": "3.10.6 (tags/v3.10.6:9c7b4bd, Aug  1 2022, 21:53:49) [MSC v.1932 64 bit (AMD64)]",
+    "executable": "E:\\MyCode\\codex\\Idea2\\Idea2_RotationInvariance\\.venv\\Scripts\\python.exe",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "numpy": "1.23.5",
+    "scipy": "1.10.1",
+    "scikit_learn": "1.3.2"
+  },
+  "cropping": "Existing grid-localized 500-sample (2 s at 250 Hz) windows; no raw re-cut; zero-phase filtering uses the complete current stroke.",
+  "channels": "Four stored channels; freshly checked acquisition table for all 63 development trial/REST recordings: map 0,1,2,3. Physical S0-S3 order follows documented tape order; no new anatomical inspection. No cyclic derotation.",
+  "filters": "Third-order zero-phase Butterworth 0.5-12 Hz; per-window demeaning; lags 0,5,...,30; ridge 1e-6 times covariance trace; tangent features dimension 406.",
+  "class_order": [
+    "UP",
+    "DOWN",
+    "LEFT",
+    "RIGHT"
+  ],
+  "wears": [
+    "W02_P01_A_W01",
+    "W02_P01_A_W02",
+    "W02_P01_A_W03",
+    "W02_P01_A_W04",
+    "W02_P01_A_W05",
+    "W02_P01_A_W06",
+    "W02_P01_B_W08",
+    "W02_P01_B_W09",
+    "W02_P01_B_W11"
+  ],
+  "n_recordings": 54,
+  "counts": {
+    "strokes": 1080,
+    "prefix": 432,
+    "per_class": [
+      270,
+      270,
+      270,
+      270
+    ]
+  },
+  "duplicates": "Unique recording/stroke identities freshly verified; no marked duplicate field in W02 archive.",
+  "output": "outputs/w02_explore_20261015/startup_curve_v1",
+  "log": "outputs/w02_explore_20261015/startup_curve_v1.log",
+  "overwrite_protection": "Directory, log, preflight and exit file absent; exclusive log/preflight creation; runner mkdir(exist_ok=False); preserve incomplete runs.",
+  "test_access": "Only development NPZ and development acquisition metadata read. Sealed W07/W10/W12 absent; no sealed NPZ or C170 data accessed. All nine development wears scored by leave-one-wear-out; exploratory.",
+  "epochs": "Not applicable; logistic regression max_iter=3000, C=0.1; PCA=30; prior_count=3. No neural training or epoch selection.",
+  "seeds": {
+    "null": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "model": "Unmodified runner does not seed PCA (solver=auto, random_state=None); no exact numerical determinism claimed.",
+    "draws": [
+      0,
+      1
+    ]
+  },
+  "experiment": "98 real configuration/draw rows and 490 matched null rows; nine held-out wears per row; no derotation.",
+  "preprocessing": "Population scaler/PCA/precision/model/global reference fit on eight complete training wears. Held-out anchor reference uses selected startup strokes; running reference uses preceding strokes only. NC4 scaler uses four anchors only. Training anchor records include their anchors in fitting; running training references use their full recording (deployment mismatch).",
+  "calibration_order": "Chosen prefix strokes are treated as performed first; all other strokes scored in recording order. This reorders acquired prefix strokes when anchors occurred later. Not a literal replay of the original recording chronology.",
+  "null": "Same recording-level class permutation applied to training labels and held-out anchor selection per seed; scored against true labels; seed-specific anchor removal can change scored identities.",
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  }
+}

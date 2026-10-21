@@ -4,6 +4,8 @@ The table below contains historical artifacts copied on 2026-10-01, not fresh tr
 
 Fresh October 12 v22 evidence lives separately in [v22_ablation_20261012](v22_ablation_20261012/summary.json): 81 new completed runs, [preflight](v22_ablation_20261012/preflight.json), [score table](v22_ablation_20261012/score_table.md), [verified run records](v22_ablation_20261012/verified_run_evidence.json) and [verification](v22_ablation_20261012/verification.json). See the [dated report](../results/2026-10-12-v22-window-normalization-ablation.md) for interpretation and test-access boundaries.
 
+Fresh October 21 W02 startup-curve evidence is in [w02_startup_curve_20261021](w02_startup_curve_20261021/README.md): 98 real rows, 490 matched recording-block null rows, 19 summaries and saved-prediction verification. See the [dated report](../results/2026-10-21-w02-startup-curve.md) for the reordered-startup assumption and per-wear failures. Only nine development wears were scored; no sealed waveform or C170 data was accessed.
+
 Some copied JSON files refer to additional checkpoints/run directories not included here; obtain the complete local artifact bundle for replay. Machine paths are provenance.
 
 | Artifact | Original local source |
